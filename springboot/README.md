@@ -1,6 +1,6 @@
 # springboot目录
 
 笔记目录
-- [mybatis_plus](springboot/start.md)
+- [springboot创建项目](springboot/start.md)
 
 
