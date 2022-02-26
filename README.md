@@ -10,11 +10,10 @@
 
 
 ## 其他文档
-  [java](java/) <br/>
-  [iOS](iOS/) <br/>
-  [document](document/) <br/>
+
+ 
 
 ## 帮助
   [码云](https://gitee.com/L10052108/doc) <br/>
-  [help](Markdown.md) <br/>
+  [help](help/) <br/>
   [home]() <br/>
