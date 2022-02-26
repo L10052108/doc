@@ -1,5 +1,2 @@
-- [前后序](ionic/context/)
-  - [java](ionic/context/)
-  - [目录结构](ionic/context/)
-  - [部署](ionic/context/)
-  - [官网详情](ionic/context/)
+- [java笔记](java/README.md)
+  - [mybatis_puls](java/mybatis_plus.md)
