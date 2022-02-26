@@ -4,6 +4,8 @@
 
 为了方便学习springboot的功能，因而创建这个项目。主分支上使用最基本的功能，springboot的简单框架。不同分支介绍不同的功能
 
+[项目代码](https://gitee.com/L10052108/springboot_project)
+
 ## 分支介绍
 
 | 名称            | 分支名称           | 介绍                 |
@@ -19,7 +21,7 @@
 
 从https://start.spring.io/ 拉去代码
 
-![1](1.png)
+![1](pic/1.png)
 
 ## 进行创建项目
 
@@ -31,7 +33,7 @@
 3. 增加一个简单web测试类
 4. 增加测试类
 
-![2](2.png)
+![2](pic/2.png)
 
 
 

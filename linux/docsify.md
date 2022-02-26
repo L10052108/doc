@@ -61,5 +61,21 @@ docsify serve docs
 
 `nohup /usr/local/node/node-v14.18.2-linux-x64/bin/docsify serve ./doc &`
 
+### 部署
 
+文档代码放到Git服务器上，每次更新代码。只需要从Git拉去代码即可
+````Java
+# 加入索引
+git add .
+# 确认
+git commit -m 'xxxx'
+# 提交
+git push
+````
+
+服务器拉取代码
+
+`git pull`
+
+这样就完成代码的更新
 
