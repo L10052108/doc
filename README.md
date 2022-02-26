@@ -15,9 +15,3 @@
   [码云](https://gitee.com/L10052108/doc) <br/>
   [help](help/) <br/>
   [home]() <br/>
-
-
-
-图片测试
-
-![1](pic/1.png)
