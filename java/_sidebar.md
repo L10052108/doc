@@ -1,3 +1,2 @@
 - [java笔记](java/README.md)
   - [mybatis_puls](java/mybatis_plus.md)
-  - [码云代码](https://gitee.com/L10052108/springboot_project/blob/master/README.md)
