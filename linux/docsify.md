@@ -55,11 +55,23 @@ docsify serve docs
 
 原文链接：https://blog.csdn.net/sinat_42483341/article/details/111934332
 
+文件的结构：
+
+![02801](pic/02801.png)
+
 ### 创建启动脚本
 
-在doc 文件夹下创建启动脚本
+- 在doc 文件夹下创建启动脚本
 
 `nohup /usr/local/node/node-v14.18.2-linux-x64/bin/docsify serve ./doc &`
+
+- 增加执行权限
+
+`chmod +X start.sh`
+
+- 启动程序
+
+`./start.sh`
 
 ### 部署
 
