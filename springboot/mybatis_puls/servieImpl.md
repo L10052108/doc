@@ -45,7 +45,7 @@ public class UserDemo3 extends ServiceImpl<TUserMapper, TUser> {
 
 两种方法对比
 
-![Snipaste_2022-02-28_17-48-24](/Users/liuwei/IdeaProjects/springboot_project/pic/Snipaste_2022-02-28_17-48-24.png)
+![Snipaste_2022-02-28_17-48-24](pic/Snipaste_2022-02-28_17-48-24.png)
 
 wrapper查询
 
@@ -106,4 +106,4 @@ public class PageDemo extends ServiceImpl<TUserMapper, TUser> {
 
 进入源码进行查看
 
-![Snipaste_2022-03-01_09-30-44](/Users/liuwei/IdeaProjects/springboot_project/pic/Snipaste_2022-03-01_09-30-44.png)
+![Snipaste_2022-03-01_09-30-44](pic/Snipaste_2022-03-01_09-30-44.png)
