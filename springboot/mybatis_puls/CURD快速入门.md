@@ -1,5 +1,10 @@
 # springboot集成mybatis_plus
 
+- [官方文档](https://baomidou.com/)
+
+Mybatise_plus 项目的介绍(省，可以查看官方文档)
+
+
 - 码云地址：https://gitee.com/L10052108/springboot_project/tree/mybatis%E2%80%94mysql/
 
 [跳转到码云](https://gitee.com/L10052108/springboot_project/tree/mybatis%E2%80%94mysql/)
