@@ -278,3 +278,8 @@ public void testUpdate(){
 
 执行的sql
 > UPDATE user SET age=29, email='hadoopcn2@163.com'  WHERE (name = 'Jack' AND age = 28);
+
+#### 聚合函数
+
+
+

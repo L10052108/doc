@@ -8,4 +8,5 @@
     - [分页](springboot/mybatis_puls/分页.md)
     - [自定义sql](springboot/mybatis_puls/自定义sql.md)
     - [servieImpl](springboot/mybatis_puls/servieImpl.md)
+    - [servieImpl](springboot/mybatis_puls/其他功能.md)
   - [H2的使用](springboot/H2的使用.md)
