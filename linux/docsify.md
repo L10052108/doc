@@ -17,12 +17,15 @@
 
 ````
 ###### 安装npm（实际上，部署不需要安装npm...） ######
+#创建目录
+mkdir -p /usr/local/node/
+cd /usr/local/node/
 # 淘宝镜像，下载node，解压
-wget https://npm.taobao.org/mirrors/node/latest-v14.x/node-v14.15.3-linux-x64.tar.gz
-tar -zxvf node-v14.15.3-linux-x64.tar.gz
+wget https://cdn.npmmirror.com/binaries/node/latest-v14.x/node-v14.18.2-linux-x64.tar.gz
+tar -zxvf node-v14.18.2-linux-x64.tar.gz
 # 添加软链接
-ln -s /usr/local/node/node-v14.15.3-linux-x64/bin/npm /usr/local/bin/npm
-ln -s /usr/local/node/node-v14.15.3-linux-x64/bin/node /usr/local/bin/node
+ln -s /usr/local/node/node-v14.18.2-linux-x64/bin/npm /usr/local/bin/npm
+ln -s /usr/local/node/node-v14.18.2-linux-x64/bin/node /usr/local/bin/node
 # 安装成功，查看版本
 npm -v
 ````
