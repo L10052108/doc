@@ -74,6 +74,19 @@ SELECT id,name,age,email
  WHERE name = 'Jone' AND email= 'test1@baomidou.com';
 ```
 
+##  实现分页（未整理）
+
+一，mapper中实现自定义的方法，然后把page参入传入即可。
+
+![img](https://img2020.cnblogs.com/blog/1709168/202008/1709168-20200813102725538-1757549107.png)
+
+ 二，使用
+
+![img](https://img2020.cnblogs.com/blog/1709168/202008/1709168-20200813102814711-209591750.png)
+
+https://www.cnblogs.com/shengkai126126/p/13494910.html
+
+
 ## 2、自定义接口方法使用Wrapper条件构造器
 
 如果我们想在自定义的方法中，使用Wrapper条件构造器。可以参考下面的方式实现。这种方式虽然简单，但仍然只适用于单表（可以是多表关联查询，但查询条件也是基于单表的）。
