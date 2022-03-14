@@ -20,15 +20,21 @@
 #创建目录
 mkdir -p /usr/local/node/
 cd /usr/local/node/
+###### 安装npm（实际上，部署不需要安装npm...） ######
 # 淘宝镜像，下载node，解压
-wget https://cdn.npmmirror.com/binaries/node/latest-v14.x/node-v14.18.2-linux-x64.tar.gz
-tar -zxvf node-v14.18.2-linux-x64.tar.gz
+wget https://npm.taobao.org/mirrors/node/latest-v14.x/node-v14.15.3-linux-x64.tar.gz
+tar -zxvf node-v14.15.3-linux-x64.tar.gz
 # 添加软链接
-ln -s /usr/local/node/node-v14.18.2-linux-x64/bin/npm /usr/local/bin/npm
-ln -s /usr/local/node/node-v14.18.2-linux-x64/bin/node /usr/local/bin/node
+ln -s /usr/local/node/node-v14.15.3-linux-x64/bin/npm /usr/local/bin/npm
+ln -s /usr/local/node/node-v14.15.3-linux-x64/bin/node /usr/local/bin/node
 # 安装成功，查看版本
 npm -v
+————————————————
+版权声明：本文为CSDN博主「寒泉Hq」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/sinat_42483341/article/details/111934332
 ````
+
+- 注意： 版本可能更新，需要进行访问最新环境，更改版本信息
 
 ### 安装软件
 
@@ -93,4 +99,74 @@ git push
 `git pull`
 
 这样就完成代码的更新
+
+> 后面采用Jenkins 自动化部署，通过Jenkins拉去代码，然后把文件拷贝到服务的目录
+
+具体的部署过程可以参看[Jenkins](linux/Jenkins.md)
+
+## 主页的配置
+
+很多功能需要配置文件来实现
+
+![1647248480834](pic/1647248480834.jpg)
+
+### 配置左侧栏
+
+[资料来源](https://cpury.com/1408.html)
+
+docsify官方并不支持侧边栏折叠，目前只能通过第三方插件实现或者自己DIY。
+
+docsify的目录功能也可简单实现折叠，一般够用。
+
+最终实现的展示效果：
+
+![docsify-sidebar-collapse](pic/docsify-sidebar-collapse.gif)
+
+
+
+index.html配置
+
+~~~~
+<script>
+  window.$docsify = {
+    loadSidebar: true,
+    alias: {
+      '/.*/_sidebar.md': '/_sidebar.md',
+    },
+    subMaxLevel: 3,
+    ...
+    sidebarDisplayLevel: 1, // set sidebar display level
+  }
+</script>
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+
+<!-- plugins -->
+<script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+~~~~
+
+ _sidebar.md demo
+
+~~~~
+- [数据结构与算法](/general/algorithm/README.md)
+  - 数据结构
+    - [stack](/general/algorithm/data-structures/stack/README.zh-CN.md)
+    - [queue](/general/algorithm/data-structures/queue/README.zh-CN.md)
+    - list
+      - [linked-list](/general/algorithm/data-structures/linked-list/README.zh-CN.md)
+      - [doubly-linked-list](/general/algorithm/data-structures/doubly-linked-list/README.zh-CN.md)
+    - [tree](/general/algorithm/data-structures/tree/README.zh-CN.md)
+      - [binary search tree](/general/algorithm/data-structures/tree/binary-search-tree/README.md)
+      - [red black tree](/general/algorithm/data-structures/tree/red-black-tree/README.md)
+    - [heap](/general/algorithm/data-structures/heap/README.zh-CN.md)
+    - [hash-table](/general/algorithm/data-structures/hash-table/README.md)
+    - [graph](/general/algorithm/data-structures/graph/README.zh-CN.md)
+  - 算法
+    - [排序算法](/general/algorithm/algorithms/sorting.md)
+- [设计模式](/general/design-pattern/README.md)
+- 网络
+  - [协议模型](/general/network/protocol-model.md)
+  - [TCP/IP](/general/network/tcp-ip.md)
+~~~~
+
+
 

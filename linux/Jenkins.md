@@ -2,11 +2,23 @@
 
 ## 下载安装
 
+访问[官网](https://www.jenkins.io/)下载最新的Jenks的jar包
 
+安装jdk，安装过程可以参考[jdk]()   （jdk安装后续完善）
 
+启动代码：
 
+`java -jar -DJENKINS_HOME=/root/jenkis/ProgramData/.jenkins jenkins.war --httpPort=8085 `
+
+> -DJENKINS_HOME：指定Jenkins的项目文件的路径
+>
+> —httpPort：指定服务的端口号
+
+访问地址：http://127.0.0.1:8085/
 
 ## 插件下载
+
+
 
 
 
