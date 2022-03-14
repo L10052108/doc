@@ -47,7 +47,8 @@
         loadNavbar: true, // 顶部路由 默认_navbar.md
         coverpage: true, // 激活封面功能-_coverpage.md，可配置多个
         onlyCover: false, // 主页仅加载封面，不能滚动到其他页
-        subMaxLevel: 2, // 侧边栏层级
+        subMaxLevel: 3, // 侧边栏层级
+        sidebarDisplayLevel: 1, // set sidebar display level
         auto2top: true, // 路线更改时滚动到屏幕顶部
         homepage: 'README.md', // 主页，默认是README.md，也可自己指定
         mergeNavbar: true, // Navbar将在较小的屏幕上与侧边栏合并
@@ -105,5 +106,8 @@
     <script src="//unpkg.com/prismjs/components/prism-bash.min.js"></script>
     <script src="//unpkg.com/prismjs/components/prism-php.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+
+    <!-- plugins -->
+<script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
   </body>
 </html>
