@@ -4,7 +4,7 @@
 
 访问[官网](https://www.jenkins.io/)下载最新的Jenks的jar包
 
-安装jdk，安装过程可以参考[jdk]()   （jdk安装后续完善）
+安装jdk，安装过程可以参考[jdk](linux/jdk.md)
 
 启动代码：
 
@@ -18,11 +18,7 @@
 
 ## 插件下载
 
-
-
-
-
-我已经整理的插件下载文件
+- 我已经整理的插件下载文件
 
 ~~~~
 链接: https://pan.baidu.com/s/1oaot6EDpG22cSyfRQvgkXw 提取码: msbl

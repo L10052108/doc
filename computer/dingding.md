@@ -111,8 +111,6 @@
 
 ### mac启动脚本
 
-参考资料：[mac双击文件就执行脚本的步骤](mac双击文件就执行脚本的步骤)
-
 创建一个文件后缀 .commond
 
 ~~~~
@@ -167,6 +165,12 @@ goto TUNNEL
 
 > https://jinlilu.lanzoum.com/igVPy01hwbvi
 > 密码:eioh
+>
+- 脚本运行效果（把脚本放到mac文件夹下，直接双击运行）
+
+  ![Mar-15-2022 16-45-32](file/Mar-15-2022 16-45-32.gif)
+
+
 
 ## 参考资料
 
