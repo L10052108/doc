@@ -74,18 +74,24 @@ SELECT id,name,age,email
  WHERE name = 'Jone' AND email= 'test1@baomidou.com';
 ```
 
-##  实现分页（未整理）
+##  实现分页
 
-一，mapper中实现自定义的方法，然后把page参入传入即可。
+1，mapper中实现自定义的方法，然后把page参入传入即可。
 
 ![1709168-20200813102725538-1757549107](pic/1709168-20200813102725538-1757549107.png)
 
- 二，使用
+ 2，使用
 
 ![1709168-20200813102814711-209591750](pic/1709168-20200813102814711-209591750.png)
 
-https://www.cnblogs.com/shengkai126126/p/13494910.html
+3. 注意导入的包
+```
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+```
 
+
+[资料来源](https://www.cnblogs.com/shengkai126126/p/13494910.html)
 
 ## 自定义接口方法使用Wrapper条件构造器
 
