@@ -162,7 +162,11 @@ goto TUNNEL
 ~~~~
 
 ### 下载脚本
-[下载脚本](https://jinlilu.lanzoum.com/igVPy01hwbvi)
+
+- 分享地址
+
+> https://jinlilu.lanzoum.com/igVPy01hwbvi
+> 密码:eioh
 
 ## 参考资料
 
