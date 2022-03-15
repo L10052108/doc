@@ -7,7 +7,7 @@
 [java](java/)
 [linux](linux/)
 [springboot](springboot/)
-[面试总结](interview/)
+[其他](computer/)
 
 
 <!-- background image -->
