@@ -9,9 +9,6 @@
   [其他](computer/) <br/>
 
 
-## 其他文档
-
-
 ## 帮助
   [码云](https://gitee.com/L10052108/doc) <br/>
   [help](help/) <br/>
