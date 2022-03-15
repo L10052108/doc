@@ -124,7 +124,6 @@ echo "start dingding"
 ./ding -config=./ding.cfg -subdomain=liu 4001
 ~~~~
 
-[mac示例](file/runding.command)
 
 ### Windows启动脚本
 
@@ -162,7 +161,8 @@ goto TUNNEL
 
 ~~~~
 
-[start脚本](file/dingding_ngrok.bat)
+### 下载脚本
+[下载脚本](https://jinlilu.lanzoum.com/igVPy01hwbvi)
 
 ## 参考资料
 
