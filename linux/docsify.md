@@ -17,7 +17,7 @@
 
 - 需要安装npm环境
 
-参考 [node](node.md)
+参考 [node](linux/node.md)
 
 ### 安装软件
 
