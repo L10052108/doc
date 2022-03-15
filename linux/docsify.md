@@ -170,3 +170,20 @@ index.html配置
 
 
 
+## 其他功能
+
+[资料来源](https://baijiahao.baidu.com/s?id=1683928475208184783&wfr=spider&for=pc)
+
+### 代码高亮
+
+![a8773912b31bb05105c5b1a60e8244b348ede05f](pic/a8773912b31bb05105c5b1a60e8244b348ede05f.png)
+
+docsify内置的代码高亮工具是 Prism。Prism 默认支持的语言如下：
+
+Markup - markup, html, xml, svg, mathml, ssml, atom, rssCSS - cssC-like - clikeJavaScript - javascript, jsJava 需要在 index.html 文件中添加额外的语法文件，如下所示：
+
+~~~~
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1.22.0/components/prism-java.min.js"></script>
+~~~~
+
+保存后，就可以在浏览器上查看到效果。
