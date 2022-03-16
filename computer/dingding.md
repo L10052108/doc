@@ -161,10 +161,6 @@ goto TUNNEL
 
 ### 下载脚本
 
-[mac脚本](file/dingding_ngrok.bat ':target=_self')
-
-
-
 - 分享地址
 
 > https://jinlilu.lanzoum.com/igVPy01hwbvi
