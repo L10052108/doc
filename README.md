@@ -16,14 +16,7 @@
   [help](help/) <br/>
   [home]() <br/>
 
-mardown常用的使用方法连接
+markdown常用的使用方法连接
 
 [md常用的使用方法](help/docsify/page.md)<br/>
-
-
-
-
-
-
-
 
