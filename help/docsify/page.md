@@ -61,6 +61,17 @@ docsify 使用并扩展了Markdown语法，使文档更具可读性。<br>
 ### 你好，世界！ :id=hello-world
 ```
 
+## 注释
+
+~~~~
+[comment]: <> (This is a comment, it will not be included)
+[comment]: <> (in  the output file unless you use it in)
+[comment]: <> (a reference style link.)
+[//]: <> (This is also a comment.)
+[//]: # (This may be the most platform independent comment)
+~~~~
+
+
 ## markdown in html
 
 ```
