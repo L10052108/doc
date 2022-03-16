@@ -8,9 +8,9 @@
   - [锁](java/并发编程/锁.md)
 
 [comment]: <> (idea使用)
-- [idea](java/readme.md)
-  - [httpClient](java/httpClient.md)
+- [idea](java/idea/README.md)
+  - [httpClient](java/idea/httpClient.md)
 
 [comment]: <> (jdk8新特性相关内容)
 - jdk8新特性
-  - [lamda表示](java/lambda.md)
+  - [lamda表示](java/jdk/lambda.md)
