@@ -6,4 +6,5 @@
   - [如果写好一个页面](help/docsify/page.md)
   - [其他内容](help/docsify/other.md)
   - [定制化插件](help/docsify/定制化插件.md)
+  - [typora工具使用](help/docsify/typora.md)
 
