@@ -166,11 +166,9 @@ goto TUNNEL
 > https://jinlilu.lanzoum.com/igVPy01hwbvi
 > 密码:eioh
 >
-- 脚本运行效果（把脚本放到mac文件夹下，直接双击运行）
+- 脚本运行效果（把脚本放到）
 
-
-
-![Mar-15-2022 16-45-32](file/Mar-15-2022 16-45-32.gif)
+  ![Mar-15-2022 16-45-32](file/Mar-15-2022 16-45-32.gif)
 
 
 
