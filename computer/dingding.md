@@ -161,7 +161,7 @@ goto TUNNEL
 
 ### 下载脚本
 
-[Mar-15-202216-45-32](computer/file/dingding_ngrok.bat "[dingding_ngrok.bat")
+[Mar-15-202216-45-32](../computer/file/dingding_ngrok.bat "[dingding_ngrok.bat")
 
 
 
