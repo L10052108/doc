@@ -161,11 +161,9 @@ goto TUNNEL
 
 ### 下载脚本
 
-[Mar-15-202216-45-32](../computer/file/dingding_ngrok.bat "[dingding_ngrok.bat")
+[Mar-15-202216-45-32](../computer/file/dingding_ngrok.bat "dingding_ngrok.bat")
 
 
-
-[git.hpi](http://121.36.8.180:4999/server/index.php?s=/api/attachment/visitFile/sign/1a8d1c811c441e9a63c4ac5785b625dc "[git.hpi")
 
 - 分享地址
 
