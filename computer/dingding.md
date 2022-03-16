@@ -172,6 +172,7 @@ goto TUNNEL
 >
 - 脚本运行效果（把脚本放到）
 
+<a href="computer/file/dingding_ngrok.bat">下载mac脚本</a>
   ​
 
   ![Mar-15-202216-45-32](file/16-45-32.gif)
