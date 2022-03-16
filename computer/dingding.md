@@ -161,7 +161,7 @@ goto TUNNEL
 
 ### 下载脚本
 
-[mac脚本](file/dingding_ngrok.bat ':target=_blank')
+[mac脚本](computer/file/dingding_ngrok.bat ':target=_blank')
 
 
 
