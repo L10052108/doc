@@ -11,4 +11,7 @@
     - [servieImpl](springboot/mybatis_puls/servieImpl.md)
     - [其他功能](springboot/mybatis_puls/其他功能.md)
   - [H2的使用](springboot/H2的使用.md)
+  - 功能
+    - [优雅的 HTTP 客户端工具](springboot/功能/retrofit.md)
+    - [springboot跨域](springboot/功能/springboot跨域.md)
 
