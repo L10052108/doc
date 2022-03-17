@@ -1,16 +1,17 @@
 
 
-[comment]: <> (多线程编程相关的项目)
-- [JDK](java/README.md#jdk8)
+[comment]: <> (多线程编程相关的项目，需要完善)
+- [JDK](java/README.md)
   - [并发编程](java/并发编程/多线程.md)
-  - [线程池](java/并发编程/线程池.md)
   - [并发编程框架](java/并发编程/并发编程框架.md)
+  - [线程池](java/并发编程/线程池.md)
+  - [线程池拒绝策略](java/并发编程/拒绝策略.md)
   - [锁](java/并发编程/锁.md)
 
 [comment]: <> (idea使用)
 - [idea](java/idea/README.md)
   - [httpClient](java/idea/httpClient.md)
 
-[comment]: <> (jdk8新特性相关内容)
+[comment]: <> (jdk8新特性相关内容，需要完善)
 - jdk8新特性
   - [lamda表示](java/jdk/lambda.md)
