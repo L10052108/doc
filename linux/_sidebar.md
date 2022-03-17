@@ -1,11 +1,14 @@
 - [说明](linux/README.md)
 - 基础服务
-  - [jdk](linux/jdk.md)
-  - [node](linux/node.md)
+  - [jdk](linux/服务/jdk.md)
+  - [node](linux/服务/node.md)
 
 - 服务和应用
-  - [docsify](linux/docsify.md)
-  - [jenkins](linux/Jenkins.md)
+  - [docsify](linux/服务/docsify.md)
+  - [jenkins](linux/服务/Jenkins.md)
 
+- docker
+  - [docker安装](linux/docker/docker安装.md)
+  - [docker-compose](linux/docker/docker-compose.md)
 
 
