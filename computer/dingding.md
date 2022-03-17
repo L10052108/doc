@@ -161,11 +161,8 @@ goto TUNNEL
 
 ### 下载脚本
 
-测试下载1
-[Mar-15-202216-45-32](../computer/file/dingding_ngrok.bat "dingding_ngrok.bat")
-
-测试下载2
-<a href="computer/file/dingding_ngrok.bat">下载mac脚本</a>
+下载window脚本
+<a href="computer/file/dingding_ngrok.bat">下载windows脚本</a>
 
 - 分享地址
 

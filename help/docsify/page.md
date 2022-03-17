@@ -55,6 +55,13 @@ docsify 使用并扩展了Markdown语法，使文档更具可读性。<br>
 ![logo](https://docsify.js.org/_media/icon.svg ':size=10%')
 ```
 
+## 下载文件
+
+```
+下载window脚本
+<a href="computer/file/dingding_ngrok.bat">下载windows脚本</a>
+```
+
 ## 设置标题ID
 
 ```
