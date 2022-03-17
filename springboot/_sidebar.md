@@ -29,3 +29,4 @@
 [comment]: <> (nacos使用教程)
   - Nacos
     - [配置中心](springboot/nacos/配置中心.md)
+    - [配置中心](springboot/nacos/配置中心.md)

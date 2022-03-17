@@ -16,6 +16,7 @@
 - [idea](java/idea/README.md)
   - [httpClient](java/idea/httpClient.md)
 
-[comment]: <> (jdk8新特性相关内容，需要完善)
+[comment]: <> (jdk8新特性相关内容，需要完善)  
 - jdk8新特性
   - [lamda表示](java/jdk/lambda.md)
+  - [Lombok的使用](java/jdk/Lombok.md)
