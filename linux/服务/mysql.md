@@ -1,6 +1,20 @@
 ## 方法一
 
-> 速度很慢，不推荐使用
+### 数据源
+
+打开网址：https://dev.mysql.com/downloads/repo/yum/,选择对应linux版本
+
+![img](https://img2018.cnblogs.com/blog/1730174/201907/1730174-20190723170337272-775661846.png)
+
+点击“No thanks, just start my download.”，进行下载
+
+![img](https://img2018.cnblogs.com/blog/1730174/201907/1730174-20190723170424636-2122131851.png)
+
+将下载地址复制，得到rpm包的地址
+
+![img](https://img2018.cnblogs.com/blog/1730174/201907/1730174-20190723170518429-54393470.png)
+
+
 
 ### 下载并安装mysql：
 
@@ -50,3 +64,8 @@ exit
 ```
 
 ### 在云服务上增加MySQL的端口
+
+
+
+### 方法二
+

@@ -1,6 +1,8 @@
 - [springboot](springboot/README.md)
   - [springboot启动命令](springboot/springboot启动命令.md)
   - [springboot创建项目](springboot/start.md)
+  - mybatis
+    - [mybatis不建议使用where 1=1](springboot/mybatis/mybatis不建议使用where 1=1.md)
   - mybatis_puls
     - [CURD快速入门](springboot/mybatis_puls/CURD快速入门.md)
     - [逻辑删除](springboot/mybatis_puls/逻辑删除.md)

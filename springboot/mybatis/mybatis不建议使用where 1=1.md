@@ -1,0 +1,50 @@
+## MyBatis 中为什么不建议使用 where 1=1？
+
+[资料来源](https://www.toutiao.com/a7030413705188065796/)
+
+### 代码分析
+
+~~~~
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.UserMapper">
+    <select id="list" resultType="com.example.demo.model.User">
+        select * from user
+        where 1=1
+        <if test="name!=null">
+            and name=#{name}
+        </if>
+        <if test="password!=null">
+            and password=#{password}
+        </if>
+    </select>
+</mapper>
+~~~~
+
+在众多 mapper 中发现了一个相同的想象，**几乎所有的 mapper 中都包含了一个无用的拼接 SQL：where 1=1**。
+
+### 改造方法
+
+在 MyBatis 中早已经想到了这个问题，我们**可以将 SQL 中的 where 关键字换成 MyBatis 中的 标签，并且给每个 标签内都加上 and 拼接符，这样问题就解决了**
+
+~~~~
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.UserMapper">
+    <select id="list" resultType="com.example.demo.model.User">
+        select * from user
+        <where>
+            <if test="name!=null">
+               and name=#{name}
+            </if>
+            <if test="password!=null">
+                and password=#{password}
+            </if>
+        </where>
+    </select>
+</mapper>
+~~~~
+
+### 总结
+
+> 在 MyBatis 中，建议尽量避免使用无意义的 SQL 拼接 where 1=1，我们可以使用 标签来替代 where 1=1，这样的写既简洁又优雅，何乐而不为呢？
