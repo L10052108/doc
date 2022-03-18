@@ -24,7 +24,7 @@ Java8 是革命性的一个版本，一直以来，Java 最受诟病的地方就
 
 - 普通接口
 
-~~~~
+~~~~java
 public interface Action {
     public void action();
 }
@@ -32,7 +32,7 @@ public interface Action {
 
 - 函数式接口
 
-~~~~
+~~~~java
 @FunctionalInterface
 public interface Action {
     public void action();
@@ -57,7 +57,7 @@ public interface Action {
 
 通过一个直观的例子来了解一下 lambda
 
-```
+~~~~java
 public class LambdaDemo {
 
     @Test
@@ -103,7 +103,7 @@ public class LambdaDemo {
         return comparator;
     }
 }
-```
+~~~~
 
 - 函数签名
 
@@ -116,12 +116,12 @@ public class LambdaDemo {
 
 **只要 lambda 和函数式接口方法的签名一致，lambda 表达式就可以作为参数传入到以该函数式接口为参数类型的方法中**。
 
-```
+~~~~java
 @FunctionalInterface
 public interface Comparator<T> {
     int compare(T o1, T o2);
 }
-```
+~~~~
 
 虽然 Comparator 中方法不止一个，但是抽象方法只有 compare 一个，上面的 lambda 完全可以作为 compare 方法的实现，实际上，**lambda 表达式确实是作为函数式接口抽象方法的实现，而且，lambda 表达式为作为整个函数接口的实例**。
 
@@ -145,7 +145,7 @@ public interface Comparator<T> {
 
 - 执行异步任务
 
-```
+~~~~java
 public class ThreadDemo {
     @Test
     public void test01(){
@@ -156,7 +156,7 @@ public class ThreadDemo {
             }
         }).start();
     }
-
+    
     // 修改版本
     @Test
     public void test02(){
@@ -165,11 +165,11 @@ public class ThreadDemo {
         ).start();
     }
 }
-```
+~~~~
 
 数组遍历
 
-```
+~~~~java
 public class ListDemo {
     @Test
     public void test01(){
@@ -179,16 +179,15 @@ public class ListDemo {
             System.out.println(s1);
         }
     }
-
+    
     // 优化后
     @Test
     public void test02(){
         String s[] = {"aa", "bb", "cc"};
         List<String> list = Arrays.asList(s);
-
+    
         list.forEach(System.out::println);
     }
 
 }
-```
-
+~~~~
