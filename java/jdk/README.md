@@ -128,23 +128,15 @@ public interface Comparator<T> {
 - 方法引用
 
 使用方法引用的时候，要使用 :: ，而且任何方法都可以这样被引用，无论是静态方法还是实例方法。
-
 方法引用可以被认为是 lambda 的语法糖，使用方法引用可以让代码更加简洁，更直观，看到方法引用的名称就能大概知道代码的逻辑，并且还可以对一些代码进行复用。
 
 ### 类型推断
-
 在上面我们说到了只要函数式接口抽象方法的函数签名与 lambda 一致，那么就可以把 lambda 表达式作为该函数式接口的实现。
-
 上面的例子中， lambda 的参数类型也是可以省略的，那么 Java 是如何判断 lambda 是否与函数式接口匹配呢？
-
 如果 lambda 表达式中，参数和返回值的类型都省略之后，需要从使用 lambda 的上下文推断出来。
-
 ![](https://tva1.sinaimg.cn/large/e6c9d24ely1h0e5hfoqd0j215i0j474z.jpg)
-
 ### 举例
-
 - 执行异步任务
-
 ~~~~java
 public class ThreadDemo {
     @Test
@@ -166,9 +158,7 @@ public class ThreadDemo {
     }
 }
 ~~~~
-
-数组遍历
-
+- 数组遍历
 ~~~~java
 public class ListDemo {
     @Test
