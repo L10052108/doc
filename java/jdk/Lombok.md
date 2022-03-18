@@ -29,7 +29,7 @@ https://github.com/rzwitserloot/lombok)，使用它可以有效的解决 Java �
 
 接下来我们需要**在项目中添加最新的 Lombok 库**，如果是 Maven 项目，直接在 pom.xml 中添加如下配置：
 
-```
+```java
 <dependencies>
   <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
  <dependency>
@@ -43,7 +43,7 @@ https://github.com/rzwitserloot/lombok)，使用它可以有效的解决 Java �
 
 如果是 **JDK 9+** 可使用模块的方式添加，配置如下：
 
-```
+```java
 <annotationProcessorPaths>
  <path>
   <groupId>org.projectlombok</groupId>
@@ -57,7 +57,7 @@ https://github.com/rzwitserloot/lombok)，使用它可以有效的解决 Java �
 
 接下来到了前半部分中最重要的 Lombok 使用环节了，我们先来看在没有使用 Lombok 之前的代码：
 
-```
+```Java
 public class Person {
     private Integer id;
     private String name;
@@ -78,7 +78,7 @@ public class Person {
 
 这是使用 Lombok 之后的代码：
 
-```
+```Java
 @Getter
 @Setter
 public class Person {
@@ -110,7 +110,7 @@ Lombok 所有注解如下：
 
 ### ① val 使用
 
-```
+```Java
 val sets = new HashSet<String>();  
 // 相当于
 final Set<String> sets = new HashSet<>();
@@ -118,7 +118,7 @@ final Set<String> sets = new HashSet<>();
 
 ###  ② NonNull 使用
 
-```
+```Java
 public void notNullExample(@NonNull String string) {
     string.length();
 }
@@ -135,7 +135,7 @@ public void notNullExample(String string) {
 
 ### ③ Cleanup 使用
 
-```
+```Java
 public static void main(String[] args) {
     try {
         @Cleanup InputStream inputStream = new FileInputStream(args[0]);
@@ -163,17 +163,16 @@ public static void main(String[] args) {
 
 ###  ④ Getter/Setter 使用
 
-```
+```Java
 @Setter(AccessLevel.PUBLIC)
 @Getter(AccessLevel.PROTECTED)
 private int id;
 private String shap;
-
 ```
 
 ###  ⑤ ToString 使用
 
-```
+```Java
 @ToString(exclude = "id", callSuper = true, includeFieldNames = true)
 public class LombokDemo {
     private int id;
@@ -188,18 +187,17 @@ public class LombokDemo {
 
 ###  ⑥ EqualsAndHashCode 使用
 
-```
+```Java
 @EqualsAndHashCode(exclude = {"id", "shape"}, callSuper = false)
 public class LombokDemo {
     private int id;
     private String shap;
 }
-
 ```
 
 ###  ⑦ NoArgsConstructor、RequiredArgsConstructor、AllArgsConstructor 使用
 
-```
+```Java
 @NoArgsConstructor
 @RequiredArgsConstructor(staticName = "of")
 @AllArgsConstructor
@@ -223,7 +221,7 @@ public class LombokDemo {
 
 ###  ⑧ Builder 使用
 
-```
+```Java
 @Builder
 public class BuilderExample {
     private String name;
@@ -261,7 +259,7 @@ public class ThrowsTest {
 
 ###  ⑩ Synchronized 使用
 
-```
+```Java
 public class SynchronizedDemo {
     @Synchronized
     public static void hello() {
@@ -280,7 +278,7 @@ public class SynchronizedDemo {
 
 ###  ⑪ Getter(lazy = true) 使用
 
-```
+```Java
 public class GetterLazyExample {
     @Getter(lazy = true)
     private final double[] cached = expensive();
@@ -357,7 +355,7 @@ Lombok 的执行流程如下：
 
 首先创建一个 MyGetter.java 自定义一个注解，代码如下：
 
-```
+```Java
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -372,7 +370,7 @@ public @interface MyGetter { // 定义 Getter
 
 再实现一个自定义的注解处理器，代码如下：
 
-```
+```Java
 import com.sun.source.tree.Tree;
 import com.sun.tools.javac.api.JavacTrees;
 import com.sun.tools.javac.code.Flags;
@@ -478,7 +476,7 @@ public class MyGetterProcessor extends AbstractProcessor {
 
 当这些代码写好之后，我们就可以新增一个 Person 类来试一下我们自定义的 @MyGetter 功能了，代码如下：
 
-```
+```Java
 @MyGetter
 public class Person {
     private String name;
