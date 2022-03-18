@@ -116,7 +116,15 @@ docsify 使用并扩展了Markdown语法，使文档更具可读性。<br>
 
 </div>
 
+### 一个 MD 文件中嵌入另外一个文件
 
+可以使用下面的方式进行嵌入。
+
+`[filename](_media/example.md ':include')`
+
+在链接到 md 文件后，在文件的后端添加参数：’:include’ 就可以了。
+
+需要注意的是 :include 需要单引号来进行包裹。[资料来源](https://blog.51cto.com/u_15077561/4192195)
 
 ## 复选框
 

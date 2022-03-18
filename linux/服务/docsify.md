@@ -194,56 +194,5 @@ index.html配置
 
 ![a8773912b31bb05105c5b1a60e8244b348ede05f](pic/a8773912b31bb05105c5b1a60e8244b348ede05f.png)
 
-docsify内置的代码高亮工具是 Prism。Prism 默认支持的语言如下：
 
-Markup - markup, html, xml, svg, mathml, ssml, atom, rssCSS - cssC-like - clikeJavaScript - javascript, jsJava 需要在 index.html 文件中添加额外的语法文件，如下所示：
 
-~~~~
-<script src="https://cdn.jsdelivr.net/npm/prismjs@1.22.0/components/prism-java.min.js"></script>
-~~~~
-
-保存后，就可以在浏览器上查看到效果。
-
-### 代码复制框[docsify-copy-code](https://github.com/jperasmus/docsify-copy-code)
-
-按下复制按钮之后，会滑动出一个`复制成功`的字，不过不是很好截图就没有弄了，主要真的不是很好看...
-
-![](https://tva1.sinaimg.cn/large/e6c9d24egy1h0e1wq4ohuj21hc06w3yf.jpg)
-
-### gif插件[docsify-gifcontrol](https://gbodigital.github.io/docsify-gifcontrol/#/)
-
-A docsify plugin that adds customizable player controls to GIFs. @adambergman from @gbodigital.
-
-我就喜欢这种简单易懂的插件，它可以控制gif的播放形式。比如点击播放，或者是鼠标放到图片上才进行播放。
-
-- 操作方法
-
-Add the CSS file to the top of your docsify index.html
-
-```
-<link rel="stylesheet" href="//unpkg.com/docsify-gifcontrol/dist/docsify-gifcontrol.css">
-```
-
-Add the JavaScript file below your docsify script tag
-
-```
-<script src="//unpkg.com/docsify-gifcontrol/dist/docsify-gifcontrol.js"></script>
-```
-
-- 使用
-
-默认的方式，鼠标放入以后，进行播放
-
-````
- <!-- Hover to play, unhover to pause (default) -->
-![](charlie.gif)
-````
-
-鼠标点击进行播放
-
-```
-<!-- Click to play, click again to pause (using inline option) -->
-![](charlie2.gif "-gifcontrol-mode=click;")
-```
-
-还有很多样式，不介绍，可以看官方文档
