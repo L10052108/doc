@@ -160,7 +160,35 @@ index.html配置
 
 
 
-## 其他功能
+## 插件
+
+[官方插件](https://docsify.js.org/#/zh-cn/plugins)
+
+**全文搜索**
+
+**emoji**
+
+**图片缩放**
+
+**复制到剪切板**
+
+**Gitalk**
+
+
+
+### 设置封面
+
+> 设置是否启用封面页，默认不启用。
+
+我没有启用封面，因为我的 Wiki 不涉及到宣传，就是自己查阅，所以应该打开就可以看到内容。
+
+不过 docsify 的封面还是很好看的。
+
+
+
+
+
+
 
 [资料来源](https://baijiahao.baidu.com/s?id=1683928475208184783&wfr=spider&for=pc)
 

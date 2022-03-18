@@ -45,7 +45,7 @@
         },
         autoHeader: false,
         loadNavbar: true, // 顶部路由 默认_navbar.md
-        coverpage: true, // 激活封面功能-_coverpage.md，可配置多个
+        coverpage: false, // 不使用封面
         onlyCover: false, // 主页仅加载封面，不能滚动到其他页
         subMaxLevel: 3, // 侧边栏层级
         sidebarDisplayLevel: 1, // set sidebar display level
@@ -93,6 +93,23 @@
         // ]
       };
     </script>
+    <!--增加评论功能 start-->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css">
+
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
+    <script>
+      const gitalk = new Gitalk({
+        clientID: 'Github Application Client ID',
+        clientSecret: 'Github Application Client Secret',
+        repo: 'Github repo',
+        owner: 'Github repo owner',
+        admin: ['Github repo collaborators, only these guys can initialize github issues'],
+        // facebook-like distraction free mode
+        distractionFreeMode: false
+      })
+    </script>
+    <!--增加评论功能 end-->
     <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
     <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
     <script src="//unpkg.com/docsify/lib/plugins/emoji.min.js"></script>
