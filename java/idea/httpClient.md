@@ -190,6 +190,56 @@ client.test("Headers option exists", function() {
 }
 ```
 
-### 测试举例
+- 实际效果
 
 ![Mar-16-2022_13-32-21](file/Mar-16-2022_13-32-21.gif)
+
+### 响应处理脚本
+
+[资料来源](https://blog.csdn.net/LawssssCat/article/details/105228894)
+
+- 我们很多时候不会一个 `会话` 只发送一个 `请求` ，而是在一个会话中发送多个请求。
+- 并且，会根据不同响应，发送不同的请求或者请求体。
+
+这就需要响应脚本进行处理。
+刚好 idea 的 http client 提供了 `响应处理脚本` 的功能
+
+（下面看 Examples 里面的一个例子）
+
+![img](https://img-blog.csdnimg.cn/20200331095756238.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xhd3Nzc3NDYXQ=,size_16,color_FFFFFF,t_70)
+
+>  脚本使用方法两个（下图）
+>
+> 脚本使用方法两个（下图）
+>
+> 在 .http 文件中直接写脚本，用 >{% ... %} 包裹
+> 直接导入 js脚本 ， 用 > 文件url 的方式
+> （这种方式，需要引入 JavaScript Library | HTTP Response Handler.）
+>
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200330183942892.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xhd3Nzc3NDYXQ=,size_16,color_FFFFFF,t_70)
+
+**脚本的编写**
+
+脚本可以 javascript（ECMAScript 5.1）写。
+主要涉及到两个类：
+
+- client：存储了会话（session）元数据（metadata）。
+- response：存储响应信息（content type、status、response body 等等）
+
+
+
+    client.test("Request executed successfully", function() {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+### RestfulToolkit
+
+[来源](https://blog.csdn.net/minkeyto/article/details/104411616)
+
+- RestfulToolkit 同样是个插件
+
+![img](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9tbWJpei5xcGljLmNuL21tYml6X3BuZy9OMWtuU0s2d3Rob3REZFdVdGliMVZ6OGROYnRTMzdNaWFUb2ptTHBYa1ZTdTB3dG9zakRCdXlRaWJRcUc0aWNKNWEwMUdocXBPZ0VmVnRjVE1JSTc2REJEaWF3LzY0MA?x-oss-process=image/format,png ':size=50%')
+
+- 安装了这个插件后，打开侧边栏，项目的所有接口信息都会展现在此处：
+
+![](https://tva1.sinaimg.cn/large/e6c9d24ely1h0dzt0v28ij20wq0ee3zr.jpg ':size=50%')
