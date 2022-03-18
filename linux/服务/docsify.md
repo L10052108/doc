@@ -176,34 +176,6 @@ index.html配置
 
 **Gitalk**
 
-
-
-### gitTalk
-
-[Gitalk](https://github.com/gitalk/gitalk)，一个现代化的，基于Preact和Github Issue的评论系统
-
-~~~~~
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css">
-
-<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
-<script>
-  const gitalk = new Gitalk({
-    clientID: 'Github Application Client ID',
-    clientSecret: 'Github Application Client Secret',
-    repo: 'Github repo',
-    owner: 'Github repo owner',
-    admin: ['Github repo collaborators, only these guys can initialize github issues'],
-    // facebook-like distraction free mode
-    distractionFreeMode: false
-  })
-</script>
-~~~~~
-
-
-
-
-
 ### 设置封面
 
 > 设置是否启用封面页，默认不启用。
@@ -211,8 +183,6 @@ index.html配置
 我没有启用封面，因为我的 Wiki 不涉及到宣传，就是自己查阅，所以应该打开就可以看到内容。
 
 不过 docsify 的封面还是很好看的。
-
-
 
 
 
