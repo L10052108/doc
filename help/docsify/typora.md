@@ -6,5 +6,3 @@
 ## mac使用
 
 typora 使用
-
-![发斯蒂芬](https://tva1.sinaimg.cn/large/e6c9d24ely1h0bskj5pvnj20yi0semz5.jpg)
