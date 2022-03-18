@@ -162,7 +162,9 @@ index.html配置
 
 ## 插件
 
-[官方插件](https://docsify.js.org/#/zh-cn/plugins)
+### 官方插件
+
+资料来源： [官方插件](https://docsify.js.org/#/zh-cn/plugins)
 
 **全文搜索**
 
@@ -173,6 +175,32 @@ index.html配置
 **复制到剪切板**
 
 **Gitalk**
+
+
+
+### gitTalk
+
+[Gitalk](https://github.com/gitalk/gitalk)，一个现代化的，基于Preact和Github Issue的评论系统
+
+~~~~~
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css">
+
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
+<script>
+  const gitalk = new Gitalk({
+    clientID: 'Github Application Client ID',
+    clientSecret: 'Github Application Client Secret',
+    repo: 'Github repo',
+    owner: 'Github repo owner',
+    admin: ['Github repo collaborators, only these guys can initialize github issues'],
+    // facebook-like distraction free mode
+    distractionFreeMode: false
+  })
+</script>
+~~~~~
+
+
 
 
 
