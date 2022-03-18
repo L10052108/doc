@@ -25,7 +25,7 @@
 [comment]: <> (sba笔记需要完善)
   - sba
     - [Spring Boot Admin，贼好使](springboot/sba/Spring_Boot_Admin.md)
-    - [报警提醒和登录验证功能实现](springboot/sba/报警提醒和登录验证功能实现.md)
+    - [报警提醒和登录验证](springboot/sba/报警提醒和登录验证功能实现.md)
 
 [comment]: <> (nacos使用教程)
   - Nacos
