@@ -178,6 +178,5 @@ public class ListDemo {
     
         list.forEach(System.out::println);
     }
-
 }
 ~~~~
