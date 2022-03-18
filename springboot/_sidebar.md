@@ -6,7 +6,7 @@
     - [springboot跨域](springboot/功能/springboot跨域.md)
     - [springboot日志](springboot/功能/日志.md)
   - mybatis
-    - [mybatis不建议使用where 1=1](springboot/mybatis/mybatis不建议使用where 1=1.md)
+    - [注意](springboot/mybatis/注意.md)
   - mybatis_puls
     - [CURD快速入门](springboot/mybatis_puls/CURD快速入门.md)
     - [逻辑删除](springboot/mybatis_puls/逻辑删除.md)
