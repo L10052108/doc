@@ -75,6 +75,9 @@
           }
         },
         executeScript: true,
+        gifcontrol: {
+          mode: 'click'   // 鼠标点击gif图片进行播放
+        },
         themeColor: '#3F51B5'
         // plugins: [
         //   function(hook) {
@@ -99,7 +102,7 @@
     <script src="//unpkg.com/docsify/lib/plugins/emoji.min.js"></script>
     <script src="//unpkg.com/docsify/lib/plugins/external-script.min.js"></script>
     <script src="//unpkg.com/docsify/lib/plugins/zoom-image.min.js"></script>
-    <script src="//unpkg.com/docsify-copy-code"></script>
+    <script src="https://unpkg.com/docsify-copy-code@2"></script>
     <script src="//unpkg.com/vue/dist/vue.min.js"></script>
     <script src="//unpkg.com/vuep/dist/vuep.min.js"></script>
 
@@ -112,6 +115,11 @@
 
     <!-- plugins -->
     <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+    
+    <!-- gif -->
+    <link rel="stylesheet" href="//unpkg.com/docsify-gifcontrol/dist/docsify-gifcontrol.css">
+    <script src="//unpkg.com/docsify-gifcontrol/dist/docsify-gifcontrol.js"></script>
+
 
   </body>
 </html>

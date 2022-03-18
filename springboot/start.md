@@ -21,7 +21,7 @@
 
 从https://start.spring.io/ 拉去代码
 
-![1](pic/1.png)
+![1](pic/1.png ':size=40%')
 
 ## 进行创建项目
 
@@ -33,7 +33,7 @@
 3. 增加一个简单web测试类
 4. 增加测试类
 
-![2](pic/2.png)
+![2](pic/2.png ':size=40%')
 
 
 

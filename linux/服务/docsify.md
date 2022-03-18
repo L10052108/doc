@@ -1,5 +1,9 @@
 # docsify 使用教程
 
+资料来源：
+
+[docsify的配置+全插件列表](https://xhhdd.cc/index.php/archives/80/comment-page-1)
+
 ## 背景
 
 经常在网上看到一些排版非常漂亮的技术手册，左边有目录栏，右边是[Markdown](https://so.csdn.net/so/search?q=Markdown&spm=1001.2101.3001.7020)格式的文档，整个配色都十分舒服，就像一本书一样，一看就很让人喜欢。就比如[Markdown Preview Enhanced的文档](https://shd101wyy.github.io/markdown-preview-enhanced/#/zh-cn/).目前网上我了解的有两种工具可以实现这样的效果，一种叫做docsify，另一种叫做Gitbook。因为MPE文档用的是docsify，而且据docsify自己的宣传，说是
@@ -199,3 +203,47 @@ Markup - markup, html, xml, svg, mathml, ssml, atom, rssCSS - cssC-like - clikeJ
 ~~~~
 
 保存后，就可以在浏览器上查看到效果。
+
+### 代码复制框[docsify-copy-code](https://github.com/jperasmus/docsify-copy-code)
+
+按下复制按钮之后，会滑动出一个`复制成功`的字，不过不是很好截图就没有弄了，主要真的不是很好看...
+
+![](https://tva1.sinaimg.cn/large/e6c9d24egy1h0e1wq4ohuj21hc06w3yf.jpg)
+
+### gif插件[docsify-gifcontrol](https://gbodigital.github.io/docsify-gifcontrol/#/)
+
+A docsify plugin that adds customizable player controls to GIFs. @adambergman from @gbodigital.
+
+我就喜欢这种简单易懂的插件，它可以控制gif的播放形式。比如点击播放，或者是鼠标放到图片上才进行播放。
+
+- 操作方法
+
+Add the CSS file to the top of your docsify index.html
+
+```
+<link rel="stylesheet" href="//unpkg.com/docsify-gifcontrol/dist/docsify-gifcontrol.css">
+```
+
+Add the JavaScript file below your docsify script tag
+
+```
+<script src="//unpkg.com/docsify-gifcontrol/dist/docsify-gifcontrol.js"></script>
+```
+
+- 使用
+
+默认的方式，鼠标放入以后，进行播放
+
+````
+ <!-- Hover to play, unhover to pause (default) -->
+![](charlie.gif)
+````
+
+鼠标点击进行播放
+
+```
+<!-- Click to play, click again to pause (using inline option) -->
+![](charlie2.gif "-gifcontrol-mode=click;")
+```
+
+还有很多样式，不介绍，可以看官方文档
