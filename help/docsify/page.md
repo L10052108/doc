@@ -53,6 +53,8 @@ docsify 使用并扩展了Markdown语法，使文档更具可读性。<br>
 ![logo](https://docsify.js.org/_media/icon.svg ':size=50x100')
 ![logo](https://docsify.js.org/_media/icon.svg ':size=100')
 ![logo](https://docsify.js.org/_media/icon.svg ':size=10%')
+
+<img align="center" src='https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f87f574e93964921a4d02146bf3ccdac~tplv-k3u1fbpfcp-zoom-1.image' width=300px height=300px />
 ```
 
 ## 下载文件
@@ -113,3 +115,20 @@ docsify 使用并扩展了Markdown语法，使文档更具可读性。<br>
 - 足球
 
 </div>
+
+
+
+## 复选框
+
+**显示效果：**
+
+- [x] Maven+SpringBoot项目搭建
+- [ ] 优化**代码**
+
+**代码**
+
+~~~~
+- [x] Maven+SpringBoot项目搭建
+- [ ] 优化**代码**
+~~~~
+
