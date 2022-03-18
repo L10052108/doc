@@ -6,6 +6,7 @@
   - 功能
     - [优雅的 HTTP 客户端工具](springboot/功能/retrofit.md)
     - [springboot跨域](springboot/功能/springboot跨域.md)
+    - [springboot日志](springboot/功能/日志.md)
 
 [comment]: <> (持久层框架)
   - mybatis
