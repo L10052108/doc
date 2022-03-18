@@ -1,5 +1,5 @@
 
-## 方法一
+## 安装过程
 运行以下命令以下载 Docker Compose 的当前稳定版本：
 
     sudo curl -L "https://github.com/docker/compose/releases/download/1.24.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
