@@ -5,6 +5,7 @@
 
 - 服务和应用
   - [docsify](linux/服务/docsify.md)
+  - [docsify](linux/服务/定制化插件.md)
   - [jenkins](linux/服务/Jenkins.md)
 
 - docker
