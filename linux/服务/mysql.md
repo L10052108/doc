@@ -57,15 +57,82 @@ ALTER USER 'root'@'localhost' IDENTIFIED BY 'my password';
 
 ```
 grant all privileges on *.* to 'root'@'%' identified by 'my password' with grant option;
-
 flush privileges;
-
 exit
 ```
 
 ### 在云服务上增加MySQL的端口
 
+各家云服务不一样，这里不介绍
 
+- 远程连接效果
+
+![](https://tva1.sinaimg.cn/large/e6c9d24ely1h0ha33ov2rj20wc0u0758.jpg ':size=80%')
+
+
+
+## 卸载MySQL
+
+资料来源：https://blog.csdn.net/qq_41829904/article/details/92966943
+
+~~~~sql
+//rpm包安装方式卸载
+查包名：rpm -qa|grep -i mysql
+删除命令：rpm -e –nodeps 包名
+ 
+//yum安装方式下载
+1.查看已安装的mysql
+命令：rpm -qa | grep -i mysql
+2.卸载mysql
+命令：yum remove mysql-community-server-5.6.36-2.el7.x86_64
+查看mysql的其它依赖：rpm -qa | grep -i mysql
+ 
+//卸载依赖
+yum remove mysql-libs
+yum remove mysql-server
+yum remove perl-DBD-MySQL
+yum remove mysql
+~~~~
 
 ### 方法二
+
+
+
+## mysql 的配置
+
+### 修改安全策略
+
+[在]()/etc/my.cnf文件添加validate_password_policy配置，指定密码策略
+
+```
+选择0（LOW），1（MEDIUM），2（STRONG）其中一种，选择2需要提供密码字典文件
+validate_password_policy=0
+```
+
+如果不需要密码策略，添加my.cnf文件中添加如下配置禁用即可：
+
+```
+validate_password = off
+```
+
+重新启动mysql服务使配置生效：
+
+```
+systemctl restart mysqld
+```
+安全策略 直接 修改 成低
+
+```
+set global validate_password_policy=LOW;
+```
+### 配置文件的路径
+
+- 路径列表
+
+~~~~
+配置文件：/etc/my.cnf 
+日志文件：/var/log//var/log/mysqld.log 
+服务启动脚本：/usr/lib/systemd/system/mysqld.service 
+socket文件：/var/run/mysqld/mysqld.pid
+~~~~
 
