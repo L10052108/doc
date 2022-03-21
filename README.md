@@ -8,7 +8,7 @@
   [linux](linux/) <br/>
   [springboot](springboot/) <br/>
   [数据库](数据库/) <br/>
-  [面试](面试/) <br/>
+  [面试](faceNotes/) <br/>
   [其他](computer/) <br/>
 
 
