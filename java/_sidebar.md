@@ -1,6 +1,6 @@
 
 
-- [并发编程](java/README.md)
+- 并发编程
   - [并发编程](java/并发编程/多线程.md)
   - [并发编程框架](java/并发编程/并发编程框架.md)
   - [线程池](java/并发编程/线程池.md)
@@ -17,6 +17,6 @@
 
 - [jdk8新特性](java/jdk/README.md)
   - [lamda表示](java/jdk/lambda.md)
-  
+
 - [其他功能](java/jdk/README.md)
   - [Lombok的使用](java/jdk/Lombok.md)
