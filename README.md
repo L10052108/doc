@@ -7,6 +7,7 @@
   [java](java/) <br/>
   [linux](linux/) <br/>
   [springboot](springboot/) <br/>
+  [springCloud](springCloud/) <br/>
   [数据库](数据库/) <br/>
   [面试](faceNotes/) <br/>
   [其他](computer/) <br/>
