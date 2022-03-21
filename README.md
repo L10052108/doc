@@ -1,16 +1,15 @@
-## 学习笔记
+## 开篇
 
 平凡的我们都拥有不平凡的梦想。<br/>
 终身学习，集跬步至千里。
 
-[comment]: <> (基本的大模块)
+## 知识模块
   [java](java/) <br/>
   [linux](linux/) <br/>
   [springboot](springboot/) <br/>
   [数据库](数据库/) <br/>
   [面试](faceNotes/) <br/>
   [其他](computer/) <br/>
-
 
 ## 帮助
   [码云](https://gitee.com/L10052108/doc) <br/>
