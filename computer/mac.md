@@ -48,4 +48,4 @@ https://blog.csdn.net/qq_41036423/article/details/105627922?spm=1001.2101.3001.6
 [图床的使用](https://toolinbox.net/iPic/)
 
 ## mumu 模拟器使用
-![配置网络](https://tva1.sinaimg.cn/large/e6c9d24ely1h0bvtqy2byg20ro0jinpd.gif)
+![配置网络](images/e6c9d24ely1h0bvtqy2byg20ro0jinpd.gif)
