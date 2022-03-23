@@ -12,7 +12,8 @@ Mybatise_plus 项目的介绍(省，可以查看官方文档)
  ##  Spring Boot整合Mybatis Plus
 
 ### 配置spring环境
-文件结构  ![Snipaste_2022-02-28_14-06-3](pic/Snipaste_2022-02-28_14-06-3.png ":size=40%")
+文件结构  <br/>
+![Snipaste_2022-02-28_14-06-3](pic/Snipaste_2022-02-28_14-06-3.png ":size=40%")
 
 1.通过maven坐标引入依赖
 
