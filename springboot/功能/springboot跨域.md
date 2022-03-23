@@ -6,7 +6,7 @@
 
 
 
-![](https://tva1.sinaimg.cn/large/e6c9d24ely1h0ctmrbm3jj21c00u0n1b.jpg)
+![](images/e6c9d24ely1h0ctmrbm3jj21c00u0n1b.jpg)
 
 
 
@@ -52,7 +52,7 @@ public CorsFilter corsFilter() {
 
 上诉服务端解决跨域请求，采用的是spring框架的@CrossOrigin，在进行源码分析前，先来回顾一下一次http请求中SpringMVC的执行流程。
 
-![springmvc](https://tva1.sinaimg.cn/large/e6c9d24ely1h0ctri5vcqj20nw0badh1.jpg)
+![springmvc](images/e6c9d24ely1h0ctri5vcqj20nw0badh1.jpg)
 
 重点介绍：
 springmvc一种响应/请求框架。
