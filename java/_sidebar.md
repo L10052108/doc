@@ -20,3 +20,6 @@
 
 - [其他功能](java/jdk/README.md)
   - [Lombok的使用](java/jdk/Lombok.md)
+
+- 工具
+  - [16个Redis常见使用场景](java/工具/redis.md)
