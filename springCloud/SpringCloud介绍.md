@@ -93,7 +93,7 @@ Spring Cloud 通过 Spring Boot 风格的封装，屏蔽掉了复杂的配置和
 
 采用伦敦的地铁站名称来作为版本号的命名，根据首字母排序，字母顺序靠后的版本号越大。
 
-**「Spring 官方详细的版本查看接口：https://start.spring.io/actuator/info」**
+**「Spring 官方详细的版本查看接口：** https://start.spring.io/actuator/info
 
 ### 发行计划
 
