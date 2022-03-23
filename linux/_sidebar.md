@@ -5,9 +5,12 @@
   - [mysql](linux/服务/mysql.md)
   - [redis](linux/服务/redis.md)
   - [jenkins](linux/服务/Jenkins.md) 
-  - [docsify](linux/服务/docsify.md)
-  - [docsify定制化插件](linux/服务/定制化插件.md)
-  
+  - docsify
+    - [docsify](linux/服务/docsify.md)
+    - [docsify定制化插件](linux/服务/定制化插件.md)
+  - linux命令
+    - [linux命令](linux/常用的命令.md)
+    - [linux其他服务](linux/常用的功能.md)
 
 - docker
   - [docker安装](linux/docker/docker安装.md)
