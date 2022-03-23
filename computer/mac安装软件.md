@@ -13,7 +13,62 @@
 脚本会解释它的作用，然后在您的确认下执行安装。
 ~~~~
 
-### 安装wget
+如果电脑[安装失败](https://blog.csdn.net/txl910514/article/details/105880125)
+
+可以使用国内源啦  再也不痛苦啦
+
+`/bin/zsh -c "$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)"`
+
+![](https://tva1.sinaimg.cn/large/e6c9d24ely1h0jw2inrrtj20u00gsad3.jpg ":size=80%")
+
+- 安装任意包
+
+`$ brew install `
+
+- 示例：安装node
+
+`$ brew install node`
+
+- 卸载任意包
+
+`$ brew uninstall `
+
+- 示例：卸载git
+
+`$ brew uninstall git`
+
+- 查询可用包
+
+`$ brew search `
+
+- 查看已安装包列表
+
+`$ brew list`
+
+- 查看任意包信息
+
+`$ brew info `
+
+- 更新Homebrew
+
+`$ brew update`
+
+- 查看Homebrew版本
+
+`$ brew -v`
+
+- Homebrew帮助信息
+
+`$ brew -h`
+
+- 卸载任意安装包
+
+`$ brew uninstall `
+
+
+原文链接：https://blog.csdn.net/qq_34156628/article/details/97561194
+
+### wget安装举例
 
 ~~~~shell
 使用非常简单，例如安装wget，在命令行输入以下命令、运行：
