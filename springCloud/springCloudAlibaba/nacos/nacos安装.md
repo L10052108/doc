@@ -89,3 +89,51 @@ sh shutdown.sh
 `cmd shutdown.cmd`
 
 或者双击 `shutdown.cmd` 运行文件。
+
+## 配置数据库
+
+　Nacos 在 `0.7` 版本之前，默认使用的是嵌入式数据库 `Apache Derby` 来存储数据（内嵌的数据库会随着 Nacos 一起启动，无需额外安装）；`0.7` 版本及以后，增加了对 `MySQL` 数据源的支持。
+
+### MySQL数据库
+
+　环境要求：MySQL 5.6.5+（生产使用建议至少主备模式，或者采用高可用数据库）；
+
+### 初始化MySQL
+
+创建数据库 `nacos_config`。
+
+　　SQL源文件地址：<https://github.com/alibaba/nacos/blob/master/distribution/conf/nacos-mysql.sql> ，或者在 `nacos-server` 解压目录 `conf` 下，找到 `nacos-mysql.sql` 文件，运行该文件，结果如下：
+
+![](https://tva1.sinaimg.cn/large/e6c9d24ely1h0jl31n47cj206r08djrm.jpg)
+
+
+
+### application.properties　
+
+修改 `nacos/conf/application.properties` 文件的以下内容。
+
+![img](https://mrhelloworld.com/resources/articles/spring/spring-cloud/nacos/image-20200429181636359.png)
+
+修改后的结果
+
+~~~~Java
+#*************** Config Module Related Configurations ***************#
+### If user MySQL as datasource:
+# 指定数据源为 MySQL
+spring.datasource.platform=mysql
+
+### Count of DB:
+# 数据库实例数量
+db.num=1
+
+# 数据库连接信息，如果是 MySQL 8.0+ 版本需要添加 serverTimezone=Asia/Shanghai
+### Connect URL of DB:
+db.url.0=jdbc:mysql://127.0.0.1:3306/nacos_config?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true&serverTimezone=Asia/Shanghai
+db.user=root
+db.password=1234
+~~~~
+
+- mysql8注意
+> 如果你和我一样使用的是 MySQL 8.0+ 版本，那么启动 Nacos 时肯定会报错。莫慌，在 Nacos 安装目录下新建 `plugins/mysql` 文件夹，并放入 8.0+ 版本的 mysql-connector-java-8.0.xx.jar，重启 Nacos 即可，启动时会提示更换了 MySQL 的 driver-class 类。
+
+![](https://tva1.sinaimg.cn/large/e6c9d24ely1h0jl4wn4pfj20rb01p0t3.jpg)
