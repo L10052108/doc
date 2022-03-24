@@ -166,8 +166,8 @@ goto TUNNEL
 
 - 分享地址
 
-> https://jinlilu.lanzoum.com/igVPy01hwbvi
-> 密码:eioh
+> https://jinlilu.lanzoum.com/i8pgv01ybtvc
+> 密码:d4dm
 >
 - 脚本运行效果（把脚本放到）
 
