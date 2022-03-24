@@ -5,6 +5,12 @@
   - [mysql](linux/服务/mysql.md)
   - [redis](linux/服务/redis.md)
   - [jenkins](linux/服务/Jenkins.md) 
+  - 翻墙
+    - [bbr加速](linux/服务/翻墙/bbr.md)
+    - [ss](linux/服务/翻墙/ss.md)
+    - [ssr](linux/服务/翻墙/ssr.md)
+    - [trojan](linux/服务/翻墙/trojan.md)
+    - [v2ray](linux/服务/翻墙/v2ray.md)
   - docsify
     - [docsify](linux/服务/docsify.md)
     - [docsify定制化插件](linux/服务/定制化插件.md)
