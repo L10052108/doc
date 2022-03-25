@@ -1,6 +1,9 @@
 
-- [数据库](数据库/README.md)
-  - [mysql](数据库/mysql/readme.md)
+- 数据库
+  - [数据库介绍](数据库/数据库介绍.md)
+  - mysql
+    - [mysql介绍]()
+    - [mysql基本操作](数据库/mysql/基本操作.md)
   - nosql
     - [nosql介绍](数据库/nosql/nosql介绍.md)
 
