@@ -8,6 +8,7 @@
     - [springboot常用的注解](springboot/功能/springboot常用的注解.md)
     - [定时任务](springboot/功能/定时任务.md)
     - [Springboot过滤器和拦截器](springboot/功能/Springboot过滤器和拦截器.md)
+    - [springboot创建对象](springboot/功能/springboot对象.md)
   - mybatis
     - [mybatis介绍](springboot/mybatis/mybatis介绍.md)
     - [注意](springboot/mybatis/注意.md)
