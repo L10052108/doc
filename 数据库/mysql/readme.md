@@ -3,7 +3,8 @@
 参考资料：
 http://novoland.github.io/%E6%95%B0%E6%8D%AE%E5%BA%93/2014/07/26/MySQL%E6%80%BB%E7%BB%93.html
 
-
+参考手册
+https://github.com/jaywcjlove/mysql-tutorial
 
 1. [数据库的脏读、幻读、不可重复读](http://dr-yanglong.github.io/2016/06/06/transaction-feature/)
 2. [事务的隔离级别以及Mysql事务的使用](http://fanyilun.me/2015/12/29/%E4%BA%8B%E5%8A%A1%E7%9A%84%E9%9A%94%E7%A6%BB%E7%BA%A7%E5%88%AB%E4%BB%A5%E5%8F%8AMysql%E4%BA%8B%E5%8A%A1%E7%9A%84%E4%BD%BF%E7%94%A8/)
