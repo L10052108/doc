@@ -57,7 +57,7 @@ tags:
 - 父节点的数据不会出现在子节点中。
 - 所有的叶子节点都在同一层，叶节点具有相同的深度。
 
-![](https://static.lovebilibili.com/mysql_suoyin_1.png)
+![](img/mysql_suoyin_1.png)
 
 在上面的B树中，假如我们要找值等于18的数据，查找路径就是磁盘块1->磁盘块3->磁盘块8。
 
@@ -71,7 +71,7 @@ tags:
 
 如图所示：
 
-![](https://static.lovebilibili.com/mysql_suoyin_2.png)
+![](img/mysql_suoyin_2.png)
 
 如果data存储的是行数据，直接返回，如果存的是磁盘地址则根据磁盘地址到磁盘中取出数据。可以看出B树的查询效率是很高的。
 
@@ -90,7 +90,7 @@ B+树与B树最大的区别在于两点：
 
 如图所示：
 
-![](https://static.lovebilibili.com/mysql_suoyin_3.png)
+![](img/mysql_suoyin_3.png)
 
 > B+树的等值查询过程是怎么样的？
 
@@ -122,7 +122,7 @@ B+树与B树最大的区别在于两点：
 
 过程如图所示：
 
-![](https://static.lovebilibili.com/mysql_suoyin_4.png)
+![](img/mysql_suoyin_4.png)
 
 所以在范围查询的时候，是不需要像B树一样，再回到根节点，这就是底层采用双向链表的好处。
 
@@ -144,15 +144,15 @@ B+树与B树最大的区别在于两点：
 
 比如有一张user表，如图所示：
 
-![](https://static.lovebilibili.com/mysql_suoyin_5.png)
+![](img/mysql_suoyin_5.png)
 
 底层的数据结构就像这样：
 
-![](https://static.lovebilibili.com/mysql_suoyin_6.png)
+![](img/mysql_suoyin_6.png)
 
 当我们用主键值去查询的时候，查询效率是很快的，因为可以直接返回数据。
 
-![](https://static.lovebilibili.com/mysql_suoyin_7.png)
+![](img/mysql_suoyin_7.png)
 
 ## 普通索引
 
@@ -164,7 +164,7 @@ CREATE INDEX INDEX_USER_AGE ON `user`(age);
 
 普通索引属于非聚簇索引，所以叶子节点存储的是主键值，底层的数据结构大概长这个样子：
 
-![](https://static.lovebilibili.com/mysql_suoyin_8.png)
+![](img/mysql_suoyin_8.png)
 
 比如要查询age=33的数据，那么首先查到磁盘块7的age=33的数据，获取到主键值，主键值为4。
 
@@ -180,7 +180,7 @@ CREATE INDEX INDEX_USER_AGE ON `user`(age);
 
 比如上面的例子，我们通过age=33查询，我需要查询的结果就只要age这一列，那就可以用到覆盖索引，如图所示：
 
-![](https://static.lovebilibili.com/mysql_suoyin_9.png)
+![](img/mysql_suoyin_9.png)
 
 使用到覆盖索引的话，就能避免回表查询，所以在写SQL语句时尽量不要写`SELECT *`。
 
@@ -190,10 +190,3 @@ CREATE INDEX INDEX_USER_AGE ON `user`(age);
 
 那么这篇文章就写到这里了，感谢大家的阅读。
 
-**觉得有用就点个赞吧，你的点赞是我创作的最大动力**~
-
-**我是一个努力让大家记住的程序员。我们下期再见！！！**
-
-![](https://static.lovebilibili.com/dashacha.png)
-
-> 能力有限，如果有什么错误或者不当之处，请大家批评指正，一起学习交流！

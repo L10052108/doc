@@ -46,7 +46,7 @@ InnoDB存储引擎中，它的聚簇索引记录中都包含两个必要的隐�
 
 每次对记录进行修改时，都会记录一条undo log信息，每一条undo log信息都会有一个roll_pointer属性(INSERT操作没有这个属性，因为之前没有更早的版本)，可以将这些undo日志都连起来，串成一个链表。事务链如下图一样：
 
-![](https://static.lovebilibili.com/mysql_mvvc_01.png)
+![](img/mysql_mvvc_01.png)
 
 ## 原理
 
@@ -60,7 +60,7 @@ RC和RR隔离级别的实现就是通过版本控制来完成，核心处理逻�
 
 我们下面举例说明RC和RR隔离级别的区别，假如有一条user数据，初始值name="刘德华"，然后经过下面的更新，时间点如下：
 
-![](https://static.lovebilibili.com/mysql_mvvc_02.png)
+![](img/mysql_mvvc_02.png)
 
 RC隔离级别的MVCC：
 
@@ -68,19 +68,19 @@ RC隔离级别的MVCC：
 
 在T4时间点时，版本链如下所示：
 
-![](https://static.lovebilibili.com/mysql_mvvc_03.png)
+![](img/mysql_mvvc_03.png)
 
 在T4时间点的Select语句执行时，当前时间系统正在活跃的事务有trx_id为100和200都未提交，所以此时生成的ReadView的事务列表是[100,200]，因此查询语句会根据当前版本链中小于事务列表中的最大的版本数据，即查询到的是刘德华。
 
 在T6时间点时，版本链如下所示：
 
-![](https://static.lovebilibili.com/mysql_mvvc_04.png)
+![](img/mysql_mvvc_04.png)
 
 在T6时间点的Select语句执行时，当前时间系统正在活跃的事务有trx_id为200未提交，所以此时生成的ReadView的事务列表时[200]，因此查询语句会根据当前版本链中小于事务列表中的最大的版本数据，即查询到的是古天乐。
 
 在T8时间点时，版本链如下所示：
 
-![](https://static.lovebilibili.com/mysql_mvvc_05.png)
+![](img/mysql_mvvc_05.png)
 
 在T6时间点的Select语句执行时，当前时间系统正在活跃的事务都已经提交，所以此时生成的ReadView的事务列表为空，因此查询语句会直接查询当前数据库最新数据，即查询到的是麦长青。
 
@@ -98,7 +98,7 @@ RR隔离级别的MVCC：
 
 第三次查询，T8时间一样，不会生成ReadView，沿用T4时间点生成的ReadView，所以查询结果依然是刘德华。
 
-![](https://static.lovebilibili.com/mysql_mvvc_06.png)
+![](img/mysql_mvvc_06.png)
 
 由于在同一个事务中，RR级别的事务在查询中只会生成一个ReadView，所以能解决不可重复读的问题。
 

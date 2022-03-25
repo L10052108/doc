@@ -1,6 +1,6 @@
 # 思维导图
 
-![](https://static.lovebilibili.com/canal_jinjie_37.png)
+![](img/canal_jinjie_37.png)
 
 # 前言
 
@@ -18,11 +18,11 @@ canal是一个伪装成slave订阅mysql的binlog，实现数据同步的中间�
 
 实际上canal是支持直接发送到MQ的，**目前最新版是支持主流的三种MQ：Kafka、RocketMQ、RabbitMQ**。而canal的RabbitMQ模式目前是有一定的bug，所以一般使用Kafka或者RocketMQ。
 
-![](https://static.lovebilibili.com/canal_jinjie_25.png)
+![](img/canal_jinjie_25.png)
 
 本文使用Kafka，实现Redis与MySQL的数据同步。架构图如下：
 
-![](https://static.lovebilibili.com/canal_jinjie_26.png)
+![](img/canal_jinjie_26.png)
 
 通过架构图，我们很清晰就知道要用到的组件：MySQL、Canal、Kafka、ZooKeeper、Redis。
 
@@ -32,7 +32,7 @@ canal是一个伪装成slave订阅mysql的binlog，实现数据同步的中间�
 
 首先在[官网](https://github.com/apache/kafka)下载安装包：
 
-![](https://static.lovebilibili.com/canal_jinjie_21.png)
+![](img/canal_jinjie_21.png)
 
 解压，打开/config/server.properties配置文件，修改日志目录：
 
@@ -42,7 +42,7 @@ log.dirs=./logs
 
 首先启动ZooKeeper，我用的是3.6.1版本：
 
-![](https://static.lovebilibili.com/canal_jinjie_27.png)
+![](img/canal_jinjie_27.png)
 
 接着再启动Kafka，在Kafka的bin目录下打开cmd，输入命令：
 
@@ -52,7 +52,7 @@ kafka-server-start.bat ../../config/server.properties
 
 我们可以看到ZooKeeper上注册了Kafka相关的配置信息：
 
-![](https://static.lovebilibili.com/canal_jinjie_28.png)
+![](img/canal_jinjie_28.png)
 
 然后需要创建一个队列，用于接收canal传送过来的数据，使用命令：
 
@@ -62,7 +62,7 @@ kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --pa
 
 创建的队列名是`canaltopic`。
 
-![](https://static.lovebilibili.com/canal_jinjie_29.png)
+![](img/canal_jinjie_29.png)
 
 # 配置Cannal Server
 
@@ -118,7 +118,7 @@ kafka-console-consumer.bat --bootstrap-server 127.0.0.1:9092 --from-beginning --
 
 **有个小坑**。我这里使用的是win10系统的cmd命令行，win10系统默认的编码是GBK，而Canal Server是UTF-8的编码，所以控制台会出现乱码：
 
-![](https://static.lovebilibili.com/canal_jinjie_30.png)
+![](img/canal_jinjie_30.png)
 
 怎么解决呢？
 
@@ -126,7 +126,7 @@ kafka-console-consumer.bat --bootstrap-server 127.0.0.1:9092 --from-beginning --
 
 然后再执行打开kafka消费端的命令，就不乱码了：
 
-![](https://static.lovebilibili.com/canal_jinjie_31.png)
+![](img/canal_jinjie_31.png)
 
 接下来就是启动Redis，把数据同步到Redis就完事了。
 
@@ -355,11 +355,11 @@ INSERT INTO `canaldb`.`tb_commodity_info` (`id`, `commodity_name`, `commodity_pr
 
 tb_commodity_info表查到新增的数据：
 
-![](https://static.lovebilibili.com/canal_jinjie_32.png)
+![](img/canal_jinjie_32.png)
 
 Redis也查到了对应的数据，证明同步成功！
 
-![](https://static.lovebilibili.com/canal_jinjie_33.png)
+![](img/canal_jinjie_33.png)
 
 如果更新呢？试一下Update语句：
 
@@ -367,9 +367,9 @@ Redis也查到了对应的数据，证明同步成功！
 UPDATE `canaldb`.`tb_commodity_info` SET `commodity_name`='青菜包',`description`='很便宜的青菜包呀，不买也开看看了喂' WHERE `id`='3e71a81fd80711eaaed600163e046cc3';
 ```
 
-![](https://static.lovebilibili.com/canal_jinjie_34.png)
+![](img/canal_jinjie_34.png)
 
-![](https://static.lovebilibili.com/canal_jinjie_35.png)
+![](img/canal_jinjie_35.png)
 
 没有问题！
 
@@ -384,7 +384,7 @@ UPDATE `canaldb`.`tb_commodity_info` SET `commodity_name`='青菜包',`descripti
 3. 存在一些bug，不过社区活跃度较高，对于提出的bug能及时修复。
 4. MQ顺序性问题。我这里把官网的回答列出来，大家参考一下。
 
-![](https://static.lovebilibili.com/canal_jinjie_36.png)
+![](img/canal_jinjie_36.png)
 
 尽管有一些缺点，毕竟没有一样技术或者产品是完美的，最重要是合适。
 
@@ -400,6 +400,3 @@ UPDATE `canaldb`.`tb_commodity_info` SET `commodity_name`='青菜包',`descripti
 
 **如果你觉得这篇文章对你有用，点个赞吧**~
 
-**你的点赞是我创作的最大动力**~
-
-想第一时间看到我更新的文章，可以微信搜索公众号「`java技术爱好者`」，**拒绝做一条咸鱼，我是一个努力让大家记住的程序员。我们下期再见！！！**

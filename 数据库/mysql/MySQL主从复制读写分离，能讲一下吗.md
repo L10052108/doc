@@ -32,7 +32,7 @@
 
 ⑤SQL线程读取I/O线程写入的relay-log，并且根据 relay-log 的内容对从数据库做对应的操作。
 
-![](https://static.lovebilibili.com/mysql_zcfz_1.png)
+![](img/mysql_zcfz_1.png)
 
 # 如何实现主从复制
 
@@ -40,7 +40,7 @@
 
 预期的效果是一主二从，如下图所示：
 
-![](https://static.lovebilibili.com/mysql_zcfz_2.png)
+![](img/mysql_zcfz_2.png)
 
 ## Master配置
 
@@ -84,7 +84,7 @@ service mysql restart
 
 可以通过命令行`show master status\G;`查看当前binlog日志的信息(后面有用)：
 
-![](https://static.lovebilibili.com/mysql_zcfz_3.png)
+![](img/mysql_zcfz_3.png)
 
 ## Slave配置
 
@@ -173,7 +173,7 @@ CREATE TABLE `tb_commodity_info` (
 
 接着我们可以看到两台slave从机同步也创建了商品信息表：
 
-![](https://static.lovebilibili.com/mysql_zcfz_5.png)
+![](img/mysql_zcfz_5.png)
 
 主从复制就完成了！java技术爱好者有点东西哦~
 
@@ -191,7 +191,7 @@ ShardingSphere-JDBC定位为轻量级 Java 框架，在 Java 的 JDBC 层提供�
 
 读写分离就可以使用ShardingSphere-JDBC实现。
 
-![](https://static.lovebilibili.com/mysql_zcfz_6.png)
+![](img/mysql_zcfz_6.png)
 
 下面演示一下SpringBoot+Mybatis+Mybatis-plus+druid+ShardingSphere-JDBC代码实现。
 
@@ -260,7 +260,7 @@ load-balance-algorithm-type是路由策略，round_robin表示轮询策略。
 
 启动项目，可以看到以下信息，代表配置成功：
 
-![](https://static.lovebilibili.com/mysql_zcfz_8.png)
+![](img/mysql_zcfz_8.png)
 
 编写Controller接口：
 
@@ -290,17 +290,17 @@ load-balance-algorithm-type是路由策略，round_robin表示轮询策略。
 
 打开POSTMAN，添加商品：
 
-![](https://static.lovebilibili.com/mysql_zcfz_9.png)
+![](img/mysql_zcfz_9.png)
 
 控制台可以看到如下信息：
 
-![](https://static.lovebilibili.com/mysql_zcfz_11.png)
+![](img/mysql_zcfz_11.png)
 
 查询数据的话则通过slave进行：
 
-![](https://static.lovebilibili.com/mysql_zcfz_12.png)
+![](img/mysql_zcfz_12.png)
 
-![](https://static.lovebilibili.com/mysql_zcfz_13.png)
+![](img/mysql_zcfz_13.png)
 
 就是这么简单！
 
@@ -314,7 +314,7 @@ load-balance-algorithm-type是路由策略，round_robin表示轮询策略。
 
 实际上这个框架已经想到了，我们看回之前的那个截图，有一句话是这样的：
 
-![](https://static.lovebilibili.com/mysql_zcfz_14.png)
+![](img/mysql_zcfz_14.png)
 
 
 
