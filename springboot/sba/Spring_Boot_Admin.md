@@ -8,7 +8,7 @@ Spring Boot Admin 可以监控 Spring Boot 单机或集群项目，它提供详�
 
 它最终的展示效果如下：
 
-![](https://tva1.sinaimg.cn/large/e6c9d24ely1h0hb84n76vj211a0u076u.jpg)
+![](large/e6c9d24ely1h0hb84n76vj211a0u076u.jpg)
 
 ## 1.搭建SBA监控端
 
@@ -16,11 +16,11 @@ Spring Boot Admin 可以监控 Spring Boot 单机或集群项目，它提供详�
 
 使用 Idea 创建一个 Spring Boot 项目：
 
-![](https://tva1.sinaimg.cn/large/e6c9d24ely1h0hb8apg1hj21k20u0q4p.jpg)
+![](large/e6c9d24ely1h0hb8apg1hj21k20u0q4p.jpg)
 
 ![img](https://p3.toutiaoimg.com/origin/tos-cn-i-qvj2lq49k0/9d69a815fa23431baaeab911b58f15ba?from=pc)这里需要注意，需要添加 Spring Boot Admin（Server）服务端框架的支持，如下图所示：
 
-![](https://tva1.sinaimg.cn/large/e6c9d24ely1h0hb93l2g4j21cr0u00ul.jpg)
+![](large/e6c9d24ely1h0hb93l2g4j21cr0u00ul.jpg)
 
 也就是创建的 Spring Boot 项目需要添加以下两个重要的框架支持：
 
@@ -65,8 +65,7 @@ PS：配置端口号的主要目的是为了不和其他 Spring Boot 项目冲�
 
 启动项目之后，就可以看到 SBA 的主页了，如下图所示：
 
-![img](https://p3.toutiaoimg.com/origin/tos-cn-i-qvj2lq49k0/0df4abd161664640a937bceb914a155e?from=pc)
-
+![](large/e6c9d24ely1h0m6uibnx0j215s0u0gn1.jpg)
 此时 SBA 中还没有添加任何需要监控的项目，接下来我们再创建一个 Spring Boot 项目，加入到 SBA 中来进行监控和管理吧。
 
 ## 创建一个普通SpringBoot项目
@@ -96,31 +95,30 @@ spring.boot.admin.client.url”为 SBA 监控地址。
 
 配置完以上信息之后，此时查看 Spring Boot Admin 页面中就有被监控的 Spring Boot 项目了，如下图所示：
 
-![img](https://p3.toutiaoimg.com/origin/tos-cn-i-qvj2lq49k0/e46d1d84a53745909b9821cba95a95dc?from=pc)
+![](large/e6c9d24ely1h0m6vc008pj21c50u0wgb.jpg)
 
 也可以点击“应用墙”查看 Spring Boot Admin 中所有被监控的 Spring Boot 项目，如下图所示：
 
-![img](https://p3.toutiaoimg.com/origin/tos-cn-i-qvj2lq49k0/e46d1d84a53745909b9821cba95a95dc?from=pc)
 
 点击应用进入详情页面，如下图所示：
 
-![img](https://p3.toutiaoimg.com/origin/tos-cn-i-qvj2lq49k0/3bd8500de0834d7188270462d86b7f1e?from=pc)
+![](large/e6c9d24ely1h0m6wfiyxgj21c50u0wh1.jpg)
 
-![img](https://p3.toutiaoimg.com/origin/tos-cn-i-qvj2lq49k0/4ac59cb9d7dd4e5eaf276cfe128fd59c?from=pc)
+![](large/e6c9d24ely1h0m6x1xhy5j21c50u0mzu.jpg)
 
 事件日志中包含 Spring Boot 各种状态的展示（UP 为正常、OFFLINE 为异常）和发生的时间，如下图所示：
 
-![img](https://p3.toutiaoimg.com/origin/tos-cn-i-qvj2lq49k0/f9ab834f43164c7c9467b3796f92549c?from=pc)
+![](large/e6c9d24ely1h0m6xq4z74j21c50u0te0.jpg)
 
 ## SpringBoot异常监控
 
 当我们手动把被监控的 Spring Boot 项目停止之后，在 Spring Boot Admin 中就可以查看到一个应用已经被停掉了，如下图所示：
 
-![img](https://p3.toutiaoimg.com/origin/tos-cn-i-qvj2lq49k0/e9591652e5da4190b551a607df4e6b90?from=pc)
+![](large/e6c9d24ely1h0m6zfn2cqj21c50u00ud.jpg)
 
 我们也可以通过事件日志查看 Spring Boot 宕机的具体时间，如下图所示：
 
-![img](https://p3.toutiaoimg.com/origin/tos-cn-i-qvj2lq49k0/ebae6a59e0b940ddb4f3bd9b32932321?from=pc)
+![](large/e6c9d24ely1h0m710yhc1j21c50u0n2j.jpg)
 
 ## 配置查看更多监控项
 
@@ -129,7 +127,7 @@ spring.boot.admin.client.url”为 SBA 监控地址。
 要解决这个问题，我们需要在被监控的 Spring Boot 项目中添加
 spring-boot-starter-actuator 框架的支持，并开启查看所有监控项的配置才行，最终展示效果如下：
 
-![img](https://p3.toutiaoimg.com/origin/tos-cn-i-qvj2lq49k0/01cc9c61afee4d65be9f5d25d9f7cb23?from=pc)
+![](large/e6c9d24ely1h0m71xxbbcj20u00y8acq.jpg)
 
 接下来我们来配置一下这些监控项。
 
@@ -157,8 +155,7 @@ management.endpoints.web.exposure.include=*
 
 以上的配置是开放监控所有选项，配置完之后，重启此 Spring Boot 项目，然后再刷新 Spring Boot Admin 更多的监控项就展示出来了，如下图所示：
 
-![img](https://p3.toutiaoimg.com/origin/tos-cn-i-qvj2lq49k0/a29d6f0aa18e47f1afe4d0c4c8275c1c?from=pc)
-
+![](large/e6c9d24ely1h0m72nu2g8j210g0u0whf.jpg)
 ### 监控项目预览
 
 将 Spring Boot 的所有监控项都开启之后，通过 SBA 就可以查看以下内容了：
@@ -186,15 +183,15 @@ management.endpoints.web.exposure.include=*
 
 ###  查看运行环境
 
-![img](https://p3.toutiaoimg.com/origin/tos-cn-i-qvj2lq49k0/7d728f6f54d34ddd8720969d3bdd994d?from=pc)
+![](large/e6c9d24ely1h0m73dz2wfj210g0u0goa.jpg)
 
-![img](https://p3.toutiaoimg.com/origin/tos-cn-i-qvj2lq49k0/f25166ec96de4808956efcbaeb2c27a0?from=pc)
+![](large/e6c9d24ely1h0m73zr7s0j210g0u0n08.jpg)
 
 ### 查看定时任务
 
-![img](https://p3.toutiaoimg.com/origin/tos-cn-i-qvj2lq49k0/b863814b93a344b7b206e6dd941798d1?from=pc)
+![](large/e6c9d24ely1h0m74n6getj210g0u0myj.jpg)
 
-![img](https://p3.toutiaoimg.com/origin/tos-cn-i-qvj2lq49k0/fbd9f8e1aaa64883a87a5cff93420389?from=pc)
+![](large/e6c9d24ely1h0m759fbvqj210g0u0adb.jpg)
 
 ### 项目日志级别配置
 
@@ -202,11 +199,11 @@ management.endpoints.web.exposure.include=*
 
 ### JVM线程和内存查看
 
-![img](https://p3.toutiaoimg.com/origin/tos-cn-i-qvj2lq49k0/e9ff558a79b547cc8a2603440b43a60a?from=pc)
+![](large/e6c9d24ely1h0m75ryg88j210g0u076w.jpg)
 
 ### 查看SpringBoot所有缓存
 
-![img](https://p3.toutiaoimg.com/origin/tos-cn-i-qvj2lq49k0/905ff582f75641f9970323f94479104f?from=pc)
+![](large/e6c9d24ely1h0m76d4q8zj210g0u03zt.jpg)
 
 当然我们还可以对这些缓存进行删除操作。
 
@@ -221,7 +218,7 @@ logging.file.path=C:\\work\\log
 
 设置完成之后，重启你的 Spring Boot 项目，然后刷新 SBA 页面，最终展示效果如下：
 
-![img](https://p3.toutiaoimg.com/origin/tos-cn-i-qvj2lq49k0/252de6f1fc7a4ce58da4b68a6feb3e23?from=pc)
+![](large/e6c9d24ely1h0m7788lqdj210g0u0aep.jpg)
 
 此时我们就可以查看实时的日志信息了，当然你也可以随时下载日志，如果需要的话。
 
