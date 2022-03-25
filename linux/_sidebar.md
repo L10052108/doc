@@ -8,9 +8,8 @@
   - 翻墙
     - [bbr加速](linux/服务/翻墙/bbr.md)
     - [ss](linux/服务/翻墙/ss.md)
-    - [ssr](linux/服务/翻墙/ssr.md)
-    - [trojan](linux/服务/翻墙/trojan.md)
-    - [v2ray](linux/服务/翻墙/v2ray.md)
+    - [ssr_trojan_v2ray](linux/服务/翻墙/ssr_trojan_v2ray.md)
+
   - docsify
     - [docsify](linux/服务/docsify.md)
     - [docsify定制化插件](linux/服务/定制化插件.md)
