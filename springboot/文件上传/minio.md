@@ -217,3 +217,4 @@ public class MinioDemo {
 
 文件不存在情况，和oss是一样的。我推测阿里的oss是使用minio技术
 
+参考代码：https://gitee.com/L10052108/springboot_project/tree/simple/

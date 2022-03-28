@@ -15,12 +15,13 @@
 - [idea](java/idea/README.md)
   - [httpClient](java/idea/httpClient.md)
 
-- [jdk8新特性](java/jdk/README.md)
+- jdk8新特性
+  - [介绍](java/jdk/README.md)
   - [lamda表示](java/jdk/lambda.md)
   - [Stream API](java/jdk/StreamAPI.md)
 
-- [其他功能](java/jdk/README.md)
-  - [Lombok的使用](java/jdk/Lombok.md)
+- 其他功能
+  - [Lombok的使用](java/其他/Lombok.md)
 
 - 设计模式
   - [设计模式](java/设计模式/快速记住23种设计模式.md)
