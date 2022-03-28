@@ -12,6 +12,7 @@
     - [springboot创建对象](springboot/功能/springboot对象.md)
     - [获取properties](springboot/功能/获取properties.md)
     - [PostConstruct](springboot/功能/PostConstruct.md)
+    - [aop](springboot/功能/aop.md)
   
   - 文件上传
     - [minio](springboot/文件上传/minio.md)
