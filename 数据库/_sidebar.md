@@ -14,8 +14,6 @@
     - [MYSQL索引](数据库/mysql/谈谈MYSQL索引是如何提高查询效率的.md)
     - [Canal+Kafka实现MySQL与Redis数据同步](数据库/mysql/Canal+Kafka实现MySQL与Redis数据同步.md)
 
-    图标需要整理一下
-
   - nosql
     - [nosql介绍](数据库/nosql/nosql介绍.md)
 
