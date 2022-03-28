@@ -30,7 +30,8 @@ chmod +x minio
 
 [中文官网](http://www.minio.org.cn/)
 
-> 中文官网无法下载安装包，因为使用官网的安装包
+> 因为中文官网无法下载安装包，所以需要使用官网的安装包
+> 中文的官网有问题，还是推荐使用官网
 
 ![](large/e6c9d24ely1h0pmi4bhv9j21hw0leady.jpg)
 
