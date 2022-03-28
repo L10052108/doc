@@ -1,4 +1,5 @@
 资料来源：https://mp.weixin.qq.com/s/kvLZRqgm1lEITm1j6rzJ0A
+http://www.macrozheng.com/#/technology/minio_use
 
 ## 介绍
 
