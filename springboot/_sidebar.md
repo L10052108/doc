@@ -12,6 +12,10 @@
     - [springboot创建对象](springboot/功能/springboot对象.md)
     - [获取properties](springboot/功能/获取properties.md)
     - [PostConstruct](springboot/功能/PostConstruct.md)
+  
+  - 文件上传
+    - [minio](springboot/文件上传/minio.md)
+
   - mybatis
     - [mybatis介绍](springboot/mybatis/mybatis介绍.md)
     - [注意](springboot/mybatis/注意.md)
