@@ -17,6 +17,7 @@
 
 - [jdk8新特性](java/jdk/README.md)
   - [lamda表示](java/jdk/lambda.md)
+  - [Stream API](java/jdk/StreamAPI.md)
 
 - [其他功能](java/jdk/README.md)
   - [Lombok的使用](java/jdk/Lombok.md)
