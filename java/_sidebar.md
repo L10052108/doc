@@ -22,7 +22,7 @@
   - [Lombok的使用](java/jdk/Lombok.md)
 
 - 设计模式
-  - [设计模式](23种设计模式)
+  - [设计模式](java/设计模式/快速记住23种设计模式.md)
 
 - 工具
   - [16个Redis常见使用场景](java/工具/redis.md)
