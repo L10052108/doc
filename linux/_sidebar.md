@@ -17,6 +17,7 @@
     - [linux命令](linux/常用的命令.md)
     - [linux其他服务](linux/常用的功能.md)
     - [linux命令](linux/linux.md)
+    - [linux防火墙](linux/linux_firewall.md)
 
 - docker
   - [docker安装](linux/docker/docker安装.md)
