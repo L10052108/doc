@@ -15,8 +15,8 @@
     - [docsify定制化插件](linux/服务/定制化插件.md)
   - linux命令
     - [linux命令](linux/常用的命令.md)
+    - [linux常用命令](linux/linux.md)
     - [linux其他服务](linux/常用的功能.md)
-    - [linux命令](linux/linux.md)
     - [linux防火墙](linux/linux_firewall.md)
 
 - docker
