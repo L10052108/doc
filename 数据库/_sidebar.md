@@ -18,5 +18,8 @@
     - [nosql介绍](数据库/nosql/nosql介绍.md)
     - MongoDB
       - [MongoDB介绍](数据库/nosql/MongoDB/MongoDB介绍.md)
+    - ES
+      - [ES介绍](数据库/nosql/ES/es介绍.md)
+      - [ES安装](数据库/nosql/ES/es安装.md)
 
 
