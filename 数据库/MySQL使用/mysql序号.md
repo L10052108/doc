@@ -1,6 +1,6 @@
 资料来源：https://blog.csdn.net/BestEternity/article/details/88249601
 
-## mysql增加序号
+## mysql查询显示行号
 
 ### 介绍
 
