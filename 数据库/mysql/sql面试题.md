@@ -16,7 +16,7 @@ https://www.toutiao.com/article/7067138670272496166/?log_from=11a11471af1538_164
 
 
 
-#### 原始数据
+**原始数据**
 
 ~~~~sql
   CREATE TABLE tb_lemon_grade (
@@ -39,18 +39,116 @@ INSERT INTO tb_lemon_grade (student_name, course, score) VALUES
 
 
 
-if
+### 思路
 
-~~~~sql
+?> 思考：怎么处理
+
+>1.把行转化成列 
+>
+>2.数据获取
+>
+>3.数据处理
+
+
+
+整理后的结果
+
+![](https://tva1.sinaimg.cn/large/e6c9d24ely1h0qm97dnauj229c0d6gof.jpg)
+
+### 行转成列
+
+把需要展示的列，列出来
+
+~~~~java
+select student_name,
+0 as 'Linux',
+0 as 'MySQL',
+0   as 'Java'
+ from tb_lemon_grade;
+~~~~
+
+展示效果
+
+![](https://tva1.sinaimg.cn/large/e6c9d24ely1h0qo30ty84j20ja0cggly.jpg)
+
+
+
+### 数据填充
+
+两种方法进行填充数据
+
+比如 ID= 1的张三", "Linux", 85这条记录
+
+进行列的判断，如果是linux，填入85其他的填入0
+
+常用的判断方法，if和case两种方法
+
+- if判断
+
+~~~sql
 SELECT student_name,
 IF(COURSE = 'Linux',SCORE,0) 'Linux',
 IF(COURSE = 'MySQL',SCORE,0) 'MySQL',
 IF(COURSE = 'Java',SCORE,0) 'Java'
 FROM tb_lemon_grade;
-;
+~~~
+
+- case
+
+~~~~sql
+ SELECT student_name,
+(CASE COURSE when 'Linux' THEN SCORE ELSE 0 END ) as 'Linux',
+(CASE COURSE when 'MySQL' THEN SCORE ELSE 0 END ) as 'MySQL',
+(CASE COURSE when 'Java' THEN SCORE ELSE 0 END ) as 'Java'
+FROM tb_lemon_grade;
+~~~~
+
+运行结果
+
+![](https://tva1.sinaimg.cn/large/e6c9d24ely1h0qo7zgdcbj20j00ccq3a.jpg)
+
+### 聚合运算
+
+- 两种方案，一种是求和，一种是求最大值
+
+- sum
+~~~~sql
+SELECT
+	student_name,
+	SUM( IF ( COURSE = 'Linux', SCORE, 0 ) ) 'Linux',
+	SUM( IF ( COURSE = 'MySQL', SCORE, 0 ) ) 'MySQL',
+	sum( IF ( COURSE = 'Java', SCORE, 0 ) ) 'Java' 
+FROM
+	tb_lemon_grade 
+GROUP BY
+	student_name
+~~~~
+
+- max
+
+~~~~sql
+SELECT
+	student_name,
+	MAX( IF ( COURSE = 'Linux', SCORE, 0 ) ) 'Linux',
+	MAX( IF ( COURSE = 'MySQL', SCORE, 0 ) ) 'MySQL',
+	MAX( IF ( COURSE = 'Java', SCORE, 0 ) ) 'Java' 
+FROM
+	tb_lemon_grade 
+GROUP BY
+	student_name
 ~~~~
 
 
 
+## 其他方案
 
+>思路：先查询所有的学生名，通过学生名和课程两个条件可以查询学生的分数
+
+~~~~sql
+select DISTINCT(t1.student_name) as student_name ,
+(select SCORE from tb_lemon_grade where student_name = t1.student_name and COURSE = 'Linux') as 'Linux',
+(select SCORE from tb_lemon_grade where student_name = t1.student_name and COURSE = 'MySQL') as 'MySQL' ,
+(select SCORE from tb_lemon_grade where student_name = t1.student_name and COURSE = 'Java') as 'Java' 
+from tb_lemon_grade t1
+~~~~
 
