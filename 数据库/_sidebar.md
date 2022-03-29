@@ -2,7 +2,7 @@
 - 数据库
   - [数据库介绍](数据库/数据库介绍.md)
   - [数据库规范](数据库/数据库规范.md)
-  - mysql
+  - mysql理论
     - [mysql介绍](数据库/mysql/mysql介绍.md)
     - [mysql基本操作](数据库/mysql/基本操作.md)
     - [什么是脏读、不可重复读、幻读](数据库/mysql/什么是脏读、不可重复读、幻读.md)
@@ -13,6 +13,10 @@
     - [超详细canal入门](数据库/mysql/超详细canal入门.md)
     - [MYSQL索引](数据库/mysql/谈谈MYSQL索引是如何提高查询效率的.md)
     - [Canal+Kafka实现MySQL与Redis数据同步](数据库/mysql/Canal+Kafka实现MySQL与Redis数据同步.md)
+
+  - mysql实际使用
+    - [sql行列变化](数据库/MySQL使用/sql行列变化.md)
+    - [mysql序号](数据库/MySQL使用/mysql序号.md)
 
   - nosql
     - [nosql介绍](数据库/nosql/nosql介绍.md)
