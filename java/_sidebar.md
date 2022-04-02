@@ -17,11 +17,11 @@
 
 - jdk8新特性
   - [介绍](java/jdk/README.md)
-  - [lamda表示](java/jdk/lambda.md)
   - [Stream API](java/jdk/StreamAPI.md)
 
 - 其他功能
   - [Lombok的使用](java/其他/Lombok.md)
+  - [为什么有的团队禁止使用Lombok](java/其他/禁止使用Lombok.md)
 
 - 设计模式
   - [设计模式](java/设计模式/快速记住23种设计模式.md)
