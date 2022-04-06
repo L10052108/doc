@@ -18,6 +18,7 @@
 - jdk8新特性
   - [介绍](java/jdk/README.md)
   - [Stream API](java/jdk/StreamAPI.md)
+  - [java8 list1去重](java/jdk/List去重.md)
 
 - 其他功能
   - [Lombok的使用](java/其他/Lombok.md)
