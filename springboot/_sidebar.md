@@ -13,6 +13,7 @@
     - [获取properties](springboot/功能/获取properties.md)
     - [PostConstruct](springboot/功能/PostConstruct.md)
     - [aop](springboot/功能/aop.md)
+    - [返回数字结果过长](springboot/功能/返回数字结果过长.md)
   
   - 文件上传
     - [minio](springboot/文件上传/minio.md)
