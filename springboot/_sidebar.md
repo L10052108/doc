@@ -14,9 +14,13 @@
     - [PostConstruct](springboot/功能/PostConstruct.md)
     - [aop](springboot/功能/aop.md)
     - [返回数字结果过长](springboot/功能/返回数字结果过长.md)
+
   
   - 文件上传
     - [minio](springboot/文件上传/minio.md)
+
+  - condition
+    - [Conditional注解使用](springboot/condition/Conditional.md)
 
   - mybatis
     - [mybatis介绍](springboot/mybatis/mybatis介绍.md)
