@@ -21,6 +21,7 @@
     - [别再使用 TIMESTAMP 作为日期字段](数据库/MySQL使用/datetime&timestamep.md)
     - [mysql实现递归](数据库/MySQL使用/递归.md)
     - [函数&视图](数据库/MySQL使用/函数&视图.md)
+    - [用户变量@]()
     - [mysql实战(创建表)](数据库/MySQL使用/mysql实战1.md)
     - [mysql实战(基础题)](数据库/MySQL使用/mysql实战2.md)
     - [mysql实战(进阶题)](数据库/MySQL使用/mysql实战3.md)
