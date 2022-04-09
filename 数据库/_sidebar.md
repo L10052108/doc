@@ -31,7 +31,10 @@
     - MongoDB
       - [MongoDB介绍](数据库/nosql/MongoDB/MongoDB介绍.md)
     - ES
+    
       - [ES介绍](数据库/nosql/ES/es介绍.md)
       - [ES安装](数据库/nosql/ES/es安装.md)
-
+    - redis
+      - [Redis为什么这么快](数据库/nosql/redis/Redis为什么这么快.md)
+      - [Redis使用规范](数据库/nosql/redis/Redis使用规范.md)
 
