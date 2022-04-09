@@ -20,6 +20,7 @@
     - [sql查询一天的数据](数据库/MySQL使用/sql查询一天的数据.md)
     - [别再使用 TIMESTAMP 作为日期字段](数据库/MySQL使用/datetime&timestamep.md)
     - [mysql实现递归](数据库/MySQL使用/递归.md)
+    - [函数&视图](数据库/MySQL使用/函数&视图.md)
 
   - nosql
     - [nosql介绍](数据库/nosql/nosql介绍.md)
