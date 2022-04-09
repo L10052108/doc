@@ -26,6 +26,7 @@
     - [mybatis介绍](springboot/mybatis/mybatis介绍.md)
     - [MyBatis类型处理器typeHandlers](springboot/mybatis/typeHanders.md)
     - [MyBatis 中为什么不建议使用 where 1=1](springboot/mybatis/注意.md)
+    - [mybatis一对多](springboot/mybatis/mybatis一对多.md)
 
   - mybatis_puls
     - [CURD快速入门](springboot/mybatis_puls/CURD快速入门.md)
