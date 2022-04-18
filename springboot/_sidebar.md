@@ -12,7 +12,7 @@
     - [springboot创建对象](springboot/功能/springboot对象.md)
     - [获取properties](springboot/功能/获取properties.md)
     - [PostConstruct](springboot/功能/PostConstruct.md)
-    - [aop](springboot/功能/aop.md)
+    - [springboot-aop](springboot/功能/aop.md)
     - [返回数字结果过长](springboot/功能/返回数字结果过长.md)
 
   
@@ -45,4 +45,7 @@
   - sba
     - [Spring Boot Admin，贼好使](springboot/sba/Spring_Boot_Admin.md)
     - [报警提醒和登录验证](springboot/sba/报警提醒和登录验证功能实现.md)
+
+[comment]: <> (分布式定时任务)
+  - [分布式定时任务](linux/定时任务/主流的分布式定时任务.md)
   - [xxl-job](springboot/xxl-job/README.md)
