@@ -10,7 +10,7 @@ Spring Boot Admin 可以监控 Spring Boot 单机或集群项目，它提供详�
 
 ![](large/e6c9d24ely1h0hb84n76vj211a0u076u.jpg)
 
-## 1.搭建SBA监控端
+## 搭建SBA监控端
 
 我们需要创建一个 Spring Boot Admin 项目，用来监控和管理我们的 Spring Boot 项目，搭建的方式和创建普通的 Spring Boot 项目类似，具体步骤如下。
 
