@@ -5,6 +5,7 @@
   - [mysql](linux/服务/mysql.md)
   - [redis](linux/服务/redis.md)
   - [jenkins](linux/服务/Jenkins.md) 
+  - [linux远程桌面管理工具xrdp](linux/服务/xrdp.md)
   - 翻墙
     - [bbr加速](linux/服务/翻墙/bbr.md)
     - [ss](linux/服务/翻墙/ss.md)
