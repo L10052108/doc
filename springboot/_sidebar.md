@@ -40,7 +40,6 @@
     - [其他功能](springboot/mybatis_puls/其他功能.md)
   - [H2的使用](springboot/功能/H2的使用.md)
 
-
 [comment]: <> (sba笔记需要完善)
   - sba
     - [Spring Boot Admin，贼好使](springboot/sba/Spring_Boot_Admin.md)
