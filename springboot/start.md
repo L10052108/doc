@@ -6,14 +6,6 @@
 
 [项目代码](https://gitee.com/L10052108/springboot_project)
 
-## 分支介绍
-
-| 名称            | 分支名称           | 介绍                 |
-| ------------- | -------------- | ------------------ |
-| master        | springboot基本框架 | 简单的springboot项目的搭建 |
-| mybatis—mysql | 整合mybatis框架    | 整合MySQL数据库         |
-
-
 
 # 代码介绍
 
