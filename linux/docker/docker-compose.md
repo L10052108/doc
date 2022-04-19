@@ -17,6 +17,10 @@
 
   ​
 
+通过下载然后文件上传后执行，放到指定的位置
+
+`mv docker-compose-linux-x86_64 /usr/local/bin/docker-compose`
+
 将可执行权限应用于二进制文件：
 
     sudo chmod +x /usr/local/bin/docker-compose
@@ -31,6 +35,12 @@
 检查执行效果
 
 ![](large/e6c9d24egy1h1ey0v9nonj20mk02emxb.jpg ':size=80%')
+
+
+
+
+
+
 
 ###  yum 方式安装
 
