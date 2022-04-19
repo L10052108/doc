@@ -1,10 +1,21 @@
 ## 安装过程
 
-### 下载
+### 安装方式一(推荐)
 
 运行以下命令以下载 Docker Compose 的当前稳定版本：
 
     sudo curl -L "https://github.com/docker/compose/releases/download/1.24.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+- 表达式含义：
+
+![](large/e6c9d24ely1h1ewblv9plj20ng04274r.jpg)
+
+- 查看最新的版本[releases](https://github.com/docker/compose/releases)
+
+  比如Linux最新版本
+
+  ![根据实际情况进行修改](large/e6c9d24ely1h1ewfe8pp7j20yp0u043a.jpg)
+
+  ​
 
 将可执行权限应用于二进制文件：
 
@@ -17,9 +28,13 @@
 测试是否安装成功：
 
     docker-compose --version
-###  yum 安装
+检查执行效果
 
+![](large/e6c9d24egy1h1ey0v9nonj20mk02emxb.jpg ':size=80%')
 
+###  yum 方式安装
+
+- 安装步骤
 
 ```
 　　1、安装python-pip
