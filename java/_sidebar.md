@@ -7,14 +7,12 @@
   - [04_线程休眠的5中方法](java/并发编程/04线程休眠的5中方法.md)
   - [05_阻塞一个线程的方法](java/并发编程/05阻塞一个线程的方法.md)
   - [06_synchronized的使用](java/并发编程/06synchronized的使用.md)
+  - [07_并发编程框架](java/并发编程/07并发编程框架.md)
   - [并发编程](java/并发编程/多线程.md)
   - [并发编程框架](java/并发编程/并发编程框架.md)
-  - [线程池](java/并发编程/线程池.md)
-  - [线程池拒绝策略](java/并发编程/拒绝策略.md)
   - [锁](java/并发编程/锁.md)
   - [AQS和ReentrantLock](java/并发编程/AQS和ReentrantLock.md)
   - [CAS](java/并发编程/CAS.md)
-  - [synchronized](java/并发编程/synchronized.md)
   - [TheadLocal](java/并发编程/TheadLocal.md)
 
 
@@ -22,10 +20,11 @@
   - [httpClient](java/idea/httpClient.md)
 
 - jdk8新特性
-  - [00介绍](java/jdk/00介绍.md)
+  - [00_介绍](java/jdk/00介绍.md)
   - [01_lambda](java/jdk/01lambda.md)
   - [02_List去重](java/jdk/02List去重.md)
   - [03_StreamAPI](java/jdk/03StreamAPI.md)
+  - [04_Queue](java/jdk/04Queue.md)
 
 - 其他功能
   - [Lombok的使用](java/其他/Lombok.md)
