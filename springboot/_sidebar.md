@@ -2,6 +2,7 @@
   - [springboot启动命令](springboot/springboot启动命令.md)
   - [springboot创建项目](springboot/start.md)
   - 功能
+    - [01_springboot异步](springboot/功能/01springboot异步.md)
     - [优雅的 HTTP 客户端工具](springboot/功能/retrofit.md)
     - [springboot跨域](springboot/功能/springboot跨域.md)
     - [springboot日志](springboot/功能/日志.md)
