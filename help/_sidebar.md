@@ -8,4 +8,5 @@
   - [其他内容](help/docsify/other.md)
 
 - 其他
+  - [文档规范](help/其他/文档规范.md)
   - [学习路线图](help/其他/学习路线图.md)
