@@ -1,12 +1,12 @@
 
 
 - 并发编程
-  - [01多线程理论](java/并发编程/01多线程的理论.md)
-  - [02线程池](java/并发编程/02线程池.md)  
-  - [03线程池7中创建方式](java/并发编程/03线程池7中创建方式.md)
-  - [04线程休眠的5中方法](java/并发编程/04线程休眠的5中方法.md)
-  - [05阻塞一个线程的方法](java/并发编程/05阻塞一个线程的方法.md)
-  - [06synchronized的使用](java/并发编程/06synchronized的使用.md)
+  - [01_多线程理论](java/并发编程/01多线程的理论.md)
+  - [02_线程池](java/并发编程/02线程池.md)  
+  - [03_线程池7中创建方式](java/并发编程/03线程池7中创建方式.md)
+  - [04_线程休眠的5中方法](java/并发编程/04线程休眠的5中方法.md)
+  - [05_阻塞一个线程的方法](java/并发编程/05阻塞一个线程的方法.md)
+  - [06_synchronized的使用](java/并发编程/06synchronized的使用.md)
   - [并发编程](java/并发编程/多线程.md)
   - [并发编程框架](java/并发编程/并发编程框架.md)
   - [线程池](java/并发编程/线程池.md)
@@ -22,9 +22,10 @@
   - [httpClient](java/idea/httpClient.md)
 
 - jdk8新特性
-  - [介绍](java/jdk/README.md)
-  - [Stream API](java/jdk/StreamAPI.md)
-  - [java8 list1去重](java/jdk/List去重.md)
+  - [00介绍](java/jdk/00介绍.md)
+  - [01_lambda](java/jdk/01lambda.md)
+  - [02_List去重](java/jdk/02List去重.md)
+  - [03_StreamAPI](java/jdk/03StreamAPI.md)
 
 - 其他功能
   - [Lombok的使用](java/其他/Lombok.md)

@@ -1,4 +1,5 @@
-资料来源：http://www.macrozheng.com/#/technology/java_stream?id=%e4%bb%80%e4%b9%88%e6%98%afstream%ef%bc%9f
+资料来源：
+[Java 8都出那么久了，Stream API了解下](http://www.macrozheng.com/#/technology/java_stream?id=%e4%bb%80%e4%b9%88%e6%98%afstream%ef%bc%9f)
 ##  Stream API
 
 
