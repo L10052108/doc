@@ -1,5 +1,9 @@
 
 
+资料来源：<br/>
+
+[官方标配！吊炸天的Linux可视化管理工具，必须推荐给你](https://www.toutiao.com/article/7067569199320744482/?app=news_article&timestamp=1650380630&use_new_style=1&req_id=202204192303500101580310440513B0C8&group_id=7067569199320744482&wxshare_count=1&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_android&utm_campaign=client_share&share_token=28858b91-92b4-4b88-b8ca-6fc124edb795) <br/>
+
 ## 开发者必备Linux命令
 
 > 开发者必备Linux常用命令，掌握这些命令绝对够了，基于CenterOS7.6。
@@ -306,3 +310,36 @@ sz fileName
 - 模糊搜索软件包：yum search nginx
 
 
+**centos更改镜像源**
+
+使用CentOS 8的yum命令安装软件时经常会遇到无法下载的问题，切换到阿里云的镜像源即可解决，这里使用Centos-vault-8.5.2111.repo仓库配置；
+
+~~~~shell
+# 先将原BaseOS配置进行备份
+mv /etc/yum.repos.d/CentOS-Linux-BaseOS.repo /etc/yum.repos.d/CentOS-Linux-BaseOS.repo.bak
+# 再下载新配置
+sudo wget -O /etc/yum.repos.d/CentOS-Linux-BaseOS.repo http://mirrors.aliyun.com/repo/Centos-vault-8.5.2111.repo
+~~~~
+
+- yum仓库配置文件在/etc/yum.repos.d目录下，再修改CentOS-Linux-AppStream.repo文件，直接拷贝CentOS-Linux-BaseOS中的appstream部分即可；
+
+~~~~shell
+[appstream]
+name=CentOS-8.5.2111 - AppStream - mirrors.aliyun.com
+baseurl=http://mirrors.aliyun.com/centos-vault/8.5.2111/AppStream/$basearch/os/
+        http://mirrors.aliyuncs.com/centos-vault/8.5.2111/AppStream/$basearch/os/
+        http://mirrors.cloud.aliyuncs.com/centos-vault/8.5.2111/AppStream/$basearch/os/
+gpgcheck=0
+gpgkey=http://mirrors.aliyun.com/centos/RPM-GPG-KEY-CentOS-Official
+~~~~
+
+- 运行如下命令清空缓存并生效；
+
+~~~~shell
+sudo yum clean all
+sudo yum makecache
+~~~~
+
+- 接下来查询一个安装包信息测试下，发现已经可以正常使用了。
+
+![](large/e6c9d24ely1h1iiyo0da0j20kc0bfjsf.jpg)

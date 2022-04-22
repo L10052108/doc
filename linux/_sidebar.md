@@ -1,5 +1,6 @@
 - [说明](linux/README.md)
 - 基础服务
+  - [01_linux可视化工具](linux/服务/01linux可视化工具.md)
   - [jdk](linux/服务/jdk.md)
   - [node](linux/服务/node.md)
   - [mysql](linux/服务/mysql.md)
@@ -7,6 +8,7 @@
   - [jenkins](linux/服务/Jenkins.md) 
   - [DooTask轻量级的开源在线项目任务管理工具](linux/服务/在线项目任务管理工具.md)
   - [linux远程桌面管理工具xrdp](linux/服务/xrdp.md)
+  
   - 翻墙
     - [bbr加速](linux/服务/翻墙/bbr.md)
     - [ss](linux/服务/翻墙/ss.md)
