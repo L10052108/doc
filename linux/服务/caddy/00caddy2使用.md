@@ -19,7 +19,7 @@ Caddy是什么？在Caddy的官网上给出一个最简单的介绍：“Caddy�
 
 Caddy的作者是来自美国的Matthew Holt，因为是用Go语言开发的，所以Caddy天生里就带着高并发的基因。据国内技术人士测试，其同时并发数优于Apache，略低于Nginx。“**几乎所有的功能在Caddy里的都是插件**”，这是Matthew Holt对他的孩子的另一种诠释，“HTTP服务器是插件，高级的TLS特性也是插件，每一行命令实现的功能都是一个插件”。自始至终，Caddy就是一个内心强大，勇于挑战新事物的探险家，这完全得益于他的作者对互联网产品的深刻认知与理解。
 
-![](large/e6c9d24ely1h1h5hxz6ccj216i0p075w.jpg)
+![](large/e6c9d24ely1h1h5hxz6ccj216i0p075w.jpg ':size=50%')
 
 在这个 HTTPS 必选的时代，Caddy 凭借无需额外配置自动 HTTPS，分分钟完成 HTTPS 站点搭建，使它成为了中小型 Web 服务的首选服务器。Caddy 深受开源爱好者们的喜爱，2014 年开源至今共收获了 3.6 万颗星。
 
@@ -53,7 +53,7 @@ v2.4.6 h1:HGkGICFGvyrodcqOOclHKfvJC0qTU7vny/7FhYp9hNw=
 caddy
 ~~~~
 
-![](https://tva1.sinaimg.cn/large/e6c9d24ely1h1h6effjcxj20mo0lcgno.jpg)
+![](large/e6c9d24ely1h1h6effjcxj20mo0lcgno.jpg)
 
 **启动服务**
 
@@ -67,7 +67,7 @@ curl localhost:2019/config/
 
 日志打印的内容
 
-![](https://tva1.sinaimg.cn/large/e6c9d24ely1h1h6nfruzqj22fa062aed.jpg)
+![](large/e6c9d24ely1h1h6nfruzqj22fa062aed.jpg)
 
 格式化后
 
