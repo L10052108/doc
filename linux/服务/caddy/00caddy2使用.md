@@ -53,7 +53,7 @@ v2.4.6 h1:HGkGICFGvyrodcqOOclHKfvJC0qTU7vny/7FhYp9hNw=
 caddy
 ~~~~
 
-![](large/e6c9d24ely1h1h6effjcxj20mo0lcgno.jpg)
+![](large/e6c9d24ely1h1h6effjcxj20mo0lcgno.jpg ':size=50%')
 
 **启动服务**
 
@@ -67,7 +67,7 @@ curl localhost:2019/config/
 
 日志打印的内容
 
-![](large/e6c9d24ely1h1h6nfruzqj22fa062aed.jpg)
+![](large/e6c9d24ely1h1h6nfruzqj22fa062aed.jpg ':size=80%')
 
 格式化后
 
@@ -115,7 +115,7 @@ sudo touch /etc/caddy/Caddyfile
 
 我创建一个`/root/mysite` 文件夹下，创建了一个index.html文件
 
-![](large/e6c9d24ely1h1ksjywfmwj20sc05gwex.jpg)
+![](large/e6c9d24ely1h1ksjywfmwj20sc05gwex.jpg ':size=70%')
 
 网页内容：
 
@@ -171,11 +171,11 @@ caddy file-server --root /root/mysite
 
 > domain:自己的域名
 
-![](large/e6c9d24ely1h1kstsxh4ej20w80f6ta7.jpg ':size=80%')
+![](large/e6c9d24ely1h1kstsxh4ej20w80f6ta7.jpg ':size=40%')
 
 访问网站的时候，已经申请好了证书，访问都正常。从后台日志，可以看出caddy自动帮助我们申请了证书
 
-![](large/e6c9d24ely1h1kssdusszj22im0qidyw.jpg)
+![](large/e6c9d24ely1h1kssdusszj22im0qidyw.jpg ':size=80%')
 
 我们继续查看证书
 
