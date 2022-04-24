@@ -88,24 +88,23 @@ curl localhost:2019/config/
 }
 ~~~~
 
-### 文件配置
+### 接口管理方式
 
-Caddy 的原生配置文件使用的是 JSON 格式。但是为了用户编写方便它提供了 Caddyfile 作为接口让用户可以快速配置站点信息，运行时 Caddy 会自动将 Caddyfile 的配置信息转为 JSON 配置文件
+Caddy 除了简单易懂的配置文件方式，还提供了管理配置的接口。通过这些接口可以轻松实现 Web 服务器管理自动化、集成发布等高级功能。
 
-官网这样描述：
+提供的接口和功能：
 
-> The **Caddyfile** is a convenient Caddy configuration format for humans. It is most people's favorite way to use Caddy because it is easy to write, easy to understand, and expressive enough for most use cases.
+- **POST /load** 设置或替换活动配置
+- **POST /stop** 停止活动配置并退出进程
+- **GET /config/[path]** 导出指定路径的配置
+- **POST /config/[path]** 设置或替换对象；追加到数组
+- **PUT /config/[path]** 创建新对象或插入数组
+- **PATCH /config/[path]** 替换现有对象或数组元素
+- **DELETE /config/[path]** 删除指定路径的值
+- **在 JSON 中使用@id** 轻松遍历配置结构
+- **GET /reverse_proxy/upstreams** 返回配置的代理上游的当前状态
 
-Caddyfile 所能提供功能不如 JSON 配置文件强大，但是对于不需要复杂配置的用户而言完全够用了。
-
-**创建配置文件**
-
-~~~~shell
-sudo mkdir -p /etc/caddy # 配置文件夹
-sudo touch /etc/caddy/Caddyfile
-~~~~
-
-
+这里就不再进行演示了，如果您想深入了解可以阅读 Caddy 的官方文档。 
 
 ## 托管一个网站
 
@@ -184,7 +183,6 @@ caddy file-server --root /root/mysite
 有两个重要的信息
 
 > 组织：let's Encrypt
->
 > 有效期：三个月
 
 

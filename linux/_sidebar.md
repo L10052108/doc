@@ -15,7 +15,7 @@
     - [ssr_trojan_v2ray](linux/服务/翻墙/ssr_trojan_v2ray.md)
   - caddy
     - [00_caddy2使用](linux/服务/caddy/00caddy2使用.md)
-    - [01_caddy配置](linux/服务/caddy/01caddy配置.md)
+    - [01_caddy入门案例](linux/服务/caddy/01caddy入门案例.md)
 
   - docsify
     - [docsify](linux/服务/docsify.md)
