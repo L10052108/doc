@@ -132,7 +132,21 @@ caddy validate --config /etc/caddy/Caddyfile
 
 ![](large/e6c9d24ely1h1kv6xglk6j221c0cs119.jpg)
 
+### 反向代理
 
+配置文件内容
+
+~~~~shell
+showdoc.51mylove.top {
+	@http {
+		protocol http
+	}
+	redir @http https://{host}{uri}
+	reverse_proxy  *  http://localhost:4999 
+}
+~~~~
+
+配置了如果http请求自动跳转到https
 
 
 

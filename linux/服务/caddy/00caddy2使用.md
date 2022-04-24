@@ -1,8 +1,8 @@
 资料来源：<br/>
 
-[像iPhone一样好玩的Web服务器: Caddy](https://www.jianshu.com/p/85600cdc38d4)
+[像iPhone一样好玩的Web服务器: Caddy](https://www.jianshu.com/p/85600cdc38d4) <br/>
 
-[真香！自带 HTTPS 的开源 Web 服务器，附快速上手教程](https://www.toutiao.com/article/7064892846268006924/?tt_from=weixin&utm_campaign=client_share&wxshare_count=1%C3%97tamp=1646577448&app=news_article&utm_source=weixin&utm_medium=toutiao_android&use_new_style=1&req_id=202203062237270101581490430A99BE81&share_token=592cc100-113d-438b-9da7-fffac6f914e9&group_id=7064892846268006924)
+[真香！自带 HTTPS 的开源 Web 服务器，附快速上手教程](https://www.toutiao.com/article/7064892846268006924/?tt_from=weixin&utm_campaign=client_share&wxshare_count=1%C3%97tamp=1646577448&app=news_article&utm_source=weixin&utm_medium=toutiao_android&use_new_style=1&req_id=202203062237270101581490430A99BE81&share_token=592cc100-113d-438b-9da7-fffac6f914e9&group_id=7064892846268006924) <br/>
 [动手撸个Caddy（一）| 托管你的网站，只需一行命令](https://www.flysnow.org/2021/06/28/caddy-in-action-getting-started.html)
 
 ## caddy2介绍
@@ -88,7 +88,7 @@ curl localhost:2019/config/
 }
 ~~~~
 
-### 接口管理方式
+## 接口管理方式
 
 Caddy 除了简单易懂的配置文件方式，还提供了管理配置的接口。通过这些接口可以轻松实现 Web 服务器管理自动化、集成发布等高级功能。
 
