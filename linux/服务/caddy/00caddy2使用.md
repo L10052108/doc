@@ -107,15 +107,85 @@ sudo touch /etc/caddy/Caddyfile
 
 
 
+## 托管一个网站
+
+是不是非常简单，只需要这一行命令，你就可以托管一个网站。
+
+### 简单入门案例
+
+我创建一个`/root/mysite` 文件夹下，创建了一个index.html文件
+
+![](large/e6c9d24ely1h1ksjywfmwj20sc05gwex.jpg)
+
+网页内容：
+
+~~~~html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>这是一个测试页面</h1>
+    
+</body>
+</html>
+~~~~
+
+执行的命令
+
+~~~~shell
+caddy file-server --root /root/mysite
+~~~~
+
+> `file-server`是caddy的子命令，表示要启动一个文件服务的意思
+>
+> `root`表示要以哪个文件目录作为文件服务的根目录，也就是我们的网站所在文件夹。
+
+启动成功后，可以访问 `http://121.36.8.180/index.html`
+
+![运行结果](large/e6c9d24ely1h1ksn4g61xj20ky0a4jrv.jpg ':size=40%')
+
 
 
 ### 配置域名
 
 配置域名的方式各个厂家不一样，下面是阿里云的配置为例
 
-![](https://tva1.sinaimg.cn/large/e6c9d24ely1h1h6wnld5oj20hw0wc3zb.jpg ':size=40%')
+![](large/e6c9d24ely1h1h6wnld5oj20hw0wc3zb.jpg ':size=40%')
 
 通过[ip138](https://ip138.com/)查询域名解析是否可用
 
-![](https://tva1.sinaimg.cn/large/e6c9d24ely1h1h76cb9bqj20ua0rudj4.jpg ':size=40%')
+![ip查询](large/e6c9d24ely1h1h76cb9bqj20ua0rudj4.jpg ':size=40%')
+
+### 配置域名访问
+
+
+
+使用的命令
+
+`caddy file-server --root /root/mysite --domain showdoc.51mylove.top`
+
+> domain:自己的域名
+
+![](large/e6c9d24ely1h1kstsxh4ej20w80f6ta7.jpg ':size=80%')
+
+访问网站的时候，已经申请好了证书，访问都正常。从后台日志，可以看出caddy自动帮助我们申请了证书
+
+![](large/e6c9d24ely1h1kssdusszj22im0qidyw.jpg)
+
+我们继续查看证书
+
+![](large/e6c9d24ely1h1ksxrfumsj20qw0vgmzn.jpg ':size=50%')
+
+有两个重要的信息
+
+> 组织：let's Encrypt
+>
+> 有效期：三个月
+
+
 
