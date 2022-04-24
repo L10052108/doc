@@ -48,7 +48,7 @@ caddy file-server --root /root/mysite
 
 配置域名的方式各个厂家不一样，下面是阿里云的配置为例
 
-![](https://tva1.sinaimg.cn/large/e6c9d24ely1h1kvvxhfslj20hw0wcgmb.jpg ':size=40%')
+![](large/e6c9d24ely1h1kvvxhfslj20hw0wcgmb.jpg ':size=40%')
 
 通过[ip138](https://ip138.com/)查询域名解析是否可用
 
