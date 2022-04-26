@@ -3,6 +3,7 @@
 资料来源：
 
 [docsify的配置+全插件列表](https://xhhdd.cc/index.php/archives/80/comment-page-1)
+[北山湖臭皮匠](https://github.com/taoGod/extraordinarywen/tree/master/docs)
 
 ## 背景
 
