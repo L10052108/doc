@@ -1,6 +1,3 @@
-# linux 目录
+## linux 目录
 
-
-
-- [目录](linux/README.md)
-  - [docsify](linux/docsify.md)
+Linux操作，是学习的java重要组成部分
