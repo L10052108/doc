@@ -13,19 +13,19 @@
     - [bbr加速](linux/服务/翻墙/bbr.md)
     - [ss](linux/服务/翻墙/ss.md)
     - [ssr_trojan_v2ray](linux/服务/翻墙/ssr_trojan_v2ray.md)
-  - caddy
-    - [00_caddy2使用](linux/服务/caddy/00caddy2使用.md)
-    - [01_caddy入门案例](linux/服务/caddy/01caddy入门案例.md)
-
-  - docsify
-    - [docsify](linux/服务/docsify.md)
-    - [docsify定制化插件](linux/服务/定制化插件.md)
+  - caddy制化插件](linux/服务/定制化插件.md)
   - linux命令
     - [linux命令](linux/常用的命令.md)
     - [linux常用命令](linux/linux.md)
     - [linux其他服务](linux/常用的功能.md)
     - [linux防火墙](linux/linux_firewall.md)
 
+    - [00_caddy2使用](linux/服务/caddy/00caddy2使用.md)
+    - [01_caddy入门案例](linux/服务/caddy/01caddy入门案例.md)
+
+  - docsify
+    - [01_docsify安装](linux/服务/docsify.md)
+    - [02_docsify定
 - docker
   - [docker安装](linux/docker/docker安装.md)
   - [docker-compose](linux/docker/docker-compose.md)
