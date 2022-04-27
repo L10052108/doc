@@ -2,7 +2,7 @@
 [最全Java锁详解：独享锁/共享锁+公平锁/非公平锁+乐观锁/悲观锁](https://mikechen.cc/6820.html)<br/>
 
 
-![](large/e6c9d24ely1h1o9zxinodj20gk0hkgmi.jpg ':size=350%')
+![](large/e6c9d24ely1h1o9zxinodj20gk0hkgmi.jpg ':size=35%')
 ## 乐观锁 VS 悲观锁
 ### 乐观锁
 
