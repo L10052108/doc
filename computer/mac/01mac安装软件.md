@@ -32,19 +32,16 @@ export PATH=$PATH:$MAVEN_HOME/bin
 
 ## 安装Homebrew
 
-\> mac os上安装软件常常需要依赖包，但对于新手来说，这是很麻烦的事情。
+>  mac os上安装软件常常需要依赖包，但对于新手来说，这是很麻烦的事情。
+>
+> 自己的安装wget的过程中，偶然间知道了Homebrew这款软件，号称是“macOS 不可或缺的套件管理器”，[Homebrew官网网站链接](http://brew.sh/index_zh-cn.html)。类似于Red hat的yum，Ubuntu的apt-get。
 
-\> 自己的安装wget的过程中，偶然间知道了Homebrew这款软件，号称是“macOS 不可或缺的套件管理器”，[Homebrew官网网站链接](http://brew.sh/index_zh-cn.html)。类似于Red hat的yum，Ubuntu的apt-get。
-
-\~~~~shell
-
+~~~~shell
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 打开终端窗口, 粘贴以上脚本。
-
 脚本会解释它的作用，然后在您的确认下执行安装。
-
-\~~~~
+~~~~
 
 如果电脑[安装失败](https://blog.csdn.net/txl910514/article/details/105880125)
 
@@ -52,7 +49,7 @@ export PATH=$PATH:$MAVEN_HOME/bin
 
 `/bin/zsh -c "$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)"`
 
-![](large/e6c9d24ely1h0jw2inrrtj20u00gsad3.jpg ":size=80%")
+![](large/e6c9d24ely1h0jw2inrrtj20u00gsad3.jpg ":size=60%")
 
 \- 安装任意包
 
