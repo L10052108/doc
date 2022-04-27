@@ -1,10 +1,10 @@
 
 
-资料来源：https://www.cnblogs.com/mrhelloworld/p/nacos1.html 
+资料来源：
+[Spring Cloud 系列之 Alibaba Nacos 注册中心（一）](https://www.cnblogs.com/mrhelloworld/p/nacos1.html)
 
 ## 介绍
-
-![img](https://mrhelloworld.com/resources/articles/spring/spring-cloud/nacos/nacos.png)
+![](large/e6c9d24ely1h1odrcdvn8j20h80b2mxi.jpg ':size=30%')
 
 　Nacos 是 Alibaba 公司推出的开源工具，用于实现分布式系统的服务发现与配置管理。英文全称 Dynamic Naming and Configuration Service，Na 为 Naming/NameServer 即注册中心，co 为 Configuration 即配置中心，Service 是指该注册/配置中心都是以服务为核心。服务（Service）是 Nacos 世界的一等公民。
 
