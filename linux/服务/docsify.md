@@ -1,8 +1,7 @@
 # docsify 使用教程
 
 资料来源：
-
-[docsify的配置+全插件列表](https://xhhdd.cc/index.php/archives/80/comment-page-1)
+[docsify的配置+全插件列表](https://xhhdd.cc/index.php/archives/80/comment-page-1)<br/>
 [北山湖臭皮匠](https://github.com/taoGod/extraordinarywen/tree/master/docs)
 
 ## 背景
@@ -13,13 +12,11 @@
 > 这将非常实用，如果只是需要快速的搭建一个小型的文档网站，或者不想因为生成的一堆 .html 文件“污染” commit 记录，只需要创建一个 index.html 就可以开始写文档而且直接部署在 GitHub Pages。
 
 所以我也就用它来做吧。这里先放上我的成品：<https://aopstudio.github.io/docs>
-
 以上资料资料来源：https://blog.csdn.net/weixin_30399055/article/details/97598957 
 
 - 很多官方文档也采用这个软件
 
   [apollo官网](https://www.apolloconfig.com/#/zh/)
-
   [hutool工具类](https://hutool.cn/docs/#/)
 
 
@@ -29,7 +26,7 @@
 
 - 需要安装npm环境
 
-参考 [node](linux/node.md)
+参考 [node](linux/服务/node.md)
 
 ### 安装软件
 
@@ -43,7 +40,7 @@
 
 ````Java
 # 初始化目录
-docsify init docs
+docsify init ./docs
 # 启动一个本地服务器，可以方便地实时预览效果。默认访问地址 http://localhost:3000
 docsify serve docs
 ````
@@ -56,8 +53,7 @@ docsify serve docs
 
 - .nojekyll 用于阻止 GitHub Pages 忽略掉下划线开头的文件
 
-
-原文链接：https://blog.csdn.net/sinat_42483341/article/details/111934332
+[原文链接](https://blog.csdn.net/sinat_42483341/article/details/111934332)
 
 文件的结构：
 
