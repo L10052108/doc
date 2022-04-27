@@ -116,6 +116,14 @@ docsify 使用并扩展了Markdown语法，使文档更具可读性。<br>
 
 </div>
 
+**显示红色：**
+
+~~~~shell
+<font color='red'> 字体颜色修改为红色 </font>
+~~~~
+<br/>
+<font color='red'> 字体颜色修改为红色 </font>
+
 ### 一个 MD 文件中嵌入另外一个文件
 
 可以使用下面的方式进行嵌入。
@@ -132,6 +140,7 @@ docsify 使用并扩展了Markdown语法，使文档更具可读性。<br>
 
 - [x] Maven+SpringBoot项目搭建
 - [ ] 优化**代码**
+
 
 **代码**
 
