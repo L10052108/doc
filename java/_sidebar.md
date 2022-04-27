@@ -10,6 +10,8 @@
   - [05_阻塞一个线程的方法](java/并发编程/05阻塞一个线程的方法.md)
   - [06_synchronized的使用](java/并发编程/06synchronized的使用.md)
   - [07_并发编程框架](java/并发编程/07并发编程框架.md)
+  - [08_AQS](java/并发编程/08AQS.md)
+  - [09_java锁详解](java/并发编程/09java锁详解.md)
 
 
 [//]: # (idea相关的内容)
