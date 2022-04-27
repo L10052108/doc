@@ -34,7 +34,7 @@ export PATH=$PATH:$MAVEN_HOME/bin
 
 >  mac os上安装软件常常需要依赖包，但对于新手来说，这是很麻烦的事情。
 >
-> 自己的安装wget的过程中，偶然间知道了Homebrew这款软件，号称是“macOS 不可或缺的套件管理器”，[Homebrew官网网站链接](http://brew.sh/index_zh-cn.html)。类似于Red hat的yum，Ubuntu的apt-get。
+>  自己的安装wget的过程中，偶然间知道了Homebrew这款软件，号称是“macOS 不可或缺的套件管理器”，[Homebrew官网网站链接](http://brew.sh/index_zh-cn.html)。类似于Red hat的yum，Ubuntu的apt-get。
 
 ~~~~shell
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -108,4 +108,43 @@ $ brew install wget
 就可以了，去试一下吧。
 
 另外据说MacPorts也有类似功能，我没有试过，有兴趣的可以看一下这篇文章[Mac OS X中MacPorts安装和使用](http://www.ccvita.com/434.html)
+
+## 安装node
+
+**访问官网下载安装包**
+
+访问nodejs官网，链接: [https://nodejs.org/en/](https://www.csdn.net/)，选择红色选框内的点击安装。
+LTS是稳定版。
+Current是最新版本，最新的功能特性都在这里面。
+
+![](large/e6c9d24ely1h1ocaxkzrdj20i108qmxx.jpg)
+
+**安装**
+
+安装过程略
+
+**验证**
+
+~~~~
+npm -v 
+node -v
+~~~~
+
+**环境变量**
+
+打开终端输入`open -e .bash_profile` 打开编辑器，添加一行代码
+
+~~~~shell
+打开之后添加一行代码：PATH=$PATH:/usr/local/bin/
+~~~~
+
+**重新打开终端**，输入node，就会进入node环境
+
+![](large/e6c9d24ely1h1ocey8auij208r037jrf.jpg)
+
+
+
+
+
+
 
