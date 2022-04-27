@@ -1,8 +1,12 @@
 资料来源：<br/>
 [最全Java锁详解：独享锁/共享锁+公平锁/非公平锁+乐观锁/悲观锁](https://mikechen.cc/6820.html)<br/>
 
-
 ![](large/e6c9d24ely1h1o9zxinodj20gk0hkgmi.jpg ':size=50%')
+
+![](large/e6c9d24ely1h1o9zxinodj20gk0hkgmi.jpg ':size=20%')
+
+
+
 ## 乐观锁 VS 悲观锁
 
 ### 乐观锁
@@ -11,7 +15,7 @@
 
 顾名思义，就是很乐观，每次去拿数据的时候都认为别人不会修改，所以不会上锁，但是在更新的时候会判断一下在此期间别人有没有去更新这个数据，可以使用版本号等机制。
 
-![](large/e6c9d24ely1h1oa2267bmj20b80am74d.jpg)
+![](large/e6c9d24ely1h1oa2267bmj20b80am74d.jpg ':size=50%')
 
 
 
@@ -36,7 +40,7 @@ CAS全称 Compare And Swap（比较与交换），是一种无锁算法。在不
 > MySQL悲观锁与乐观锁、行锁与表锁、共享锁<br/>
 > 比如上面提到的Java的同步,synchronized关键字的实现就是典型的悲观锁。<br/>
 
-![](large/e6c9d24ely1h1oa8efhouj20cg0apdg0.jpg)
+![](large/e6c9d24ely1h1oa8efhouj20cg0apdg0.jpg ':size=50%')
 
 **总之：**
 
@@ -48,7 +52,7 @@ CAS全称 Compare And Swap（比较与交换），是一种无锁算法。在不
 
 ### 公平锁
 
-![](large/e6c9d24ely1h1oadqy3ytj20kc0apmxb.jpg)
+![](large/e6c9d24ely1h1oadqy3ytj20kc0apmxb.jpg ':size=50%')
 
 就是很公平，在并发环境中，每个线程在获取锁时会先查看此锁维护的等待队列，如果为空，或者当前线程是等待队列的第一个，就占有锁，否则就会加入到等待队列中，以后会按照FIFO的规则从队列中取到自己。
 
@@ -60,7 +64,7 @@ CAS全称 Compare And Swap（比较与交换），是一种无锁算法。在不
 
 非公平锁的优点是可以减少唤起线程的开销，整体的吞吐效率高，因为线程有几率不阻塞直接获得锁，CPU不必唤醒所有线程。缺点是处于等待队列中的线程可能会饿死，或者等很久才会获得锁。
 
-![](large/e6c9d24ely1h1oaf2tahjj20ef0ajmxe.jpg)
+![](large/e6c9d24ely1h1oaf2tahjj20ef0ajmxe.jpg ':size=50%')
 
 
 
@@ -74,13 +78,13 @@ java jdk并发包中的ReentrantLock可以指定构造函数的boolean类型来�
 
 ### 独享锁
 
-![](large/e6c9d24ely1h1oahmerwkj20ch0aq74d.jpg)
+![](large/e6c9d24ely1h1oahmerwkj20ch0aq74d.jpg ':size=50%')
 
 是指该锁一次只能被一个线程所持有。
 
 ### 共享锁
 
-![](large/e6c9d24ely1h1oaifon5kj20b10aedg0.jpg)
+![](large/e6c9d24ely1h1oaifon5kj20b10aedg0.jpg ':size=50%')
 
 是指该锁可被多个线程所持有。
 
@@ -96,7 +100,7 @@ java jdk并发包中的ReentrantLock可以指定构造函数的boolean类型来�
 
 分段锁其实是一种锁的设计，并不是具体的一种锁，对于ConcurrentHashMap而言，其并发的实现就是通过分段锁的形式来实现高效的并发操作。
 
-![](large/e6c9d24ely1h1oal4n34aj21200rl0up.jpg)
+![](large/e6c9d24ely1h1oal4n34aj21200rl0up.jpg ':size=30%')
 
 我们以ConcurrentHashMap来说一下分段锁的含义以及设计思想，ConcurrentHashMap中的分段锁称为Segment，它即类似于HashMap（JDK7与JDK8中HashMap的实现）的结构，即内部拥有一个Entry数组，数组中的每个元素又是一个链表；同时又是一个ReentrantLock（Segment继承了ReentrantLock)。
 
