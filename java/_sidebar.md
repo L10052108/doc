@@ -1,5 +1,5 @@
 
-
+[//]: # (并发编程)
 - 并发编程
   - [01_多线程理论](java/并发编程/01多线程的理论.md)
   - [01_01多线程的原子性](java/并发编程/01.0多线程原子性.md)
@@ -10,15 +10,11 @@
   - [05_阻塞一个线程的方法](java/并发编程/05阻塞一个线程的方法.md)
   - [06_synchronized的使用](java/并发编程/06synchronized的使用.md)
   - [07_并发编程框架](java/并发编程/07并发编程框架.md)
-  - [并发编程](java/并发编程/多线程.md)
-  - [并发编程框架](java/并发编程/并发编程框架.md)
-  - [锁](java/并发编程/锁.md)
-  - [AQS和ReentrantLock](java/并发编程/AQS和ReentrantLock.md)
-  - [TheadLocal](java/并发编程/TheadLocal.md)
 
 
+[//]: # (idea相关的内容)
 - [idea](java/idea/README.md)
-  - [httpClient](java/idea/httpClient.md)
+  - [02_httpClient](java/idea/httpClient.md)
 
 - jdk8新特性
   - [00_介绍](java/jdk/00介绍.md)
@@ -27,6 +23,7 @@
   - [03_StreamAPI](java/jdk/03StreamAPI.md)
   - [04_Queue](java/jdk/04Queue.md)
 
+[//]: # (其他功能)
 - 其他功能
   - [Lombok的使用](java/其他/Lombok.md)
   - [为什么有的团队禁止使用Lombok](java/其他/禁止使用Lombok.md)
