@@ -8,6 +8,7 @@
   - [03_http优雅使用客户端retrofit](springboot/功能/03http客户端retrofit.md)
   - [04_springboot创建对象](springboot/功能/04springboot对象.md)
   - [05_Spring Bean的销毁](springboot/功能/05Spring_Bean的销毁.md)
+  - [06_springboot多环境配置](springboot/功能/06springboot多环境配置.md)
   - [99_springboot打包](springboot/功能/99springboot打包.md)
   - [springboot跨域](springboot/功能/springboot跨域.md)
   - [springboot日志](springboot/功能/日志.md)
