@@ -16,8 +16,8 @@
 
 
 [//]: # (idea相关的内容)
-- [idea](java/idea/README.md)
-  - [02_httpClient](java/idea/httpClient.md)
+- idea
+  - [01_httpClient](java/idea/httpClient.md)
 
 - jdk8新特性
   - [00_介绍](java/jdk/00介绍.md)

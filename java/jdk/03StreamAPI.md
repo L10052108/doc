@@ -1,11 +1,11 @@
-资料来源：
-[Java 8都出那么久了，Stream API了解下](http://www.macrozheng.com/#/technology/java_stream?id=%e4%bb%80%e4%b9%88%e6%98%afstream%ef%bc%9f)
-##  Stream API
+资料来源：<br/>
 
+[Java 8都出那么久了，Stream API了解下](http://www.macrozheng.com/#/technology/java_stream?id=%e4%bb%80%e4%b9%88%e6%98%afstream%ef%bc%9f)<br/>
+
+###  什么是Stream？
 
 > Java 8 引入了全新的 Stream API，可以使用声明的方式来处理数据，极大地方便了集合操作，让我们可以使用更少的代码来实现更为复杂的逻辑，本文主要对一些常用的Stream API进行介绍。
 
-### 什么是Stream？
 
 Stream（流）是一个来自数据源的元素队列，它可以支持聚合操作。
 
