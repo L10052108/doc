@@ -29,11 +29,11 @@
   - [02_springboot不同开发环境](springboot/condition/02.springboot不同环境.md)
 
 - mybatis
-  - [mybatis介绍](springboot/mybatis/mybatis介绍.md)
-  - [MyBatis类型处理器typeHandlers](springboot/mybatis/typeHanders.md)
-  - [MyBatis 中为什么不建议使用 where 1=1](springboot/mybatis/注意.md)
-  - [mybatis一对多](springboot/mybatis/mybatis一对多.md)
-  - [多数据源配置](springboot/mybatis/多数据源配置.md)
+  - [01_mybatis介绍](springboot/mybatis/mybatis介绍.md)
+  - [02_MyBatis类型处理器typeHandlers](springboot/mybatis/typeHanders.md)
+  - [03_MyBatis 中为什么不建议使用 where 1=1](springboot/mybatis/注意.md)
+  - [04_mybatis一对多](springboot/mybatis/mybatis一对多.md)
+  - [05_多数据源配置](springboot/mybatis/多数据源配置.md)
 
 - mybatis_puls
   - [CURD快速入门](springboot/mybatis_puls/CURD快速入门.md)
@@ -47,9 +47,11 @@
 
 [comment]: <> (sba笔记需要完善)
 - sba
-  - [Spring Boot Admin，贼好使](springboot/sba/Spring_Boot_Admin.md)
-  - [报警提醒和登录验证](springboot/sba/报警提醒和登录验证功能实现.md)
+  - [01_Spring Boot Admin，贼好使](springboot/sba/Spring_Boot_Admin.md)
+  - [02_报警提醒和登录验证](springboot/sba/报警提醒和登录验证功能实现.md)
 
 [comment]: <> (分布式定时任务)
-- [分布式定时任务](linux/定时任务/主流的分布式定时任务.md)
-- [xxl-job](springboot/xxl-job/README.md)
+- 分布式定时任务
+  - [01_主流的定时任务](springboot/定时任务/主流的分布式定时任务.md)
+  - xxljob
+    - [01_xxl-job](springboot/定时任务/xxl-job/01xxljob使用.md)
