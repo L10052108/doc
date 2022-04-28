@@ -258,7 +258,7 @@ public class ConditonDemo {
 
 !>  当设置为**prototype**多例时：每次连接请求，都会生成一个bean实例，也会导致一个问题，当请求数越多，性能会降低，因为创建的实例，导致GC频繁，GC时长增加。
 
-需要考虑对象的回收
+需要考虑[对象的回收](springboot/功能/05Spring Bean的销毁.md)
 
 ###  恶汉式 & 懒汉式
 
