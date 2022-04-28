@@ -7,7 +7,7 @@
 
 file— new moduel — maven — 选择jdk
 
-![](file/Apr-28-2022%2013-24-12.gif ':size=60%')
+![](file/Apr-28-2022%2013-24-12.gif ':size=40%')
 
 在项目pom文件加入模块依赖(版本管理)
 

@@ -15,9 +15,8 @@
 > 2.需要下载单独安装包安装到系统中。<br/>
 
 使用举例
-![httpClinent](file/httpClinent.gif)
 
-
+![httpClinent](file/httpClinent.gif  ':size=70%')
 
 ## 简单使用
 
@@ -192,7 +191,7 @@ client.test("Headers option exists", function() {
 
 - 实际效果
 
-![Mar-16-2022_13-32-21](file/Mar-16-2022_13-32-21.gif)
+![Mar-16-2022_13-32-21](file/Mar-16-2022_13-32-21.gif ':size=50%')
 
 ### 响应处理脚本
 

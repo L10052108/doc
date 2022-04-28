@@ -23,7 +23,7 @@
 - jdk8新特性
   - [00_介绍](java/jdk/00介绍.md)
   - [01_lambda](java/jdk/01lambda.md)
-  - [02_List去重](java/jdk/02List去重.md)
+  - [02_List去重](java/jdk/02List去重.md) 
   - [03_StreamAPI](java/jdk/03StreamAPI.md)
   - [04_Queue](java/jdk/04Queue.md)
 
