@@ -17,7 +17,8 @@
 
 [//]: # "idea相关的内容"
 - idea
-  - [01_httpClient](java/idea/httpClient.md)
+  - [01_httpClient](java/idea/01httpClient.md)
+  - [02_idea创建springboot项目](java/idea/02idea创建springboot项目.md)
 
 - jdk8新特性
   - [00_介绍](java/jdk/00介绍.md)
