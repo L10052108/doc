@@ -8,7 +8,7 @@
 file— new moduel — maven — 选择jdk
 
 
-![](file/471222.gif ':size=40%')
+![](file/471222.gif ':size=80%')
 
 
 
