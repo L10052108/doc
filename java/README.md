@@ -15,3 +15,7 @@ java - 工具<br>
 
 未完成<br/>
 [学习笔记：ThreadLocal使用及注意事项](https://www.jianshu.com/p/165e491e034a)
+
+设计模式总结
+[归斯君的博客](https://www.cnblogs.com/EthanWong/)
+[学习笔记：设计模式之策略模式](https://www.jianshu.com/p/b4d7f0411cbd)
