@@ -7,9 +7,9 @@
 
 file— new moduel — maven — 选择jdk
 
-![](file/Apr-28-2022%2013-24-12.gif ':size=40%')
 
-!> 无法加在springboot配置（后面有时间完善）
+![](file/471222.gif ':size=40%')
+
 
 
 
