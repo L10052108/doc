@@ -23,7 +23,7 @@
 
 - 举例
 
-![](https://tva1.sinaimg.cn/large/e6c9d24egy1h1pj937dalj20q20gsq4c.jpg ':size=40%')
+![](large/e6c9d24egy1h1pj937dalj20q20gsq4c.jpg ':size=40%')
 
 
 
@@ -39,7 +39,7 @@ bootstrap.yml > application.yml > application.properties
 
 我们可以看到在idea中bootstrap.yml文件的格式yml，这样的标识无法启动时加载。
 
-![](https://tva1.sinaimg.cn/large/e6c9d24egy1h1pjc680mdj20de07u74j.jpg)
+![](large/e6c9d24egy1h1pjc680mdj20de07u74j.jpg)
 
 无法加载的原因是因为bootstrap.yml配置是spring cloud中带有的功能，当你只使用了springboot组件启动项目时，是无法自动加载的。
 

@@ -1,13 +1,14 @@
-资料来源: https://www.toutiao.com/article/7064151088441655847/?log_from=e8ba6d1ccdba8_1646702002454
+资料来源: <br/>
+[Spring Cloud Alibaba—Nacos路由策略之保护阈值](https://www.toutiao.com/article/7064151088441655847/?log_from=e8ba6d1ccdba8_1646702002454)
 
 在 Nacos 的路由策略中有 3 个比较重要的内容：**权重**、**保护阈值**和**就近访问**。因为这 3 个内容都是彼此独立的，所以今天我们就单独拎出“保护阈值”来详细聊聊。
 
-## 保护阈值
+### 保护阈值
 
 **保护阈值（ProtectThreshold）：为了防止因过多实例故障，导致所有流量全部流入剩余健康实例，继而造成流量压力将剩余健康实例被压垮形成雪崩效应。应将健康保护阈值定义为⼀个 0 到 1 之间的浮点数。当域名健康实例数占总服务实例数的比例小于该值时，无论实例是否健康，都会将这个（健康或不健康的）实例返回给客户端。这样做虽然损失了⼀部分流量，但是保证了集群中剩余健康实例能正常工作。**
 
-也就是说，保护阈值是设置集群中健康实例占比允许的最小值，它需要设置一个 0-1 的浮点值，默认值为 0，当集群中的健康实例占比小于设置的保护阈值时，就会触发阈值保护功能。保护阈值可在服务详情中查询和设置，如下图所示：
-![](https://tva1.sinaimg.cn/large/e6c9d24ely1h0jnzoxutqj214v0u0wgh.jpg)
+也就是说，保护阈值是设置集群中健康实例占比允许的最小值，它需要设置一个 0-1 的浮点值，默认值为 0，当集群中的健康实例占比小于设置的保护阈值时，就会触发阈值保护功能。保护阈值可在服务详情中查询和设置，如下图所示：<br/>
+![](large/e6c9d24ely1h0jnzoxutqj214v0u0wgh.jpg ':size=50%')
 
 ### 如何理解保护阈值？
 
@@ -21,34 +22,34 @@
 
 ### 设置保护阈值
 
-我们可以通过“编辑服务”来设置保护阈值，如下图所示：
-![](https://tva1.sinaimg.cn/large/e6c9d24ely1h0jnzye1yxj21750u0wgh.jpg)
+我们可以通过“编辑服务”来设置保护阈值，如下图所示：<br/>
+![](large/e6c9d24ely1h0jnzye1yxj21750u0wgh.jpg ':size=50%')<br/>
 
 ### 触发保护阈值
 
 接下来我们创建一个服务测试一下保护阈值的功能，在创建的服务中添加两个实例，如下图所示：
-![](https://tva1.sinaimg.cn/large/e6c9d24ely1h0jo0cmtwhj21sz0o7dih.jpg)
-![](https://tva1.sinaimg.cn/large/e6c9d24ely1h0jo0ikbxnj214v0u0ac2.jpg)
+![](large/e6c9d24ely1h0jo0cmtwhj21sz0o7dih.jpg ':size=70%')<br/>
+![](large/e6c9d24ely1h0jo0ikbxnj214v0u0ac2.jpg ':size=70%')<br/>
 
 默认情况下服务实例都是健康的，接下来我们将保护阈值设置为 0.8，也就是健康实例的最低要求是 80%，如果健康实例占比小于此值就会触发保护阈值，如下图所示：
-![](https://tva1.sinaimg.cn/large/e6c9d24ely1h0jo0r4xw3j214g0u0764.jpg)
+![](large/e6c9d24ely1h0jo0r4xw3j214g0u0764.jpg ':size=70%')<br/>
 
 当所有节点都健康时，观察服务列表页面，可以看出并未触发保护阈值的功能，如下图所示：
-![](https://tva1.sinaimg.cn/large/e6c9d24ely1h0jo0xpki3j21sz0oytbo.jpg)
-此时我们手动停止一个服务实例，如下图所示：
-![](https://tva1.sinaimg.cn/large/e6c9d24ely1h0jo11zo8vj214m0u0q4t.jpg)
+![](large/e6c9d24ely1h0jo0xpki3j21sz0oytbo.jpg ':size=70%')<br/>
+此时我们手动停止一个服务实例，如下图所示：<br/>
+![](large/e6c9d24ely1h0jo11zo8vj214m0u0q4t.jpg ':size=70%')<br/>
 这是健康实例的占比就从 100%，下降到了 50%，小于了设置的保护阈值 0.8（80%），接下来返回服务列表页面，可以看到保护阈值功能被触发了：
-![](https://tva1.sinaimg.cn/large/e6c9d24ely1h0jo1dijsdj21t10otad0.jpg)
+![](large/e6c9d24ely1h0jo1dijsdj21t10otad0.jpg ':size=70%')<br/>
 此时，我们再去访问服务就会看到，部分请求会转发到非健康实例，也就是访问会出错，如下图所示：
-![](https://tva1.sinaimg.cn/large/e6c9d24ely1h0jo1m94luj21ei0d4gos.jpg)
+![](large/e6c9d24ely1h0jo1m94luj21ei0d4gos.jpg ':size=70%')<br/>
 ### 未触发保护阈值
 
 接下来我们降低保护阈值，将保护阈值设置为 0.3，也就是健康实例占比最低要求是 30%，否则会触发阈值保护，如下图所示：
-![](https://tva1.sinaimg.cn/large/e6c9d24ely1h0jo1r2phzj214n0u040e.jpg)
+![](large/e6c9d24ely1h0jo1r2phzj214n0u040e.jpg ':size=70%')<br/>
 而此时因为我们健康实例占比是 50%，大于设置的阈值保护 0.3，所以就不会触发阈值保护，这点可以在服务列表中观察到：
-![](https://tva1.sinaimg.cn/large/e6c9d24ely1h0jo1v12elj21sz0npjuh.jpg)
+![](large/e6c9d24ely1h0jo1v12elj21sz0npjuh.jpg ':size=70%')<br/>
 当未触发保护阈值时，Nacos 会把所有请求都转发到健康的实例上，所以每次都能正常的访问服务，执行效果如下图所示：
-![](https://tva1.sinaimg.cn/large/e6c9d24ely1h0jo1zebvpj21ek064mye.jpg)
+![](large/e6c9d24ely1h0jo1zebvpj21ek064mye.jpg ':size=70%')
 ### 总结
 
 保护阈值是为了防止因过多实例故障，导致所有流量全部流入剩余健康实例，继而造成流量压力将剩余健康实例被压垮形成雪崩效应。它的默认值是 0，取值范围应该是 0-1 的浮点数。此值是定义集群中允许健康实例占比的最小值，如果实际健康服务占比小于或等于此值，就会触发保护阈值，那么 Nacos 就会将全部实例：健康实例 + 非健康实例全部返回给调用者，而当保护阈值未触发时，Nacos 只会把健康实例返回给调用者。
