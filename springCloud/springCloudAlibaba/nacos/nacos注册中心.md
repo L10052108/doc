@@ -8,7 +8,9 @@
 
 我们创建聚合项目来讲解 Nacos，首先创建一个 pom 父工程。
 
-![](https://tva1.sinaimg.cn/large/e6c9d24ely1h0jk223ifhj20oc0ei750.jpg 'size=60%')创建过程省略
+![](large/e6c9d24ely1h0jk223ifhj20oc0ei750.jpg 'size=50%')
+
+创建过程省略
 
 >  service作为服务端<br/>
 >
@@ -371,7 +373,7 @@ public class NacosServiceApplication {
 
 　　刷新 Nacos 服务器，可以看到服务已注册至 Nacos。
 
-![nacos注册中心](https://tva1.sinaimg.cn/large/e6c9d24ely1h0jkd8kajkj21ko0ksabr.jpg ':size=60%')
+![nacos注册中心](large/e6c9d24ely1h0jkd8kajkj21ko0ksabr.jpg ':size=60%')
 
 
 ## 客户端
@@ -564,7 +566,7 @@ public class ProductDemo01 {
 
 运行效果
 
-![](https://tva1.sinaimg.cn/large/e6c9d24ely1h0jkjt5e20j222s0biadh.jpg ':size=80%')
+![](large/e6c9d24ely1h0jkjt5e20j222s0biadh.jpg ':size=80%')
 
 ### LoadBalancerClient
 
