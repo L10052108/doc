@@ -8,7 +8,7 @@
 
 我们创建聚合项目来讲解 Nacos，首先创建一个 pom 父工程。
 
-![](large/e6c9d24ely1h0jk223ifhj20oc0ei750.jpg 'size=50%')
+![nacos注册中心](large/e6c9d24ely1h0jk223ifhj20oc0ei750.jpg ':size=50%')
 
 创建过程省略
 

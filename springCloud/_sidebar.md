@@ -10,7 +10,7 @@
     - [01_nacos安装](springCloud/springCloudAlibaba/nacos/nacos安装.md)
     - [02_nacos配置](springCloud/springCloudAlibaba/nacos/nacos配置.md)
     - [03_nacos注册中心](springCloud/springCloudAlibaba/nacos/nacos注册中心.md)
-    - [04_nacos配置中心](springCloud/springCloudAlibaba/nacos/nacos配置中心.md)
+    - [04_配置中心](springCloud/springCloudAlibaba/nacos/nacos配置中心.md)
     - [05_nacos其他](springCloud/springCloudAlibaba/nacos/nacos其他.md)
 
 - ELK

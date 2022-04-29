@@ -1,5 +1,4 @@
-资料来源：
-
+资料来源：<br/>
 [Spring Cloud 系列之 Alibaba Nacos 配置中心](https://mrhelloworld.com/nacos-config/)
 
 
@@ -12,7 +11,7 @@
 
 - 打开配置列表
 
-![](large/e6c9d24ely1h1qfcbdwg7j22rk0tutdp.jpg ':size =75%')
+![](large/e6c9d24ely1h1qfcbdwg7j22rk0tutdp.jpg ':size=75%')
 
 - 配置
 
@@ -20,7 +19,7 @@
 
 主文件配置
 
-~~~~java
+```java
 server:
   port: 8003
   servlet:
@@ -34,11 +33,11 @@ server:
       min-spare: 30
       # tomcat最大线程数，默认为200
       max: 200
-~~~~
+```
 
 mybatis配置
 
-~~~~java
+```java
 server:
   port: 8003
   servlet:
@@ -52,7 +51,7 @@ server:
       min-spare: 30
       # tomcat最大线程数，默认为200
       max: 200
-~~~~
+```
 
 ### 配置服务
 
@@ -68,19 +67,19 @@ server:
 
 pom中增加依赖的jar
 
-~~~~Java
+```java
 <!-- spring cloud alibaba nacos config 依赖 -->
 <dependency>
     <groupId>com.alibaba.cloud</groupId>
     <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
 </dependency>
-~~~~
+```
 
 ### 配置
 
 修改*bootstrap.yml*文件
 
-```Java
+```java
 spring:
   cloud:
     nacos:
@@ -103,11 +102,54 @@ spring:
 
 
 
+
+
 多文件配置
 
 > - 通过配置 `spring.cloud.nacos.config.ext-config[n].data-id` 来支持多个配置集。
 > - 通过配置 `spring.cloud.nacos.config.ext-config[n].group` 来定制配置组。如果未指定，则使用默认组。
 > - 通过配置 `spring.cloud.nacos.config.ext-config[n].refresh` 来控制该配置集是否支持配置的动态刷新。默认情况下不支持。
+
+?> 此时可以启动服务器。和本地的配置的效果相同
+
+
+
+### 获取配置
+
+演示代码
+
+```java
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import java.util.HashMap;
+import java.util.Map;
+
+@RefreshScope
+@RestController
+public class ConfigController {
+
+    @Value("${my.date}")
+    private Integer date;
+
+    @GetMapping("/config")
+    public Map<String, Object> getConfig() {
+        Map<String, Object> configMap = new HashMap();
+        configMap.put("date", date);
+        return configMap;
+    }
+}
+```
+
+使用 *Spring* 的 `@Value` 注解来获取配置信息，`${}` 中对应 *Nacos* 配置中心配置内容的 *key*，:后跟默认值。
+
+　　并且通过 Spring Cloud 原生注解 @RefreshScope 实现配置自动更新。
+
+*展示效果*
+
+![](large/Apr-29-2022_13-26-42.gif ':size=50%')
 
 
 
