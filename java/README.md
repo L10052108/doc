@@ -12,9 +12,10 @@ java - 设计模式<br>
 java - 工具<br>
 
 
-
 未完成<br/>
 [学习笔记：ThreadLocal使用及注意事项](https://www.jianshu.com/p/165e491e034a)
+[面试官：不懂ThreadLocal，还谈什么并发编程？](https://www.jianshu.com/p/905071d841b7)
+[Java多线程](https://www.jianshu.com/p/b1f6d38d921d)
 
 设计模式总结<br/>
 [归斯君的博客](https://www.cnblogs.com/EthanWong/)<br/>

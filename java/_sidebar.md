@@ -29,6 +29,7 @@
 
 [//]: # "其他功能"
 - 其他功能
+  - [01_java的测试类(待完善)](java/其他/01java的测试类.md)
   - [Lombok的使用](java/其他/Lombok.md)
   - [为什么有的团队禁止使用Lombok](java/其他/禁止使用Lombok.md)
 
