@@ -1,0 +1,2 @@
+资料来源：<br/>
+[如何在Spring Boot应用启动之后立刻执行一段逻辑](https://www.toutiao.com/article/6833566023392690699/?app=news_article&timestamp=1651680983&use_new_style=1&req_id=202205050016220101581651511F7EB1CC&group_id=6833566023392690699&wxshare_count=1&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_android&utm_campaign=client_share&share_token=6adb844a-83a3-4c70-b38c-669ce9113d61)<br/>

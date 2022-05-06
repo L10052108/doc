@@ -20,6 +20,7 @@
 - Dubbo
   - [01_技术架构演变](springCloud/dubbo/01技术架构演变.md)
   - [02_springboot集成dubbo](springCloud/dubbo/02springboot集成dubbo.md)
+  - [03_注册中心版](springCloud/dubbo/03注册中心版.md)
 
 - 注册中心
   - zookeeper

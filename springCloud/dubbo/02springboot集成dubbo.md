@@ -4,8 +4,9 @@
 [dubbo-spring-boot-starter【github】](https://github.com/alibaba/dubbo-spring-boot-starter )<br/>
 
 
-
 ## dubbo
+
+[代码地址](https://gitee.com/L10052108/springboot_project/tree/dubbo-alone/)
 
 Apache Dubbo 是一款高性能、轻量级的开源服务框架
 
@@ -504,6 +505,8 @@ public class ConsumerApplication {
 ```
 
 ### 测试
+
+[代码地址](https://gitee.com/L10052108/springboot_project/tree/dubbo-alone/)
 
 先启动provide再启动consumer
 
