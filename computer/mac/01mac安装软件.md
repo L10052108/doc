@@ -19,7 +19,11 @@ export PATH
 export CLASSPATH
 ~~~~
 
-!>  根据自己的情况，修改配置JAVA_HOME的文件路径，一般只要修改版本号
+!>  环境变量生效 `source .bash_profile`<br/>
+根据自己的情况，修改配置JAVA_HOME的文件路径，一般只要修改版本号
+
+
+
 
 ## 安装maven
 
