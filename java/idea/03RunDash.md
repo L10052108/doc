@@ -4,13 +4,14 @@
 
 ###  显示效果
 
-![](https://tva1.sinaimg.cn/large/e6c9d24ely1h2005c2uo1j20zs069aby.jpg)
+![](file/e6c9d24ely1h2005c2uo1j20zs069aby.jpg)
 
 点击IDEA上面工具栏`View---Tool Windows---Run Dashboard` 即可打开界面，
+![](file/activateRunDashboard.gif)
 
 如果Tool Windows的子选项里没有Run Dashboard，可以在工程目录下找.idea文件夹下的workspace.xml，在其中增加如下组件
 
-![](https://tva1.sinaimg.cn/large/e6c9d24ely1h2006jeyftj20fg05ymxe.jpg)
+![](file/e6c9d24ely1h2006jeyftj20fg05ymxe.jpg)
 
 **Workspace.xml**
 
