@@ -2,7 +2,8 @@
 
 [项目代码](https://gitee.com/L10052108/springboot_project/tree/modus-nacos/)
 
-资料来源：https://www.cnblogs.com/mrhelloworld/p/nacos1.html
+资料来源：<br/>
+[Spring Cloud 系列之 Alibaba Nacos 注册中心（一）](https://www.cnblogs.com/mrhelloworld/p/nacos1.html)
 
 ## 创建项目
 

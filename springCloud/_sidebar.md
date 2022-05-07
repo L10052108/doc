@@ -4,7 +4,7 @@
   - [01_Spring Cloud介绍](springCloud/01SpringCloud介绍.md)
   - [02_springcloud架构介绍](springCloud/02springcloud架构介绍.md)
   - [03_springCloudAlibaba介绍](springCloud/springCloudAlibaba/介绍.md)
-  
+
 - nacos
   - [01_nacos安装](springCloud/nacos/nacos安装.md)
   - [02_nacos配置](springCloud/nacos/nacos配置.md)
@@ -26,4 +26,4 @@
   - zookeeper
     - [01_zookeeper安装](springCloud/注册中心/zookeeper/01zookeeper安装.md)
   - eureka
-    - []()
+    - [01_eureka作为注册中心](springCloud/注册中心/eureka/01注册中心.md)
