@@ -10,6 +10,8 @@
   - [05_Spring Bean的销毁](springboot/功能/05Spring_Bean的销毁.md)
   - [06_springboot多环境配置](springboot/功能/06springboot多环境配置.md)
   - [07_springboot加载顺序](springboot/功能/07springboot加载顺序.md)
+  - [08_Spring Boot应用启动之后立刻执行一段逻辑](springboot/功能/08Springboot应用启动之后立刻执行一段逻辑.md)
+  - [09_springboot返回json](springboot/功能/09springboot返回json.md)
   - [99_springboot打包](springboot/功能/99springboot打包.md)
   - [springboot跨域](springboot/功能/springboot跨域.md)
   - [springboot日志](springboot/功能/日志.md)
