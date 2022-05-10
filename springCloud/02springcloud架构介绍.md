@@ -14,7 +14,8 @@ SpringCloud为开发人员提供了快速构建分布式系统架构的工具，
 
 ## 整体架构
 
-![](large/e6c9d24egy1h0prahn6ebj20ze0ia75c.jpg)
+![](large/e6c9d24egy1h0prahn6ebj20ze0ia75c.jpg ':size=50%')
+
 
 ## SpringCloud的版本关系
 

@@ -61,3 +61,6 @@ public class FeignRequestInterceptor implements RequestInterceptor {
 
 ![](large/e6c9d24ely1h239px1dlyj21ts0swthr.jpg ':size=70%')
 
+**下一篇：**
+
+[AlibabaSentinel服务哨兵](springCloud/服务哨兵/AlibabaSentinel服务哨兵.md)
