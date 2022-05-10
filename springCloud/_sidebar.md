@@ -27,3 +27,7 @@
     - [01_zookeeper安装](springCloud/注册中心/zookeeper/01zookeeper安装.md)
   - eureka
     - [01_eureka作为注册中心](springCloud/注册中心/eureka/01注册中心.md)
+
+
+- feign
+  - [01_feign声明式服务调用](springCloud/feign/01声明式服务调用.md)
