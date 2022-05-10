@@ -29,5 +29,6 @@
     - [01_eureka作为注册中心](springCloud/注册中心/eureka/01注册中心.md)
 
 
-- feign
-  - [01_feign声明式服务调用](springCloud/feign/01声明式服务调用.md)
+- feign&ribbon
+  - [01_feign声明式服务调用](springCloud/feign&ribbon/01声明式服务调用.md)
+  - [02_ribbon的使用](springCloud/feign&ribbon/02ribbon的使用.md)
