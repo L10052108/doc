@@ -167,3 +167,4 @@ product-service:
 至此，无注册中心版本已经可以使用了
 
 ![](large/e6c9d24ely1h23620kjbkj21qc0f4tdq.jpg ':size=70%')
+
