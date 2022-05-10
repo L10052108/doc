@@ -168,3 +168,6 @@ product-service:
 
 ![](large/e6c9d24ely1h23620kjbkj21qc0f4tdq.jpg ':size=70%')
 
+!> 关闭 Eureka 注册中心，服务提供者由于无法连接至注册中心所以会报连接异常。但是服务是可以正常可消费的，所以目前使用的是点对点的方式来进行调用的。
+
+![](large/e6c9d24ely1h23abr2vpyj21pr0u0anp.jpg ':size=80%')
