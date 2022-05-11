@@ -57,7 +57,7 @@ Spring Boot 提供了一套多环境配置机制，称为：**Profile-specific P
 
 以上，我们就完成了多环境配置，运行程序，结果如下：
 
-![img](http://upload-images.jianshu.io/upload_images/2222997-4006b955d49b827e.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200/format/webp)
+![](large/e6c9d24ely1h24fw8an1nj20xc063q4t.jpg)
 
 run
 

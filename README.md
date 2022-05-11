@@ -9,7 +9,8 @@
   [springboot](springboot/) <br/>
   [springCloud](springCloud/) <br/>
   [场景应用](应用/) <br/>
-  [数据库](数据库/) <br/>
+  [数据库](关系型数据库/) <br/>
+  [nosql](nosql/) <br/>
   [面试](faceNotes/) <br/>
   [其他](computer/) <br/>
 
