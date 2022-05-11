@@ -1,4 +1,7 @@
+资料来源：<br/>
+[Maven国内镜像源](https://blog.csdn.net/weixin_40292834/article/details/111316732)
 
+[SpringBlade](https://gitee.com/smallc/SpringBlade/blob/master/pom.xml)
 
 ## maven
 
@@ -95,4 +98,27 @@
 
 ~~~~
 
-资料来源：https://blog.csdn.net/weixin_40292834/article/details/111316732
+### springboot指定maven仓库
+
+~~~~xml
+    <repositories>
+        <repository>
+            <id>aliyun-repos</id>
+            <url>https://maven.aliyun.com/nexus/content/groups/public/</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>aliyun-plugin</id>
+            <url>https://maven.aliyun.com/nexus/content/groups/public/</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
+~~~~
+

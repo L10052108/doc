@@ -12,7 +12,8 @@
   [数据库](关系型数据库/) <br/>
   [nosql](nosql/) <br/>
   [面试](faceNotes/) <br/>
-  [其他](computer/) <br/>
+  [计算机](computer/) <br/>
+  [杂谈](other/)<br/>
 
 ## 帮助
   [码云](https://gitee.com/L10052108/doc) <br/>

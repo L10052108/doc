@@ -51,8 +51,8 @@
   - [观察者模式](java/设计模式/观察者模式.md)
 
 - 工具
-  - [16个Redis常见使用场景](java/工具/redis.md)
-  - [maven](java/工具/maven.md)
+  - [01_maven](java/工具/maven.md)
+  
 
 - docker
   - [01_docker介绍](java/docker/01docker介绍.md)
