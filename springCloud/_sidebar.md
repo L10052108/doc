@@ -64,6 +64,5 @@
 
 - 链路追踪
   - [01_Sleuth链路追踪](springCloud/链路追踪/01Sleuth链路追踪.md)
-
 - 服务哨兵
- - [01_Alibaba Sentinel服务哨兵](springCloud/服务哨兵/AlibabaSentinel服务哨兵.md)
+  - [01_Alibaba Sentinel服务哨兵](springCloud/服务哨兵/AlibabaSentinel服务哨兵.md)
