@@ -1,8 +1,6 @@
 
-
-
-- nosql
-  - [01_nosql介绍](nosql/01_nosql介绍.md)
+- 杂谈
+  - [01_服务器备案](other/01服务器备案.md)
   
 
 
