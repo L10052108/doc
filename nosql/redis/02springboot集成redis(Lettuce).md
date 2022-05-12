@@ -6,10 +6,11 @@
 [Spring Boot(三)：Spring Boot 中 Redis 的使用](http://www.ityouknow.com/springboot/2016/03/06/spring-boot-redis.html)<br/>[springboot集成redis (Lettuce)](https://blog.csdn.net/u014082714/article/details/105294268?utm_medium=distribute.pc_feed_404.none-task-blog-2defaultBlogCommendFromBaidu~default-7.nonecase)
 
 ## springboot集成Redis方案
+参考代码：
 
 使用 Java 操作 Redis 的方案很多，Jedis 是目前较为流行的一种方案，除了 Jedis ，还有很多其他解决方案，如下：
 
-![](https://tva1.sinaimg.cn/large/e6c9d24egy1h25lm5fry3j20if0gdjs5.jpg)
+![](large/e6c9d24egy1h25lm5fry3j20if0gdjs5.jpg)
 
 在 Spring Boot 中，默认集成的 Redis 就是 Spring Data Redis，默认底层的连接池使用了 lettuce ，开发者可以自行修改为自己的熟悉的，例如 Jedis。
 
