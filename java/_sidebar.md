@@ -31,8 +31,10 @@
 [//]: # "其他功能"
 - 其他功能
   - [01_java的测试类(待完善)](java/其他/01java的测试类.md)
-  - [Lombok的使用](java/其他/Lombok.md)
-  - [为什么有的团队禁止使用Lombok](java/其他/禁止使用Lombok.md)
+  - 02_Lombok
+    - [Lombok的使用](java/其他/Lombok.md)
+    - [为什么有的团队禁止使用Lombok](java/其他/禁止使用Lombok.md)
+  - [03_序列化](java/其他/03序列化的使用.md)
 
 - 设计模式
   - [00设计模式](java/设计模式/00快速记住23种设计模式.md)

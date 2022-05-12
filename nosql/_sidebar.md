@@ -1,11 +1,13 @@
 
 
-
+[//]: <> (非关系型数据库)
 - nosql
   - [01_nosql介绍](nosql/01_nosql介绍.md)
-  - redis
+  - 02_redis
     - [01_redis介绍](nosql/redis/01redis介绍.md)
-    - [02_springboot集成redis.md](nosql/redis/02springboot集成redis.md)
+    - [02_springboot集成redis](nosql/redis/02springboot集成redis.md)
+    - [03_redis的十六种使用场景](nosql/redis/03redis的十六种使用场景.md)
+    - [04_redis位图](nosql/redis/04redis位图.md)
   - mongoDB
     - [01_mongoDB介绍](nosql/MongoDB/01_mongoDB介绍.md)
 
