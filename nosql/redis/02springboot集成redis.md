@@ -948,7 +948,6 @@ public class SpringDataRedisApplicationTests {
 
 到此处，介绍完成springboot-data的方法
 
-## jedis pool
 
 
 
