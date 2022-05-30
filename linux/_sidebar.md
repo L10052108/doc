@@ -3,6 +3,7 @@
   - 服务安装
     - [01_linux可视化工具](linux/服务/01linux可视化工具.md)
     - [02_acme.sh实现免费自动续期的https](linux/服务/02acme.sh实现免费自动续期的https.md)
+    - [03_私服nexus](linux/服务/03nexus.md)
     - [jdk](linux/服务/jdk.md)
     - [node](linux/服务/node.md)
     - [mysql](linux/服务/mysql.md)
