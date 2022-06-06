@@ -38,6 +38,7 @@
   - [03_MyBatis 中为什么不建议使用 where 1=1](springboot/mybatis/注意.md)
   - [04_mybatis一对多](springboot/mybatis/mybatis一对多.md)
   - [05_多数据源配置](springboot/mybatis/多数据源配置.md)
+  - [06_mybatis的sql](springboot/mybatis/mybatis的sql.md)
 
 - mybatis_puls
   - [CURD快速入门](springboot/mybatis_puls/CURD快速入门.md)

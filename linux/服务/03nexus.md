@@ -60,11 +60,7 @@ mvn deploy:deploy-file -DgroupId=com.alibaba.platform.shared -DartifactId=ocean.
 - -DpomFile=xxxxxx 对应的是 pom 文件路径
 
 查询上传的结果
-![](https://tva1.sinaimg.cn/large/e6c9d24ely1h2qf70bu8qj219w0apjsi.jpg)
-
-
-
-
+![](large/e6c9d24ely1h2qf70bu8qj219w0apjsi.jpg)
 
 pom中修改
 
