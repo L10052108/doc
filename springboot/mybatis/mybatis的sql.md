@@ -6,7 +6,53 @@
 
 
 
-### mybatis union
+
+
+### 批量写入
+
+- 接口
+
+~~~~java
+public interface WjVestJobDetailMapper extends BaseMapper<WjVestJobDetail> {
+
+
+    void insertList(List<WjVestJobDetail> list);
+
+}
+~~~~
+
+- 配置文件
+
+~~~~xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="xyz.guqing.creek.mapper.WjVestJobDetailMapper">
+
+    <insert id="insertList" parameterType="xyz.guqing.creek.model.entity.WjVestJobDetail">
+        insert into wj_vest_job_detail ( comm_id, user_id,
+                                        action_type, job_status, fail_reason,
+                                        plan_time, execute_time, execute_id)
+        values
+        <foreach collection ="list" item="detail" separator =",">
+               ( #{detail.commId,jdbcType=BIGINT}, #{detail.userId,jdbcType=BIGINT},
+                #{detail.actionType,jdbcType=TINYINT}, #{detail.jobStatus,jdbcType=TINYINT}, #{detail.failReason,jdbcType=VARCHAR},
+                #{detail.planTime,jdbcType=TIMESTAMP}, #{detail.executeTime,jdbcType=TIMESTAMP}, #{detail.executeId,jdbcType=BIGINT}
+                )
+        </foreach >
+    </insert>
+
+</mapper>
+~~~~
+
+### in
+
+~~~~xml
+ <foreach collection="topicIds" item="id" open="(" close=")" separator=",">
+            #{id}
+ </foreach>
+~~~~
+
+### union
 
 ~~~~sql
 	<foreach collection="nameList" item="name" separator="union">
