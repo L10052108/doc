@@ -13,9 +13,9 @@
 
   比如Linux最新版本
 
-  ![根据实际情况进行修改](large/e6c9d24ely1h1ewfe8pp7j20yp0u043a.jpg)
+  ![根据实际情况进行修改](large/e6c9d24ely1h1ewfe8pp7j20yp0u043a.jpg ':size=50%')
 
-  ​
+` wget https://github.com/docker/compose/releases/download/v2.6.0/docker-compose-linux-x86_64 `
 
 通过下载然后文件上传后执行，放到指定的位置
 
@@ -23,23 +23,18 @@
 
 将可执行权限应用于二进制文件：
 
-    sudo chmod +x /usr/local/bin/docker-compose
+   ` sudo chmod +x /usr/local/bin/docker-compose`
 
 创建软链：
 
-    sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+    `sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose`
 
 测试是否安装成功：
 
     docker-compose --version
 检查执行效果
 
-![](large/e6c9d24egy1h1ey0v9nonj20mk02emxb.jpg ':size=80%')
-
-
-
-
-
+![](large/e6c9d24egy1h1ey0v9nonj20mk02emxb.jpg ':size=60%')
 
 
 ###  yum 方式安装
