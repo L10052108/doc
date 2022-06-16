@@ -15,19 +15,21 @@
 
   ![根据实际情况进行修改](large/e6c9d24ely1h1ewfe8pp7j20yp0u043a.jpg ':size=50%')
 
+下载举例
+
 ` wget https://github.com/docker/compose/releases/download/v2.6.0/docker-compose-linux-x86_64 `
 
 通过下载然后文件上传后执行，放到指定的位置
 
-`mv docker-compose-linux-x86_64 /usr/local/bin/docker-compose`
+    mv docker-compose-linux-x86_64 /usr/local/bin/docker-compose
 
 将可执行权限应用于二进制文件：
 
-   ` sudo chmod +x /usr/local/bin/docker-compose`
+    sudo chmod +x /usr/local/bin/docker-compose
 
 创建软链：
 
-    `sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose`
+    sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 
 测试是否安装成功：
 
