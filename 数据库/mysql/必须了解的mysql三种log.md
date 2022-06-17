@@ -22,7 +22,7 @@ binlog是用于**记录数据库表结构和表数据变更的二进制日志**�
 
 使用`mysqlbinlog`命令可以查看。
 
-![](https://static.lovebilibili.com/mysql_log_1.png)
+![](large/mysql_log_1.png)
 
 会记录下每条变更的sql语句，还有执行开始时间，结束时间，事务id等等信息。
 
@@ -30,7 +30,7 @@ binlog是用于**记录数据库表结构和表数据变更的二进制日志**�
 
 使用命令`show variables like '%log_bin%';`查看binlog是否打开。
 
-![](https://static.lovebilibili.com/mysql_log_2.png)
+![](large/mysql_log_2.png)
 
 如果像上图一样，没有开启binlog，那怎么开启呢？
 
@@ -47,7 +47,7 @@ binlog-format=ROW
 
 执行`SHOW MASTER STATUS;`可以查看当前写入的binlog文件名。
 
-![](https://static.lovebilibili.com/mysql_log_3.png)
+![](large/mysql_log_3.png)
 
 > binlog用来干嘛的呢？
 
@@ -71,7 +71,7 @@ UPDATE `user` SET `name`='刘德华' WHERE `id`='1';
 
 为了避免出现这种问题，MySQL引入了redo log。
 
-![](https://static.lovebilibili.com/mysql_log_4.png)
+![](large/mysql_log_4.png)
 
 如图所示，当执行数据变更操作时，首先把数据也加载到内存中，然后在内存中进行更新，更新完成后写入到redo log buffer中，然后由redo log buffer在写入到redo log file中。
 
@@ -79,9 +79,7 @@ redo log file记录着xxx页做了xxx修改，所以即使mysql发生宕机，�
 
 > redo log与事务机制是如何配合工作的？
 
-
-
-![](https://static.lovebilibili.com/mysql_log_7.png)
+![](large/mysql_log_7.png)
 
 如图所示：
 
@@ -107,7 +105,7 @@ binlog是存储所有数据变更的情况，理论上只要记录在binlog上�
 
 答，在提交事务的时候。
 
-![](https://static.lovebilibili.com/mysql_log_8.png)
+![](large/mysql_log_8.png)
 
 # 三、undo log
 
@@ -133,7 +131,4 @@ undo log另一个作用是**实现多版本控制(MVCC)**，undo记录中包含�
 
 **我是一个努力让大家记住的程序员。我们下期再见！！！**
 
-![](https://static.lovebilibili.com/dashacha.png)
-
-> 能力有限，如果有什么错误或者不当之处，请大家批评指正，一起学习交流！
 

@@ -22,7 +22,7 @@
 
 接下来我们看一张官网提供的示意图：
 
-![](https://static.lovebilibili.com/pic/canal_syt.png)
+![](large/canal_syt.png)
 
 canal的工作原理就是**把自己伪装成MySQL slave，模拟MySQL slave的交互协议向MySQL Mater发送 dump协议，MySQL mater收到canal发送过来的dump请求，开始推送binary log给canal，然后canal解析binary log，再发送到存储目的地**，比如MySQL，Kafka，Elastic Search等等。
 
@@ -74,15 +74,15 @@ server_id=1
 
 改了配置文件之后，重启MySQL，使用命令查看是否打开binlog模式：
 
-![](https://static.lovebilibili.com/pic/canal_1.png)
+![](large/canal_1.png)
 
 查看binlog日志文件列表：
 
-![](https://static.lovebilibili.com/pic/canal_2.png)
+![](large/canal_2.png)
 
 查看当前正在写入的binlog文件：
 
-![](https://static.lovebilibili.com/pic/canal_3.png)
+![](large/canal_3.png)
 
 MySQL服务器这边就搞定了，很简单。
 
@@ -91,11 +91,11 @@ MySQL服务器这边就搞定了，很简单。
 去官网下载页面进行下载：https://github.com/alibaba/canal/releases
 
 我这里下载的是1.1.4的版本：
-![](https://static.lovebilibili.com/pic/canal_download.png)
+![](large/canal_download.png)
 
 解压**canal.deployer-1.1.4.tar.gz**，我们可以看到里面有四个文件夹：
 
-![](https://static.lovebilibili.com/pic/tar_one.png)
+![](large/tar_one.png)
 
 接着打开配置文件conf/example/instance.properties，配置信息如下：
 
@@ -133,15 +133,15 @@ canal.instance.filter.black.regex=
 
 启动就报错，坑呀：
 
-![](https://static.lovebilibili.com/pic/canal_4.png)
+![](large/canal_4.png)
 
 要修改一下启动的脚本startup.bat：
 
-![](https://static.lovebilibili.com/pic/canal_5.png)
+![](large/canal_5.png)
 
 然后再启动脚本：
 
-![](https://static.lovebilibili.com/pic/canal_6.png)
+![](large/canal_6.png)
 
 这就启动成功了。
 
@@ -159,7 +159,7 @@ canal.instance.filter.black.regex=
 
 然后创建一个canal项目，使用SpringBoot构建，如图所示：
 
-![](https://static.lovebilibili.com/pic/canal_8.png)
+![](large/canal_8.png)
 
 在CannalClient类使用Spring Bean的生命周期函数afterPropertiesSet()：
 
@@ -283,7 +283,7 @@ CREATE TABLE `tb_commodity_info` (
 
 然后我们在控制台就可以看到如下信息：
 
-![](https://static.lovebilibili.com/pic/canal_10.png)
+![](large/canal_10.png)
 
 如果新增一条数据到表中：
 
@@ -293,7 +293,7 @@ INSERT INTO tb_commodity_info VALUES('3e71a81fd80711eaaed600163e046cc3','叉烧�
 
 控制台可以看到如下信息：
 
-![](https://static.lovebilibili.com/pic/canal_11.png)
+![](large/canal_11.png)
 
 # 总结
 
@@ -303,7 +303,7 @@ canal的好处在于**对业务代码没有侵入**，因为是**基于监听bin
 
 实际项目我们是**配置MQ模式，配合RocketMQ或者Kafka，canal会把数据发送到MQ的topic中，然后通过消息队列的消费者进行处理**。
 
-![](https://static.lovebilibili.com/pic/canal_12.png)
+![](large/canal_12.png)
 
 Canal的部署也是支持集群的，需要配合ZooKeeper进行集群管理。
 
@@ -322,8 +322,3 @@ Canal还有一个简单的Web管理界面。
 **如果你觉得这篇文章对你有用，点个赞吧**~
 
 **你的点赞是我创作的最大动力**~
-
-想第一时间看到我更新的文章，可以微信搜索公众号「`java技术爱好者`」，**拒绝做一条咸鱼，我是一个努力让大家记住的程序员。我们下期再见！！！**
-![在这里插入图片描述](https://imgconvert.csdnimg.cn/aHR0cHM6Ly91c2VyLWdvbGQtY2RuLnhpdHUuaW8vMjAyMC82LzMwLzE3MzA1Y2MwOGE3ZWQ1ZDc?x-oss-process=image/format,png)
-
-> 能力有限，如果有什么错误或者不当之处，请大家批评指正，一起学习交流！
