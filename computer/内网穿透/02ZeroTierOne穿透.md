@@ -10,13 +10,13 @@
 
 ### 实现效果
 
-![](large/e6c9d24ely1h3ek9kmx4yj210r0ozwgb.jpg)
+![](large/e6c9d24ely1h3ek9kmx4yj210r0ozwgb.jpg ':size=50%')
 
 ### 实现原理
 
 ①使用[ZeroTier](https://www.zerotier.com/download/)将需要操作的设备组在一个虚拟的局域网里面，实现该[虚拟局域网](https://so.csdn.net/so/search?q=%E8%99%9A%E6%8B%9F%E5%B1%80%E5%9F%9F%E7%BD%91&spm=1001.2101.3001.7020)里面的设备可以相互通讯连接。
 
-![](large/e6c9d24ely1h3ekagwuyrj21ec0qudie.jpg)
+![](large/e6c9d24ely1h3ekagwuyrj21ec0qudie.jpg ':size=50%')
 
 
 
@@ -28,43 +28,43 @@
 
 ①登陆成功后选择【Networks--->Create A Network】创建虚拟局域网
 
-![](large/e6c9d24ely1h3ekbsh6f3j21qk0cv3zx.jpg)
+![](large/e6c9d24ely1h3ekbsh6f3j21qk0cv3zx.jpg ':size=50%')
 
-![](large/e6c9d24ely1h3ekby2f2sj21yu0kbq5m.jpg)
+![](large/e6c9d24ely1h3ekby2f2sj21yu0kbq5m.jpg ':size=50%')
 
 
  ②选中新建出来的虚拟局域网，点击鼠标进如设置界面进行设置
 
-![](large/e6c9d24ely1h3ekcl3av7j21y30qgdkc.jpg)
+![](large/e6c9d24ely1h3ekcl3av7j21y30qgdkc.jpg ':size=50%')
 
 
-![](large/e6c9d24ely1h3ekcuhdclj21i50u00wh.jpg)
+![](large/e6c9d24ely1h3ekcuhdclj21i50u00wh.jpg ':size=50%')
 
 
 
-![](large/e6c9d24ely1h3ekcyua4lj20zl0nfq5c.jpg)
+![](large/e6c9d24ely1h3ekcyua4lj20zl0nfq5c.jpg ':size=50%')
 
 ### 添加设备到虚拟局域网络中
 
 ①进入ZeroTier虚拟网络VPN的下载界面 
 
-![](large/e6c9d24ely1h3ekdwpohsj21q90dr761.jpg)
+![](large/e6c9d24ely1h3ekdwpohsj21q90dr761.jpg ':size=50%')
 
 ### windows版本
 
  ②下载电脑版的ZeroTier虚拟网络VPN（这里以Windows系统电脑为例说明）
 
-![](large/e6c9d24ely1h3ekeb18hkj219t0u0n1a.jpg)
+![](large/e6c9d24ely1h3ekeb18hkj219t0u0n1a.jpg ':size=50%')
 
 
 
 ③ 安装完成ZeroTier One后打开加入刚才创建的虚拟局域网ID标识符
 
-![](large/e6c9d24ely1h3ekepoockj20s20h7tae.jpg)
+![](large/e6c9d24ely1h3ekepoockj20s20h7tae.jpg ':size=50%')
 
 ### mac 版本
 
-![](large/e6c9d24ely1h3ekhic4afj20jq0bst9p.jpg)
+![](large/e6c9d24ely1h3ekhic4afj20jq0bst9p.jpg ':size=50%')
 
 ### Linux版本
 
@@ -90,9 +90,14 @@ yum make cache
 yum install zerotier-one
 ~~~~
 
+安装完成，进行启动服务
+`zerotier-one -d`
+
 加入网络
 `zerotier-cli join 网络ID`
 如果network设置为privite再在zerotier网站将主机id加入
+
+
 
 
 
@@ -100,7 +105,7 @@ yum install zerotier-one
 
  ④刷新ZeroTier虚拟局域网管理网页查看设备且授权
 
-![](large/e6c9d24ely1h3ekftlb5ij21880u00wl.jpg)
+![](large/e6c9d24ely1h3ekftlb5ij21880u00wl.jpg ':size=50%')
 
  ⑤验证电脑添加虚拟局域网是否成功
 
