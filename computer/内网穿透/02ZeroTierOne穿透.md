@@ -94,11 +94,14 @@ yum install zerotier-one
 `zerotier-one -d`
 
 加入网络
+
 `zerotier-cli join 网络ID`
+
 如果network设置为privite再在zerotier网站将主机id加入
 
+执行命令，将云服务器加入到自己创建好的虚拟网络，将命令中的 xxxxxxxx 替换成实际的虚拟网络 ID。
 
-
+    $ sudo zerotier-cli join xxxxxxxx
 
 
 ### 刷新网络

@@ -2,7 +2,8 @@
   - [苹果电脑使用技巧](computer/mac.md)
   - 内网穿透
     - [01_钉钉内网穿透内网穿透](computer/内网穿透/01_dingding内网穿透.md)
-    - [01_01ZeroTierOne穿透](computer/内网穿透/02ZeroTierOne穿透.md)
+    - [02_01ZeroTierOne穿透](computer/内网穿透/02ZeroTierOne穿透.md)
+    - [02_02简单搭建ZerotierMoon](computer/内网穿透/简单搭建ZerotierMoon.md)
   - [mac安装软件](computer/mac安装软件.md)
   - [vscode](computer/vscode.md)
 
