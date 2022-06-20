@@ -33,7 +33,7 @@ $ sudo zerotier-cli join xxxxxxxx
 
 #### 
 
-![](https://tva1.sinaimg.cn/large/e6c9d24ely1h3ep50y37ij20ne0gcq3i.jpg)
+![](large/e6c9d24ely1h3ep50y37ij20ne0gcq3i.jpg ':size=60%')
 
 ### 配置 Moon
 
@@ -82,7 +82,6 @@ $ sudo systemctl restart zerotier-one
 
 普通的 Zerotier 成员使用 Moon 有两种方法，第一种方法是使用 `zerotier-cli orbit` 命令直接添加 Moon 节点ID；第二种方法是在 zerotier-one 程序的根目录创建`moons.d`文件夹，将 `xxx.moon` 复制到该文件夹中，我们采用第一种方法：
 
-##### 
 
 >  使用之前步骤中 moon.json 文件中的 id 值 (10 位的字符串，就是xxxxxxxxxx），不知道的话在服务器上执行如下命令可以得到id。
 >
@@ -95,6 +94,14 @@ zerotier-cli orbit b66b85a05b b66b85a05b
 ```
 
 此处的b66b85a05b刚刚在服务器得到的ID值
+
+检查是否成功
+
+~~~~shell
+$ sudo zerotier-cli listpeers
+~~~~
+
+![](large/e6c9d24ely1h3eq16ym99j20ti09ogon.jpg ':size=60%')
 
 
 
