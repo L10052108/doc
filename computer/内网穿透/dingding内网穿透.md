@@ -4,7 +4,7 @@
 
 ## 内网穿透介绍
 
-![p163821](file/p163821.png)
+![p163821](large/p163821.png ':size=60%')
 
 ## 下载工具
 
@@ -158,7 +158,7 @@ goto TUNNEL
 ### 下载脚本
 
 下载window脚本
-<a href="computer/file/dingding_ngrok.bat">下载windows脚本</a>
+<a href="computer/内网穿透/large/dingding_ngrok.bat">下载windows脚本</a>
 
 - 分享地址
 
@@ -167,11 +167,7 @@ goto TUNNEL
 >
 - 脚本运行效果（把脚本放到）
 
-
-  ​
-
-  ![Mar-15-202216-45-32](file/16-45-32.gif)
-
+  ![Mar-15-202216-45-32](large/16-45-32.gif ':size=60%')
 
 
 ## 参考资料
