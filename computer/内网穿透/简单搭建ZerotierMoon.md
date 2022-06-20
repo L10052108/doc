@@ -70,11 +70,23 @@ $ sudo mkdir moons.d
 $ sudo mv 000000xxxxxxxxxx.moon moons.d
 ```
 
+> .moon 配置文件的名一般为`10个前导零`+`本机的节点ID`
 
+**重启 zerotier-one 服务**
+
+```Shell
+$ sudo systemctl restart zerotier-one
+```
+
+### 使用 Moon
+
+普通的 Zerotier 成员使用 Moon 有两种方法，第一种方法是使用 `zerotier-cli orbit` 命令直接添加 Moon 节点ID；第二种方法是在 zerotier-one 程序的根目录创建`moons.d`文件夹，将 `xxx.moon` 复制到该文件夹中，我们采用第一种方法：
+
+##### 
 
 >  使用之前步骤中 moon.json 文件中的 id 值 (10 位的字符串，就是xxxxxxxxxx），不知道的话在服务器上执行如下命令可以得到id。
 >
-> 执行命令：grep id /var/lib/zerotier-one/moon.json | head -n 1
+>  执行命令：grep id /var/lib/zerotier-one/moon.json | head -n 1
 
 然后在客户端机器里执行命令：
 
