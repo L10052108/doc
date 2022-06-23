@@ -1,0 +1,347 @@
+资料来源：
+
+[Elasticsearch操作实践手册|建议收藏篇](https://segmentfault.com/a/1190000038278910)
+
+## kibana 的使用
+
+### 索引的操作(库)
+
+官方为我们提供了多种语言操作Elasticsearch的API，可以很方便的在项目中操作。学习利用原生请求操作Elasticsearch，方便维护数据库，还能加快学习使用不同语言的API。
+
+![](https://tva1.sinaimg.cn/large/e6c9d24ely1h3g0iafit7j20it0adt90.jpg)
+
+
+
+#### 查看索引
+
+查看所有的索引
+
+~~~~
+GET /_cat/indices?v
+~~~~
+
+![](https://tva1.sinaimg.cn/large/e6c9d24ely1h3g0jlfeu7j20w005wmyg.jpg)
+
+查看健康
+
+~~~~
+## 查看健康
+GET _cat/health
+~~~~
+
+- 红色：集群中未分配至少一个主分片。
+- 黄色：已分配所有主副本，但未分配至少一个副本。
+- 绿色：分配所有分片。
+
+#### 创建索引
+
+创建索引使用`PUT`请求，后面跟上索引名称就好了，由于7.x默认type为`_doc`，所以后面不必跟上type了。在PUT简单请求同时，可以加上JSON请求体，进行复杂创建。
+
+~~~~json
+PUT /user
+{
+  "settings": {
+    "index": {
+      "number_of_shards": 3,  
+      "number_of_replicas": 2 
+    }
+  },
+  "mappings": {
+    "properties": {
+      "name": { "type": "text" },
+      "age": {"type": "short"},
+      "city":{"type": "keyword"}
+    }
+  }
+}
+~~~~
+
+创建索引`user`，可以通过参数`setting`设置分片和副本数，通过`number_of_shards`设置一共有3个分片，通过`number_of_replicas`给每个分片设置2个副本，默认不指定的话，这两个参数都是1。通过`mappings`规定文档各个Filed插入类型。此外，还可以设置`aliases`字段，给索引创建别名，这样不仅可以通过别名访问该索引，还可以定义查询条件、指定查询分片等等，[详情请参考](https://link.segmentfault.com/?enc=p56bX6P5vb3pP35fHiRz7A%3D%3D.wCuZStnxQTnaKElDRwgIDHik1PefKcY2xKMua%2BNGkIECtjQHto17LNuPmnxS9sAi4WLj%2FwSRcr5lgQT3BCRQrodDUK%2FafD4mNcfaHrUwShuQnQVrTCe%2BADSGLImQv%2F4l)。
+
+#### 查看索引
+
+创建默认索引
+
+```json
+# 查看索引
+GET /user
+```
+
+运行结果
+
+~~~~json
+{
+  "user" : {
+    "aliases" : { },
+    "mappings" : {
+      "properties" : {
+        "age" : {
+          "type" : "short"
+        },
+        "city" : {
+          "type" : "keyword"
+        },
+        "name" : {
+          "type" : "text"
+        }
+      }
+    },
+    "settings" : {
+      "index" : {
+        "creation_date" : "1655806118044",
+        "number_of_shards" : "3",
+        "number_of_replicas" : "2",
+        "uuid" : "eLDx1zT0R5iKkD7xLkdohg",
+        "version" : {
+          "created" : "7020099"
+        },
+        "provided_name" : "user"
+      }
+    }
+  }
+}
+
+~~~~
+
+你也可以通过在索引后面加参数来查看某一具体参数
+
+~~~~shelL
+GET /user/_settings
+GET /user/_mapping
+GET /user/_alias
+~~~~
+
+`GET /user/_settings` 结果
+
+![](https://tva1.sinaimg.cn/large/e6c9d24ely1h3g12xeekaj20f10bngmd.jpg)
+
+修改索引的部分操作
+
+~~~~json
+PUT /user/_settings
+{
+  "number_of_replicas": 3 
+}
+~~~~
+
+#### 删除索引
+
+~~~~
+# 删除索引
+DELETE /user
+~~~~
+
+### 文档
+
+#### 插入文档
+
+新增文档使用`PUT`、`POST`请求。
+
+~~~~shell
+PUT /<target>/_doc/<_id>
+
+POST /<target>/_doc/
+
+PUT /<target>/_create/<_id>
+
+POST /<target>/_create/<_id>
+~~~~
+
+`target`为索引名称
+
+`_doc`为默认type
+
+通过前两种请求可看出，id可以自行指定，也可以由ES自动生成。
+
+`_create`可以保证只有当文档不存在的时候进行插入，而`_doc`还可以用于文档更新
+
+####  简单查询文档
+
+- 根据ID进行查询
+
+~~~~Shell
+# 查询
+GET /user/_doc/1
+~~~~
+
+查询结果
+
+~~~~Json
+{
+  "_index" : "user",
+  "_type" : "_doc",
+  "_id" : "1",
+  "_version" : 2,
+  "_seq_no" : 1,
+  "_primary_term" : 1,
+  "found" : true,
+  "_source" : {
+    "name" : "pjjlt",
+    "age" : 26,
+    "city" : "sjz"
+  }
+}
+
+~~~~
+
+- 查询全部文档
+
+~~~~shell
+GET /user/_search?pretty&size=20
+~~~~
+
+运行结果
+
+~~~~json
+{
+  "took" : 0,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 1,
+    "successful" : 1,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : {
+      "value" : 1,
+      "relation" : "eq"
+    },
+    "max_score" : 1.0,
+    "hits" : [
+      {
+        "_index" : "user",
+        "_type" : "_doc",
+        "_id" : "1",
+        "_score" : 1.0,
+        "_source" : {
+          "name" : "pjjlt",
+          "age" : 26,
+          "city" : "sjz"
+        }
+      }
+    ]
+  }
+}
+~~~~
+
+>  `pretty`参数在浏览器中才会发挥作用，格式化返回json的
+>
+> 以上这条命令默认返回10条数据，想返回更多数据可以添加`size`字段。
+
+可以看出，数据部分在`hits`里面，Spring提供的elasticsearch客户端会有对应的实体类，在项目中很方便的使用。下面看下这几部分的含义。
+
+| 元素                | 含义                    |
+| ----------------- | --------------------- |
+| took              | 运行查询需要多长时间            |
+| time_out          | 请求是否超时                |
+| _shards           | 搜索了多少分片，多少成功多少跳过，多少失败 |
+| hits.total        | 总共有多少数据               |
+| hits._max_score   | 查询到的文档中，关联度最大文档分数     |
+| hits.hits._source | 查询到的数据                |
+| hits.hits.id      | 某文档的主键                |
+
+### 批量操作
+
+批量操作是指，一批命令同时执行(减少IO)，这些命令不一定是同种类型。
+
+使用`_bulk`命令可以进行文档的批量增删改。
+
+~~~~
+POST _bulk
+{ "update" : { "_index" : "user", "_id" : "1" } }
+{ "doc" : {"age" : 18} }
+{ "create" : { "_index" : "user", "_id" : "2" } }
+{ "name" : "小明","age":32,"city":"beijing" }
+{ "create" : { "_index" : "user", "_id" : "3" } }
+{ "name" : "小红","age":21,"city":"sjz" }
+{ "create" : { "_index" : "user", "_id" : "4" } }
+{ "name" : "mark","age":22,"city":"tianjin" }
+{ "delete" : { "_index" : "user", "_id" : "4" } }
+~~~~
+
+
+
+以上命令更新了id为1文档的年龄，新增id为2、3、4的文档，再删除id为4的文档。
+
+上边的命令堆在一起不方便看，下面单独写看，方便读者查看。
+
+#### 批量新增
+
+~~~~
+POST _bulk
+{ "create" : { "_index" : "user", "_id" : "2" } }
+{ "name" : "小明","age":32,"city":"beijing" }
+
+{ "create" : { "_index" : "user", "_id" : "3" } }
+{ "name" : "小红","age":21,"city":"sjz" }
+
+{ "index" : { "_index" : "user", "_id" : "4" } }
+{ "name" : "mark","age":22,"city":"tianjin" }
+~~~~
+
+`create`命令是只有文档不存在，才会插入，
+
+`index`会判断如果存在就更新，不存在就插入。
+
+#### 批量更新
+
+~~~~
+POST _bulk
+{ "update" : { "_index" : "user", "_id" : "1" } }
+{ "doc" : {"age" : 18} }
+
+{ "update" : { "_index" : "user", "_id" : "2" } }
+{ "doc" : {"age" : 20} }
+~~~~
+
+和新增一样，`update`命令下一行需要紧跟这data数据。
+
+#### 批量删除
+
+~~~~
+POST _bulk
+{ "delete" : { "_index" : "user", "_id" : "3" } }
+{ "delete" : { "_index" : "user", "_id" : "4" } }
+~~~~
+
+#### 批量查找
+
+批量查找，使用`_mget`关键字，批量查找如果不跨越索引，也具有简写形式。
+
+~~~~Json
+GET /_mget
+{
+  "docs": [
+    {
+      "_index": "user",
+      "_id": "1"
+    },
+    {
+      "_index": "user",
+      "_id": "2"
+    }
+  ]
+}
+
+# 还可以简写形式
+POST /user/_mget
+{
+  "ids": [
+    "1",
+    "2",
+    "3"
+  ]
+}
+~~~~
+
+
+
+
+
+
+
+
+
+
+
