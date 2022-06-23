@@ -6,7 +6,7 @@
 
 [全文检索-ELASTICSEARCH-进阶-QUERYDSL基本使用&MATCH_ALL](https://www.freesion.com/article/7026743230/)
 
-## DSL
+### DSL 介绍
 
 > Elasticsearch提供了一个完整的基于JSON的查询DSL(领域特定语言)来定义查询。可以将查询DSL看作查询的AST(抽象语法树)，它由两种类型的子句组成:Leaf query clauses(叶查询子句)和Compound query clauses(复合查询子句)
 
@@ -408,9 +408,9 @@ GET /user/_search
 
 
 
-![](https://tva1.sinaimg.cn/large/e6c9d24ely1h3i5kvnl2aj20kc0a1q3i.jpg)
+![](large/e6c9d24ely1h3i5kvnl2aj20kc0a1q3i.jpg)
 
-![](https://tva1.sinaimg.cn/large/e6c9d24ely1h3i5kzzdn9j20kc0at74w.jpg)
+![](large/e6c9d24ely1h3i5kzzdn9j20kc0at74w.jpg)
 
 对比两张图可以看出，filter并没有计算_score，搜索速度较快。
 

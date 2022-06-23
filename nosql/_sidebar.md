@@ -16,7 +16,8 @@
   - ElasticSearch
     - [01_ES的介绍](nosql/ElasticSearch/01ElasticSearch介绍.md)
     - [02_ES的安装](nosql/ElasticSearch/02ES的安装.md)
-    - [03_kibana的操作](nosql/ElasticSearch/03kibana的操作.md)
+    - [03_基本操作](nosql/ElasticSearch/03基本操作.md)
     - [04_DSL查询](nosql/ElasticSearch/04DSL查询.md)
+    - [05_聚合操作](nosql/ElasticSearch/05聚合操作.md)
 
 
