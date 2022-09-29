@@ -38,7 +38,7 @@
     - [Dubbo](faceNotes/JavaFaceNotes-master/Dubbo.md)
 
   - 面试总结2（跟着Mic学架构）
-    - [java基础&容器&多线程](faceNotes/interview-master/doc/200+/200_1.md)
+    - [java面试1](faceNotes/interview-master/doc/200+/200_1.md)
   - 面试总结3（磊哥）
     - [java基础&容器&多线程](faceNotes/interview-master/doc/200+/200_1.md)
     - [反射&对象拷贝&Java Web&异常&网络](faceNotes/interview-master/doc/200+/200_2.md)
