@@ -97,23 +97,35 @@ Integer.MAX_VALUE， 也就是 2 的 31 次方-1。
 资料来源：[【Java面试】String、StringBuffer、StringBuilder区别](https://www.toutiao.com/video/7107446899690603045/?from_scene=all)
 
 嗯， 好的， 面试官。
-关于 String、 StringBuffer、 StringBuilder 的区别， 我想从四个角度来说明。
-**第一个， 可变性。**
+关于 String、 StringBuffer、 StringBuilder 的区别， 我想从四个角度来说明。<br/>
+**第一个， 可变性。**<br/>
 String 内部的 value 值是 final 修饰的， 所以它是不可变类。 所以每次修改 String
 的值， 都会产生一个新的对象。
-StringBuffer 和 StringBuilder 是可变类， 字符串的变更不会产生新的对象。
-**第二个， 线程安全性。**
+
+StringBuffer 和 StringBuilder 是可变类， 字符串的变更不会产生新的对象。<br/>
+**第二个， 线程安全性。**<br/>
 String 是不可变类， 所以它是线程安全的。
-StringBuffer 是线程安全的， 因为它每个操作方法都加了 synchronized 同步关键
-字。
-StringBuilder 不是线程安全的， 所以在多线程环境下对字符串进行操作， 应该使
-用 StringBuffer， 否则使用 StringBuilder
-**第三个， 性能方面。**
-String 的性能是最的低的， 因为不可变意味着在做字符串拼接和修改的时候， 需
-要重新创建新的对象以及分配内存。
-其次是 StringBuffer 要比 String 性能高， 因为它的可变性使得字符串可以直接被
-修改最后是 StringBuilder， 它比 StringBuffer 的性能高， 因为 StringBuffer 加了
-同步锁。
-**第四个， 存储方面。**
+
+StringBuffer 是线程安全的， 因为它每个操作方法都加了 synchronized 同步关键字。
+
+StringBuilder 不是线程安全的， 所以在多线程环境下对字符串进行操作， 应该使用 StringBuffer， 否则使用 StringBuilder<br/>
+**第三个， 性能方面。**<br/>
+String 的性能是最的低的， 因为不可变意味着在做字符串拼接和修改的时候， 需要重新创建新的对象以及分配内存。<br/>
+
+其次是 StringBuffer 要比 String 性能高， 因为它的可变性使得字符串可以直接被修改最后是 StringBuilder， 它比 StringBuffer 的高， 因为 StringBuffer 加了同步锁。<br/>
+
+**第四个， 存储方面。**<br/>
 String 存储在字符串常量池里面
+
 StringBuffer 和 StringBuilder 存储在堆内存空间。  
+
+###  并行和并发有什么区别？
+
+并行和并发是Java并发编程里面的概念。<br/>
+并行，是指在多核CPU架构下，同一时刻同时可以执行多个线程的能力。<br/>
+在单核CPU架构中，同一时刻只能运行一个线程。<br/>
+在4核4线程的CPU架构中，同一时刻可以运行4个线程，那这4个线程就是并行执行的。<br/>
+并发，是指在同一时刻CPU能够处理的任务数量，也可以理解成CPU的并发能力。<br/>
+在单核CPU架构中，操作系统通过CPU时间片机制提升CPU的并发能力。<br/>
+在多核CPU架构中，基于任务的并行执行能力以及CPU时间片切换的能力来提升CPU的并发能力。<br/>
+所以，总的来说，并发是一个宏观概念，它指的是CPU能够承载的压力大小，并行是一个微观概念，它描述CPU同时执行多个任务的能力。<br/>

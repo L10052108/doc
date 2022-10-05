@@ -41,6 +41,8 @@
     - [java面试1](faceNotes/mic/01.md)
     - [Java基础](faceNotes/mic/java基础.md)
     - [多线程](faceNotes/mic/多线程.md)
+    - [mysql](faceNotes/mic/mysql.md)
+    - [spring](faceNotes/mic/spring.md)
   - 面试总结3（磊哥）
     - [java基础&容器&多线程](faceNotes/interview-master/doc/200+/200_1.md)
     - [反射&对象拷贝&Java Web&异常&网络](faceNotes/interview-master/doc/200+/200_2.md)
