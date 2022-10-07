@@ -20,11 +20,55 @@ setter 注入<br/>
 以上就是我对这个问题的理解！  
 
 
+
+
+### 介绍下Spring IoC的工作流程？
+
+资料来源：[介绍下Spring IoC的工作流程？](https://www.toutiao.com/video/7090050239951962660/)
+
+
+### Spring中有哪些方式可以把Bean注入到IOC容器
+
+资料来源：[Spring中有哪些方式可以把Bean注入到IOC容器](https://www.toutiao.com/video/7098586416824713736/)
+
+
+### Spring如何解决循环依赖问题的
+
+资料来源：[Spring如何解决循环依赖问题的](https://www.toutiao.com/video/7038513985431437831/)
+
+
+
+
+### 如何叙述Spring Bean 的生命周期
+
+资料来源：[如何叙述Spring Bean 的生命周期](https://www.toutiao.com/video/7041875113050014238/)
+
+
+
 ### Spring Bean 生命周期的执行流程
 
 资料来源：[Spring Bean 生命周期的执行流程](#)
 
 Spring Bean 生命周期的执行流程
+
+
+### Spring 中Bean的作用域有哪些
+
+资料来源：[Spring 中Bean的作用域有哪些](https://www.toutiao.com/video/7088874285007110687/)
+
+<hr/>
+
+
+### Spring中BeanFactory和FactoryBean的区别
+
+资料来源：[Spring中BeanFactory和FactoryBean的区别](https://www.toutiao.com/video/7090791563147772424/)
+
+<hr/>
+
+
+### Spring Boot 约定优于配置，你的理解是什么
+
+资料来源：[Spring Boot 约定优于配置，你的理解是什么](https://www.toutiao.com/video/7072300941218677256/)
 
 
 ### @Autowired 和 @Resource 有什么区别

@@ -1,11 +1,18 @@
 
 
 
+### 谈谈什么是消息队列(MQ)
+
+资料来源：[谈谈什么是消息队列(MQ)](https://www.toutiao.com/video/7031099634365760036/)
+
 ### Kafka如何保证消息不丢失？
 
 资料来源：[Kafka如何保证消息不丢失？](https://www.toutiao.com/video/7083432523916640799/?from_scene=all)
 
 
+### MQ是如何保证消息顺序性
+
+资料来源：[MQ是如何保证消息顺序性](https://www.toutiao.com/video/7106388748878905870/)
 
 ### Kafka怎么避免重复消费？
 
