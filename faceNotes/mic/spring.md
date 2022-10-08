@@ -112,3 +112,36 @@ Spring Bean 生命周期的执行流程
 `@Autowired`是根据 type 来匹配， `@Resource` 可以根据 name 和 type 来匹配，默认是 name 匹配。<br/> 
 `@Autowired` 是 Spring 定义的注解，` @Resource `是 JSR 250 规范里面定义的注解， 而 Spring 对 JSR 250 规范提供了支持。<br/> 
 `@Autowired` 如果需要支持 name 匹配， 就需要配合`@Primary` 或者`@Qualifier`来实现。<br/> 
+
+<hr/>
+
+### Spring里面两个id相同的bean会报错吗？
+
+资料来源：[Spring里面两个id相同的bean会报错吗？](https://www.toutiao.com/video/7099349888562889252/?from_scene=all)
+
+关于这个问题， 我从几个点来回答。<br/>
+首先， 在同一个 XML 配置文件里面， 不能存在 id 相同的两个 bean， 否则 spring容器启动的时候会报错<br/>
+
+![image-20221008140106393](img/image-20221008140106393.png)
+
+因为 id 这个属性表示一个 Bean 的唯一标志符号， 所以 Spring 在启动的时候会去验证 id 的唯一性， 一旦发现重复就会报错，<br/>
+这个错误发生 Spring 对 XML 文件进行解析转化为 BeanDefinition 的阶段。<br/>
+但是在两个不同的 Spring 配置文件里面， 可以存在 id 相同的两个 bean。 IOC容器在加载 Bean 的时候， 默认会多个相同 id 的 bean 进行覆盖。<br/>
+在 Spring3.x 版本以后， 这个问题发生了变化<br/>
+我们知道 Spring3.x 里面提供@Configuration 注解去声明一个配置类， 然后使用@Bean 注解实现 Bean 的声明， 这种方式完全取代了 XMl。<br/>
+在这种情况下， 如果我们在同一个配置类里面声明多个相同名字的 bean， 在Spring IOC 容器中只会注册第一个声明的 Bean 的实例。<br/>
+后续重复名字的 Bean 就不会再注册了。<br/>
+像这样一段代码， 在 Spring IOC 容器里面， 只会保存 UserService01 这个实例，后续相同名字的实例不会再加载。<br/>
+
+![image-20221008140153727](img/image-20221008140153727.png)<br/>
+
+如果使用@Autowired 注解根据类型实现依赖注入， 因为 IOC 容器只有UserService01的实例， 所以启动的时候会提示找不到UserService02这个实例  <br/>
+
+![image-20221008140213740](img/image-20221008140213740.png)<br/>
+
+如果使用@Resource 注解根据名词实现依赖注入， 在 IOC 容器里面得到的实例对象是 UserService01，<br/>
+于是 Spring 把 UserService01 这个实例赋值给 UserService02， 就会提示类型不匹配错误。<br/>
+
+![image-20221008140412395](img/image-20221008140412395.png)<br/>
+这个错误， 是在 Spring IOC 容器里面的 Bean 初始化之后的依赖注入阶段发生的。<br/>
+以上就是我对这个问题的理解<br/>
