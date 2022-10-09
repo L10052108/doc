@@ -3,6 +3,11 @@
 
 资料来源：[谈谈什么是消息队列(MQ)](https://www.toutiao.com/video/7031099634365760036/)
 
+
+### RabbitMQ如何实现高可用
+
+资料来源：[RabbitMQ如何实现高可用](https://www.toutiao.com/video/7134958549234680350/?from_scene=all)
+
 ### Kafka如何保证消息不丢失？
 
 资料来源：[Kafka如何保证消息不丢失？](https://www.toutiao.com/video/7083432523916640799/?from_scene=all)
