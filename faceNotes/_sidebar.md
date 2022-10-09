@@ -38,7 +38,6 @@
     - [Dubbo](faceNotes/JavaFaceNotes-master/Dubbo.md)
 
   - 面试总结2（跟着Mic学架构）
-    - [java面试1](faceNotes/mic/01.md)
     - [01Java基础](faceNotes/mic/java基础.md)
     - [02多线程](faceNotes/mic/多线程.md)
     - [03锁](faceNotes/mic/锁.md)

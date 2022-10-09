@@ -19,7 +19,10 @@ setter 注入<br/>
 分别是根据 bean 的 id 和 bean 的类型来实现依赖注入。<br/>
 以上就是我对这个问题的理解！  
 
+## 跟着mic 学架构
+### @Conditional注解有什么用
 
+`condition` 注解的一个作用为bean的装载做一个条件判断，只有在满足条件的情况下。`spring`才会把`bean`装载到`IOC`容器里面。而这个条件是我们可以自定义去完成的。我们可以实现`condition`这个接口，并且重写里面的`matches`这个方法，去实现自定义的逻辑。所以`@condition`这个注解，增加了bean的装配的灵活性。在`springboot`里面对`@condition`注解做了更进一步的扩展，比如增加了`@conditionalOnClass`,`@conditionOnBean`等这样的注解，使得我们在使用的过程中。不再需要些那些条件的逻辑判断。而是可以直接根据数据本身的语义去完成对应的条件的一个装配
 
 
 ### 介绍下Spring IoC的工作流程？

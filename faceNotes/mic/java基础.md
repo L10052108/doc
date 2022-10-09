@@ -190,13 +190,21 @@ StringBuffer 和 StringBuilder 存储在堆内存空间。
 要么就是接口只允许调用一次， 比如唯一约束、 基于 redis 的锁机制。<br/>
 要么就是对数据的影响只会触发一次， 比如幂等性、 乐观锁<br/>
 
-
-
-
 ### SimpleDateFormat 是线程安全的吗?为什么
 
-资料来源：[SimpleDateFormat 是线程安全的吗?为什么](https://www.toutiao.com/video/7099638175949128222/?from_scene=all)
+资料来源：[SimpleDateFormat 是线程安全的吗?为什么](https://www.toutiao.com/video/7127459299298640398/?from_scene=all)
 
+SimpleDateFormat 不是线程安全的，<br/>
+SimpleDateFormat 类内部有一个 Calendar 对象引用,<br/>
+它用来储存和这个 SimpleDateFormat 相关的日期信息。<br/>
+当我们把 SimpleDateFormat 作为多个线程的共享资源来使用的时候。<br/>
+意味着多个线程会共享 SimpleDateFormat 里面的 Calendar 引用，<br/>
+多个线程对于同一个 Calendar 的操作， 会出现数据脏读现象导致一些不可预料的错误。<br/>
+在实际应用中， 我认为有 4 种方法可以解决这个问题。<br/>
+第一种， 把 SimpleDateFormat 定义成局部变量， 每个线程调用的时候都创建一个新的实例。<br/>
+第二种， 使用 ThreadLocal 工具， 把 SimpleDateFormat 变成线程私有的<br/>
+第三种， 加同步锁， 在同一时刻只允许一个线程操作 SimpleDateFormat<br/>
+第四种， 在 Java8 里面引入了一些线程安全的日期 API， 比如 LocalDateTimer、DateTimeFormatter 等。<br/>
 
 ## 谈谈雪花算法
 
