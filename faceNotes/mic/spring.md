@@ -1,3 +1,9 @@
+
+### 为什么要使用Spring 框架？
+
+资料来源：[为什么要使用Spring 框架？](https://www.toutiao.com/video/7086770071976018445/?from_scene=all)
+
+
 ### 谈谈你对 Spring IOC 和 DI 的理解
 
 资料来源：[Java高级开发必须要懂，谈谈你对 Spring IOC 和 DI 的理解](https://www.toutiao.com/video/7112251973440963109/?from_scene=all)
@@ -40,19 +46,10 @@ setter 注入<br/>
 资料来源：[Spring如何解决循环依赖问题的](https://www.toutiao.com/video/7038513985431437831/)
 
 
-
-
 ### 如何叙述Spring Bean 的生命周期
 
 资料来源：[如何叙述Spring Bean 的生命周期](https://www.toutiao.com/video/7041875113050014238/)
 
-
-
-### Spring Bean 生命周期的执行流程
-
-资料来源：[Spring Bean 生命周期的执行流程](#)
-
-Spring Bean 生命周期的执行流程
 
 
 ### Spring 中Bean的作用域有哪些
@@ -69,9 +66,7 @@ Spring Bean 生命周期的执行流程
 <hr/>
 
 
-### Spring Boot 约定优于配置，你的理解是什么
 
-资料来源：[Spring Boot 约定优于配置，你的理解是什么](https://www.toutiao.com/video/7072300941218677256/)
 
 
 ### @Autowired 和 @Resource 有什么区别
@@ -148,3 +143,9 @@ Spring Bean 生命周期的执行流程
 ![image-20221008140412395](img/image-20221008140412395.png)<br/>
 这个错误， 是在 Spring IOC 容器里面的 Bean 初始化之后的依赖注入阶段发生的。<br/>
 以上就是我对这个问题的理解<br/>
+
+
+
+### Spring中事务的传播行为有哪些？
+
+资料来源：[Spring中事务的传播行为有哪些？](https://www.toutiao.com/video/7087137193034318349/?from_scene=all)

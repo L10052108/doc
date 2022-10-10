@@ -50,3 +50,14 @@ Consumer 端会从分配的 Partition 里面去消费消息， 如果 Consumer �
 ###  什么叫阻塞队列的有界和无界?
 
 资料来源：[ 什么叫阻塞队列的有界和无界?](https://www.toutiao.com/video/7075638697248424461/?from_scene=all)
+
+
+
+###  基于数组的阻塞队列 ，ArrayBlockingQueue 原理
+
+资料来源：[基于数组的阻塞队列 ，ArrayBlockingQueue 原理](https://www.toutiao.com/video/7084567609114362399/?from_scene=all)
+
+
+ ###  什么叫阻塞队列的有界和无界?
+
+资料来源：[ 什么叫阻塞队列的有界和无界?](https://www.toutiao.com/video/7075638697248424461/?from_scene=all)
