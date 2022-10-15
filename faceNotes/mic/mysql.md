@@ -47,6 +47,11 @@ B+树索引在进行范围查找的时候， 只需要找到起始节点， 然�
 资料来源：[Mysql为什么使用B+Tree作为索引结构？](https://www.toutiao.com/video/7091921684218774053/?from_scene=all)
 
 
+### 谈谈你对B树和B+树的理解？
+
+资料来源：[谈谈你对B树和B+树的理解](https://www.toutiao.com/video/7076388733272588807/?from_scene=all)
+
+
 ### Mysql的事务隔离级别
 
 资料来源：[Mysql的事务隔离级别](https://www.toutiao.com/video/7091535865247498783/?from_scene=all)
