@@ -105,3 +105,5 @@ acme.sh --upgrade
 ~~~~~shell
 acme.sh  --upgrade  --auto-upgrade
 ~~~~~
+
+![img](pic\v2-a35ebec61efc321b29dd949b6f6c9bfe_r.jpg)
