@@ -154,13 +154,15 @@ vim /etc/nps/conf/nps.conf
 
 socks5 使用客户端，就厉害了。配置H5 以后，就可以访问任何内网的服务了（这里我就不介绍了）
 
+[socket5客户端](https://www.cnblogs.com/edeny/p/16530270.html?share_token=C134BBE1-03F6-4296-BBAF-56A5CDAD5B9D&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1)
+
 ### 方法二：（不建议）
 
 进入conf 用文本文件打开npc.conf文件
 
 第一个要修改的地方
 
-![在这里插入图片描述](pic\watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxODEzMjA4,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](pic\20210208181715191.png)
 
 第二个要修改的地方，这个时候客户端一启动就会讲本地的8080端口连接到服务器的6666端口
 也就实现了类似：访问http://yumbo.top:6666就访问到了本机的8080端口
