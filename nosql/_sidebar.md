@@ -10,6 +10,8 @@
     - [03_redis的十六种使用场景](nosql/redis/03redis的十六种使用场景.md)
     - [04_redis位图](nosql/redis/04redis位图.md)
     - [05_使用redis限流](nosql/redis/05.使用redis限流.md)
+    - [06redis监听](nosql/redis/06redis监听.md)
+    - [07redis客户端](nosql/redis/07redis客户端.md)
   - MongoDB
     - [01_mongoDB介绍](nosql/MongoDB/01_mongoDB介绍.md)
     
