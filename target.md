@@ -19,3 +19,25 @@
 
 
 [SpringBoot自定义注解+异步+观察者模式实现业务日志保存](https://www.toutiao.com/article/7159396762061390372/?app=news_article&timestamp=1666957328&use_new_style=1&req_id=20221028194208010209157026093A7510&group_id=7159396762061390372&share_token=8917AC16-A019-4853-893F-9F9288713788&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect)
+
+
+
+Spring/Spring Boot下如何动态配置计划任务
+
+https://www.toutiao.com/article/7158705923182182927/?app=news_article&timestamp=1666967484&use_new_style=1&req_id=202210282231230102100982141B4603EF&group_id=7158705923182182927&share_token=ACD68CAC-353F-459D-B202-DC03323BFBD5&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect
+
+
+
+
+
+ [socks5代理ip几种工具](https://www.cnblogs.com/edeny/p/16530270.html)
+
+
+
+SpringBoot进阶：一键集成GrayLog，那叫一个丝滑
+https://www.toutiao.com/article/7153427109799576075/?app=news_article&timestamp=1666913194&use_new_style=1&req_id=202210280726330102040230361E1C7907&group_id=7153427109799576075&share_token=C984A98C-DEE4-43E9-8D07-80F4DC8AC2BA&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect
+
+
+
+ SpringBoot自定义注解+异步+观察者模式实现业务日志保存
+ https://www.toutiao.com/article/7159396762061390372/?app=news_article&timestamp=1666957328&use_new_style=1&req_id=20221028194208010209157026093A7510&group_id=7159396762061390372&share_token=8917AC16-A019-4853-893F-9F9288713788&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect
