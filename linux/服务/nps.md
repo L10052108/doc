@@ -1,6 +1,7 @@
 资料来源：<br/>
 [nps实现内网穿透，将公网服务器端口映射到内网服务器端口](https://blog.csdn.net/qq_41813208/article/details/113760249)<br/>
 [超简单安装NPS内网穿透服务器](https://zhuanlan.zhihu.com/p/316438148)<br/>
+ [socks5代理ip几种工具](https://www.cnblogs.com/edeny/p/16530270.html)<br/>
 
 ## nps 介绍
 功能介绍:一款轻量级、高性能、功能强大的内网穿透代理服务器协议支持全面，兼容几乎所有常用协议，例如tcp、udp、http(s)、socks5、p2p、http代理...全平台兼容(linux、windows、macos、群辉等)，支持一键安装为系统服务控制全面，同时支持服务端和客户端控制https集成，支持将后端代理和web服务转成https，同时支持多证书操作简单，只需简单的配置即可在web ui上完成其余操作展示信息全面，流量、系统信息、即时带宽、客户端版本等扩展功能强大，该有的都有了（缓存、压缩、加密、流量限制、带宽限制、端口复用等等）域名解析具备自定义header、404页面配置、host修改、站点保护、URL路由、泛解析等功能服务端支持多用户和用户注册功能
@@ -155,6 +156,12 @@ vim /etc/nps/conf/nps.conf
 socks5 使用客户端，就厉害了。配置H5 以后，就可以访问任何内网的服务了（这里我就不介绍了）
 
 [socket5客户端](https://www.cnblogs.com/edeny/p/16530270.html?share_token=C134BBE1-03F6-4296-BBAF-56A5CDAD5B9D&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1)
+
+比如使用`proxycap` 官网地址：`http://www.proxycap.com/`
+
+![img](large\pcap_rules.gif)
+
+
 
 ### 方法二：（不建议）
 
