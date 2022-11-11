@@ -109,6 +109,43 @@ public class TestController {
 }
 ```
 
+也可以使用工具类
+
+~~~java
+import org.springframework.beans.BeansException;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ApplicationContextAware;
+import org.springframework.stereotype.Component;
+
+@Component
+public class SpringContextUtil implements ApplicationContextAware {
+
+  private static ApplicationContext CONTEXT;
+
+  public static ApplicationContext context() {
+    return CONTEXT;
+  }
+  
+  public static <T> T getBean(Class<T> beanType, String name) {
+    return CONTEXT.getBean(name, beanType);
+  }
+
+  public static <T> T getBean(Class<T> beanType) {
+    return CONTEXT.getBean(beanType);
+  }
+
+  @Override
+  public void setApplicationContext(ApplicationContext context) throws BeansException {
+    CONTEXT = context;
+  }
+
+}
+~~~
+
+可以直接通过这个工具类进行调用
+
+举例：`RedisTemplate redisTemplate = SpringContextUtil.getBean(RedisTemplate.class, "redisTemplate");`
+
 ### 方式三 手动注入ApplicationContext
 
 手动注入ApplicationContext
@@ -138,6 +175,8 @@ public class StaticMethodGetBean_3<T> implements ApplicationContextAware {
     }
 }
 ~~~~
+
+
 
 调用方式
 
