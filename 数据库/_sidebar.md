@@ -27,5 +27,8 @@
     - [07_mysql实战](数据库/MySQL使用/mysql实战1.md)
     - [08_查询表空间](数据库/MySQL使用/查询表空间.md)
    
+  - oracle
+    - [01_01安装](数据库/oracle/01安装.md)
+
   
 
