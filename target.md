@@ -41,3 +41,14 @@ https://www.toutiao.com/article/7153427109799576075/?app=news_article&timestamp=
 
  SpringBoot自定义注解+异步+观察者模式实现业务日志保存
  https://www.toutiao.com/article/7159396762061390372/?app=news_article&timestamp=1666957328&use_new_style=1&req_id=20221028194208010209157026093A7510&group_id=7159396762061390372&share_token=8917AC16-A019-4853-893F-9F9288713788&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect
+
+
+
+oracle 数据库操作：https://blog.csdn.net/qq_38667427/article/details/119323495
+
+
+
+ 请勿过度依赖Redis的过期监听
+
+https://cloud.tencent.com/developer/article/1781454
+
