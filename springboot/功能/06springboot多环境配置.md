@@ -75,13 +75,13 @@ spring:
 
 **如果同一个环境有多个配置文件，可以通过spirng.profiles.include实现多配置文件**
 
-![](https://tva1.sinaimg.cn/large/e6c9d24ely1h1pffz94d7j20g508s3ys.jpg)
+![](images/e6c9d24ely1h1pffz94d7j20g508s3ys.jpg)
 
 ?> **如果想在某个配置文件中引用其他配置文件的内容，可以使用${}符号实现**
 
-![](https://tva1.sinaimg.cn/large/e6c9d24ely1h1pfilur2qj20nf0co0to.jpg)
+![](images/e6c9d24ely1h1pfilur2qj20nf0co0to.jpg)
 
-![](https://tva1.sinaimg.cn/large/e6c9d24ely1h1pg3be7hoj20se09b0tq.jpg)
+![](images/e6c9d24ely1h1pg3be7hoj20se09b0tq.jpg)
 
 ### 多环境的优先级
 
@@ -105,7 +105,7 @@ spring:
 server.port=8081 
 ~~~~
 
-![](https://tva1.sinaimg.cn/large/e6c9d24ely1h1pfjp6c1uj20as0bzdgj.jpg)
+![](images/e6c9d24ely1h1pfjp6c1uj20as0bzdgj.jpg)
 
 运行时，使用cmd命令行指定特定的配置文件（优化级最高），cmd命令如下：
 这种情况可以加载打包后需要修改配置文件的运行，可以使用项目外的配置，如D盘的配置

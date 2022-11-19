@@ -42,13 +42,15 @@ https://www.toutiao.com/article/7153427109799576075/?app=news_article&timestamp=
  SpringBoot自定义注解+异步+观察者模式实现业务日志保存
  https://www.toutiao.com/article/7159396762061390372/?app=news_article&timestamp=1666957328&use_new_style=1&req_id=20221028194208010209157026093A7510&group_id=7159396762061390372&share_token=8917AC16-A019-4853-893F-9F9288713788&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect
 
-
-
 oracle 数据库操作：https://blog.csdn.net/qq_38667427/article/details/119323495
 
-
-
  请勿过度依赖Redis的过期监听
-
 https://cloud.tencent.com/developer/article/1781454
+
+
+ Google Protobuf 快速入门实例
+ https://www.toutiao.com/article/7166878389264908813/?app=news_article&timestamp=1668695460&use_new_style=1&req_id=202211172230590102091561620D1DB0D9&group_id=7166878389264908813&share_token=8306EBAF-820B-4F5E-84CD-EB463744837F&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect
+ 
+ 公司的这种打包启动方式，我简直惊呆了
+ toutiao.com/article/7167181389648413199/?app=news_article&timestamp=1668782865&use_new_style=1&req_id=202211182247450102120680220D203191&group_id=7167181389648413199&share_token=A3C042C5-C71C-48C5-8124-B2B25D46C814&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect
 
