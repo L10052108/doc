@@ -124,6 +124,40 @@ java -jar lqyspringboot-0.0.1-SNAPSHOT.jar --spring.config.location=D:/applicati
 
 - Spring Boot 还提供了许多其他方式进行配置，下面简单介绍几种：
 
+### pom 文件中配置
+
+在application.yml 中
+
+~~~yml
+spring:
+  profiles:
+    active: '@build.profile@'
+~~~
+
+在pom中配置
+
+~~~xml
+ <profiles>
+        <profile>
+            <id>dev</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <build.profile>dev</build.profile>
+            </properties>
+        </profile>
+        <profile>
+            <id>pro</id>
+            <properties>
+                <build.profile>pro</build.profile>
+            </properties>
+        </profile>
+    </profiles>
+~~~
+
+其中`<id>`标签下面 `<activation>`表示生效
+
 ### 代码动态配置
 
 **代码动态配置**：
@@ -176,10 +210,6 @@ spring:
 ~~~~
 
 这样加在`dev`下面的`application.yml`配置文件
-
-
-
-
 
 ## 指定环境运行
 
