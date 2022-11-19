@@ -7,8 +7,9 @@
 
 ## Springboot 打包
 
+普通的打成fatjar
 
-~~~~java
+~~~~xml
     <!-- 打包配置 -->
     <build>
         <plugins>
@@ -18,4 +19,5 @@
             </plugin>
         </plugins>
     </build>
-~~~~java
+~~~~
+
