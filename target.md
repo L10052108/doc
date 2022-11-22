@@ -48,16 +48,25 @@ oracle 数据库操作：https://blog.csdn.net/qq_38667427/article/details/11932
 https://cloud.tencent.com/developer/article/1781454
 
 
+
+
  Google Protobuf 快速入门实例
  https://www.toutiao.com/article/7166878389264908813/?app=news_article&timestamp=1668695460&use_new_style=1&req_id=202211172230590102091561620D1DB0D9&group_id=7166878389264908813&share_token=8306EBAF-820B-4F5E-84CD-EB463744837F&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect
-
 
  [ 公司的这种打包启动方式，我简直惊呆了](https://www.toutiao.com/article/7167181389648413199/?app=news_article&timestamp=1668782865&use_new_style=1&req_id=202211182247450102120680220D203191&group_id=7167181389648413199&share_token=A3C042C5-C71C-48C5-8124-B2B25D46C814&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect)
 
 
 
-
-
-
 [SpringBoot项目实现发布订阅模式，真的很简单](https://www.toutiao.com/article/7166422166932554279/?app=news_article&timestamp=1668908842&use_new_style=1&req_id=20221120094722010158046070128D9385&group_id=7166422166932554279&wxshare_count=1&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_android&utm_campaign=client_share&share_token=52aca278-e6ad-4cac-ab61-fdcee8dba457&source=m_redirect)
 
+
+
+[Google Protobuf 快速入门实例（Netty）](https://www.toutiao.com/article/7166878389264908813/?app=news_article&timestamp=1668695460&use_new_style=1&req_id=202211172230590102091561620D1DB0D9&group_id=7166878389264908813&share_token=8306EBAF-820B-4F5E-84CD-EB463744837F&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect)
+
+
+
+[ MySQL性能分析神器—Profiling](https://www.toutiao.com/article/7166909357652017679/?app=news_article&timestamp=1668904068&use_new_style=1&req_id=20221120082747010208097097003A0A65&group_id=7166909357652017679&share_token=069EE728-6C6D-4047-A727-11D1C7B529A5&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect)
+
+
+
+[一个轻量级的分布式日志标记追踪神器，十分钟接入，非常好用！](https://mp.weixin.qq.com/s/_GEMjO-7eILEID0-M5fBFw)
