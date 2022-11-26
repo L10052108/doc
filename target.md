@@ -77,5 +77,6 @@ oracle 数据库操作：https://blog.csdn.net/qq_38667427/article/details/11932
 
 
 
+idea激活
 
-
+https://www.yuque.com/yueryi/oldfish/bqrfq3 

@@ -206,10 +206,14 @@ public class Application {
 ~~~~java
 spring:
   config:
-    location: classpath:/dev/
+    location: classpath:/online/
 ~~~~
 
 这样加在`dev`下面的`application.yml`配置文件
+
+![image-20221126205203469](images\image-20221126205203469.png)
+
+online 下所有的配置文件都被加载
 
 ## 指定环境运行
 
@@ -290,6 +294,20 @@ public class Application {
 以上，就完成指定加载具体环境配置文件读取功能了。
 
 
+## 使用外部的配置文件
 
+部署的时候，有时候只需要修改配置文件。没必要每一次都需要打包，启动时候可以直接，指定配置文件的目录
 
+比如：希望执行的是`config`下的`application.yml`配置文件
 
+![image-20221126213122500](images\image-20221126213122500.png)
+
+执行的启动脚本
+
+~~~~
+java -jar -Dspring.config.location=D:\temp\jar\config\ simple-project-1.0-SNAPSHOT.jar
+~~~~
+
+运行的结果。外部的配置文件
+
+![image-20221126213320833](images\image-20221126213320833.png)
