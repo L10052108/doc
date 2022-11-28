@@ -14,6 +14,6 @@
     - [02_mac配置](computer/mac/02mac配置.md)
   
   - 网络
-    - [01_window配置两个网络](computer/网络/window配置两个网络.md)
+    - [01_window配置两个网络](computer/网络/01_window配置两个网络.md)
 
 
