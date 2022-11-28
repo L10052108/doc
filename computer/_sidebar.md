@@ -12,4 +12,8 @@
   - mac
     - [01_mac安装软件](computer/mac/01mac安装软件.md)
     - [02_mac配置](computer/mac/02mac配置.md)
+  
+  - 网络
+    - [01_window配置两个网络](computer/网络/window配置两个网络.md)
+
 
