@@ -140,7 +140,7 @@
 
 这样打出来的包，把配置文件和依赖的jar都拆分出来了
 
-![image-20221201232701971](D:\file\docs\springboot\功能\images\image-20221201232701971.png)
+![image-20221201232701971](images\image-20221201232701971.png)
 
 解压后查看`META-INF`的内容
 
