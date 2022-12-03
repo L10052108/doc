@@ -5,7 +5,7 @@
 [基于 DolphinDB 搭建微服务的 SpringBoot 项目](https://www.toutiao.com/article/7148265288654488097/?app=news_article&timestamp=1669894821&use_new_style=1&req_id=2022120119402001021207523207057EE9&group_id=7148265288654488097&share_token=145CF9E5-D680-40C0-AEEC-E28AC5DD3C73&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect&wid=1669901407728)<br/>
 [java中jar包运行之-jar和-cp命令](https://blog.csdn.net/firstendhappy/article/details/119209167)<br/>
 [SpringBoot项目部署](https://www.toutiao.com/article/7171832911283470851/?app=news_article&timestamp=1669894972&use_new_style=1&req_id=202212011942510101981121550F065469&group_id=7171832911283470851&share_token=C5EAE761-FE4E-45C7-A19B-0B97625A92D0&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect)<br/>
-
+[Spring Boot项目使用maven-assembly-plugin根据不同环境打包成tar.gz或者zip](https://blog.csdn.net/fygkchina/article/details/98882605)
 
 ## Springboot 打包
 
@@ -56,6 +56,7 @@
     </build>
 ~~~~
 
+### 拆分依赖和jar
 
 ### 拆分配置文件和jar
 ~~~~xml

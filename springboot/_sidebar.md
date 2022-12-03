@@ -3,6 +3,7 @@
   - [springboot创建项目](springboot/start.md)
 
 - 功能
+  - [00_springboot.md](springboot/功能/00springboot.md)
   - [01_springboot异步](springboot/功能/01springboot异步.md)
   - [02_springboot-aop](springboot/功能/02aop.md)
   - [03_http优雅使用客户端retrofit](springboot/功能/03http客户端retrofit.md)
@@ -20,9 +21,9 @@
   - [15_springboot打包](springboot/功能/15springboot打包.md)
   - [16_springboot跨域](springboot/功能/springboot跨域.md)
   - [17_Springboot过滤器和拦截器](springboot/功能/Springboot过滤器和拦截器.md)
-  - [获取properties](springboot/功能/获取properties.md)
-  - [PostConstruct](springboot/功能/PostConstruct.md)
-  - [返回数字结果过长](springboot/功能/返回数字结果过长.md)
+  - [18_获取properties](springboot/功能/获取properties.md)
+  - [19_PostConstruct](springboot/功能/PostConstruct.md)
+  - [20_返回数字结果过长](springboot/功能/返回数字结果过长.md)
 
 - h2
   - [01_H2的使用](springboot/h2/01H2的使用.md)
