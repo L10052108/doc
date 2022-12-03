@@ -83,3 +83,49 @@ https://blog.csdn.net/weixin_53142722/article/details/124942857?utm_medium=distr
 idea激活
 
 https://www.yuque.com/yueryi/oldfish/bqrfq3 
+
+[史上最全面的Neo4j使用指南](https://blog.csdn.net/weixin_34314962/article/details/89655551?spm=1001.2101.3001.6650.2&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-2-89655551-blog-103318347.pc_relevant_aa&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-2-89655551-blog-103318347.pc_relevant_aa&utm_relevant_index=5)
+
+
+
+再见丑陋的 SwaggerUI，这款API文档生成神器界面更炫酷，逼格更高！
+https://mp.weixin.qq.com/s/qWfdhx-b28NP6--xeTePSg
+
+
+
+[SpringBoot 如何统计、监控 SQL运行情况](https://mp.weixin.qq.com/s/FD5XSGGc-5Y-Mbms3AlFlQ)
+
+[Spring Boot 如何统计、监控 SQL 运行情况？](https://mp.weixin.qq.com/s/AJyM0DyZNczgGcXepotnjA)
+
+
+SpringBoot-21-Mybatis多数据源配置
+https://www.toutiao.com/i7072000828030485004/?tt_from=weixin&utm_campaign=client_share&wxshare_count=1×tamp=1646780594&app=news_article&utm_source=weixin&utm_medium=toutiao_android&use_new_style=1&req_id=202203090703130101502221571126F741&share_token=6639b3b4-30b1-4a41-a44c-71bbb572f2cc&group_id=7072000828030485004
+
+
+mysql之自定义函数
+https://www.cnblogs.com/progor/p/8871480.html 
+
+mysql 递归函数
+https://blog.csdn.net/weixin_33896726/article/details/92236104
+
+[Spring Boot @Condition 注解，组合条件你知道吗 ](https://www.cnblogs.com/FraserYu/p/11280420.html)
+
+[Springboot过滤器和拦截器详解及使用场景](https://www.toutiao.com/i6892269785032327684/?tt_from=weixin&utm_campaign=client_share&wxshare_count=1×tamp=1647226031&app=news_article&utm_source=weixin&utm_medium=toutiao_android&use_new_style=1&req_id=202203141047110101501630311ABBED8E&share_token=c6035892-bee0-4aea-97a2-0c4430bc3641&group_id=6892269785032327684)
+
+[SpringBoot接入轻量级分布式日志框架（GrayLog）](https://www.toutiao.com/i7074754656219808287/?tt_from=weixin&utm_campaign=client_share&wxshare_count=1×tamp=1647225790&app=news_article&utm_source=weixin&utm_medium=toutiao_android&use_new_style=1&req_id=202203141043100101501030481FB707FD&share_token=45a5bf16-3b98-49a9-ace5-4e6dc442bb55&group_id=7074754656219808287)
+
+[ElasticJob.3.0.0-beta安装与使用](https://my.oschina.net/u/437309/blog/4719406)
+
+springcloud
+https://blog.csdn.net/forezp/article/details/70148833
+
+[狂神说笔记之ElasticSearch](https://blog.csdn.net/gouzhengju1454/article/details/117707976)
+
+ES
+https://www.yuque.com/fengwenyi/pvaq8o/ftop4l
+
+jwt
+https://mp.weixin.qq.com/s/MO-rLjMbaOkibenXejhw0wc
+
+读写分离
+https://mp.weixin.qq.com/s/2_YTsOwyEByYj0K01QIYVA
