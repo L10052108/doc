@@ -80,6 +80,14 @@ https://blog.csdn.net/weixin_53142722/article/details/124942857?utm_medium=distr
 
 
 
+[只会用 xxl-job？更强大的新一代分布式任务调度框架来了！](https://mp.weixin.qq.com/s/homQEY9um9FadGXcAhzg5g)
+
+
+
+[java 中set删除](https://www.techiedelight.com/zh/remove-elements-from-set-java/)
+
+
+
 idea激活
 
 https://www.yuque.com/yueryi/oldfish/bqrfq3 

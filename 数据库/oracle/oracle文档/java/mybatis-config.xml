@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<!-- 别名 -->
+	<typeAliases>
+		<package name="com.junhui_hz.pay"/>
+	</typeAliases>
+	
+	<plugins>
+		<plugin interceptor="com.github.pagehelper.PageHelper">
+			<!--数据库方言-->
+			<property name="dialect" value="oracle"/>
+			<!--设置成true ,使用rowbounds分页进行count会出现总条数的-->
+			<property name="rowBoundsWithCount" value="true"/>
+		</plugin>
+	</plugins>
+</configuration>

@@ -1,0 +1,18 @@
+create tablespace ucity
+datafile 'ucity.dbf'
+size 100m
+autoextend on
+next 10m
+
+
+create user ucity
+identified by city2020
+default tablespace ucity
+
+
+grant dba to ucity
+
+
+# 解锁 scott 数据库
+alter user scott account unlock;
+alter user scott identified by tiger;
