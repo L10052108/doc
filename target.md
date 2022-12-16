@@ -137,3 +137,22 @@ https://mp.weixin.qq.com/s/MO-rLjMbaOkibenXejhw0wc
 
 读写分离
 https://mp.weixin.qq.com/s/2_YTsOwyEByYj0K01QIYVA
+
+
+
+[springBoot集成webSocket并使用postMan进行测试](https://www.toutiao.com/article/7177193271481860619/?app=news_article&timestamp=1671119163&use_new_style=1&req_id=202212152346037A22732ED825E889A450&group_id=7177193271481860619&share_token=032BBC14-0454-4D6F-BCFF-CB532E817C69&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect)
+
+[mysql数据同步到elasticsearch数据解决方案](https://www.toutiao.com/article/7176838363440398852/?app=news_article&timestamp=1671076798&use_new_style=1&req_id=20221215115958E446858BC8318E495254&group_id=7176838363440398852&share_token=9BD630F9-926F-42FC-BA9C-1043A442DAB9&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect)
+
+
+[SpringBoot+ElasticSearch 实现模糊查询，批量CRUD，排序，分页，高亮！](https://mp.weixin.qq.com/s/qoK_OlUTVnN9fPSWsUF6uw)
+
+[准确率 99.9% 的离线IP地址定位库](https://mp.weixin.qq.com/s/m0Pxbi3QMekxRrz8KvpDcQ)
+
+[SpringBoot集成kettle实现对接oracle数据](https://www.toutiao.com/article/7175357672575959586/?app=news_article&timestamp=1670687517&use_new_style=1&req_id=202212102351574B0A7436F0AA94505E19&group_id=7175357672575959586&share_token=625FCBB3-E435-4BE0-8AE0-62E72542C876&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect)
+
+
+[JUC并发编程02——AQS源码剖析](https://www.toutiao.com/article/7175332221471965730/?app=news_article&timestamp=1670687164&use_new_style=1&req_id=202212102346042AF7C96DBF45344B976F&group_id=7175332221471965730&share_token=B1DED9F3-448E-409D-9A39-FD070E92CEE8&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect)
+
+
+[SpringBoot中统一日志管理](https://www.toutiao.com/article/7174784709573198376/?app=news_article&timestamp=1670686318&use_new_style=1&req_id=202212102331589D26B075A0C58F4D3893&group_id=7174784709573198376&share_token=1E2798B4-9CAC-40DC-A7FC-7F326D30F890&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect)
