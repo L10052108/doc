@@ -83,6 +83,19 @@ spring:
 
 ![](images/e6c9d24ely1h1pg3be7hoj20se09b0tq.jpg)
 
+### 多文件配置
+
+```
+# 指定配置环境
+spring:
+  profiles:
+    include: redis
+```
+
+![image-20221221123926220](img/image-20221221123926220.png)
+
+这样就可以引入redis了
+
 ### 多环境的优先级
 
 ~~~~shell
