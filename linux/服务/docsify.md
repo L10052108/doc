@@ -159,7 +159,11 @@ index.html配置
   - [TCP/IP](/general/network/tcp-ip.md)
 ~~~~
 
+## markdown 使用
 
+需要插入图片这种使用typora客户端
+
+![image-20221221115811927](img/image-20221221115811927.png)
 
 ## 插件
 
