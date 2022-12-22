@@ -142,6 +142,8 @@ https://mp.weixin.qq.com/s/2_YTsOwyEByYj0K01QIYVA
 
 [springBoot集成webSocket并使用postMan进行测试](https://www.toutiao.com/article/7177193271481860619/?app=news_article&timestamp=1671119163&use_new_style=1&req_id=202212152346037A22732ED825E889A450&group_id=7177193271481860619&share_token=032BBC14-0454-4D6F-BCFF-CB532E817C69&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect)
 
+
+
 [mysql数据同步到elasticsearch数据解决方案](https://www.toutiao.com/article/7176838363440398852/?app=news_article&timestamp=1671076798&use_new_style=1&req_id=20221215115958E446858BC8318E495254&group_id=7176838363440398852&share_token=9BD630F9-926F-42FC-BA9C-1043A442DAB9&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect)
 
 
@@ -154,5 +156,31 @@ https://mp.weixin.qq.com/s/2_YTsOwyEByYj0K01QIYVA
 
 [JUC并发编程02——AQS源码剖析](https://www.toutiao.com/article/7175332221471965730/?app=news_article&timestamp=1670687164&use_new_style=1&req_id=202212102346042AF7C96DBF45344B976F&group_id=7175332221471965730&share_token=B1DED9F3-448E-409D-9A39-FD070E92CEE8&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect)
 
-
 [SpringBoot中统一日志管理](https://www.toutiao.com/article/7174784709573198376/?app=news_article&timestamp=1670686318&use_new_style=1&req_id=202212102331589D26B075A0C58F4D3893&group_id=7174784709573198376&share_token=1E2798B4-9CAC-40DC-A7FC-7F326D30F890&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect)
+
+
+
+
+
+卡机启动
+
+[开机自启动浏览器并全屏打开网站](https://blog.csdn.net/liyongchunscr/article/details/125232517)
+
+[Windows设置开机自启动bat脚本](https://blog.csdn.net/weixin_42272246/article/details/126388954)
+
+[windows开机自启(通过bat脚本)](https://blog.csdn.net/weixin_43329956/article/details/114946467?spm=1001.2101.3001.6650.1&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-114946467-blog-125020433.pc_relevant_recovery_v2&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-114946467-blog-125020433.pc_relevant_recovery_v2&utm_relevant_index=2)
+
+
+
+[SpringBoot 过滤器、拦截器、监听器对比及使用场景](https://www.toutiao.com/article/7179777247111627321/?app=news_article&timestamp=1671684529&use_new_style=1&req_id=20221222124848BCBA5BB2781D070CA196&group_id=7179777247111627321&share_token=49349541-C358-4553-9EC1-F47D9C9F6C5F&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect)
+
+[阿里面试必问Spring Security进阶学习](https://www.toutiao.com/article/7174967275160961576/?app=news_article&timestamp=1671639173&use_new_style=1&req_id=20221222001252275D9AA5B4A6DD2A4E85&group_id=7174967275160961576&share_token=83C05213-EAFF-48BC-9ECC-C9AD8DE66666&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect)
+
+[SpringBoot进阶-SpringBoot整合Redis实现发布订阅功能](https://www.toutiao.com/article/7179527015451116091/?app=news_article&timestamp=1671638402&use_new_style=1&req_id=202212220000021F004E46959E2B2944CD&group_id=7179527015451116091&share_token=80107BEF-910D-4DA5-8DFC-DECAD9809740&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect)
+
+
+
+[illa-builder 是一款开源的 #低代码# 平台](https://www.toutiao.com/w/1752716652642311/?app=news_article&timestamp=1671585472&use_new_style=1&share_token=D3F63ABB-E85F-453E-97E9-726EEB7C8E71&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect)
+
+[GitHub中文排行榜](https://github.com/GrowingGit/GitHub-Chinese-Top-Charts) 
+
