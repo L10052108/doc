@@ -12,6 +12,9 @@
   - mac
     - [01_mac安装软件](computer/mac/01mac安装软件.md)
     - [02_mac配置](computer/mac/02mac配置.md)
+  - window
+    - [01_mac安装软件](computer/win/01开机启动浏览器.md)
+    - [02_检测网络启动服务](computer/win/02检测网络启动服务.md)
   
   - 网络
     - [01_window配置两个网络](computer/网络/01_window配置两个网络.md)

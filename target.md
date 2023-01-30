@@ -162,16 +162,6 @@ https://mp.weixin.qq.com/s/2_YTsOwyEByYj0K01QIYVA
 
 
 
-卡机启动
-
-[开机自启动浏览器并全屏打开网站](https://blog.csdn.net/liyongchunscr/article/details/125232517)
-
-[Windows设置开机自启动bat脚本](https://blog.csdn.net/weixin_42272246/article/details/126388954)
-
-[windows开机自启(通过bat脚本)](https://blog.csdn.net/weixin_43329956/article/details/114946467?spm=1001.2101.3001.6650.1&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-114946467-blog-125020433.pc_relevant_recovery_v2&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-114946467-blog-125020433.pc_relevant_recovery_v2&utm_relevant_index=2)
-
-
-
 [SpringBoot 过滤器、拦截器、监听器对比及使用场景](https://www.toutiao.com/article/7179777247111627321/?app=news_article&timestamp=1671684529&use_new_style=1&req_id=20221222124848BCBA5BB2781D070CA196&group_id=7179777247111627321&share_token=49349541-C358-4553-9EC1-F47D9C9F6C5F&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect)
 
 [阿里面试必问Spring Security进阶学习](https://www.toutiao.com/article/7174967275160961576/?app=news_article&timestamp=1671639173&use_new_style=1&req_id=20221222001252275D9AA5B4A6DD2A4E85&group_id=7174967275160961576&share_token=83C05213-EAFF-48BC-9ECC-C9AD8DE66666&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect)
