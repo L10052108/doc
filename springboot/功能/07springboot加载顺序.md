@@ -1,6 +1,7 @@
 资料来源：<br/>
 [bootstrap.yml无法加载](https://blog.csdn.net/lizz861109/article/details/116646960)<br/>
 [Springboot 中配置文件的优先级和加载顺序](https://www.cnblogs.com/panchanggui/p/10788652.html)<br/>
+[Spring Boot配置文件的位置和优先级](https://blog.csdn.net/ai97926/article/details/127618284)
 
 ### 加载顺序
 
@@ -12,7 +13,7 @@
 >
 >   bootstrap.yml 由父Spring ApplicationContext加载。
 >
->   ​ •bootstrap.yml 可以理解成系统级别的一些参数配置，这些参数一般是不会变动的。<br/>
+>    •bootstrap.yml 可以理解成系统级别的一些参数配置，这些参数一般是不会变动的。<br/>
 >   ​ •application.yml 可以用来定义应用级别的，如果搭配 spring-cloud-config 使用 application.yml 里面定义的文件可以实现动态替换。
 
 - 不同位置的配置文件的加载顺序：
@@ -32,6 +33,10 @@
 ~~~~Shell
 bootstrap.yml > application.yml > application.properties
 ~~~~
+
+### 配置文件顺序
+1、file:./config/（项目路径下的config文件夹配置文件优先级最高）
+
 
 ### bootstrap无法加载问题
 
@@ -63,5 +68,18 @@ bootstrap.yml > application.yml > application.properties
 
 使用其他spring cloud starter组件时，会内置context组件。
 
+![77065cf1399d4dd088d00d14c67b2041](img\77065cf1399d4dd088d00d14c67b2041.png)
 
+2、file:/（项目路径下的配置文件优先级其后）
 
+![a4f9aa4a98a4449492a796e5280a14b6](img\a4f9aa4a98a4449492a796e5280a14b6.png)
+
+3、classpath:/config/（资源路径下的config文件夹配置文件优先级为三）
+
+![6749d04b27c84c0f8f14e174a39c051e](img\6749d04b27c84c0f8f14e174a39c051e.png)
+
+4、classpath:/（资源路径下的配置文件优先级最低）
+
+![2e1279337d26485c882aab952e424932](img\2e1279337d26485c882aab952e424932.png)
+
+?>  文件加载位置的优先级为：1 > 2 > 3 > 4 
