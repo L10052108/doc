@@ -174,3 +174,12 @@ https://mp.weixin.qq.com/s/2_YTsOwyEByYj0K01QIYVA
 
 [GitHub中文排行榜](https://github.com/GrowingGit/GitHub-Chinese-Top-Charts) 
 
+
+
+[232控制程序](https://www.freesion.com/article/5264714225/)
+
+ confluence介绍
+
+https://blog.csdn.net/yangbindxj/article/details/128232675
+
+https://www.cnblogs.com/hujinzhong/p/11955880.html
