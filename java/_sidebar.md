@@ -56,8 +56,8 @@
 
 - netty
   - [01_websocket使用](java/netty/webSocket.md)
-
-
+  - [02_netty中client的使用](java/netty/netty_client.md)
+  - [03_netty中client的断开后重连](java/netty/netty_client2.md)
 
 - 工具
   - [01_maven](java/工具/maven.md)
