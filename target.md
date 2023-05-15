@@ -193,3 +193,45 @@ https://github.com/OpenEthan/SMSBoom
 [232控制程序](https://www.freesion.com/article/5264714225/)
 
 https://blog.csdn.net/qq_28743877/article/details/104012106
+
+
+
+# ByteBuf用法详解
+
+https://blog.csdn.net/smith789/article/details/104410317?spm=1001.2101.3001.6650.1&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-104410317-blog-123698827.235%5Ev33%5Epc_relevant_increate_t0_download_v2_base&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-104410317-blog-123698827.235%5Ev33%5Epc_relevant_increate_t0_download_v2_base&utm_relevant_index=2
+
+
+【Netty】option(ChannelOption.SO_KEEPALIVE, true) socket参数详解:KeepAlive
+
+https://andyoung.blog.csdn.net/article/details/113653633?spm=1001.2101.3001.6650.3&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-3-113653633-blog-109404456.235%5Ev35%5Epc_relevant_increate_t0_download_v2_base&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-3-113653633-blog-109404456.235%5Ev35%5Epc_relevant_increate_t0_download_v2_base&utm_relevant_index=4
+
+
+
+ future.channel().closeFuture().sync();后面代码不执行
+
+https://blog.csdn.net/csdm_admin/article/details/61623965?locationNum=9&fps=1&utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_baidulandingword~default-0-61623965-blog-108224455.235^v35^pc_relevant_increate_t0_download_v2_base&spm=1001.2101.3001.4242.1&utm_relevant_index=1
+
+
+
+ 一起学Netty（十四）之 Netty生产级的心跳和重连机制
+
+https://blog.csdn.net/linuu/article/details/51509847?spm=1001.2101.3001.6661.1&utm_medium=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-51509847-blog-113653633.235%5Ev35%5Epc_relevant_increate_t0_download_v2_base&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-51509847-blog-113653633.235%5Ev35%5Epc_relevant_increate_t0_download_v2_base&utm_relevant_index=1
+
+
+
+阿里的冯家春（fengjiachun）的[github](https://so.csdn.net/so/search?q=github&spm=1001.2101.3001.7020)上的开源代码Jupiter
+
+
+
+v2ray免费节点
+
+https://github.com/Pawdroid/Free-servers 
+
+
+
+ Git报错：Permission denied (publickey) 解决办法
+
+https://blog.csdn.net/libeiqi1201/article/details/117107099
+
+
+
