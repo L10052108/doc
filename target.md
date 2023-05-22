@@ -235,3 +235,20 @@ https://blog.csdn.net/libeiqi1201/article/details/117107099
 
 
 
+
+
+** 如何正确控制springboot中bean的加载顺序总结
+https://blog.csdn.net/x275920/article/details/124364134
+
+
+
+** Java函数式编程(一)–Function的使用
+https://blog.csdn.net/boyan_HFUT/article/details/99618833?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_baidulandingword~default-1-99618833-blog-129592133.235^v35^pc_relevant_increate_t0_download_v2_base&spm=1001.2101.3001.4242.2&utm_relevant_index=4
+
+
+
+# [不灭的焱](https://php-note.com/)
+
+### 革命尚未成功，同志仍须
+
+https://php-note.com/1572.html

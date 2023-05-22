@@ -111,6 +111,25 @@ public class TestController {
 
 也可以使用工具类
 
+启动类上修改
+
+```
+@SpringBootApplication
+@DependsOn(value = "springContextUtil")
+public class Application {
+
+  /**
+   * 
+   * @param args
+   */
+   public static void main(String[] args) {
+      SpringApplication.run(Application.class, args);
+   }
+}
+```
+
+@DependsOn(value = "springContextUtil") 指的是先加载springContextUtil 再执行方法
+
 ~~~java
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
