@@ -182,9 +182,15 @@ https://www.cnblogs.com/hujinzhong/p/11955880.html
 
 
 
-smsboom
 
-https://github.com/OpenEthan/SMSBoom
+
+[Spring Boot 一个注解，优雅的实现重试机制](https://blog.csdn.net/qq_35387940/article/details/99676114)
+
+[Springboot 整合 xxljob 动态API调度任务(进阶篇)](https://blog.csdn.net/qq_35387940/article/details/125410895)
+
+[Spring Boot + Disruptor 等于 王炸！！](https://mp.weixin.qq.com/s/e52KI8i0Lb-dOseHJ9eVBg)
+
+[smsboom](https://github.com/OpenEthan/SMSBoom)
 
 
 
@@ -213,10 +219,6 @@ https://blog.csdn.net/csdm_admin/article/details/61623965?locationNum=9&fps=1&ut
 
 
 
- 一起学Netty（十四）之 Netty生产级的心跳和重连机制
-
-https://blog.csdn.net/linuu/article/details/51509847?spm=1001.2101.3001.6661.1&utm_medium=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-51509847-blog-113653633.235%5Ev35%5Epc_relevant_increate_t0_download_v2_base&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-51509847-blog-113653633.235%5Ev35%5Epc_relevant_increate_t0_download_v2_base&utm_relevant_index=1
-
 
 
 阿里的冯家春（fengjiachun）的[github](https://so.csdn.net/so/search?q=github&spm=1001.2101.3001.7020)上的开源代码Jupiter
@@ -242,8 +244,7 @@ https://blog.csdn.net/x275920/article/details/124364134
 
 
 
- Java函数式编程(一)–Function的使用
-https://blog.csdn.net/boyan_HFUT/article/details/99618833?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_baidulandingword~default-1-99618833-blog-129592133.235^v35^pc_relevant_increate_t0_download_v2_base&spm=1001.2101.3001.4242.2&utm_relevant_index=4
+[ Java函数式编程(一)–Function的使用](https://blog.csdn.net/boyan_HFUT/article/details/99618833?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_baidulandingword~default-1-99618833-blog-129592133.235^v35^pc_relevant_increate_t0_download_v2_base&spm=1001.2101.3001.4242.2&utm_relevant_index=4)
 
 
 
@@ -261,39 +262,26 @@ https://www.jianshu.com/p/cd915908cb96
 
 
 
-SpringBoot + Druid DataSource 实现监控 MySQL 性能
-https://www.toutiao.com/article/7203906287799681575/?app=news_article&timestamp=1677376865&use_new_style=1&req_id=202302261001055BB2848D7D41F6989694&group_id=7203906287799681575&share_token=9CB9513B-EEE5-419A-869A-8C36EBFB12D8&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect
-Spring高级之注解@DependsOn详解（超详细）
-https://blog.csdn.net/qq_40837310/article/details/106557588
-
-
-websocket调试工具
-https://www.toutiao.com/article/7185066376376173056/?app=news_article&timestamp=1677311632&use_new_style=1&req_id=20230225155351499BEABE73136C5C4D34&group_id=7185066376376173056&share_token=A289150C-4035-4389-8FC4-5FE1875F6658&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect
-
-并发编程-队列
-https://www.toutiao.com/article/7192866288283386406/?app=news_article&timestamp=1677310427&use_new_style=1&req_id=20230225153347483B6D6B62D91E5A396B&group_id=7192866288283386406&share_token=9CDCD7CF-E409-4BDD-9AAC-2A6D8CF46EEF&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect
 
 
 
-学过这么一遍，Spring循环依赖问题难不倒我
-https://www.toutiao.com/article/7202414607967797797/?app=news_article&timestamp=1677309779&use_new_style=1&req_id=20230225152258722986A84AD7935BB356&group_id=7202414607967797797&share_token=62BCD2D1-9047-40E6-95FF-BAC08E8223B9&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect
-
-SpringBoot进阶-SpringBoot如何实现配置文件脱敏？
-https://www.toutiao.com/article/7193965484314903074/?app=news_article&timestamp=1675054122&use_new_style=1&req_id=202301301248411557B3506967C58E6B93&group_id=7193965484314903074&share_token=1919C290-124A-4A3B-88C7-E48B64681CCB&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect
 
 
+[SpringBoot + Druid DataSource 实现监控 MySQL 性能](https://www.toutiao.com/article/7203906287799681575/?app=news_article&timestamp=1677376865&use_new_style=1&req_id=202302261001055BB2848D7D41F6989694&group_id=7203906287799681575&share_token=9CB9513B-EEE5-419A-869A-8C36EBFB12D8&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect)
 
-Java CompletableFuture 异步超时实现探索
-https://www.toutiao.com/article/7197605539877093921/?app=news_article&timestamp=1676476125&use_new_style=1&req_id=2023021523484417538688F164B72577EA&group_id=7197605539877093921&share_token=F2929B7D-9995-4EBA-A0ED-856E67CB2E44&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect
+[Spring高级之注解@DependsOn详解（超详细）](https://blog.csdn.net/qq_40837310/article/details/106557588)
 
-如何使用IntelliJ IDEA远程调试Spring Boot程序
-https://www.toutiao.com/article/7202847959141204518/?app=news_article&timestamp=1677300028&use_new_style=1&req_id=202302251240275E85844C72A2635441D2&group_id=7202847959141204518&share_token=B6C63BF3-3DAA-43A8-9EF5-991163DA327C&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect
+[websocket调试工具](https://www.toutiao.com/article/7185066376376173056/?app=news_article&timestamp=1677311632&use_new_style=1&req_id=20230225155351499BEABE73136C5C4D34&group_id=7185066376376173056&share_token=A289150C-4035-4389-8FC4-5FE1875F6658&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect)
 
-并发编程-队列
-https://www.toutiao.com/article/7192866288283386406/?app=news_article&timestamp=1677310427&use_new_style=1&req_id=20230225153347483B6D6B62D91E5A396B&group_id=7192866288283386406&share_token=9CDCD7CF-E409-4BDD-9AAC-2A6D8CF46EEF&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect
+[并发编程-队列](https://www.toutiao.com/article/7192866288283386406/?app=news_article&timestamp=1677310427&use_new_style=1&req_id=20230225153347483B6D6B62D91E5A396B&group_id=7192866288283386406&share_token=9CDCD7CF-E409-4BDD-9AAC-2A6D8CF46EEF&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect)
 
-websocket调试工具
-https://www.toutiao.com/article/7185066376376173056/?app=news_article&timestamp=1677311632&use_new_style=1&req_id=20230225155351499BEABE73136C5C4D34&group_id=7185066376376173056&share_token=A289150C-4035-4389-8FC4-5FE1875F6658&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect
+[学过这么一遍，Spring循环依赖问题难不倒我](https://www.toutiao.com/article/7202414607967797797/?app=news_article&timestamp=1677309779&use_new_style=1&req_id=20230225152258722986A84AD7935BB356&group_id=7202414607967797797&share_token=62BCD2D1-9047-40E6-95FF-BAC08E8223B9&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect)
+
+[SpringBoot进阶-SpringBoot如何实现配置文件脱敏？](https://www.toutiao.com/article/7193965484314903074/?app=news_article&timestamp=1675054122&use_new_style=1&req_id=202301301248411557B3506967C58E6B93&group_id=7193965484314903074&share_token=1919C290-124A-4A3B-88C7-E48B64681CCB&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect)
+
+[Java CompletableFuture 异步超时实现探索](https://www.toutiao.com/article/7197605539877093921/?app=news_article&timestamp=1676476125&use_new_style=1&req_id=2023021523484417538688F164B72577EA&group_id=7197605539877093921&share_token=F2929B7D-9995-4EBA-A0ED-856E67CB2E44&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect)
+
+[如何使用IntelliJ IDEA远程调试Spring Boot程序](https://www.toutiao.com/article/7202847959141204518/?app=news_article&timestamp=1677300028&use_new_style=1&req_id=202302251240275E85844C72A2635441D2&group_id=7202847959141204518&share_token=B6C63BF3-3DAA-43A8-9EF5-991163DA327C&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect)
 
 
 
@@ -301,8 +289,11 @@ https://www.toutiao.com/article/7185066376376173056/?app=news_article&timestamp=
 
 
 
-github上可激活win10和office的开源、无毒的放心工具
-https://www.toutiao.com/article/7206248142433010231/?app=news_article&timestamp=1679838681&use_new_style=1&req_id=20230326215120F96C467D997E51D7C509&group_id=7206248142433010231&share_token=5C349BF4-C0E6-43B6-9739-25F0A16AAE4D&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=2&source=m_redirect
+[github上可激活win10和office的开源、无毒的放心工具](https://www.toutiao.com/article/7206248142433010231/?app=news_article&timestamp=1679838681&use_new_style=1&req_id=20230326215120F96C467D997E51D7C509&group_id=7206248142433010231&share_token=5C349BF4-C0E6-43B6-9739-25F0A16AAE4D&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=2&source=m_redirect)
+
+
+
+
 
 
 

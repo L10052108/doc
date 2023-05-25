@@ -24,7 +24,8 @@
   - [18_获取properties](springboot/功能/获取properties.md)
   - [19_PostConstruct](springboot/功能/PostConstruct.md)
   - [20_返回数字结果过长](springboot/功能/返回数字结果过长.md)
-
+  - [21_spring循环依赖](springboot/功能/20spring循环依赖.md)
+  
 - h2
   - [01_H2的使用](springboot/h2/01H2的使用.md)
 
@@ -53,12 +54,12 @@
   - [servieImpl](springboot/mybatis_puls/servieImpl.md)
   - [其他功能](springboot/mybatis_puls/其他功能.md)
 
-[comment]: <> (sba笔记需要完善)
+[comment]: <> "sba笔记需要完善"
 - sba
   - [01_Spring Boot Admin，贼好使](springboot/sba/Spring_Boot_Admin.md)
   - [02_报警提醒和登录验证](springboot/sba/报警提醒和登录验证功能实现.md)
 
-[comment]: <> (分布式定时任务)
+[comment]: <> "分布式定时任务"
 - 定时任务
   - [00_cron表达式](springboot/定时任务/cron表达式.md)
   - [01_主流的定时任务](springboot/定时任务/主流的分布式定时任务.md)

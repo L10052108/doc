@@ -1,3 +1,7 @@
+资料来源：
+
+[mysql重置root密码centos_mysql 5.7 root密码重置(centos 7)](https://blog.csdn.net/weixin_33152959/article/details/114352722)
+
 ## 方法一
 
 ### 数据源
@@ -63,15 +67,34 @@ flush privileges;
 exit
 ```
 
-### 在云服务上增加MySQL的端口
+### 忘记密码
 
-各家云服务不一样，这里不介绍
+当然有些人可能是root密码真忘记了，那样可以通过mysql免密码登陆
 
-- 远程连接效果
+- 在其配置文件/etc/my.cnf中加入`skip-grant-tables=1`
+- 重启mysql服务器 `systemctl restart mysqld`
+- 进行免密连接到mysql
 
-![](https://tva1.sinaimg.cn/large/e6c9d24ely1h0ha33ov2rj20wc0u0758.jpg ':size=80%')
+![image-20230524164152731](img\image-20230524164152731.png 'size=50%')
 
+```
+mysql 
+mysql> use mysql
+mysql> update user set authentication_string = password("123456") where user="root";
+mysql> flush privileges;
+```
 
+在此要注意的是，之前版本密码修改字段为password，在5.7版本之后字段为authentication_string
+
+mysql密码难度修改
+
+mysql密码修改为123456之后，有人发现使用123456能进入mysql，但是却不能使用mysql的任何功能。会出现如下情况:
+
+- 然后将/etc/my.cnf中的skip-grant-tables=1注释掉，重启mysql服务即可。
+
+- 重新进入服务后`mysql -uroot -p123456`
+
+  
 
 ## 卸载MySQL
 
