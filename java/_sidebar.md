@@ -36,6 +36,7 @@
     - [Lombok的使用](java/其他/Lombok.md)
     - [为什么有的团队禁止使用Lombok](java/其他/禁止使用Lombok.md)
   - [03_序列化](java/其他/03序列化的使用.md)
+  - [04_串口](java/其他/04_串口.md)
 
 - 设计模式
   - [00设计模式](java/设计模式/00快速记住23种设计模式.md)
@@ -56,8 +57,12 @@
 
 - netty
   - [01_websocket使用](java/netty/webSocket.md)
+  - [01_02websocket使用](java/netty/websocket2.md)
   - [02_netty中client的使用](java/netty/netty_client.md)
   - [03_netty中client的断开后重连](java/netty/netty_client2.md)
+
+
+  
 
 - 工具
   - [01_maven](java/工具/maven.md)

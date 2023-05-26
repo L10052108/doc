@@ -24,7 +24,9 @@
   - [18_获取properties](springboot/功能/获取properties.md)
   - [19_PostConstruct](springboot/功能/PostConstruct.md)
   - [20_返回数字结果过长](springboot/功能/返回数字结果过长.md)
-  - [21_spring循环依赖](springboot/功能/20spring循环依赖.md)
+  - [21_spring循环依赖](springboot/功能/21spring循环依赖.md)
+  - [22_springboot静态资源](springboot/功能/22_springboot静态资源.md)
+
   
 - h2
   - [01_H2的使用](springboot/h2/01H2的使用.md)
