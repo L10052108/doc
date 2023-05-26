@@ -142,8 +142,6 @@ https://mp.weixin.qq.com/s/2_YTsOwyEByYj0K01QIYVA
 
 [springBoot集成webSocket并使用postMan进行测试](https://www.toutiao.com/article/7177193271481860619/?app=news_article&timestamp=1671119163&use_new_style=1&req_id=202212152346037A22732ED825E889A450&group_id=7177193271481860619&share_token=032BBC14-0454-4D6F-BCFF-CB532E817C69&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect)
 
-
-
 [mysql数据同步到elasticsearch数据解决方案](https://www.toutiao.com/article/7176838363440398852/?app=news_article&timestamp=1671076798&use_new_style=1&req_id=20221215115958E446858BC8318E495254&group_id=7176838363440398852&share_token=9BD630F9-926F-42FC-BA9C-1043A442DAB9&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect)
 
 
@@ -182,23 +180,11 @@ https://www.cnblogs.com/hujinzhong/p/11955880.html
 
 
 
-
-
 [Spring Boot 一个注解，优雅的实现重试机制](https://blog.csdn.net/qq_35387940/article/details/99676114)
 
 [Springboot 整合 xxljob 动态API调度任务(进阶篇)](https://blog.csdn.net/qq_35387940/article/details/125410895)
 
 [Spring Boot + Disruptor 等于 王炸！！](https://mp.weixin.qq.com/s/e52KI8i0Lb-dOseHJ9eVBg)
-
-[smsboom](https://github.com/OpenEthan/SMSBoom)
-
-
-
-串口的使用
-
-[232控制程序](https://www.freesion.com/article/5264714225/)
-
-https://blog.csdn.net/qq_28743877/article/details/104012106
 
 
 
@@ -219,8 +205,6 @@ https://blog.csdn.net/csdm_admin/article/details/61623965?locationNum=9&fps=1&ut
 
 
 
-
-
 阿里的冯家春（fengjiachun）的[github](https://so.csdn.net/so/search?q=github&spm=1001.2101.3001.7020)上的开源代码Jupiter
 
 
@@ -234,17 +218,6 @@ https://github.com/Pawdroid/Free-servers
  Git报错：Permission denied (publickey) 解决办法
 
 https://blog.csdn.net/libeiqi1201/article/details/117107099
-
-
-
-
-
-** 如何正确控制springboot中bean的加载顺序总结
-https://blog.csdn.net/x275920/article/details/124364134
-
-
-
-[ Java函数式编程(一)–Function的使用](https://blog.csdn.net/boyan_HFUT/article/details/99618833?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_baidulandingword~default-1-99618833-blog-129592133.235^v35^pc_relevant_increate_t0_download_v2_base&spm=1001.2101.3001.4242.2&utm_relevant_index=4)
 
 
 
@@ -262,16 +235,9 @@ https://www.jianshu.com/p/cd915908cb96
 
 
 
-
-
-
-
-
 [SpringBoot + Druid DataSource 实现监控 MySQL 性能](https://www.toutiao.com/article/7203906287799681575/?app=news_article&timestamp=1677376865&use_new_style=1&req_id=202302261001055BB2848D7D41F6989694&group_id=7203906287799681575&share_token=9CB9513B-EEE5-419A-869A-8C36EBFB12D8&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect)
 
 [Spring高级之注解@DependsOn详解（超详细）](https://blog.csdn.net/qq_40837310/article/details/106557588)
-
-[websocket调试工具](https://www.toutiao.com/article/7185066376376173056/?app=news_article&timestamp=1677311632&use_new_style=1&req_id=20230225155351499BEABE73136C5C4D34&group_id=7185066376376173056&share_token=A289150C-4035-4389-8FC4-5FE1875F6658&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect)
 
 [并发编程-队列](https://www.toutiao.com/article/7192866288283386406/?app=news_article&timestamp=1677310427&use_new_style=1&req_id=20230225153347483B6D6B62D91E5A396B&group_id=7192866288283386406&share_token=9CDCD7CF-E409-4BDD-9AAC-2A6D8CF46EEF&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect)
 
@@ -286,8 +252,6 @@ https://www.jianshu.com/p/cd915908cb96
 
 
 [Springboot 多模块项目搭建](https://www.toutiao.com/article/7194754280837136952/?app=news_article&timestamp=1677312089&use_new_style=1&req_id=20230225160129F5EC5136F313145AFDD2&group_id=7194754280837136952&share_token=D911315E-DF1F-48B6-BB2C-5E72EDD81FC9&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect)
-
-
 
 [github上可激活win10和office的开源、无毒的放心工具](https://www.toutiao.com/article/7206248142433010231/?app=news_article&timestamp=1679838681&use_new_style=1&req_id=20230326215120F96C467D997E51D7C509&group_id=7206248142433010231&share_token=5C349BF4-C0E6-43B6-9739-25F0A16AAE4D&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=2&source=m_redirect)
 
