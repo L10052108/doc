@@ -60,9 +60,8 @@
   - [01_02websocket使用](java/netty/websocket2.md)
   - [02_netty中client的使用](java/netty/netty_client.md)
   - [03_netty中client的断开后重连](java/netty/netty_client2.md)
+  - [04_netty之ByteBuf用法](java/netty/04ByteBuf用法.md)
 
-
-  
 
 - 工具
   - [01_maven](java/工具/maven.md)
