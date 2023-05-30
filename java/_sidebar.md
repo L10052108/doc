@@ -16,6 +16,11 @@
   - [12_超时执行](java/并发编程/12超时执行.md)
 
 
+[//]: # "常用的类"
+- 常用的类
+  - [01_String](java/pojo/01_String.md)
+
+
 [//]: # "idea相关的内容"
 - idea
   - [01_httpClient](java/idea/01httpClient.md)
