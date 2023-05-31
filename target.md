@@ -282,7 +282,6 @@ https://www.mydigit.cn/thread-378643-1-1.html （资料列表）
 [教你如何使用 SpringBoot 日志](https://www.toutiao.com/article/7230986210762916389/?app=news_article&timestamp=1685233646&use_new_style=1&req_id=2023052808272510B493444499BF21F6E2&group_id=7230986210762916389&wxshare_count=1&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_android&utm_campaign=client_share&share_token=64ba6ebb-a7f4-4f1f-8791-7d3857bfc733&source=m_redirect)
 
 
-
 [【实践篇】教你玩转JWT认证---从一个优惠券聊起](https://www.toutiao.com/article/7234699843615097400/?app=news_article&timestamp=1685401424&use_new_style=1&req_id=202305300703448B8BE027BEE0B535FA3B&group_id=7234699843615097400&wxshare_count=1&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_android&utm_campaign=client_share&share_token=b9b8c368-9b4b-4958-a25b-126529cfb8ab&source=m_redirect)
 
 [Netty服务端开发及性能优化](https://www.toutiao.com/article/7227022004753482300/?app=news_article&timestamp=1685403739&use_new_style=1&req_id=202305300742192689551D38D07237E60D&group_id=7227022004753482300&wxshare_count=1&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_android&utm_campaign=client_share&share_token=9cd66856-4719-422e-8be0-9f291fa8f5e2&source=m_redirect)
@@ -292,3 +291,6 @@ https://www.mydigit.cn/thread-378643-1-1.html （资料列表）
 [Netty 组件介绍](https://www.toutiao.com/article/7203517335574086177/?app=news_article&timestamp=1685406318&use_new_style=1&req_id=2023053008251804897A44FA2E2A3BD065&group_id=7203517335574086177&wxshare_count=1&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_android&utm_campaign=client_share&share_token=a52a5071-7cd7-4e86-93cc-87043f619999&source=m_redirect)
 
 [Mockito使用](https://www.toutiao.com/article/7202775681682457140/?app=news_article&timestamp=1685408239&use_new_style=1&req_id=20230530085718400D2AC29C9DD93E4C5C&group_id=7202775681682457140&wxshare_count=1&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_android&utm_campaign=client_share&share_token=4f3a9473-ae83-4b3e-a623-9502ae1dff67&source=m_redirect)
+
+
+java -> idea ->idea插件

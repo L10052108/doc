@@ -26,6 +26,7 @@
   - [01_httpClient](java/idea/01httpClient.md)
   - [02_idea创建springboot项目](java/idea/02idea创建springboot项目.md)
   - [03_RunDash的使用](java/idea/03RunDash.md)
+  - [04_idea插件](java/idea/04idea插件.md)
 
 - jdk8新特性
   - [00_介绍](java/jdk/00介绍.md)
