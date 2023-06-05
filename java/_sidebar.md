@@ -27,6 +27,7 @@
   - [02_idea创建springboot项目](java/idea/02idea创建springboot项目.md)
   - [03_RunDash的使用](java/idea/03RunDash.md)
   - [04_idea插件](java/idea/04idea插件.md)
+  - [05_idea05配置](java/idea/05配置.md)
 
 - jdk8新特性
   - [00_介绍](java/jdk/00介绍.md)
@@ -72,6 +73,5 @@
 - 工具
   - [01_maven](java/工具/maven.md)
   
-
 - docker
   - [01_docker介绍](java/docker/01docker介绍.md)

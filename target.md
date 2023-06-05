@@ -132,8 +132,11 @@ https://blog.csdn.net/forezp/article/details/70148833
 ES
 https://www.yuque.com/fengwenyi/pvaq8o/ftop4l
 
-jwt
-https://mp.weixin.qq.com/s/MO-rLjMbaOkibenXejhw0wc
+
+
+
+
+[JWT](https://blog.csdn.net/m0_59359926/article/details/123809705?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522168578457416800188583181%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=168578457416800188583181&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-123809705-null-null.142^v88^control,239^v2^insert_chatgpt&utm_term=jwt%20token&spm=1018.2226.3001.4187)
 
 读写分离
 https://mp.weixin.qq.com/s/2_YTsOwyEByYj0K01QIYVA
@@ -281,8 +284,11 @@ https://www.mydigit.cn/thread-378643-1-1.html （资料列表）
 
 [教你如何使用 SpringBoot 日志](https://www.toutiao.com/article/7230986210762916389/?app=news_article&timestamp=1685233646&use_new_style=1&req_id=2023052808272510B493444499BF21F6E2&group_id=7230986210762916389&wxshare_count=1&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_android&utm_campaign=client_share&share_token=64ba6ebb-a7f4-4f1f-8791-7d3857bfc733&source=m_redirect)
 
+[【实践篇】教你玩转JWT认证---从一个优惠券聊起](https://www.toutiao.com/article/7234699843615097400/?app=news_article&timestamp=1685401424&use_new_style=1&req_id=202305300703448B8BE027BEE0B535FA3B&group_id=7234699843615097400&wxshare_count=1&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_android&utm_campaign=client_share&share_token=b9b8c368-9b4b-4958-a25b-126529cfb8ab&source=m_redirect)‘
 
-[【实践篇】教你玩转JWT认证---从一个优惠券聊起](https://www.toutiao.com/article/7234699843615097400/?app=news_article&timestamp=1685401424&use_new_style=1&req_id=202305300703448B8BE027BEE0B535FA3B&group_id=7234699843615097400&wxshare_count=1&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_android&utm_campaign=client_share&share_token=b9b8c368-9b4b-4958-a25b-126529cfb8ab&source=m_redirect)
+[使用JWT生成token实现权限验证](https://blog.csdn.net/m0_59359926/article/details/123809705?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522168578457416800188583181%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=168578457416800188583181&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-123809705-null-null.142^v88^control,239^v2^insert_chatgpt&utm_term=jwt%20token&spm=1018.2226.3001.4187)
+
+
 
 [Netty服务端开发及性能优化](https://www.toutiao.com/article/7227022004753482300/?app=news_article&timestamp=1685403739&use_new_style=1&req_id=202305300742192689551D38D07237E60D&group_id=7227022004753482300&wxshare_count=1&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_android&utm_campaign=client_share&share_token=9cd66856-4719-422e-8be0-9f291fa8f5e2&source=m_redirect)
 
@@ -292,5 +298,19 @@ https://www.mydigit.cn/thread-378643-1-1.html （资料列表）
 
 [Mockito使用](https://www.toutiao.com/article/7202775681682457140/?app=news_article&timestamp=1685408239&use_new_style=1&req_id=20230530085718400D2AC29C9DD93E4C5C&group_id=7202775681682457140&wxshare_count=1&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_android&utm_campaign=client_share&share_token=4f3a9473-ae83-4b3e-a623-9502ae1dff67&source=m_redirect)
 
-
 java -> idea ->idea插件
+
+
+
+分享个Windows版本的gif录制工具，免费开源，redisant.cn/gif
+
+
+
+Spring 中获取 Bean 的八种方式 https://mp.weixin.qq.com/s/hRG3VycEkVkngW6zwujDUw
+
+
+
+ZincSearch，一个Go写的搜索引擎，可以看作是 Elasticsearch 的轻量级实现与 Elasticsearch 相比，更简单易用、自带UI
+
+一款轻量稳定，可编排的组件式流程引擎项目：liteFlow
+https://www.toutiao.com/article/7233037404448473640/?app=news_article&timestamp=1685929924&use_new_style=1&req_id=2023060509520318AA4486CD25612E37AE&group_id=7233037404448473640&wxshare_count=1&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_android&utm_campaign=client_share&share_token=d7f73e94-50a5-4601-800c-f875ee88823c&source=m_redirect
