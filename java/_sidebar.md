@@ -27,7 +27,7 @@
   - [02_idea创建springboot项目](java/idea/02idea创建springboot项目.md)
   - [03_RunDash的使用](java/idea/03RunDash.md)
   - [04_idea插件](java/idea/04idea插件.md)
-  - [05_idea05配置](java/idea/05配置.md)
+  - [05_idea配置](java/idea/05配置.md)
 
 - jdk8新特性
   - [00_介绍](java/jdk/00介绍.md)
@@ -47,7 +47,6 @@
   - [05_正则表达式](java/其他/05_正则表达式.md)
   - [06_java实现文字点阵打印](java/其他/06java实现文字点阵打印.md)
 
-  
 - 设计模式
   - [00设计模式](java/设计模式/00快速记住23种设计模式.md)
   - [01_策略模式](java/设计模式/01策略模式.md)
