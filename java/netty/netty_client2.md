@@ -204,6 +204,42 @@ public class NettyClientConfiguration {
 }
 ```
 
+注意：在`NettyClient.connect()`中 ` cf.channel().closeFuture().sync();`
+
+是异步的会产生阻塞。导致`springboot`启动后，无法运行到启动端口服务
+
+```java
+ @Bean
+    public NettyClient getClient() throws Exception{
+        String host = "127.0.0.1";
+        int port = 7000;
+
+        NettyClient client = new NettyClient(host,port);
+        client.init();
+
+//        client.connect();
+        Thread thread = new Thread(() -> {
+            try {
+                client.connect();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        });
+
+        thread.setName("t_netty_");
+        thread.start();
+        return client;
+    }
+```
+
+
+
+因而进行修改版本，增加一个新的线程启动
+
+![image-20230607172644477](img\image-20230607172644477.png)
+
+
+
 ### 简单测试发送数据
 
 ```java
