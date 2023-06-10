@@ -33,19 +33,28 @@
 例如前端人员会在本地起HttpServer 直连后台开发本地起的服务，此时，如果不加任何配置，前端页面的请求会被浏览器跨域限制拦截，所以，业务服务常常会添加如下代码设置全局跨域：
 
 ~~~~
-@Bean
-public CorsFilter corsFilter() {
-    logger.debug("CORS限制打开");
-    CorsConfiguration config = new CorsConfiguration();
-    # 仅在开发环境设置为*
-    config.addAllowedOrigin("*");
-    config.addAllowedHeader("*");
-    config.addAllowedMethod("*");
-    config.setAllowCredentials(true);
-    UrlBasedCorsConfigurationSource configSource = new UrlBasedCorsConfigurationSource();
-    configSource.registerCorsConfiguration("/**", config);
-    return new CorsFilter(configSource);
+import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Component;
+import org.springframework.web.cors.CorsConfiguration;
+import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
+import org.springframework.web.filter.CorsFilter;
+
+@Component
+public class CrosConfig {
+    @Bean
+    public CorsFilter corsFilter() {
+        CorsConfiguration config = new CorsConfiguration();
+//    # 仅在开发环境设置为*
+        config.addAllowedOrigin("*");
+        config.addAllowedHeader("*");
+        config.addAllowedMethod("*");
+        config.setAllowCredentials(true);
+        UrlBasedCorsConfigurationSource configSource = new UrlBasedCorsConfigurationSource();
+        configSource.registerCorsConfiguration("/**", config);
+        return new CorsFilter(configSource);
+    }
 }
+
 ~~~~
 
 ### 方法二(@CrossOrigin)
