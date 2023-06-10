@@ -70,8 +70,8 @@
   - [02_netty中client的使用](java/netty/netty_client.md)
   - [03_netty中client的断开后重连](java/netty/netty_client2.md)
   - [04_netty之ByteBuf用法](java/netty/04ByteBuf用法.md)
-  - [05_netty之编码和解码](java/netty/04ByteBuf用法.md)
-
+  - [05_netty之编码和解码](java/netty/05_netty之编码和解码.md)
+  - [06_Netty解决粘包和拆包问题的四种方案](java/netty/06_Netty解决粘包和拆包问题的四种方案.md)
 
 - 工具
   - [01_maven](java/工具/maven.md)
