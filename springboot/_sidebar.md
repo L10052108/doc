@@ -22,7 +22,7 @@
   - [16_springboot跨域](springboot/功能/springboot跨域.md)
   - [17_Springboot过滤器和拦截器](springboot/功能/Springboot过滤器和拦截器.md)
   - [18_获取properties](springboot/功能/获取properties.md)
-  - [19_PostConstruct](springboot/功能/PostConstruct.md)
+  - [19_spring加载bean的顺序](springboot/功能/19spring加载bean的顺序.md)
   - [20_返回数字结果过长](springboot/功能/返回数字结果过长.md)
   - [21_spring循环依赖](springboot/功能/21spring循环依赖.md)
   - [22_springboot静态资源](springboot/功能/22_springboot静态资源.md)
