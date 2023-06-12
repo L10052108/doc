@@ -1,5 +1,8 @@
-资料来源：https://mp.weixin.qq.com/s/kvLZRqgm1lEITm1j6rzJ0A
-http://www.macrozheng.com/#/technology/minio_use
+资料来源：
+
+[Github标星19K+Star，10分钟自建对象存储服务！](https://mp.weixin.qq.com/s/kvLZRqgm1lEITm1j6rzJ0A)
+[mall学习教程](http://www.macrozheng.com/#/technology/minio_use)
+[springboot整合Minio + vue 实现文件分片上传（完整代码）](https://www.yii666.com/blog/430563.html)
 
 ## 介绍
 
@@ -166,7 +169,7 @@ public class MinioClientConf {
 
 ### 实现测试方法
 
-```
+```java
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = ProjectApplication.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class MinioDemo {

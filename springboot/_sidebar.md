@@ -33,6 +33,7 @@
 
 - 文件上传
   - [01_minio](springboot/文件上传/01minio.md)
+  - [01_文件分片上传](springboot/文件上传/02文件分片上传.md)
 
 - condition
   - [01_spring提供的conditional](springboot/condition/01spring提供的conditional.md)

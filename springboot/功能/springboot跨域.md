@@ -5,7 +5,6 @@
 浏览器的[同源策略](https://so.csdn.net/so/search?q=%E5%90%8C%E6%BA%90%E7%AD%96%E7%95%A5&spm=1001.2101.3001.7020)是浏览器上为安全性考虑实施的非常重要的安全策略。
 
 
-
 ![](images/e6c9d24ely1h0ctmrbm3jj21c00u0n1b.jpg)
 
 
@@ -55,6 +54,41 @@ public class CrosConfig {
     }
 }
 
+~~~~
+另外一种写法
+~~~~
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.cors.CorsConfiguration;
+import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
+import org.springframework.web.filter.CorsFilter;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+
+/**
+ * 全局跨域处理
+ * @author CV
+ */
+
+@Configuration
+public class CorsConfig implements WebMvcConfigurer {
+
+        private CorsConfiguration buildConfig() {
+            CorsConfiguration corsConfiguration = new CorsConfiguration();
+            corsConfiguration.addAllowedOrigin("*");
+            corsConfiguration.addAllowedHeader("*");
+            corsConfiguration.addAllowedMethod("*");
+            corsConfiguration.setMaxAge(3600L);
+            corsConfiguration.setAllowCredentials(true);
+            return corsConfiguration;
+        }
+
+        @Bean
+        public CorsFilter corsFilter() {
+            UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
+            source.registerCorsConfiguration("/**", buildConfig());
+            return new CorsFilter(source);
+        }
+    }
 ~~~~
 
 ### 方法二(@CrossOrigin)
