@@ -16,10 +16,10 @@
   - [12_超时执行](java/并发编程/12超时执行.md)
 
 
-[//]: # "常用的类"
-- 常用的类
-  - [01_String](java/pojo/01_String.md)
-
+[//]: # "java基础"
+- java基础
+  - [01_String](java/java基础/01_String.md)
+  - [02_注解](java/java基础/02_注解.md)
 
 [//]: # "idea相关的内容"
 - idea
