@@ -80,8 +80,6 @@ https://blog.csdn.net/weixin_53142722/article/details/124942857?utm_medium=distr
 
 
 
-[只会用 xxl-job？更强大的新一代分布式任务调度框架来了！](https://mp.weixin.qq.com/s/homQEY9um9FadGXcAhzg5g)
-
 
 
 [java 中set删除](https://www.techiedelight.com/zh/remove-elements-from-set-java/)
@@ -116,9 +114,11 @@ https://www.cnblogs.com/progor/p/8871480.html
 mysql 递归函数
 https://blog.csdn.net/weixin_33896726/article/details/92236104
 
-[Spring Boot @Condition 注解，组合条件你知道吗 ](https://www.cnblogs.com/FraserYu/p/11280420.html)
+
 
 [Springboot过滤器和拦截器详解及使用场景](https://www.toutiao.com/i6892269785032327684/?tt_from=weixin&utm_campaign=client_share&wxshare_count=1×tamp=1647226031&app=news_article&utm_source=weixin&utm_medium=toutiao_android&use_new_style=1&req_id=202203141047110101501630311ABBED8E&share_token=c6035892-bee0-4aea-97a2-0c4430bc3641&group_id=6892269785032327684)
+
+
 
 [SpringBoot接入轻量级分布式日志框架（GrayLog）](https://www.toutiao.com/i7074754656219808287/?tt_from=weixin&utm_campaign=client_share&wxshare_count=1×tamp=1647225790&app=news_article&utm_source=weixin&utm_medium=toutiao_android&use_new_style=1&req_id=202203141043100101501030481FB707FD&share_token=45a5bf16-3b98-49a9-ace5-4e6dc442bb55&group_id=7074754656219808287)
 
@@ -136,7 +136,7 @@ https://www.yuque.com/fengwenyi/pvaq8o/ftop4l
 
 
 
-[JWT](https://blog.csdn.net/m0_59359926/article/details/123809705?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522168578457416800188583181%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=168578457416800188583181&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-123809705-null-null.142^v88^control,239^v2^insert_chatgpt&utm_term=jwt%20token&spm=1018.2226.3001.4187)
+
 
 读写分离
 https://mp.weixin.qq.com/s/2_YTsOwyEByYj0K01QIYVA
@@ -314,3 +314,39 @@ ZincSearch，一个Go写的搜索引擎，可以看作是 Elasticsearch 的轻�
 
 一款轻量稳定，可编排的组件式流程引擎项目：liteFlow
 https://www.toutiao.com/article/7233037404448473640/?app=news_article&timestamp=1685929924&use_new_style=1&req_id=2023060509520318AA4486CD25612E37AE&group_id=7233037404448473640&wxshare_count=1&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_android&utm_campaign=client_share&share_token=d7f73e94-50a5-4601-800c-f875ee88823c&source=m_redirect
+
+
+
+登录
+
+使用JWT生成token实现权限验证
+https://blog.csdn.net/m0_59359926/article/details/123809705?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522168578457416800188583181%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=168578457416800188583181&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-123809705-null-null.142^v88^control,239^v2^insert_chatgpt&utm_term=jwt%20token&spm=1018.2226.3001.4187
+
+认证与授权之Cookie、Session、Token、JWT
+https://juejin.cn/post/7173833497830752286/
+
+Spring Security入门学习
+https://juejin.cn/post/7174576646635126814#heading-0
+
+Spring Security结合JWT实现认证与授权
+
+https://juejin.cn/post/7176803095525982269
+
+ Spring Security进阶学习
+
+https://juejin.cn/post/7174943829655552059
+
+Spring Security结合Redis实现缓存功能
+https://juejin.cn/post/7177188004677550141
+
+
+Spring Security自定义认证逻辑实现图片验证码登录
+https://juejin.cn/post/7176057114006126653
+
+
+
+SpringBoot结合XXL-JOB实现定时任务
+https://juejin.cn/post/7172325382320816165
+
+[只会用 xxl-job？更强大的新一代分布式任务调度框架来了！](https://mp.weixin.qq.com/s/homQEY9um9FadGXcAhzg5g)
+
