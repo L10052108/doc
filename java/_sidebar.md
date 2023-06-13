@@ -37,6 +37,12 @@
   - [03_StreamAPI](java/jdk/03StreamAPI.md)
   - [04_Queue](java/jdk/04Queue.md)
 
+[//]: # "java基础"
+- MQ
+  - [01_MQ的介绍](java/mq/01MQ的介绍.md)
+  - [Spring Boot+Disruptor=王炸](java/mq/02Disruptor.md)
+
+
 [//]: # "其他功能"
 - 其他功能
   - [01_java的测试类(待完善)](java/其他/01java的测试类.md)
