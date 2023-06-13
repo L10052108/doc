@@ -13,6 +13,7 @@
   - [08_AQS](java/并发编程/08AQS.md)
   - [09_java锁详解](java/并发编程/09java锁详解.md)
   - [10_ReentrantLock](java/并发编程/10ReentrantLock.md)
+  - [11_防抖和限流.md](java/并发编程/11防抖和限流.md.md)
   - [12_超时执行](java/并发编程/12超时执行.md)
 
 
@@ -74,7 +75,11 @@
   - [06_Netty解决粘包和拆包问题的四种方案](java/netty/06_Netty解决粘包和拆包问题的四种方案.md)
 
 - 工具
-  - [01_maven](java/工具/maven.md)
+  - [01_maven](java/工具/01maven.md)
+  - [02_redis](java/工具/02redis.md)
+  - [03_yapi](java/工具/02redis.md)
+  - [03_postman](java/工具/04postman.md)
+
   
 - docker
   - [01_docker介绍](java/docker/01docker介绍.md)

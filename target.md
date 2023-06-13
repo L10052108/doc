@@ -350,3 +350,22 @@ https://juejin.cn/post/7172325382320816165
 
 [只会用 xxl-job？更强大的新一代分布式任务调度框架来了！](https://mp.weixin.qq.com/s/homQEY9um9FadGXcAhzg5g)
 
+大公司为什么禁止SpringBoot项目使用Tomcat？
+https://mp.weixin.qq.com/s/rf8BQOATJR43MmbBw0V9iQ
+
+
+
+SpringBoot 调用外部接口的三种方式
+https://mp.weixin.qq.com/s/ScJ42nwEgUV1AeH0pfbBjg
+
+
+正式上市 || Spring 官方认证服务器 SAS 使用
+https://mp.weixin.qq.com/s/CzvmsuQHtSASdhjnpItNPw
+
+
+Spring Boot + Disruptor = 王炸！
+https://mp.weixin.qq.com/s/0iG5brK3bYF0BgSjX4jRiA
+
+
+面试官问：注解@Transactional失效的几种原因及解决办法？
+https://mp.weixin.qq.com/s/g7lTcQVmIx-EZwVOqhDYsg
