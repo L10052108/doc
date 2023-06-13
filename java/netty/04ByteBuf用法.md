@@ -155,6 +155,18 @@ public class ByteBufUtils {
     public static byte[] strToByte(String str){
         return HexUtil.decodeHex(str);
     }
+    
+    /**
+     * 把Long类型的数字转成byte数组
+     * @param l 需要转化的数字
+     * @return
+     */
+    public static byte[] getLongByte(Long l){
+        ByteBuffer bb = ByteBuffer.allocate(8);
+        bb.putLong(0, 25);
+
+        return bb.array();
+    }
 
 }
 ```
