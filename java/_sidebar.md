@@ -85,7 +85,7 @@
   - [02_redis](java/工具/02redis.md)
   - [03_yapi](java/工具/02redis.md)
   - [03_postman](java/工具/04postman.md)
+  - [05_gitlab](java/工具/05gitlab.md)
 
-  
 - docker
   - [01_docker介绍](java/docker/01docker介绍.md)
