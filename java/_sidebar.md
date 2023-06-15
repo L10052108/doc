@@ -30,12 +30,12 @@
   - [04_idea插件](java/idea/04idea插件.md)
   - [05_idea配置](java/idea/05配置.md)
 
-- jdk8新特性
-  - [00_介绍](java/jdk/00介绍.md)
-  - [01_lambda](java/jdk/01lambda.md)
-  - [02_List去重](java/jdk/02List去重.md) 
-  - [03_StreamAPI](java/jdk/03StreamAPI.md)
-  - [04_Queue](java/jdk/04Queue.md)
+- JDK
+  - [00_(jdk新特性)介绍](java/jdk/00介绍.md)
+  - [01_(jdk新特性)lambda](java/jdk/01lambda.md)
+  - [02_(jdk新特性)List去重](java/jdk/02List去重.md) 
+  - [03_(jdk新特性)StreamAPI](java/jdk/03StreamAPI.md)
+  - [04_(jdk新特性)Queue](java/jdk/04Queue.md)
 
 [//]: # "java基础"
 - MQ

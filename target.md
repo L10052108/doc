@@ -363,9 +363,12 @@ https://mp.weixin.qq.com/s/ScJ42nwEgUV1AeH0pfbBjg
 https://mp.weixin.qq.com/s/CzvmsuQHtSASdhjnpItNPw
 
 
-Spring Boot + Disruptor = 王炸！
-https://mp.weixin.qq.com/s/0iG5brK3bYF0BgSjX4jRiA
-
-
 面试官问：注解@Transactional失效的几种原因及解决办法？
 https://mp.weixin.qq.com/s/g7lTcQVmIx-EZwVOqhDYsg
+
+
+
+
+
+【Gradle-3】Gradle中的DSL，Groovy & Kotlin
+https://blog.csdn.net/yechaoa/article/details/130257106

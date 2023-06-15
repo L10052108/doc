@@ -5,6 +5,19 @@
 
 ## maven
 
+
+
+### maven 导入
+
+以下jar包属于定制化 需要手动压入maven本地库
+压入指令如下 jar路径自行调整
+
+```
+mvn install:install-file -Dfile="D:\1\jasperreports-fonts-improved-6.8.2.jar" -DgroupId=net.sf.jasperreports -DartifactId=jasperreports-fonts-improved -Dversion=6.8.2 -Dpackaging=jar
+```
+
+
+
 ### 国内的镜像源
 
 ~~~~java
