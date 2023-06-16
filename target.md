@@ -362,9 +362,14 @@ https://mp.weixin.qq.com/s/ScJ42nwEgUV1AeH0pfbBjg
 正式上市 || Spring 官方认证服务器 SAS 使用
 https://mp.weixin.qq.com/s/CzvmsuQHtSASdhjnpItNPw
 
-
 面试官问：注解@Transactional失效的几种原因及解决办法？
 https://mp.weixin.qq.com/s/g7lTcQVmIx-EZwVOqhDYsg
+
+
+
+SpringBootJWTShiro
+
+https://gitee.com/mrzhouy/SpringBootJWTShiro/tree/master
 
 
 

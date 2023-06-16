@@ -35,7 +35,8 @@
   - [01_(jdk新特性)lambda](java/jdk/01lambda.md)
   - [02_(jdk新特性)List去重](java/jdk/02List去重.md) 
   - [03_(jdk新特性)StreamAPI](java/jdk/03StreamAPI.md)
-  - [04_(jdk新特性)Queue](java/jdk/04Queue.md)
+  - [04_Queue](java/jdk/04Queue.md)
+  - [05_反射限制](java/jdk/05反射限制.md)
 
 [//]: # "java基础"
 - MQ
