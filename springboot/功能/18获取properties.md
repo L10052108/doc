@@ -1,4 +1,5 @@
-资料来源：https://blog.csdn.net/changerzhuo_319/article/details/101388516 
+资料来源：<br/>
+[springboot 加载一个properties文件转换为map](https://blog.csdn.net/changerzhuo_319/article/details/101388516 )
 
 ## 获取properties
 
