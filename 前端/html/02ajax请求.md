@@ -141,15 +141,15 @@ https://code.jquery.com/jquery-1.11.2.js
   $(function () {
     $('#btn').click(function () {
       $.ajax({
-        url: 'http://127.0.0.1/say', // 接口的请求地址
+        url: 'http://127.0.0.1/say3', // 接口的请求地址
         dataType: 'json',
         type: 'post',
-        headers:{'Content-Type':'application/json;charset=utf8'},
-        data: '{"name":"liuwei"}', // 请求参数
+        headers:{'Content-Type':'application/x-www-form-urlencoded; charset=UTF-8'},
+        data: 'name=fox&age=18', // 请求参数
         success: function (data) {
-          let s = JSON.stringify(data);
-          alert(s);
-          $("#showInfo").html(data.name);
+          console.log('接口请求成功');
+          alert(data);
+          $("#showInfo").html(data);
         },
         error: function (err) {
           console.log('接口请求失败：' + err);

@@ -13,7 +13,3 @@ linux - docsify <br>
 linux - linux命令 <br>
 linux - nginx <br>
 linux - docker <br>
-
-**目录 介绍**
-
-[filename](_sidebar.md ':include')

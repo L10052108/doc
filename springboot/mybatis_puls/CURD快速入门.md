@@ -220,7 +220,25 @@ public void testquery4(){
 }
 ```
 
+- LambdaQueryWrapper
+
+```
+    @Test
+    public void test02(){
+        LambdaQueryWrapper<SysRole> wrapper = new LambdaQueryWrapper<>();
+        wrapper.eq(SysRole::getTypes, 0)
+                .last("limit 1");
+
+        SysRole sysRole = sysRoleDao.selectOne(wrapper);
+        System.out.println(sysRole);
+
+    }
+```
+
+
+
 执行的sql
+
 >
 >   SELECT name,age FROM user  WHERE (age IN (18,20,21))   LIMIT 1;
 
@@ -263,7 +281,7 @@ public void delByid(){
 
 - 通过条件修改
 
-```
+```java
 @Test
 public void testUpdate(){
     UpdateWrapper<User> update = new UpdateWrapper<>();
@@ -280,7 +298,28 @@ public void testUpdate(){
 执行的sql
 > UPDATE user SET age=29, email='hadoopcn2@163.com'  WHERE (name = 'Jack' AND age = 28);
 
-#### 聚合函数
+#### 分页查询
+
+```java
+   @Test
+    public void test01(){
+
+        Page<SysRole> tPage = new Page<SysRole>(1 , 1 , false);
+        QueryWrapper<SysRole> wrapper = new QueryWrapper<>();
+        wrapper.eq("types",0);
+        IPage<SysRole> page = sysRoleDao.selectPage(tPage, wrapper);
+        long pages = page.getPages();
+        long total = page.getTotal();
+
+        List<SysRole> records = page.getRecords();
+        for (SysRole record : records) {
+            System.out.println(record);
+        }
+        System.out.println("pages:" + pages + "  total:"+ total);
+    }
+```
+
+
 
 
 
