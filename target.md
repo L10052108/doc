@@ -368,12 +368,21 @@ https://mp.weixin.qq.com/s/g7lTcQVmIx-EZwVOqhDYsg
 
 
 SpringBootJWTShiro
-
 https://gitee.com/mrzhouy/SpringBootJWTShiro/tree/master
 
+[基于jib插件，实现Docker部署springboot项目](https://www.toutiao.com/article/7246198514475385403/?app=news_article&timestamp=1687325911&use_new_style=1&req_id=20230621133830DD1864835FB10ABA1CB3&group_id=7246198514475385403&wxshare_count=1&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_android&utm_campaign=client_share&share_token=32b9fe50-ecc3-4d1d-85e9-510fffca9e2f&source=m_redirect)
 
+[使用 ProcessBuilder API 优化你的流程](https://www.toutiao.com/article/7244779303471333925/?app=news_article&timestamp=1687575853&use_new_style=1&req_id=20230624110412C47E7B59E912C12C09BE&group_id=7244779303471333925&wxshare_count=1&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_android&utm_campaign=client_share&share_token=ee45796e-a816-49dc-a319-ed4b75b3bf29&source=m_redirect)
 
+[卸载你的Navicat，试试阿里开源的Chat2DB，一款集成AIGC能力的数据库客户端！](https://mp.weixin.qq.com/s/vnBgJq2xph3cPXDJXWDiMA)
 
+[SpringBoot 实现定时任务动态管理，太爽了！](https://mp.weixin.qq.com/s/btk5LZLHYNKj4HsYIZjBmw)
 
 【Gradle-3】Gradle中的DSL，Groovy & Kotlin
 https://blog.csdn.net/yechaoa/article/details/130257106
+
+
+
+MP
+
+https://blog.csdn.net/weixin_45529338/article/details/130448579
