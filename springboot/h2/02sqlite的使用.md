@@ -101,6 +101,8 @@ INSERT INTO user (id, name, age, email) VALUES
 
 
 
+?> 从建表语句上看，和`h2`不一样，少了`COMMENT  xxx`备注的内容
+
 ## springboot 集成sqlite
 
 在H2基础上进行修改
