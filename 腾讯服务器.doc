@@ -1,0 +1,72 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+    xmlns:o="urn:schemas-microsoft-com:office:office"
+    xmlns:w="urn:schemas-microsoft-com:office:word"
+    xmlns="http://www.w3.org/TR/REC-html40">
+    <head><meta http-equiv=Content-Type content="text/html; charset=utf-8">
+    <style type="text/css">
+        table  
+        {  
+            border-collapse: collapse;
+            border: none;  
+            width: 100%;  
+        }  
+        td,tr  
+        {  
+            border: solid #CCC 1px;
+            padding:3px;
+            font-size:9pt;
+        } 
+        .codestyle{
+            word-break: break-all;
+            mso-highlight:rgb(252, 252, 252);
+            padding-left: 5px; background-color: rgb(252, 252, 252); border: 1px solid rgb(225, 225, 232);
+        }
+        img {
+            width:100;
+        }
+    </style>
+    <meta name=ProgId content=Word.Document>
+    <meta name=Generator content="Microsoft Word 11">
+    <meta name=Originator content="Microsoft Word 11">
+    <xml><w:WordDocument><w:View>Print</w:View></xml></head>
+    <body><h1>腾讯云服务器</h1><div style="margin-left:20px;"><h3>服务器ip</h3>
+<p><code>124.221.127.60</code></p>
+<table width='100%' class='codestyle'><pre><code>服务器的地址：124.221.127.60
+用户名： root
+密码：AHfxuJybd54!yNJ</code></pre></table>
+<h3>mysql数据库</h3>
+<p>重置了服务，本地密码 root
+端口号：3306</p>
+<table width='100%' class='codestyle'><pre><code>grant all privileges on *.* to 'root'@'%' identified by 'ws123D4dsd565@51' with grant option;
+flush privileges;
+exit</code></pre></table>
+<h3>showdoc</h3>
+<table width='100%' class='codestyle'><pre><code>地址：https://showdoc2.liuwei.store/
+用户名：liuwei
+密码：liuwei</code></pre></table>
+<h3>jenkis</h3>
+<table width='100%' class='codestyle'><pre><code>地址：http://124.221.127.60:8085/
+用户名 ：admin
+密码： 3a1ffccc6f644dfa8002dfbe2919b933
+java -jar -DJENKINS_HOME=/root/jenkis/ProgramData/.jenkins jenkins.war --httpPort=8085</code></pre></table>
+<h3>docsify</h3>
+<table width='100%' class='codestyle'><pre><code>nohup  /usr/local/node/node-v14.18.2-linux-x64/bin/docsify serve /root/doc &</code></pre></table>
+<h3>caddy</h3>
+<h3>Redis</h3>
+<table width='100%' class='codestyle'><pre><code>/usr/local/redis/6379
+./bin/redis-server redis.conf
+密码：foobared</code></pre></table>
+<h3>nps</h3>
+<table width='100%' class='codestyle'><pre><code>http://124.221.127.60:8080/login/index
+https://nps.liuwei.store/
+web_username=admin
+web_password=mousetrap
+
+下载:https://jinlilu.lanzoum.com/ipj4E10q7v2d 密码:bskx
+开放端口
+10000-12000
+</code></pre></table>
+<h3>cockpit</h3>
+<table width='100%' class='codestyle'><pre><code>https://cockpit.liuwei.store/
+用户名： root
+密码：AHfxuJybd54!yNJ</code></pre></table></div></body></html>

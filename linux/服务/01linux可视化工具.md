@@ -10,24 +10,34 @@ Cockpit是CentOS 8内置的一款基于Web的可视化管理工具，对一些�
 
 下面是Cockpit的管理界面，看起来还是挺炫酷的！
 
-![](https://tva1.sinaimg.cn/large/e6c9d24ely1h1if4hubczj21v10u0jvv.jpg)
+![img](img\60339f2bf2ea438981359f720ea98b23~noop.image)
 
 
 
 ### 安装&使用
 
-安装
+> 下面介绍下Cockpit的安装和启动，非常简单。
 
-~~~~shell
-# 安装
-yum install cockpit
+- CentOS 8默认已安装Cockpit，直接启动服务即可；
+
+```
 # 配置cockpit服务开机自启
 systemctl enable --now cockpit.socket
 # 启动cockpit服务
 systemctl start cockpit
-~~~~
+```
 
-- 安装完成后即可通过浏览器访问Cockpit，使用Linux用户即可登录（比如root用户），访问地址：https://ip:9090/ 默认端口号9090。
+- CentOS 7上如果要使用Cockpit的话，需要自行安装，并开放对应服务；
 
-证书安全问题[mac谷歌浏览器使用](computer/mac/02mac配置.md)
+```c
+# 安装
+yum install cockpit
+# 开放服务
+firewall-cmd --permanent --zone=public --add-service=cockpit
+# 重新加载防护墙
+firewall-cmd --reload
+```
 
+- 安装完成后即可通过浏览器访问Cockpit，使用Linux用户即可登录（比如root用户），访问地址：http://192.168.3.106:9090/
+
+![img](img\216f2d39878549fb854cf097a5c82d1d~noop.image)

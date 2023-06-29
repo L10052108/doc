@@ -32,8 +32,9 @@
   - [26_springboot接口的多实现](springboot/功能/26接口的多实现.md) 
   - [27_springboot校验](springboot/功能/27springboot校验.md) 
 
-- h2
+- 数据库
   - [01_H2的使用](springboot/h2/01H2的使用.md)
+  - [02_sqlite的使用](springboot/h2/02sqlite的使用.md)
 
 - 文件上传
   - [01_minio](springboot/文件上传/01minio.md)
