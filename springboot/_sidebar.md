@@ -32,6 +32,8 @@
   - [25_springboot常用的注解](springboot/功能/25springboot常用的注解.md) 
   - [26_springboot接口的多实现](springboot/功能/26接口的多实现.md) 
   - [27_springboot校验](springboot/功能/27springboot校验.md) 
+  - [28_SpringBoot项目限流就该这么设计](springboot/功能/28SpringBoot项目限流就该这么设计.md) 
+
 
 - 数据库
   - [01_H2的使用](springboot/h2/01H2的使用.md)
