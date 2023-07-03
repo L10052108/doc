@@ -24,24 +24,13 @@ Netty针对这种情况，使用了NIO中的另一大特性——零拷贝，当
  ### 简单demo
 
 **添加依赖**<br/>
-```
+```xml
   		<!-- websocket 推送 -->
         <dependency>
             <groupId>org.yeauty</groupId>
             <artifactId>netty-websocket-spring-boot-starter</artifactId>
             <version>0.12.0</version>
         </dependency>
-```
-
-启动配置
-
-```
-import org.yeauty.annotation.ServerEndpoint;
-
-@ServerEndpoint(path = "/myWs")
-public class MyWebSocket2 {
-
-}
 ```
 
 启动服务就会打印日志

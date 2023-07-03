@@ -7,6 +7,7 @@
   - [04_json](前端/html/04json.md)
   - [05_jQuery的介绍和选择器](前端/html/05_jQuery的介绍和选择器.md)
   - [06_CSS样式表和选择器](前端/html/06_CSS样式表和选择器.md)
+  - [07_常用的input](前端/html/07_常用的input.md.md)
 
 
 
