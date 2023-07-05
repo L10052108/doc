@@ -395,3 +395,42 @@ docker安装confluence全套教程
 https://developer.aliyun.com/article/1038121
 
 https://blog.csdn.net/ethnicitybeta/article/details/122595939
+
+
+
+IDEA、JDK17、OpenJFX(javaFX)快速开发桌面应用，并打包成exe可执行文件
+
+https://blog.csdn.net/weixin_42286276/article/details/127860167?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_baidulandingword~default-0-127860167-blog-129977741.235^v38^pc_relevant_sort_base1&spm=1001.2101.3001.4242.1&utm_relevant_index=3
+
+
+
+25000 字详解 23 种设计模式，建议收藏
+
+https://mp.weixin.qq.com/s/tX0bRm1ZnsTNdVWbAD1N5g
+
+
+
+JAVA开发利器之Arthas，快速定位线上问题
+https://mp.weixin.qq.com/s/6MPQJJZEfSLbFg-grvk5VA
+
+面试官：Redis 分布式锁如何自动续期？
+https://mp.weixin.qq.com/s/gZm_Y5Dr8uCf7rFBS7y7Fw
+
+SpringBoot事件监听机制及观察者模式/发布订阅模式
+https://mp.weixin.qq.com/s/844o9trdMLIVimTMpbixGw
+
+
+
+ Openjob 重磅来袭，高性能任务调度框架
+ https://mp.weixin.qq.com/s/lGjr6eEYo8YXQLT2hrcciw
+
+
+
+ 别在重复造轮子欢迎使用apache的commons-lang3工具-帮你书写优雅代码
+
+https://mp.weixin.qq.com/s/h4V2VWgxU-KECF7cVINQmQ
+
+
+
+Springboot中的异步请求
+https://mp.weixin.qq.com/s/lnI0ZHzVFHYP-Vm3eiQOew
