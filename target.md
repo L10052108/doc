@@ -408,6 +408,18 @@ https://blog.csdn.net/weixin_42286276/article/details/127860167?utm_medium=distr
 
 
 
+ jdk14——独立打包工具jpackage
+
+https://blog.csdn.net/FlyLikeButterfly/article/details/130888197?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_baidulandingword~default-0-130888197-blog-104897288.235^v38^pc_relevant_sort_base1&spm=1001.2101.3001.4242.1&utm_relevant_index=3
+
+
+
+# idea插件开发(5)-Swing图形化设计
+
+https://blog.csdn.net/liudonglovehemin/article/details/130740949
+
+
+
 25000 字详解 23 种设计模式，建议收藏
 
 https://mp.weixin.qq.com/s/tX0bRm1ZnsTNdVWbAD1N5g

@@ -18,6 +18,7 @@
     - [bbr加速](linux/服务/翻墙/bbr.md)
     - [ss](linux/服务/翻墙/ss.md)
     - [ssr_trojan_v2ray](linux/服务/翻墙/ssr_trojan_v2ray.md)
+    - [WARP上网](linux/服务/翻墙/WARP.md)
 
   - caddy
     - [00_caddy2使用](linux/服务/caddy/00caddy2使用.md)
