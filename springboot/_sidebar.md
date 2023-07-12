@@ -34,6 +34,8 @@
   - [27_springboot校验](springboot/功能/27springboot校验.md) 
   - [28_SpringBoot项目限流就该这么设计](springboot/功能/28SpringBoot项目限流就该这么设计.md) 
 
+- springboot3.0
+  - [01_Spring Boot3.0升级，踩坑之旅](springboot/springboot3/01springboot3踩坑.md)
 
 - 数据库
   - [01_H2的使用](springboot/h2/01H2的使用.md)
