@@ -1,10 +1,12 @@
 
 [//]: # "并发编程"
 - 并发编程
-  - [01_多线程理论](java/并发编程/01多线程的理论.md)
-  - [01_01多线程的原子性](java/并发编程/01.0多线程原子性.md)
-  - [01_03多线程(Future&FutureTask)](java/并发编程/01_02Future&FutureTask.md)
-  - [01_04多线程(CompletableFuture使用详解)](java/并发编程/01_03CompletableFuture使用详解.md)
+  - 多线程理论
+    - [01_多线程理论](java/并发编程/01多线程的理论.md)
+    - [01_01多线程的原子性](java/并发编程/01.0多线程原子性.md)
+    - [01_03多线程(Future&FutureTask)](java/并发编程/01_02Future&FutureTask.md)
+    - [01_04多线程(CompletableFuture使用详解)](java/并发编程/01_03CompletableFuture使用详解.md)
+    - [01_05多线程(join()方法的作用)](java/并发编程/01_05join()方法的作用.md)
   - [02_线程池](java/并发编程/02线程池.md)  
   - [03_线程池7中创建方式](java/并发编程/03线程池7中创建方式.md)
   - [04_线程休眠的5中方法](java/并发编程/04线程休眠的5中方法.md)
@@ -20,11 +22,11 @@
   - [12_超时执行](java/并发编程/12超时执行.md)
 
 
-
 [//]: # "java基础"
 - java基础
   - [01_String](java/java基础/01_String.md)
   - [02_注解](java/java基础/02_注解.md)
+  - [03_apache的commons-lang3工具](java/java基础/03_apache的commons-lang3工具.md)
 
 [//]: # "idea相关的内容"
 - idea
