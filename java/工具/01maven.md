@@ -16,6 +16,23 @@
 mvn install:install-file -Dfile="D:\1\jasperreports-fonts-improved-6.8.2.jar" -DgroupId=net.sf.jasperreports -DartifactId=jasperreports-fonts-improved -Dversion=6.8.2 -Dpackaging=jar
 ```
 
+## 实际在用maven的配置镜像
+
+```xml
+<mirror>
+      <id>alimaven</id>
+      <name>aliyun maven</name>
+      <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+      <mirrorOf>central</mirrorOf>        
+    </mirror>
+```
+
+
+
+
+
+
+
 
 
 ### 国内的镜像源
