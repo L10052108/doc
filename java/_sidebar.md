@@ -28,7 +28,8 @@
   - [01_String](java/java基础/01_String.md)
   - [02_注解](java/java基础/02_注解.md)
   - [03_apache的commons-lang3工具](java/java基础/03_apache的commons-lang3工具.md)
-  - [03_Java计时新姿势StopWatch](java/java基础/04_stopWatch的使用.md)
+  - [04_Java计时新姿势StopWatch](java/java基础/04_stopWatch的使用.md)
+  - [05_map的使用](java/java基础/05_map的使用.md)
 
 
 [//]: # "idea相关的内容"

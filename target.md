@@ -501,3 +501,9 @@ https://juejin.cn/post/6999242756312793119
 why技术
 
 https://juejin.cn/user/3702810893364350/posts
+
+
+
+Java删除Map中元素
+
+https://juejin.cn/post/6844903859580567559?searchId=20230719095120BF9BFEA34091611B54B4
