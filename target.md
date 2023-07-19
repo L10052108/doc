@@ -464,14 +464,6 @@ https://juejin.cn/post/6885128690150146062
 
 
 
-# StopWatch使用
-
-https://juejin.cn/post/6935807854188167175
-
-https://juejin.cn/post/7161333087983861797
-
-
-
 AQS
 
 https://juejin.cn/post/6913925439723405319
@@ -485,3 +477,27 @@ https://juejin.cn/post/7014099031718641694
 pdf 添加水印
 
 https://mp.weixin.qq.com/s/TvU0Ny64NvmJL4-GKSaPpA
+
+
+
+视频转码
+
+https://www.cnblogs.com/lidabo/p/14763192.html
+
+
+
+SpringBoot官方支持任务调度框架，轻量级用起来也挺香！
+
+https://juejin.cn/post/6885869364180942862
+
+
+
+还原最本质的JDBC轻量级封装的工具包：Apache Common DbUtils
+
+https://juejin.cn/post/6999242756312793119
+
+
+
+why技术
+
+https://juejin.cn/user/3702810893364350/posts
