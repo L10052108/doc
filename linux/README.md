@@ -15,5 +15,4 @@ linux - nginx <br>
 linux - docker <br>
 
 
-[filename](_sidebar.md ':include')
 
