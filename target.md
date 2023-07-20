@@ -2,7 +2,6 @@
 
 
 
-[redis实现分布式限流 结合Lua脚本](https://blog.csdn.net/weixin_44912855/article/details/120667603?spm=1001.2014.3001.5501)
 
 
 
@@ -191,29 +190,6 @@ https://www.cnblogs.com/hujinzhong/p/11955880.html
 
 [Springboot 整合 xxljob 动态API调度任务(进阶篇)](https://blog.csdn.net/qq_35387940/article/details/125410895)
 
-[Spring Boot + Disruptor 等于 王炸！！](https://mp.weixin.qq.com/s/e52KI8i0Lb-dOseHJ9eVBg)
-
-
-
-# ByteBuf用法详解
-
-https://blog.csdn.net/smith789/article/details/104410317?spm=1001.2101.3001.6650.1&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-104410317-blog-123698827.235%5Ev33%5Epc_relevant_increate_t0_download_v2_base&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-104410317-blog-123698827.235%5Ev33%5Epc_relevant_increate_t0_download_v2_base&utm_relevant_index=2
-
-
-【Netty】option(ChannelOption.SO_KEEPALIVE, true) socket参数详解:KeepAlive
-
-https://andyoung.blog.csdn.net/article/details/113653633?spm=1001.2101.3001.6650.3&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-3-113653633-blog-109404456.235%5Ev35%5Epc_relevant_increate_t0_download_v2_base&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-3-113653633-blog-109404456.235%5Ev35%5Epc_relevant_increate_t0_download_v2_base&utm_relevant_index=4
-
-
-
- future.channel().closeFuture().sync();后面代码不执行
-
-https://blog.csdn.net/csdm_admin/article/details/61623965?locationNum=9&fps=1&utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_baidulandingword~default-0-61623965-blog-108224455.235^v35^pc_relevant_increate_t0_download_v2_base&spm=1001.2101.3001.4242.1&utm_relevant_index=1
-
-
-
-阿里的冯家春（fengjiachun）的[github](https://so.csdn.net/so/search?q=github&spm=1001.2101.3001.7020)上的开源代码Jupiter
-
 
 
 v2ray免费节点
@@ -222,15 +198,9 @@ https://github.com/Pawdroid/Free-servers
 
 
 
- Git报错：Permission denied (publickey) 解决办法
+ [不灭的焱](https://php-note.com/)
 
-https://blog.csdn.net/libeiqi1201/article/details/117107099
-
-
-
-# [不灭的焱](https://php-note.com/)
-
-### 革命尚未成功，同志仍须
+ 革命尚未成功，同志仍须
 
 https://php-note.com/1572.html
 
@@ -272,11 +242,6 @@ https://github.com/selierlin/Share-SSR-V2ray
 
 
 
-tvbox:
-
-https://github.com/liu673cn/box  （github）
-
-https://www.mydigit.cn/thread-378643-1-1.html （资料列表）
 
 
 

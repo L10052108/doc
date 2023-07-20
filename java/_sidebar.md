@@ -31,7 +31,8 @@
   - [03_apache的commons-lang3工具](java/java基础/03_apache的commons-lang3工具.md)
   - [04_Java计时新姿势StopWatch](java/java基础/04_stopWatch的使用.md)
   - [05_map的使用](java/java基础/05_map的使用.md)
-
+  - [06_guava工具类](java/java基础/06_guava工具类.md)
+  - [07_collection](java/java基础/07_collection.md)
 
 [//]: # "idea相关的内容"
 - idea
