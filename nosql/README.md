@@ -7,5 +7,3 @@ nosql - Redis <br>
 nosql - MongoDB <br>
 nosql - ElasticSearch <br>
 
-
-[filename](_sidebar.md ':include')

@@ -10,11 +10,10 @@
 要使用common里面的lang3需要在pom里面添加如下的依赖：
 
 ```xml
-
 <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-lang3</artifactId>
-            <version>3.10</version>
+    <groupId>org.apache.commons</groupId>
+    <artifactId>commons-lang3</artifactId>
+    <version>3.10</version>
 </dependency>
 ```
 
