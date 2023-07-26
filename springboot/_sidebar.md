@@ -34,6 +34,7 @@
   - [26_springboot接口的多实现](springboot/功能/26接口的多实现.md) 
   - [27_springboot校验](springboot/功能/27springboot校验.md) 
   - [28_SpringBoot项目限流就该这么设计](springboot/功能/28SpringBoot项目限流就该这么设计.md) 
+  - [29_SpringBoot之EventListener](springboot/功能/29_SpringBoot之EventListener.md) 
 
 - springboot3.0
   - [01_Spring Boot3.0升级，踩坑之旅](springboot/springboot3/01springboot3踩坑.md)
