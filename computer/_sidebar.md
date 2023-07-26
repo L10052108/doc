@@ -17,7 +17,7 @@
     - [02_检测网络启动服务](computer/win/02检测网络启动服务.md)
     - [03_常用的脚本](computer/win/03常用的脚本.md)
     - [04_常用的软件](computer/win/04常用的软件.md)
-    - [05_windows激活](computer/win/04常用的软件.md)
+    - [05_windows激活](computer/win/05_windows激活.md)
   
   - 网络
     - [01_window配置两个网络](computer/网络/01_window配置两个网络.md)

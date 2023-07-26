@@ -3,8 +3,6 @@
 
 
 
-
-
 [前后端分离 springboot shiro+jwt token认证 权限校验](https://blog.csdn.net/weixin_44912855/article/details/121319260?spm=1001.2014.3001.5501)
 
 
@@ -48,8 +46,6 @@ oracle 数据库操作：https://blog.csdn.net/qq_38667427/article/details/11932
 
 
 [请勿过度依赖Redis的过期监听](https://cloud.tencent.com/developer/article/1781454)
-
-
 
 [ Google Protobuf 快速入门实例]( https://www.toutiao.com/article/7166878389264908813/?app=news_article&timestamp=1668695460&use_new_style=1&req_id=202211172230590102091561620D1DB0D9&group_id=7166878389264908813&share_token=8306EBAF-820B-4F5E-84CD-EB463744837F&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect)
 
@@ -288,11 +284,9 @@ https://www.toutiao.com/article/7233037404448473640/?app=news_article&timestamp=
 
 登录
 
-使用JWT生成token实现权限验证
-https://blog.csdn.net/m0_59359926/article/details/123809705?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522168578457416800188583181%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=168578457416800188583181&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-123809705-null-null.142^v88^control,239^v2^insert_chatgpt&utm_term=jwt%20token&spm=1018.2226.3001.4187
+[使用JWT生成token实现权限验证](https://blog.csdn.net/m0_59359926/article/details/123809705?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522168578457416800188583181%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=168578457416800188583181&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-123809705-null-null.142^v88^control,239^v2^insert_chatgpt&utm_term=jwt%20token&spm=1018.2226.3001.4187)
 
-认证与授权之Cookie、Session、Token、JWT
-https://juejin.cn/post/7173833497830752286/
+[认证与授权之Cookie、Session、Token、JWT](https://juejin.cn/post/7173833497830752286/)
 
 Spring Security入门学习
 https://juejin.cn/post/7174576646635126814#heading-0
@@ -379,7 +373,7 @@ https://blog.csdn.net/FlyLikeButterfly/article/details/130888197?utm_medium=dist
 
 
 
-# idea插件开发(5)-Swing图形化设计
+idea插件开发(5)-Swing图形化设计
 
 https://blog.csdn.net/liudonglovehemin/article/details/130740949
 
@@ -461,6 +455,17 @@ https://juejin.cn/user/3702810893364350/posts
 Java删除Map中元素
 https://juejin.cn/post/6844903859580567559?searchId=20230719095120BF9BFEA34091611B54B4
 
-
 基础篇：详解锁原理，synchronized、volatile+cas底层实现
 https://juejin.cn/post/6854573210768900110#heading-11
+
+
+
+【JVM】万字详解垃圾回收机制（面试常问）
+
+https://blog.csdn.net/weixin_48271092/article/details/125330239?spm=1001.2014.3001.5502
+
+
+
+MySQL优化详解
+
+https://blog.csdn.net/zls986992484/article/details/52860496
