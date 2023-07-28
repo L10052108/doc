@@ -34,6 +34,7 @@
   - [05_map的使用](java/java基础/05_map的使用.md)
   - [06_guava工具类](java/java基础/06_guava工具类.md)
   - [07_collection](java/java基础/07_collection.md)
+  - [08_Java开发利器之重试](java/java基础/08_Java开发利器之重试.md)
 
 [//]: # "idea相关的内容"
 - idea
