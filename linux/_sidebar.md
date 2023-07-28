@@ -36,6 +36,8 @@
 
   - nginx 
     - [01_nginx使用配置](linux/nginx/nginx配置.md)
+    - [02_Nginx代理MySQL连接](linux/nginx/02.Nginx代理MySQL连接.md)
+    - [03_限制可访问IP](linux/nginx/03_限制可访问IP.md)
 
 - docker
   - [docker安装](linux/docker/docker安装.md)
