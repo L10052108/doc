@@ -180,10 +180,6 @@ https://blog.csdn.net/yangbindxj/article/details/128232675
 
 https://www.cnblogs.com/hujinzhong/p/11955880.html
 
-
-
-[Spring Boot 一个注解，优雅的实现重试机制](https://blog.csdn.net/qq_35387940/article/details/99676114)
-
 [Springboot 整合 xxljob 动态API调度任务(进阶篇)](https://blog.csdn.net/qq_35387940/article/details/125410895)
 
 
@@ -418,15 +414,12 @@ https://www.cnblogs.com/lidabo/p/14763192.html
 SpringBoot官方支持任务调度框架，轻量级用起来也挺香！
 https://juejin.cn/post/6885869364180942862
 
-
-
 还原最本质的JDBC轻量级封装的工具包：Apache Common DbUtils
 https://juejin.cn/post/6999242756312793119
 
 
 why技术
 https://juejin.cn/user/3702810893364350/posts
-
 
 Java删除Map中元素
 https://juejin.cn/post/6844903859580567559?searchId=20230719095120BF9BFEA34091611B54B4
@@ -457,7 +450,6 @@ https://mp.weixin.qq.com/s/mQW8RO5LAFIMWHjyAoW02Q
 https://mp.weixin.qq.com/s/nHB2HvBaZdx4BQywRQfG7Q
 
 
-[maven打jar包, 其它jar包中，只打进依赖的类，无依赖类不打进来](https://www.toutiao.com/article/7260334409004466728/?app=news_article&timestamp=1690547397&use_new_style=1&req_id=2023072820295638F33EAF37F07600D07F&group_id=7260334409004466728&wxshare_count=2&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_android&utm_campaign=client_share&share_token=732ebeb0-9feb-45ad-9540-70035a7ecf8b&source=m_redirect)
 
 [使用上 Spring 的事件机制，真香！](https://www.toutiao.com/article/7258100906871603748/?log_from=7b20e42ecc76c_1690768726065)
 

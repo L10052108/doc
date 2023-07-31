@@ -52,23 +52,6 @@
   - [01_spring提供的conditional](springboot/condition/01spring提供的conditional.md)
   - [02_springboot不同开发环境](springboot/condition/02.springboot不同环境.md)
 
-- mybatis
-  - [01_mybatis介绍](springboot/mybatis/mybatis介绍.md)
-  - [02_MyBatis类型处理器typeHandlers](springboot/mybatis/typeHanders.md)
-  - [03_MyBatis 中为什么不建议使用 where 1=1](springboot/mybatis/注意.md)
-  - [04_mybatis一对多](springboot/mybatis/mybatis一对多.md)
-  - [05_多数据源配置](springboot/mybatis/多数据源配置.md)
-  - [06_mybatis的sql](springboot/mybatis/mybatis的sql.md)
-
-- mybatis_puls
-  - [CURD快速入门](springboot/mybatis_puls/CURD快速入门.md)
-  - [逻辑删除](springboot/mybatis_puls/逻辑删除.md)
-  - [条件构造器使用与总结](springboot/mybatis_puls/条件构造器使用与总结.md)
-  - [分页](springboot/mybatis_puls/分页.md)
-  - [自定义sql](springboot/mybatis_puls/自定义sql.md)
-  - [servieImpl](springboot/mybatis_puls/servieImpl.md)
-  - [其他功能](springboot/mybatis_puls/其他功能.md)
-
 [comment]: <> "sba笔记需要完善"
 - sba
   - [01_Spring Boot Admin，贼好使](springboot/sba/Spring_Boot_Admin.md)
