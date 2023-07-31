@@ -362,7 +362,6 @@ https://blog.csdn.net/ethnicitybeta/article/details/122595939
 
 
 IDEA、JDK17、OpenJFX(javaFX)快速开发桌面应用，并打包成exe可执行文件
-
 https://blog.csdn.net/weixin_42286276/article/details/127860167?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_baidulandingword~default-0-127860167-blog-129977741.235^v38^pc_relevant_sort_base1&spm=1001.2101.3001.4242.1&utm_relevant_index=3
 
 
@@ -374,15 +373,12 @@ https://blog.csdn.net/FlyLikeButterfly/article/details/130888197?utm_medium=dist
 
 
 idea插件开发(5)-Swing图形化设计
-
 https://blog.csdn.net/liudonglovehemin/article/details/130740949
 
 
 
 25000 字详解 23 种设计模式，建议收藏
-
 https://mp.weixin.qq.com/s/tX0bRm1ZnsTNdVWbAD1N5g
-
 
 
 JAVA开发利器之Arthas，快速定位线上问题
@@ -391,28 +387,13 @@ https://mp.weixin.qq.com/s/6MPQJJZEfSLbFg-grvk5VA
 面试官：Redis 分布式锁如何自动续期？
 https://mp.weixin.qq.com/s/gZm_Y5Dr8uCf7rFBS7y7Fw
 
-SpringBoot事件监听机制及观察者模式/发布订阅模式
-https://mp.weixin.qq.com/s/844o9trdMLIVimTMpbixGw
-
-
 
  Openjob 重磅来袭，高性能任务调度框架
  https://mp.weixin.qq.com/s/lGjr6eEYo8YXQLT2hrcciw
 
 
 
- 别在重复造轮子欢迎使用apache的commons-lang3工具-帮你书写优雅代码
-
-https://mp.weixin.qq.com/s/h4V2VWgxU-KECF7cVINQmQ
-
-
-
-Springboot中的异步请求
-https://mp.weixin.qq.com/s/lnI0ZHzVFHYP-Vm3eiQOew
-
-
-
-利用Redis的Geo功能实现查找附近的位置、
+利用Redis的Geo功能实现查找附近的位置
 https://mp.weixin.qq.com/s/g8tq_572yBe7PhaRgCoeuA
 
 
@@ -424,10 +405,6 @@ https://juejin.cn/post/6885128690150146062
 AQS
 https://juejin.cn/post/6913925439723405319
 
-Java开发利器之重试框架guava-retrying
-https://juejin.cn/post/7014099031718641694
-
-
 
 pdf 添加水印
 https://mp.weixin.qq.com/s/TvU0Ny64NvmJL4-GKSaPpA
@@ -436,7 +413,6 @@ https://mp.weixin.qq.com/s/TvU0Ny64NvmJL4-GKSaPpA
 
 视频转码
 https://www.cnblogs.com/lidabo/p/14763192.html
-
 
 
 SpringBoot官方支持任务调度框架，轻量级用起来也挺香！
@@ -470,6 +446,27 @@ MySQL优化详解
 
 https://blog.csdn.net/zls986992484/article/details/52860496
 
+1.5kstar，实用开源工具推荐
+https://mp.weixin.qq.com/s/xQ3RoK4O488cs_r7HEjhxQ
 
 
-ceshi
+[开源]一款分布式高性能任务调度框架，支持多种任务、工作流设计
+https://mp.weixin.qq.com/s/mQW8RO5LAFIMWHjyAoW02Q
+
+再见，Guava！再见，Ehcache！这才是 Java 本地缓存之王！
+https://mp.weixin.qq.com/s/nHB2HvBaZdx4BQywRQfG7Q
+
+
+[maven打jar包, 其它jar包中，只打进依赖的类，无依赖类不打进来](https://www.toutiao.com/article/7260334409004466728/?app=news_article&timestamp=1690547397&use_new_style=1&req_id=2023072820295638F33EAF37F07600D07F&group_id=7260334409004466728&wxshare_count=2&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_android&utm_campaign=client_share&share_token=732ebeb0-9feb-45ad-9540-70035a7ecf8b&source=m_redirect)
+
+[使用上 Spring 的事件机制，真香！](https://www.toutiao.com/article/7258100906871603748/?log_from=7b20e42ecc76c_1690768726065)
+
+[@Lazy 注解为啥就能破解死循环？](https://www.toutiao.com/article/7257536972619924026/?log_from=19cbff8d4904b_1690768775876)
+
+[面渣逆袭：MySQL六十六问，两万字+五十图详解！](https://www.toutiao.com/article/7227085009981784637/)
+
+[全解MySQL：一条SQL语句从诞生至结束的多姿多彩历程！](https://www.toutiao.com/article/7221477015071982138/?log_from=7ca5c2422d4b_1690786274768)
+
+[阿里一面:在日常工作中怎么做MySQL优化的？](https://www.toutiao.com/article/7215845464631968268/?log_from=f38f01eac4652_1690786541672)
+
+[看完这篇还不懂MySQL的MVCC机制算我输](https://www.toutiao.com/article/7251879185865245239/?log_from=222839b60344c_1690786715622)
