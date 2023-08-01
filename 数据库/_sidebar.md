@@ -29,6 +29,7 @@
   - [07_mysql实战](数据库/MySQL使用/mysql实战1.md)
   - [08_查询表空间](数据库/MySQL使用/查询表空间.md)
   - [09_MySQL不建议使用NULL作为列默认值](数据库/MySQL使用/09_MySQL不建议使用NULL作为列默认值.md)
+  - [10_mysql怎么求时间差](数据库/MySQL使用/10_mysql怎么求时间差.md)
    
 - oracle
   - [01_01安装](数据库/oracle/01安装.md)

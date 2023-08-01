@@ -414,8 +414,6 @@ https://www.cnblogs.com/lidabo/p/14763192.html
 SpringBoot官方支持任务调度框架，轻量级用起来也挺香！
 https://juejin.cn/post/6885869364180942862
 
-还原最本质的JDBC轻量级封装的工具包：Apache Common DbUtils
-https://juejin.cn/post/6999242756312793119
 
 
 why技术
@@ -428,7 +426,6 @@ https://juejin.cn/post/6844903859580567559?searchId=20230719095120BF9BFEA3409161
 https://juejin.cn/post/6854573210768900110#heading-11
 
 
-
 【JVM】万字详解垃圾回收机制（面试常问）
 
 https://blog.csdn.net/weixin_48271092/article/details/125330239?spm=1001.2014.3001.5502
@@ -436,7 +433,6 @@ https://blog.csdn.net/weixin_48271092/article/details/125330239?spm=1001.2014.30
 
 
 MySQL优化详解
-
 https://blog.csdn.net/zls986992484/article/details/52860496
 
 1.5kstar，实用开源工具推荐
@@ -450,11 +446,6 @@ https://mp.weixin.qq.com/s/mQW8RO5LAFIMWHjyAoW02Q
 https://mp.weixin.qq.com/s/nHB2HvBaZdx4BQywRQfG7Q
 
 
-
-[使用上 Spring 的事件机制，真香！](https://www.toutiao.com/article/7258100906871603748/?log_from=7b20e42ecc76c_1690768726065)
-
-[@Lazy 注解为啥就能破解死循环？](https://www.toutiao.com/article/7257536972619924026/?log_from=19cbff8d4904b_1690768775876)
-
 [面渣逆袭：MySQL六十六问，两万字+五十图详解！](https://www.toutiao.com/article/7227085009981784637/)
 
 [全解MySQL：一条SQL语句从诞生至结束的多姿多彩历程！](https://www.toutiao.com/article/7221477015071982138/?log_from=7ca5c2422d4b_1690786274768)
@@ -462,3 +453,7 @@ https://mp.weixin.qq.com/s/nHB2HvBaZdx4BQywRQfG7Q
 [阿里一面:在日常工作中怎么做MySQL优化的？](https://www.toutiao.com/article/7215845464631968268/?log_from=f38f01eac4652_1690786541672)
 
 [看完这篇还不懂MySQL的MVCC机制算我输](https://www.toutiao.com/article/7251879185865245239/?log_from=222839b60344c_1690786715622)
+
+
+mysql怎么求时间差
+https://www.utheme.cn/code/mysql/26085.html
