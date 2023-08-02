@@ -57,6 +57,11 @@
   - [03_(jdk新特性)StreamAPI](java/jdk/03StreamAPI.md)
   - [04_Queue](java/jdk/04Queue.md)
   - [05_反射限制](java/jdk/05反射限制.md)
+  - **JVM**
+    - [01_垃圾回收的区域](java/jdk/JVM/01垃圾回收机制.md)
+    - [02_垃圾回收算法](java/jdk/JVM/02垃圾回收机制.md)
+
+
 
 [//]: # "java基础"
 - MQ
