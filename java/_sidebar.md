@@ -20,9 +20,14 @@
   - [08_AQS](java/并发编程/08AQS.md)
   - [09_java锁详解](java/并发编程/09java锁详解.md)
   - [10_ReentrantLock](java/并发编程/10ReentrantLock.md)
+  - [10_02ReentrantLock原理](java/并发编程/10_02ReentrantLock原理.md)
   - [11_防抖和限流.md](java/并发编程/11防抖和限流.md.md)
   - [12_超时执行](java/并发编程/12超时执行.md)
-  - [100_锁的原理](java/并发编程/100_锁的原理.md)
+
+
+[//]: # "lock锁相关的内容"
+- lock
+  - [01_锁的原理](java/lock/01_锁的原理.md)
 
 
 [//]: # "java基础"
