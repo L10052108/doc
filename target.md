@@ -435,12 +435,12 @@ https://blog.csdn.net/weixin_48271092/article/details/125330239?spm=1001.2014.30
 MySQL优化详解
 https://blog.csdn.net/zls986992484/article/details/52860496
 
-1.5kstar，实用开源工具推荐
-https://mp.weixin.qq.com/s/xQ3RoK4O488cs_r7HEjhxQ
+
 
 
 [开源]一款分布式高性能任务调度框架，支持多种任务、工作流设计
 https://mp.weixin.qq.com/s/mQW8RO5LAFIMWHjyAoW02Q
+
 
 再见，Guava！再见，Ehcache！这才是 Java 本地缓存之王！
 https://mp.weixin.qq.com/s/nHB2HvBaZdx4BQywRQfG7Q
@@ -453,7 +453,3 @@ https://mp.weixin.qq.com/s/nHB2HvBaZdx4BQywRQfG7Q
 [阿里一面:在日常工作中怎么做MySQL优化的？](https://www.toutiao.com/article/7215845464631968268/?log_from=f38f01eac4652_1690786541672)
 
 [看完这篇还不懂MySQL的MVCC机制算我输](https://www.toutiao.com/article/7251879185865245239/?log_from=222839b60344c_1690786715622)
-
-
-mysql怎么求时间差
-https://www.utheme.cn/code/mysql/26085.html
