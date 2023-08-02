@@ -44,18 +44,11 @@ https://www.toutiao.com/article/7153427109799576075/?app=news_article&timestamp=
 oracle 数据库操作：https://blog.csdn.net/qq_38667427/article/details/119323495
 
 
-
-[请勿过度依赖Redis的过期监听](https://cloud.tencent.com/developer/article/1781454)
-
 [ Google Protobuf 快速入门实例]( https://www.toutiao.com/article/7166878389264908813/?app=news_article&timestamp=1668695460&use_new_style=1&req_id=202211172230590102091561620D1DB0D9&group_id=7166878389264908813&share_token=8306EBAF-820B-4F5E-84CD-EB463744837F&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect)
 
  Netty 入门学习
 
 https://blog.csdn.net/weixin_53142722/article/details/124942857?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_baidulandingword~default-1-124942857-blog-105618052.pc_relevant_recovery_v2&spm=1001.2101.3001.4242.2&utm_relevant_index=4
-
-
-
- [ 公司的这种打包启动方式，我简直惊呆了](https://www.toutiao.com/article/7167181389648413199/?app=news_article&timestamp=1668782865&use_new_style=1&req_id=202211182247450102120680220D203191&group_id=7167181389648413199&share_token=A3C042C5-C71C-48C5-8124-B2B25D46C814&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect)
 
 
 
@@ -153,8 +146,6 @@ https://mp.weixin.qq.com/s/2_YTsOwyEByYj0K01QIYVA
 
 [SpringBoot集成kettle实现对接oracle数据](https://www.toutiao.com/article/7175357672575959586/?app=news_article&timestamp=1670687517&use_new_style=1&req_id=202212102351574B0A7436F0AA94505E19&group_id=7175357672575959586&share_token=625FCBB3-E435-4BE0-8AE0-62E72542C876&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect)
 
-
-[JUC并发编程02——AQS源码剖析](https://www.toutiao.com/article/7175332221471965730/?app=news_article&timestamp=1670687164&use_new_style=1&req_id=202212102346042AF7C96DBF45344B976F&group_id=7175332221471965730&share_token=B1DED9F3-448E-409D-9A39-FD070E92CEE8&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect)
 
 [SpringBoot中统一日志管理](https://www.toutiao.com/article/7174784709573198376/?app=news_article&timestamp=1670686318&use_new_style=1&req_id=202212102331589D26B075A0C58F4D3893&group_id=7174784709573198376&share_token=1E2798B4-9CAC-40DC-A7FC-7F326D30F890&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect)
 
@@ -262,15 +253,6 @@ https://github.com/selierlin/Share-SSR-V2ray
 java -> idea ->idea插件
 
 
-
-分享个Windows版本的gif录制工具，免费开源，redisant.cn/gif
-
-
-
-Spring 中获取 Bean 的八种方式 https://mp.weixin.qq.com/s/hRG3VycEkVkngW6zwujDUw
-
-
-
 ZincSearch，一个Go写的搜索引擎，可以看作是 Elasticsearch 的轻量级实现与 Elasticsearch 相比，更简单易用、自带UI
 
 一款轻量稳定，可编排的组件式流程引擎项目：liteFlow
@@ -292,7 +274,6 @@ Spring Security结合JWT实现认证与授权
 https://juejin.cn/post/7176803095525982269
 
  Spring Security进阶学习
-
 https://juejin.cn/post/7174943829655552059
 
 Spring Security结合Redis实现缓存功能

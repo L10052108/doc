@@ -8,6 +8,8 @@
 
 ## 认识ReentrantLock
 
+![img](img/cad25670d4b84e68be215d2f5ecedc28~noop.image)
+
 ReentrantLock是一个很经典的使用AQS的案例，不妨以此为切入点来继续深入。ReentrantLock的特性有很多，首先它是一个悲观锁，其次有两种模式分别是公平锁和非公平锁，最后它是重入锁，也就是能够对共享资源重复加锁。
 
 AQS通常是使用内部类实现，所以不难想象在ReentrantLock类里有两个内部类，我们看一张类图。

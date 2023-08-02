@@ -1,7 +1,8 @@
 资料来源:<br/>
 [AQS 详细介绍](https://zhuanlan.zhihu.com/p/378219920)<br/>
 [JUC源码分析—AQS (基于java11)](https://www.jianshu.com/p/a8d27ba5db49)<br/>
-[五千字详细讲解并发编程的AQS.md](https://github.com/yehongzhi/learningSummary/blob/master/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E7%9A%84%E8%89%BA%E6%9C%AF/%E4%BA%94%E5%8D%83%E5%AD%97%E8%AF%A6%E7%BB%86%E8%AE%B2%E8%A7%A3%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E7%9A%84AQS.md)
+[五千字详细讲解并发编程的AQS.md](https://github.com/yehongzhi/learningSummary/blob/master/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E7%9A%84%E8%89%BA%E6%9C%AF/%E4%BA%94%E5%8D%83%E5%AD%97%E8%AF%A6%E7%BB%86%E8%AE%B2%E8%A7%A3%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E7%9A%84AQS.md)<br/>
+[JUC并发编程02——AQS源码剖析](https://www.toutiao.com/article/7175332221471965730/?app=news_article&timestamp=1670687164&use_new_style=1&req_id=202212102346042AF7C96DBF45344B976F&group_id=7175332221471965730&share_token=B1DED9F3-448E-409D-9A39-FD070E92CEE8&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect)
 
 
 
@@ -11,7 +12,7 @@
 
 谈到并发编程，不得不说`AQS(AbstractQueuedSynchronizer)`，这可谓是`Doug Lea`老爷子的大作之一。`AQS`即是抽象队列同步器，是用来构建`Lock`锁和同步组件的基础框架，很多我们熟知的锁和同步组件都是基于`AQS`构建，比如`ReentrantLock`、`ReentrantReadWriteLock`、`CountDownLatch`、`Semaphore`。
 
-
+![img](img/4d906d75c689464fbec92adf272d2c41~noop.image)
 
 实际上AQS是一个抽象类，我们不妨先看一下源码：
 
@@ -40,7 +41,7 @@ public abstract class AbstractOwnableSynchronizer implements java.io.Serializabl
 
 **AQS 核心思想是，如果被请求的共享资源空闲，则将当前请求资源的线程设置为有效的工作线程，并且将共享资源设置为锁定状态。如果被请求的共享资源被占用，那么就需要一套线程阻塞等待以及被唤醒 时锁分配的机制，这个机制 AQS 是用** **CLH 队列锁实现的，即将暂时获取不到锁的线程加入到队列中。**
 
-
+![img](img/98d34d642c374e258605bb8b74372e09~noop.image)
 
 由源码可以看出AQS是有以下几个部分组成的：
 
@@ -114,9 +115,15 @@ AQS通过继承`AbstractOwnableSynchronizer`类，拥有的属性。表示独占
 
 AQS有两种模式，分别是独占式和共享式。
 
+![img](img/91237801da1542ae8dce4ac1ae4ac6e5~noop.image)
+
+![img](img/b3b3b9ef4b474923a32e5b84ece97a31~noop.image)
+
 ### 独占式
 
 同一时刻仅有一个线程持有同步状态，也就是其他线程只有在占有的线程释放后才能竞争，比如**ReentrantLock**。下面从源码切入，梳理独占式的实现思路。
+
+![img](img/9f7887a8665c497f9e6a3c4d9731b385~noop.image)
 
 首先看acquire()方法，这是AQS在独占模式下获取同步状态的方法。
 
