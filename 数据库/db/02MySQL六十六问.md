@@ -36,7 +36,6 @@
 
 ```
 select * from table where type = 2 and level = 9 order by id asc limit 190289,10;
-复制代码
 ```
 
 优化方案：
@@ -44,7 +43,9 @@ select * from table where type = 2 and level = 9 order by id asc limit 190289,10
 - **延迟关联**
 - 先通过where条件提取出主键，在将该表与原数据表关联，通过主键id提取数据行，而不是通过原来的二级索引提取数据行
 - 例如：
-- select a.* from table a, (select id from table where type = 2 and level = 9 order by id asc limit 190289,10 ) b where a.id = b.id 复制代码
+```
+select a.* from table a, (select id from table where type = 2 and level = 9 order by id asc limit 190289,10 ) b where a.id = b.id 
+```
 - **书签方式**
 - 书签方式就是找到limit第一个参数对应的主键值，根据这个主键值再去过滤并limit
 - 例如：
@@ -52,7 +53,6 @@ select * from table where type = 2 and level = 9 order by id asc limit 190289,10
 ```
   select * from table where id >
   (select * from table where type = 2 and level = 9 order by id asc limit 190
-复制代码
 ```
 
 #### 索引优化
@@ -67,14 +67,12 @@ InnoDB使用非主键索引查询数据时会回表，但是如果索引的叶�
 
 ```
 select name from test where city='上海'
-复制代码
 ```
 
 我们将被查询的字段建立到联合索引中，这样查询结果就可以直接从索引中获取
 
 ```
 alter table test add index idx_city_name (city, name);
-复制代码
 ```
 
 **低版本避免使用or查询**
@@ -97,7 +95,6 @@ SQL中，不等于操作符会导致查询引擎放弃查询索引，引起全�
 
 ```
 alter table test add index index2(email(6));
-复制代码
 ```
 
 PS:需要注意的是，前缀索引也存在缺点，MySQL无法利用前缀索引做order by和group by 操作，也无法作为覆盖索引
@@ -109,7 +106,6 @@ PS:需要注意的是，前缀索引也存在缺点，MySQL无法利用前缀索
 ```
 select * from test where id + 1 = 50;
 select * from test where month(updateTime) = 7;
-复制代码
 ```
 
 **正确使用联合索引**
@@ -130,7 +126,6 @@ select * from test where month(updateTime) = 7;
 
 ```
  select name from A left join B ;
-复制代码
 ```
 
 **适当增加冗余字段**
@@ -158,7 +153,6 @@ MySQL有两种方式生成有序结果：其一是对结果集进行排序的操
 ```
 --建立索引（date,staff_id,customer_id）
 select staff_id, customer_id from test where date = '2010-01-01' order by staff_id,customer_id;
-复制代码
 ```
 
 只有当索引的列顺序和ORDER BY子句的顺序完全一致，并且所有列的排序方向都一样时，才能够使用索引来对结果做排序
