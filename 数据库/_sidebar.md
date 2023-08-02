@@ -4,6 +4,12 @@
   - [数据库规范](数据库/数据库规范.md)
   - [JDBC轻量级封装的工具包](数据库/db/JDBC轻量级封装的工具包.md)
 
+- MySQL六十六问
+  - [01_MySQL基础](数据库/db/01MySQL六十六问.md)
+  - [02_MySQL数据库架构&存储引擎&日志](数据库/db/04MySQL六十六问.md)
+  - [03_MySQL_SQL 优化](数据库/db/02MySQL六十六问.md)
+  - [04_MySQL锁&事务&高可用&运维](数据库/db/03MySQL六十六问.md)
+
 - mysql理论
   - [01_mysql介绍](数据库/mysql/mysql理论/mysql介绍.md)
   - [02_mysql基本操作](数据库/mysql/mysql理论/基本操作.md)
