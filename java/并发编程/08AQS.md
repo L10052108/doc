@@ -340,7 +340,7 @@ protected boolean tryRelease(int arg) {
 
 tryAcquireShared()方法，共享式获取同步资源，返回大于等于0表示获取资源成功，返回小于0表示失败。
 
-```java'
+```java
 protected int tryAcquireShared(int arg) {
     throw new UnsupportedOperationException();
 }
