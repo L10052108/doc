@@ -60,4 +60,6 @@
   - [servieImpl](数据库/mybatis_puls/servieImpl.md)
   - [其他功能](数据库/mybatis_puls/其他功能.md)
   
+- mybatis_puls
+  - [MyBatis-Flex](数据库/MyBatis-Flex/01_MyBatis-Flex介绍.md)
 
