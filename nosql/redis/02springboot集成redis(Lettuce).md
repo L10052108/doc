@@ -3,7 +3,8 @@
 [RedisTemplate Api总结](https://www.jianshu.com/p/19e851a3edba)<br/>
 [全面解析下Spring Boot操作Redis的几种方案](https://www.toutiao.com/article/6734570604680184334/?tt_from=weixin&utm_campaign=client_share&wxshare_count=1&timestamp=1568108248&app=news_article&utm_source=weixin&utm_medium=toutiao_android&req_id=201909101737270100100582030331B163&group_id=6734570604680184334)<br/>
 [如何使用RedisTemplate访问Redis数据结构](https://www.jianshu.com/p/7bf5dc61ca06)<br/>
-[Spring Boot(三)：Spring Boot 中 Redis 的使用](http://www.ityouknow.com/springboot/2016/03/06/spring-boot-redis.html)<br/>[springboot集成redis (Lettuce)](https://blog.csdn.net/u014082714/article/details/105294268?utm_medium=distribute.pc_feed_404.none-task-blog-2defaultBlogCommendFromBaidu~default-7.nonecase)
+[Spring Boot(三)：Spring Boot 中 Redis 的使用](http://www.ityouknow.com/springboot/2016/03/06/spring-boot-redis.html)<br/>[springboot集成redis (Lettuce)](https://blog.csdn.net/u014082714/article/details/105294268?utm_medium=distribute.pc_feed_404.none-task-blog-2defaultBlogCommendFromBaidu~default-7.nonecase)<br/>
+[数据序列化](https://github.com/redisson/redisson/wiki/4.-%E6%95%B0%E6%8D%AE%E5%BA%8F%E5%88%97%E5%8C%96)
 
 ## springboot集成Redis方案
 参考代码：
@@ -230,6 +231,30 @@ reids配置类：
 [序列化的方法](java/其他/03序列化的使用.md)很多
 
 > 　`RedisTemplate` 序列化默认使用 `JdkSerializationRedisSerializer` 存储二进制字节码，为了方便使用，自定义序列化策略。
+>
+
+Redisson的对象编码类是用于将对象进行序列化和反序列化，以实现对该对象在Redis里的读取和存储。Redisson提供了以下几种的对象编码应用，以供大家选择：
+
+| 编码类名称                                      | 说明                                                         |
+| ----------------------------------------------- | ------------------------------------------------------------ |
+| `org.redisson.codec.JsonJacksonCodec`           | [Jackson JSON](https://github.com/FasterXML/jackson) 编码 **默认编码** |
+| `org.redisson.codec.AvroJacksonCodec`           | [Avro](http://avro.apache.org/) 一个二进制的JSON编码         |
+| `org.redisson.codec.SmileJacksonCodec`          | [Smile](http://wiki.fasterxml.com/SmileFormatSpec) 另一个二进制的JSON编码 |
+| `org.redisson.codec.CborJacksonCodec`           | [CBOR](http://cbor.io/) 又一个二进制的JSON编码               |
+| `org.redisson.codec.MsgPackJacksonCodec`        | [MsgPack](http://msgpack.org/) 再来一个二进制的JSON编码      |
+| `org.redisson.codec.IonJacksonCodec`            | [Amazon Ion](https://amzn.github.io/ion-docs/) 亚马逊的Ion编码，格式与JSON类似 |
+| `org.redisson.codec.KryoCodec`                  | [Kryo](https://github.com/EsotericSoftware/kryo) 二进制对象序列化编码 |
+| `org.redisson.codec.SerializationCodec`         | JDK序列化编码                                                |
+| `org.redisson.codec.FstCodec`                   | [FST](https://github.com/RuedigerMoeller/fast-serialization) 10倍于JDK序列化性能而且100%兼容的编码 |
+| `org.redisson.codec.LZ4Codec`                   | [LZ4](https://github.com/jpountz/lz4-java) 压缩型序列化对象编码 |
+| `org.redisson.codec.SnappyCodec`                | [Snappy](https://github.com/xerial/snappy-java) 另一个压缩型序列化对象编码 |
+| `org.redisson.client.codec.JsonJacksonMapCodec` | 基于Jackson的映射类使用的编码。可用于避免序列化类的信息，以及用于解决使用`byte[]`遇到的问题。 |
+| `org.redisson.client.codec.StringCodec`         | 纯字符串编码（无转换）                                       |
+| `org.redisson.client.codec.LongCodec`           | 纯整长型数字编码（无转换）                                   |
+| `org.redisson.client.codec.ByteArrayCodec`      | 字节数组编码                                                 |
+| `org.redisson.codec.CompositeCodec`             | 用来组合多种不同编码在一起                                   |
+
+*22e2e30*
 
 ~~~~java
 

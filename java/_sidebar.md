@@ -29,7 +29,7 @@
 [//]: # "lock锁相关的内容"
 - lock
   - [01_锁的原理](java/lock/01_锁的原理.md)
-
+  - [02_redis分布式锁](java/lock/02_redis分布式锁.md)
 
 [//]: # "java基础"
 - java基础
