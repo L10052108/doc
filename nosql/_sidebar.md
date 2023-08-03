@@ -5,6 +5,7 @@
   - [01_nosql介绍](nosql/01_nosql介绍.md)
 - Redis
   - **01_redis介绍**
+    - [00_redis规范](nosql/redis/00redis规范.md)
     - [01_01redis安装](nosql/redis/01_01redis安装.md)
     - [01_02redis常见的问题](nosql/redis/01_02redis常见的问题.md)
     - [01-03Redis常见数据类型](nosql/redis/01-03Redis常见数据类型.md)
