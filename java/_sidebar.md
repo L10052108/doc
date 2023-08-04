@@ -76,6 +76,7 @@
     - [Lombok的使用](java/其他/Lombok.md)
     - [为什么有的团队禁止使用Lombok](java/其他/禁止使用Lombok.md)
   - [03_序列化](java/其他/03序列化的使用.md)
+  - [03_02序列化之Protobuf](java/其他/03_02序列化之Protobuf.md)
   - [04_串口](java/其他/04_串口.md)
   - [05_正则表达式](java/其他/05_正则表达式.md)
   - [06_java实现文字点阵打印](java/其他/06java实现文字点阵打印.md)

@@ -324,7 +324,6 @@ https://blog.csdn.net/yechaoa/article/details/130257106
 
 
 MP
-
 https://blog.csdn.net/weixin_45529338/article/details/130448579
 
 
@@ -349,10 +348,12 @@ https://blog.csdn.net/FlyLikeButterfly/article/details/130888197?utm_medium=dist
 
 
 
-idea插件开发(5)-Swing图形化设计
+Swing图形化设计
 https://blog.csdn.net/liudonglovehemin/article/details/130740949
 
+https://blog.csdn.net/weixin_43444930/article/details/117855310
 
+https://blog.csdn.net/weixin_43444930/article/details/118769225?spm=1001.2101.3001.6650.3&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-3-118769225-blog-130740949.235%5Ev38%5Epc_relevant_sort_base1&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-3-118769225-blog-130740949.235%5Ev38%5Epc_relevant_sort_base1&utm_relevant_index=6
 
 25000 字详解 23 种设计模式，建议收藏
 https://mp.weixin.qq.com/s/tX0bRm1ZnsTNdVWbAD1N5g
@@ -367,12 +368,6 @@ https://mp.weixin.qq.com/s/gZm_Y5Dr8uCf7rFBS7y7Fw
 
  Openjob 重磅来袭，高性能任务调度框架
  https://mp.weixin.qq.com/s/lGjr6eEYo8YXQLT2hrcciw
-
-
-
-利用Redis的Geo功能实现查找附近的位置
-https://mp.weixin.qq.com/s/g8tq_572yBe7PhaRgCoeuA
-
 
 
 Redis Lua脚本完全入门
@@ -396,21 +391,8 @@ SpringBoot官方支持任务调度框架，轻量级用起来也挺香！
 https://juejin.cn/post/6885869364180942862
 
 
-
 why技术
 https://juejin.cn/user/3702810893364350/posts
-
-Java删除Map中元素
-https://juejin.cn/post/6844903859580567559?searchId=20230719095120BF9BFEA34091611B54B4
-
-基础篇：详解锁原理，synchronized、volatile+cas底层实现
-https://juejin.cn/post/6854573210768900110#heading-11
-
-
-【JVM】万字详解垃圾回收机制（面试常问）
-
-https://blog.csdn.net/weixin_48271092/article/details/125330239?spm=1001.2014.3001.5502
-
 
 
 MySQL优化详解
@@ -418,19 +400,17 @@ https://blog.csdn.net/zls986992484/article/details/52860496
 
 
 
-
-[开源]一款分布式高性能任务调度框架，支持多种任务、工作流设计
-https://mp.weixin.qq.com/s/mQW8RO5LAFIMWHjyAoW02Q
-
-
 再见，Guava！再见，Ehcache！这才是 Java 本地缓存之王！
 https://mp.weixin.qq.com/s/nHB2HvBaZdx4BQywRQfG7Q
 
-
-[面渣逆袭：MySQL六十六问，两万字+五十图详解！](https://www.toutiao.com/article/7227085009981784637/)
 
 [全解MySQL：一条SQL语句从诞生至结束的多姿多彩历程！](https://www.toutiao.com/article/7221477015071982138/?log_from=7ca5c2422d4b_1690786274768)
 
 [阿里一面:在日常工作中怎么做MySQL优化的？](https://www.toutiao.com/article/7215845464631968268/?log_from=f38f01eac4652_1690786541672)
 
 [看完这篇还不懂MySQL的MVCC机制算我输](https://www.toutiao.com/article/7251879185865245239/?log_from=222839b60344c_1690786715622)
+
+
+netty
+https://github.com/pjmike/springboot-netty
+https://github.com/pjmike/springboot-rpc-demo
