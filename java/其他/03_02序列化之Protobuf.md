@@ -272,3 +272,5 @@ ProtoBuf 是一种**轻量、高效**的数据交换格式，它具有以下优�
 - 由于二进制编码，**可读性较差，这点不如 JSON 可以直接阅读**。
 
 总体来说，**Protobuf 适合用于数据传输和存储等场景，能够提高数据传输效率和减少数据体积**。但对于需要人类可读的数据，或需要实时修改的数据，或者对数据的传输效率和体积没那么在意的场景，选择更加通用的 JSON 未尝不是一个好的选择。
+
+参考代码：[https://gitee.com/L10052108/store/tree/master/local/proto](https://gitee.com/L10052108/store/tree/master/local/proto)

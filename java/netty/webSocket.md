@@ -2,9 +2,10 @@
 [实战 Springboot + netty +websocket 推送消息](https://blog.csdn.net/weixin_44912855/article/details/122667977)
 
 
-
 ###  netty 配置
 
+参考代码：
+https://gitee.com/L10052108/store/tree/master/netty/websocket
 
  netty服务器
 ~~~~java
