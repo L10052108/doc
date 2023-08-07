@@ -1,8 +1,3 @@
-[分享一个好用而且免费的GIF录制软件](https://blog.csdn.net/weixin_44912855/article/details/120337544?spm=1001.2014.3001.5501)
-
-
-
-
 [前后端分离 springboot shiro+jwt token认证 权限校验](https://blog.csdn.net/weixin_44912855/article/details/121319260?spm=1001.2014.3001.5501)
 
 
@@ -10,11 +5,6 @@
 [Spring/Spring Boot下如何动态配置计划任务](https://www.toutiao.com/article/7158705923182182927/?app=news_article&timestamp=1666967484&use_new_style=1&req_id=202210282231230102100982141B4603EF&group_id=7158705923182182927&share_token=ACD68CAC-353F-459D-B202-DC03323BFBD5&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect)
 
 
-
-[Redisson 加锁、锁自动续期、解锁源码分析](https://www.toutiao.com/article/7157576182844981773/?app=news_article&timestamp=1666967685&use_new_style=1&req_id=202210282234440102112000732444493A&group_id=7157576182844981773&share_token=5C0DD19D-0537-4F99-9B7B-C48EDA863661&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect)
-
- Spring Boot项目中分布式锁实现方案：Redisson
-https://mp.weixin.qq.com/s/8t_DIohymape6x-71D_uQg
 
 
 
@@ -44,19 +34,13 @@ https://www.toutiao.com/article/7153427109799576075/?app=news_article&timestamp=
 oracle 数据库操作：https://blog.csdn.net/qq_38667427/article/details/119323495
 
 
-[ Google Protobuf 快速入门实例]( https://www.toutiao.com/article/7166878389264908813/?app=news_article&timestamp=1668695460&use_new_style=1&req_id=202211172230590102091561620D1DB0D9&group_id=7166878389264908813&share_token=8306EBAF-820B-4F5E-84CD-EB463744837F&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect)
+
 
  Netty 入门学习
 
 https://blog.csdn.net/weixin_53142722/article/details/124942857?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_baidulandingword~default-1-124942857-blog-105618052.pc_relevant_recovery_v2&spm=1001.2101.3001.4242.2&utm_relevant_index=4
 
 
-
-[SpringBoot项目实现发布订阅模式，真的很简单](https://www.toutiao.com/article/7166422166932554279/?app=news_article&timestamp=1668908842&use_new_style=1&req_id=20221120094722010158046070128D9385&group_id=7166422166932554279&wxshare_count=1&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_android&utm_campaign=client_share&share_token=52aca278-e6ad-4cac-ab61-fdcee8dba457&source=m_redirect)
-
-
-
-[Google Protobuf 快速入门实例（Netty）](https://www.toutiao.com/article/7166878389264908813/?app=news_article&timestamp=1668695460&use_new_style=1&req_id=202211172230590102091561620D1DB0D9&group_id=7166878389264908813&share_token=8306EBAF-820B-4F5E-84CD-EB463744837F&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect)
 
 
 
@@ -77,10 +61,6 @@ https://blog.csdn.net/weixin_53142722/article/details/124942857?utm_medium=distr
 [java 中set删除](https://www.techiedelight.com/zh/remove-elements-from-set-java/)
 
 
-
-idea激活
-
-https://www.yuque.com/yueryi/oldfish/bqrfq3 
 
 [史上最全面的Neo4j使用指南](https://blog.csdn.net/weixin_34314962/article/details/89655551?spm=1001.2101.3001.6650.2&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-2-89655551-blog-103318347.pc_relevant_aa&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-2-89655551-blog-103318347.pc_relevant_aa&utm_relevant_index=5)
 
@@ -171,8 +151,6 @@ https://blog.csdn.net/yangbindxj/article/details/128232675
 
 https://www.cnblogs.com/hujinzhong/p/11955880.html
 
-[Springboot 整合 xxljob 动态API调度任务(进阶篇)](https://blog.csdn.net/qq_35387940/article/details/125410895)
-
 
 
 v2ray免费节点
@@ -199,13 +177,13 @@ https://www.jianshu.com/p/cd915908cb96
 
 [Spring高级之注解@DependsOn详解（超详细）](https://blog.csdn.net/qq_40837310/article/details/106557588)
 
-[并发编程-队列](https://www.toutiao.com/article/7192866288283386406/?app=news_article&timestamp=1677310427&use_new_style=1&req_id=20230225153347483B6D6B62D91E5A396B&group_id=7192866288283386406&share_token=9CDCD7CF-E409-4BDD-9AAC-2A6D8CF46EEF&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect)
+
 
 [学过这么一遍，Spring循环依赖问题难不倒我](https://www.toutiao.com/article/7202414607967797797/?app=news_article&timestamp=1677309779&use_new_style=1&req_id=20230225152258722986A84AD7935BB356&group_id=7202414607967797797&share_token=62BCD2D1-9047-40E6-95FF-BAC08E8223B9&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect)
 
 [SpringBoot进阶-SpringBoot如何实现配置文件脱敏？](https://www.toutiao.com/article/7193965484314903074/?app=news_article&timestamp=1675054122&use_new_style=1&req_id=202301301248411557B3506967C58E6B93&group_id=7193965484314903074&share_token=1919C290-124A-4A3B-88C7-E48B64681CCB&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect)
 
-[Java CompletableFuture 异步超时实现探索](https://www.toutiao.com/article/7197605539877093921/?app=news_article&timestamp=1676476125&use_new_style=1&req_id=2023021523484417538688F164B72577EA&group_id=7197605539877093921&share_token=F2929B7D-9995-4EBA-A0ED-856E67CB2E44&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect)
+
 
 [如何使用IntelliJ IDEA远程调试Spring Boot程序](https://www.toutiao.com/article/7202847959141204518/?app=news_article&timestamp=1677300028&use_new_style=1&req_id=202302251240275E85844C72A2635441D2&group_id=7202847959141204518&share_token=B6C63BF3-3DAA-43A8-9EF5-991163DA327C&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect)
 
@@ -225,13 +203,6 @@ https://github.com/selierlin/Share-SSR-V2ray
 
 
 
-
-
-
-[【LockSupport】线程的休眠和指定唤醒](https://blog.csdn.net/weixin_48271092/article/details/124315238?spm=1001.2101.3001.6650.1&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-124315238-blog-102819451.235%5Ev36%5Epc_relevant_default_base3&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-124315238-blog-102819451.235%5Ev36%5Epc_relevant_default_base3&utm_relevant_index=2)
-
-
-
 [限速神器RateLimiter源码解析](https://www.toutiao.com/article/7233585842072060477/?app=news_article&timestamp=1685401334&use_new_style=1&req_id=20230530070213C57164EEE9625E361B33&group_id=7233585842072060477&wxshare_count=1&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_android&utm_campaign=client_share&share_token=85a2f07c-3639-447b-bdcd-77873e69bd22&source=m_redirect&wid=1685409833038)
 
 [教你如何使用 SpringBoot 日志](https://www.toutiao.com/article/7230986210762916389/?app=news_article&timestamp=1685233646&use_new_style=1&req_id=2023052808272510B493444499BF21F6E2&group_id=7230986210762916389&wxshare_count=1&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_android&utm_campaign=client_share&share_token=64ba6ebb-a7f4-4f1f-8791-7d3857bfc733&source=m_redirect)
@@ -244,7 +215,7 @@ https://github.com/selierlin/Share-SSR-V2ray
 
 [Netty服务端开发及性能优化](https://www.toutiao.com/article/7227022004753482300/?app=news_article&timestamp=1685403739&use_new_style=1&req_id=202305300742192689551D38D07237E60D&group_id=7227022004753482300&wxshare_count=1&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_android&utm_campaign=client_share&share_token=9cd66856-4719-422e-8be0-9f291fa8f5e2&source=m_redirect)
 
-[请停止微服务，做好单体的模块化才是王道：Spring Modulith介绍](https://www.toutiao.com/article/7236272207863890465/?app=news_article&timestamp=1685405380&use_new_style=1&req_id=20230530080938695064D413755A3A97D6&group_id=7236272207863890465&wxshare_count=1&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_android&utm_campaign=client_share&share_token=e9ef3efc-48c1-4e1b-8035-a600b1b37b74&source=m_redirect)
+
 
 [Netty 组件介绍](https://www.toutiao.com/article/7203517335574086177/?app=news_article&timestamp=1685406318&use_new_style=1&req_id=2023053008251804897A44FA2E2A3BD065&group_id=7203517335574086177&wxshare_count=1&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_android&utm_campaign=client_share&share_token=a52a5071-7cd7-4e86-93cc-87043f619999&source=m_redirect)
 
@@ -285,25 +256,11 @@ https://juejin.cn/post/7176057114006126653
 
 
 
-SpringBoot结合XXL-JOB实现定时任务
-https://juejin.cn/post/7172325382320816165
 
-[只会用 xxl-job？更强大的新一代分布式任务调度框架来了！](https://mp.weixin.qq.com/s/homQEY9um9FadGXcAhzg5g)
-
-大公司为什么禁止SpringBoot项目使用Tomcat？
-https://mp.weixin.qq.com/s/rf8BQOATJR43MmbBw0V9iQ
-
-
-
-SpringBoot 调用外部接口的三种方式
-https://mp.weixin.qq.com/s/ScJ42nwEgUV1AeH0pfbBjg
 
 
 正式上市 || Spring 官方认证服务器 SAS 使用
 https://mp.weixin.qq.com/s/CzvmsuQHtSASdhjnpItNPw
-
-面试官问：注解@Transactional失效的几种原因及解决办法？
-https://mp.weixin.qq.com/s/g7lTcQVmIx-EZwVOqhDYsg
 
 
 
@@ -316,7 +273,7 @@ https://gitee.com/mrzhouy/SpringBootJWTShiro/tree/master
 
 [卸载你的Navicat，试试阿里开源的Chat2DB，一款集成AIGC能力的数据库客户端！](https://mp.weixin.qq.com/s/vnBgJq2xph3cPXDJXWDiMA)
 
-[SpringBoot 实现定时任务动态管理，太爽了！](https://mp.weixin.qq.com/s/btk5LZLHYNKj4HsYIZjBmw)
+
 
 【Gradle-3】Gradle中的DSL，Groovy & Kotlin
 https://blog.csdn.net/yechaoa/article/details/130257106
@@ -366,8 +323,6 @@ https://mp.weixin.qq.com/s/6MPQJJZEfSLbFg-grvk5VA
 https://mp.weixin.qq.com/s/gZm_Y5Dr8uCf7rFBS7y7Fw
 
 
- Openjob 重磅来袭，高性能任务调度框架
- https://mp.weixin.qq.com/s/lGjr6eEYo8YXQLT2hrcciw
 
 
 Redis Lua脚本完全入门
@@ -387,16 +342,8 @@ https://mp.weixin.qq.com/s/TvU0Ny64NvmJL4-GKSaPpA
 https://www.cnblogs.com/lidabo/p/14763192.html
 
 
-SpringBoot官方支持任务调度框架，轻量级用起来也挺香！
-https://juejin.cn/post/6885869364180942862
-
-
 why技术
 https://juejin.cn/user/3702810893364350/posts
-
-
-MySQL优化详解
-https://blog.csdn.net/zls986992484/article/details/52860496
 
 
 
@@ -404,17 +351,35 @@ https://blog.csdn.net/zls986992484/article/details/52860496
 https://mp.weixin.qq.com/s/nHB2HvBaZdx4BQywRQfG7Q
 
 
+
+## 定时任务
+
+[SpringBoot 实现定时任务动态管理，太爽了！](https://mp.weixin.qq.com/s/btk5LZLHYNKj4HsYIZjBmw)
+
+[Springboot 整合 xxljob 动态API调度任务(进阶篇)](https://blog.csdn.net/qq_35387940/article/details/125410895)
+
+SpringBoot官方支持任务调度框架，轻量级用起来也挺香！
+https://juejin.cn/post/6885869364180942862
+
+ Openjob 重磅来袭，高性能任务调度框架
+ https://mp.weixin.qq.com/s/lGjr6eEYo8YXQLT2hrcciw
+
+ SpringBoot结合XXL-JOB实现定时任务
+https://juejin.cn/post/7172325382320816165
+
+[只会用 xxl-job？更强大的新一代分布式任务调度框架来了！](https://mp.weixin.qq.com/s/homQEY9um9FadGXcAhzg5g)
+
+
+
+
+## mysql
+
 [全解MySQL：一条SQL语句从诞生至结束的多姿多彩历程！](https://www.toutiao.com/article/7221477015071982138/?log_from=7ca5c2422d4b_1690786274768)
 
 [阿里一面:在日常工作中怎么做MySQL优化的？](https://www.toutiao.com/article/7215845464631968268/?log_from=f38f01eac4652_1690786541672)
 
 [看完这篇还不懂MySQL的MVCC机制算我输](https://www.toutiao.com/article/7251879185865245239/?log_from=222839b60344c_1690786715622)
 
+MySQL优化详解
+https://blog.csdn.net/zls986992484/article/details/52860496
 
-
-使用上 Spring 的事件机制，真香！
-https://mp.weixin.qq.com/s/fWBldeODiqhbssh95SrRpA
-
-
-[准确率 99.9% 的离线IP地址定位库](https://mp.weixin.qq.com/s/m0Pxbi3QMekxRrz8KvpDcQ)
-https://mp.weixin.qq.com/s/G-u1IgFAmIumAZ990og9vA

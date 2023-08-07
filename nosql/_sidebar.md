@@ -13,6 +13,7 @@
   - [02_02springboot集成redis(jedis)](nosql/redis/02springboot集成redis(jedis).md)
   - [03_redis的十六种使用场景](nosql/redis/03redis的十六种使用场景.md)
   - [04_redis位图](nosql/redis/04redis位图.md)
+  - [04_02redis的Geo功能实现查找附近的位置](nosql/redis/04_02redis的Geo功能实现查找附近的位置.md)
   - [05_使用redis限流](nosql/redis/05.使用redis限流.md)
   - [06_redis监听](nosql/redis/06redis监听.md)
   - [07_redis客户端](nosql/redis/07redis客户端.md)
