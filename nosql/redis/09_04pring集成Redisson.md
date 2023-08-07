@@ -76,6 +76,10 @@ try {
 
 RLock是Redisson分布式锁的最核心接口，继承了concurrent包的Lock接口和自己的RLockAsync接口，RLockAsync的返回值都是RFuture，是Redisson执行异步实现的核心逻辑，也是Netty发挥的主要阵地。
 
+如果我们未制定 lock 的超时时间，就使用 30 秒作为看门狗的默认时间。只要占锁成功，就会启动一个`定时任务`：每隔 10 秒重新给锁设置过期的时间，过期时间为 30 秒。
+
+![640](img/640.png)
+
 **RLock如何加锁？**
 
 从RLock进入，找到RedissonLock类，找到**tryLock**方法再递进到干事的**tryAcquireOnceAsync**方法，这是加锁的主要代码（版本不一此处实现有差别，和最新3.15.x有一定出入，但是核心逻辑依然未变。此处以3.13.6为例）
@@ -403,6 +407,8 @@ return 0;
 详细加锁解锁流程总结如下图：
 
 ![image-20230804101954216](img/image-20230804101954216.png)
+
+从上面可知Redisson底层大量使用lua脚本来保证操作的原子性，同时使用看门狗机制实现自动续期，基于以上两点解决了基于redis实现分布式可能出现的问题。
 
 ## RedissonFairLock
 
