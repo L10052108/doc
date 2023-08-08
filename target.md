@@ -205,8 +205,6 @@ https://github.com/selierlin/Share-SSR-V2ray
 
 [限速神器RateLimiter源码解析](https://www.toutiao.com/article/7233585842072060477/?app=news_article&timestamp=1685401334&use_new_style=1&req_id=20230530070213C57164EEE9625E361B33&group_id=7233585842072060477&wxshare_count=1&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_android&utm_campaign=client_share&share_token=85a2f07c-3639-447b-bdcd-77873e69bd22&source=m_redirect&wid=1685409833038)
 
-[教你如何使用 SpringBoot 日志](https://www.toutiao.com/article/7230986210762916389/?app=news_article&timestamp=1685233646&use_new_style=1&req_id=2023052808272510B493444499BF21F6E2&group_id=7230986210762916389&wxshare_count=1&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_android&utm_campaign=client_share&share_token=64ba6ebb-a7f4-4f1f-8791-7d3857bfc733&source=m_redirect)
-
 [【实践篇】教你玩转JWT认证---从一个优惠券聊起](https://www.toutiao.com/article/7234699843615097400/?app=news_article&timestamp=1685401424&use_new_style=1&req_id=202305300703448B8BE027BEE0B535FA3B&group_id=7234699843615097400&wxshare_count=1&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_android&utm_campaign=client_share&share_token=b9b8c368-9b4b-4958-a25b-126529cfb8ab&source=m_redirect)‘
 
 [使用JWT生成token实现权限验证](https://blog.csdn.net/m0_59359926/article/details/123809705?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522168578457416800188583181%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=168578457416800188583181&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-123809705-null-null.142^v88^control,239^v2^insert_chatgpt&utm_term=jwt%20token&spm=1018.2226.3001.4187)

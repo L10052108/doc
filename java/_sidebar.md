@@ -40,7 +40,9 @@
   - [05_map的使用](java/java基础/05_map的使用.md)
   - [06_guava工具类](java/java基础/06_guava工具类.md)
   - [07_collection](java/java基础/07_collection.md)
+  - [07_02Java集合复习](java/java基础/07_02Java集合复习.md)
   - [08_Java开发利器之重试](java/java基础/08_Java开发利器之重试.md)
+
 
 [//]: # "idea相关的内容"
 - idea
@@ -112,8 +114,7 @@
 
 - 工具
   - [01_maven](java/工具/01maven.md)
-  - [02_redis](java/工具/02redis.md)
-  - [03_yapi](java/工具/02redis.md)
+  - [03_yapi](java/工具/03yapi.md)
   - [03_postman](java/工具/04postman.md)
   - [05_gitlab](java/工具/05gitlab.md)
 
