@@ -138,7 +138,7 @@ INSERT INTO SC VALUES('0020' , 's3' ,62);
 
 **1.查询名字中含有「龙」字的学生信息**
 
-```text
+```sql
 SELECT *
 FROM student
 WHERE sname LIKE '%龙%';
@@ -148,7 +148,7 @@ WHERE sname LIKE '%龙%';
 
 **2.查询「数」姓的所有老师的信息**
 
-```text
+```sql
 -- 很简单。用个like就行，不会like的，去百度一下就可以。
 SELECT * FROM teacher
 WHERE Tname LIKE '数%';
@@ -158,7 +158,7 @@ WHERE Tname LIKE '数%';
 
 **3.查询男生、女生人数**
 
-```text
+```sql
 SELECT Ssex,COUNT(ssex) as 人数 
 FROM student
 GROUP BY Ssex; 
@@ -174,7 +174,7 @@ GROUP BY Ssex;
 
 **4.查询2000年后出生的学生名单**
 
-```text
+```sql
 SELECT sname
 FROM student
 WHERE sage LIKE '20%';
@@ -184,7 +184,7 @@ WHERE sage LIKE '20%';
 
 **5.查询同名同姓学生名单，并统计同名人数**
 
-```text
+```sql
 -- 思路：sname分组即可，本数据无同名
 SELECT sname,COUNT(sname) AS 同名人数
 FROM student
@@ -196,7 +196,7 @@ HAVING 同名人数>1;
 
 **6.查询每门课程选修人数**
 
-```text
+```sql
 -- 思路：分组后，用个count即可
 SELECT Cid,COUNT(sid) AS num
 FROM  sc 
@@ -207,7 +207,7 @@ GROUP BY cid;
 
 **7.查询每门课程的平均成绩**
 
-```text
+```sql
 SELECT cid,AVG(score) '平均成绩'
 FROM sc
 GROUP BY cid 
@@ -217,7 +217,7 @@ GROUP BY cid
 
 **8.查询每门成绩最好的前3名**
 
-```text
+```sql
 -- 思路：三个课程的乘积表，排名取前三，然后合并
 (SELECT * FROM sc WHERE Cid='s1'  ORDER BY score DESC LIMIT 3)
 UNION
@@ -230,7 +230,7 @@ UNION
 
 **9.查询选修过任一课程的学生的学生信息**
 
-```text
+```sql
 -- 思路：没选修课程的同学不在成绩表中，所以直接联结即可。
 -- 这种等值联结，相当于内联结，只有两表都有的记录才会被留下。
 -- 如果不理解，可以网上查一下，深刻理解一下联结部分的内容。
@@ -243,7 +243,7 @@ WHERE student.Sid=sc.Sid
 
 **10.查询至少选修两门课程的学生学号**
 
-```text
+```sql
 SELECT 
   sid,COUNT(cid) 选修数 
 FROM
@@ -256,7 +256,7 @@ HAVING 选修数 >= 2 ;
 
 **11.查询出只选修两门课程的学生学号和姓名**
 
-```text
+```sql
 SELECT sc.sid,sname
 FROM sc INNER JOIN student
 ON sc.sid = student.sid
@@ -268,7 +268,7 @@ HAVING COUNT(sc.cid) = 2;
 
 **12.查询选修了全部课程的学生信息**
 
-```text
+```sql
 -- 思路：分组求出每个学生选课数，加上选课数等于全部课程数的条件。
 -- 后用in把剩下的Sid带到student表即可。
 SELECT * FROM student 
@@ -282,7 +282,7 @@ HAVING COUNT(*)=(SELECT COUNT(cid) FROM course))
 
 **13.查询没有选修全部课程的同学的信息。**
 
-```text
+```sql
 -- 思路：先查询选了所有课的学生，再反向选择这些人之外的学生.否则会漏掉什么都没选的。
 SELECT * FROM student 
 WHERE Sid  NOT IN(
@@ -295,7 +295,7 @@ HAVING COUNT(*)=(SELECT COUNT(cid) FROM course));
 
 **14.查询各学生的年龄，只按年份来算**
 
-```text
+```sql
 -- 思路：用时间函数，看一眼就明白了，注意记忆。
 SELECT sname,YEAR(NOW()) - YEAR(sage) AS 年龄
 FROM student ;
@@ -305,7 +305,7 @@ FROM student ;
 
 **15.查询所有学生的姓名、课程名称和分数**
 
-```text
+```sql
 SELECT sname,sc.cid,score 
 FROM sc INNER JOIN student 
 ON sc.sid = student.sid ;
@@ -315,7 +315,7 @@ ON sc.sid = student.sid ;
 
 **16.查询任何一门课程成绩在 70 分以上的姓名、课程名称和分数**
 
-```text
+```sql
 -- 思路：上一题的基础上，加上一个where条件判断
 SELECT sname,sc.cid,score 
 FROM
@@ -330,7 +330,7 @@ AND score > 70 ;
 
 **17.查询有不及格课程的学生的姓名、课程名称和分数**
 
-```text
+```sql
 -- 思路：同上一题
 SELECT sname,sc.cid,score 
 FROM
@@ -343,7 +343,7 @@ AND score < 60 ;
 
 **18.查询课程编号为 s1 且课程成绩在 80 分以上的学生的学号和姓名**
 
-```text
+```sql
 -- 思路：同上一题,多加个条件
 SELECT sc.sid,sname
 FROM sc INNER JOIN student AS s
@@ -357,7 +357,7 @@ WHERE sc.cid = 's1' AND score >= 80;
 
 **19.查询本周过生日的学生**
 
-```text
+```sql
 -- 思路：时间函数week()，返回日期的所在周数，一年大概52周，试一下就知道了
 SELECT sname
 FROM student
@@ -368,7 +368,7 @@ WHERE WEEK(sage) = WEEK(NOW());
 
 **20.查询下周过生日的学生**
 
-```text
+```sql
 SELECT 
   sname 
 FROM
@@ -380,7 +380,7 @@ WHERE WEEK(sage) = WEEK(NOW()) + 1 ;
 
 **21.查询本月过生日的学生**
 
-```text
+```sql
 SELECT 
   sname,
   sage 
@@ -393,7 +393,7 @@ WHERE MONTH(sage) = MONTH(NOW());
 
 **22.查询下月过生日的学生**
 
-```text
+```sql
 SELECT 
   sname,
   sage 
@@ -408,7 +408,7 @@ WHERE MONTH(sage) = MONTH(NOW()) + 1 ;
 
 **1.查询所有同学的学生编号、学生姓名、选课总数、所有课程的成绩总和**
 
-```text
+```sql
 -- 思路：看到选课总数和成绩总和，要想到groupby，然后和student表联结一下即可。
 -- 如果有学生没选课，用left join联结，也会被选出，因为在student表该学生存在。
 -- 此数据中没有一节课没选的学生。
@@ -426,7 +426,7 @@ ON student.Sid=r.Sid;
 
 **2.按平均成绩从高到低显示所有学生的所有课程的成绩以及平均成绩**
 
-```text
+```sql
 -- 思路：这题非常漂亮，但不难，联结3张各科成绩表+1张平均成绩表即可。记得排序
 SELECT t1.Sid,t1.score '语文',t2.score '数学',t3.score '英语',t4.平均成绩 FROM
 (SELECT * FROM sc WHERE CId='s1' )AS t1,
@@ -441,7 +441,7 @@ ORDER BY 平均成绩 DESC
 
 **3.查询各科成绩最高分、最低分、平均分、（及格率、中等率、优良率、优秀率）**
 
-```text
+```sql
 -- 思路：虽然多，但是不难。前3个分组后聚合函数直接求。后面4个用case分类后再计算。不会case的百度下case
 SELECT 
   cid AS 课程ID,
@@ -469,7 +469,7 @@ GROUP BY cid
 
 **4.统计各科成绩各分数段人数：课程编号，课程名称，[0-59]，[60-79]，[80-89]，[90-100] 及所占百分比**
 
-```text
+```sql
 -- 思路：在case的基础上加一个 SUM()聚合即可。百分比的多弄个除法。
 SELECT
   sc.Cid AS 课程编号,
@@ -492,7 +492,7 @@ GROUP BY sc.cid ;
 
 **5.查询选修了" s1 "课程和" s2 "课程的成绩情况**
 
-```text
+```sql
 SELECT * FROM 
 (SELECT * FROM sc WHERE CId='s1') AS t1,
 (SELECT * FROM sc WHERE CId='s2') AS t2
@@ -503,7 +503,7 @@ WHERE t1.SId=t2.SId;
 
 **6.查询" s1 "课程比" s2 "课程成绩高的学生的信息及课程分数**
 
-```text
+```sql
 -- 思路：将成绩表sc中课程s1和s2的记录进行表联结，选出分数s1>s2的，
 -- 然后再和student联结以取出学生信息。最后每个字段全查询出来。
 SELECT * FROM Student
@@ -522,7 +522,7 @@ ON Student.Sid = r.Sid;
 
 **7.查询没有选修“s1”课程的同学的“s2”课程的成绩。**
 
-```text
+```sql
 -- 思路:先把选修了s1课程的学生的学号取出来，然后用not in 反向选择没选修s1的，再加个s2的条件即可。
 SELECT * FROM sc
 WHERE sc.Sid NOT IN (
@@ -535,7 +535,7 @@ AND sc.Cid= 's2';
 
 **8.检索" s1 "课程分数小于 60，按分数降序排列的学生信息,及对应成绩**
 
-```text
+```sql
 -- 思路：先查询s1<60的，再和student表联结即可
 SELECT student.*,Cid,score
 FROM student,
@@ -560,7 +560,7 @@ SELECT Cid FROM sc WHERE Sid='0001'));
 
 **10.查询和学号为" 0001 "的同学选修课程完全相同的学生信息**
 
-```text
+```sql
 -- 思路：此题很特殊！如果一次得出结果，会非常复杂!所以我们必须分两次。见下文
 -- 第一次查询：查看学号为" 0001 "的同学，选了哪些课程。
 SELECT Cid FROM sc WHERE Sid='0001';
@@ -581,7 +581,7 @@ WHERE t1.Sid=t2.Sid AND t2.Sid=t3.Sid)
 
 **11.查询两门及其以上不及格课程的同学的学号，姓名及其’不及格课程的平均成绩’**
 
-```text
+```sql
 -- 这题简化了一下，只求(有两门不及格课程的学生的对应课程平均成绩)
 -- 而不是(有两门不及格课程的学生的全部课程平均成绩)。注意区分！
 -- 思路：先把不及格的选出来，再分组，选出计数大于2的，再和student表联结即可。
@@ -596,7 +596,7 @@ HAVING COUNT(t2.cid)>=2;
 
 **12.查询平均成绩大于等于 60 分的同学的学生学号、姓名和平均成绩**
 
-```text
+```sql
 -- 思路:看见平均，先想到分组，然后用having加个>=60的条件，最后和student表联结，取出所需值即可。
 SELECT student.Sid,sname,avg_sc FROM student,(
     SELECT Sid, AVG(score) AS avg_sc FROM sc  
@@ -610,7 +610,7 @@ WHERE student.sid = r.sid;
 
 **13.查询平均成绩大于等于 85 的所有学生的学号、姓名和平均成绩**
 
-```text
+```sql
 SELECT sc.sid,sname,AVG(score) AS 平均成绩
 FROM sc,student
 WHERE sc.sid = student.sid
@@ -622,7 +622,7 @@ HAVING 平均成绩>= 85;
 
 **14. 查询课程名称为「数学」，且分数低于 60 的学生姓名和分数**
 
-```text
+```sql
 -- 思路：多表联结加上条件即可，相比先联结再加条件，这种先加条件再联结，效率高一点
 SELECT sname,score 
 FROM
@@ -639,7 +639,7 @@ ON sc.sid = s.sid ;
 
 **15.查询学过「数据分析王子」老师授课的同学的信息**
 
-```text
+```sql
 -- 思路：要通过读题看出需要几张表，本题需要4张，联结后，再加个条件即可。
 SELECT student.* FROM student,teacher,course,sc
 WHERE 
@@ -653,7 +653,7 @@ WHERE
 
 **16.查询选修「数据分析王子」老师所授课程的学生中，成绩最高的学生信息及其成绩(如果有并列的，需要都列出来)**
 
-```text
+```sql
 -- 思路：通过两次联结，第一次联结求出最大值，
 --     第二次联结加上条件 老师='数据分析王子'老师和分数=最高分
 -- 思路：方法有待优化，无奈试了其他方法会报错。
@@ -680,7 +680,7 @@ WHERE tname = '数据分析王子'
 
 -- 没什么实际意义，看个乐就行
 
-```text
+```sql
 SELECT 
   DISTINCT *
 FROM
@@ -697,7 +697,7 @@ WHERE a.score = b.score
 
 **18-20.查询学生的总成绩，并进行排名，使用3种排名方法**
 
-```text
+```sql
 -- 知识补充；
 -- 	三种排名函数，我已经帮你写好了格式，可以直接拿去用。
 -- 	具体的可以百度Mysql排名函数，了解一下。它是一种窗体函数。
@@ -717,7 +717,7 @@ FROM (SELECT sid,SUM(score) 总分 FROM sc GROUP BY sid) a
 
 **21.各科成绩排名**
 
-```text
+```sql
 -- 思路:使用排名函数会非常简单，详细可以百度学习一下mysql排名函数学习一下
 SELECT *,ROW_NUMBER() OVER (ORDER BY cid,score DESC) '排名'
 FROM sc
