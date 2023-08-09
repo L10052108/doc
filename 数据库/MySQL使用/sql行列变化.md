@@ -13,9 +13,6 @@ https://www.toutiao.com/article/7067138670272496166/?log_from=11a11471af1538_164
 ![](https://tva1.sinaimg.cn/large/e6c9d24egy1h0ps8bopqjj20j006874d.jpg ":size=40%")
 
 
-
-
-
 **原始数据**
 
 ~~~~sql

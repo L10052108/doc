@@ -1,19 +1,8 @@
-[前后端分离 springboot shiro+jwt token认证 权限校验](https://blog.csdn.net/weixin_44912855/article/details/121319260?spm=1001.2014.3001.5501)
-
-
-
-[Spring/Spring Boot下如何动态配置计划任务](https://www.toutiao.com/article/7158705923182182927/?app=news_article&timestamp=1666967484&use_new_style=1&req_id=202210282231230102100982141B4603EF&group_id=7158705923182182927&share_token=ACD68CAC-353F-459D-B202-DC03323BFBD5&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect)
-
-
-
 
 
 
 [SpringBoot自定义注解+异步+观察者模式实现业务日志保存](https://www.toutiao.com/article/7159396762061390372/?app=news_article&timestamp=1666957328&use_new_style=1&req_id=20221028194208010209157026093A7510&group_id=7159396762061390372&share_token=8917AC16-A019-4853-893F-9F9288713788&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect)
 
-
-
-  [Spring/Spring Boot下如何动态配置计划任务](https://www.toutiao.com/article/7158705923182182927/?app=news_article&timestamp=1666967484&use_new_style=1&req_id=202210282231230102100982141B4603EF&group_id=7158705923182182927&share_token=ACD68CAC-353F-459D-B202-DC03323BFBD5&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect)
 
 
 
@@ -35,27 +24,12 @@ oracle 数据库操作：https://blog.csdn.net/qq_38667427/article/details/11932
 
 
 
-
- Netty 入门学习
-
-https://blog.csdn.net/weixin_53142722/article/details/124942857?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_baidulandingword~default-1-124942857-blog-105618052.pc_relevant_recovery_v2&spm=1001.2101.3001.4242.2&utm_relevant_index=4
-
-
-
-
-
 [ MySQL性能分析神器—Profiling](https://www.toutiao.com/article/7166909357652017679/?app=news_article&timestamp=1668904068&use_new_style=1&req_id=20221120082747010208097097003A0A65&group_id=7166909357652017679&share_token=069EE728-6C6D-4047-A727-11D1C7B529A5&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect)
-
 
 
 [一个轻量级的分布式日志标记追踪神器，十分钟接入，非常好用！](https://mp.weixin.qq.com/s/_GEMjO-7eILEID0-M5fBFw)
 
-
-
 [SpringBoot 还在用 if 校验参数？那你真的太low了，老司机都是这么玩的！](https://mp.weixin.qq.com/s/Sm9VcUktodOts-arOdQ7oA)
-
-
-
 
 
 [java 中set删除](https://www.techiedelight.com/zh/remove-elements-from-set-java/)
@@ -159,11 +133,7 @@ idea集成japi
 https://www.jianshu.com/p/cd915908cb96 
 
 
-
-[SpringBoot + Druid DataSource 实现监控 MySQL 性能](https://www.toutiao.com/article/7203906287799681575/?app=news_article&timestamp=1677376865&use_new_style=1&req_id=202302261001055BB2848D7D41F6989694&group_id=7203906287799681575&share_token=9CB9513B-EEE5-419A-869A-8C36EBFB12D8&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect)
-
 [Spring高级之注解@DependsOn详解（超详细）](https://blog.csdn.net/qq_40837310/article/details/106557588)
-
 
 
 [学过这么一遍，Spring循环依赖问题难不倒我](https://www.toutiao.com/article/7202414607967797797/?app=news_article&timestamp=1677309779&use_new_style=1&req_id=20230225152258722986A84AD7935BB356&group_id=7202414607967797797&share_token=62BCD2D1-9047-40E6-95FF-BAC08E8223B9&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect)
@@ -178,9 +148,6 @@ https://www.jianshu.com/p/cd915908cb96
 
 [Springboot 多模块项目搭建](https://www.toutiao.com/article/7194754280837136952/?app=news_article&timestamp=1677312089&use_new_style=1&req_id=20230225160129F5EC5136F313145AFDD2&group_id=7194754280837136952&share_token=D911315E-DF1F-48B6-BB2C-5E72EDD81FC9&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect)
 
-[github上可激活win10和office的开源、无毒的放心工具](https://www.toutiao.com/article/7206248142433010231/?app=news_article&timestamp=1679838681&use_new_style=1&req_id=20230326215120F96C467D997E51D7C509&group_id=7206248142433010231&share_token=5C349BF4-C0E6-43B6-9739-25F0A16AAE4D&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=2&source=m_redirect)
-
-
 
 免费节点及订阅地址：
 https://github.com/Pawdroid/Free-servers
@@ -188,9 +155,6 @@ https://github.com/Pawdroid/Free-servers
 镜像网站/浏览器插件/机场推荐/直连网站/工具下载/Clash/SS/SSR/V2ray使用教程
 https://github.com/selierlin/Share-SSR-V2ray
 
-
-
-[限速神器RateLimiter源码解析](https://www.toutiao.com/article/7233585842072060477/?app=news_article&timestamp=1685401334&use_new_style=1&req_id=20230530070213C57164EEE9625E361B33&group_id=7233585842072060477&wxshare_count=1&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_android&utm_campaign=client_share&share_token=85a2f07c-3639-447b-bdcd-77873e69bd22&source=m_redirect&wid=1685409833038)
 
 [【实践篇】教你玩转JWT认证---从一个优惠券聊起](https://www.toutiao.com/article/7234699843615097400/?app=news_article&timestamp=1685401424&use_new_style=1&req_id=202305300703448B8BE027BEE0B535FA3B&group_id=7234699843615097400&wxshare_count=1&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_android&utm_campaign=client_share&share_token=b9b8c368-9b4b-4958-a25b-126529cfb8ab&source=m_redirect)‘
 
@@ -222,27 +186,6 @@ https://www.toutiao.com/article/7233037404448473640/?app=news_article&timestamp=
 
 [认证与授权之Cookie、Session、Token、JWT](https://juejin.cn/post/7173833497830752286/)
 
-Spring Security入门学习
-https://juejin.cn/post/7174576646635126814#heading-0
-
-Spring Security结合JWT实现认证与授权
-
-https://juejin.cn/post/7176803095525982269
-
- Spring Security进阶学习
-https://juejin.cn/post/7174943829655552059
-
-Spring Security结合Redis实现缓存功能
-https://juejin.cn/post/7177188004677550141
-
-
-Spring Security自定义认证逻辑实现图片验证码登录
-https://juejin.cn/post/7176057114006126653
-
-
-
-
-
 
 正式上市 || Spring 官方认证服务器 SAS 使用
 https://mp.weixin.qq.com/s/CzvmsuQHtSASdhjnpItNPw
@@ -256,18 +199,13 @@ https://gitee.com/mrzhouy/SpringBootJWTShiro/tree/master
 
 [使用 ProcessBuilder API 优化你的流程](https://www.toutiao.com/article/7244779303471333925/?app=news_article&timestamp=1687575853&use_new_style=1&req_id=20230624110412C47E7B59E912C12C09BE&group_id=7244779303471333925&wxshare_count=1&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_android&utm_campaign=client_share&share_token=ee45796e-a816-49dc-a319-ed4b75b3bf29&source=m_redirect)
 
-[卸载你的Navicat，试试阿里开源的Chat2DB，一款集成AIGC能力的数据库客户端！](https://mp.weixin.qq.com/s/vnBgJq2xph3cPXDJXWDiMA)
-
 
 
 【Gradle-3】Gradle中的DSL，Groovy & Kotlin
 https://blog.csdn.net/yechaoa/article/details/130257106
 
-
-
 MP
 https://blog.csdn.net/weixin_45529338/article/details/130448579
-
 
 
 https://www.yuucn.com/a/73234.html
@@ -283,11 +221,9 @@ IDEA、JDK17、OpenJFX(javaFX)快速开发桌面应用，并打包成exe可执�
 https://blog.csdn.net/weixin_42286276/article/details/127860167?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_baidulandingword~default-0-127860167-blog-129977741.235^v38^pc_relevant_sort_base1&spm=1001.2101.3001.4242.1&utm_relevant_index=3
 
 
-
  jdk14——独立打包工具jpackage
 
 https://blog.csdn.net/FlyLikeButterfly/article/details/130888197?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_baidulandingword~default-0-130888197-blog-104897288.235^v38^pc_relevant_sort_base1&spm=1001.2101.3001.4242.1&utm_relevant_index=3
-
 
 
 Swing图形化设计
@@ -304,18 +240,7 @@ https://mp.weixin.qq.com/s/tX0bRm1ZnsTNdVWbAD1N5g
 JAVA开发利器之Arthas，快速定位线上问题
 https://mp.weixin.qq.com/s/6MPQJJZEfSLbFg-grvk5VA
 
-面试官：Redis 分布式锁如何自动续期？
-https://mp.weixin.qq.com/s/gZm_Y5Dr8uCf7rFBS7y7Fw
 
-
-
-
-Redis Lua脚本完全入门
-https://juejin.cn/post/6885128690150146062
-
-
-AQS
-https://juejin.cn/post/6913925439723405319
 
 
 pdf 添加水印
@@ -367,4 +292,27 @@ https://juejin.cn/post/7172325382320816165
 
 MySQL优化详解
 https://blog.csdn.net/zls986992484/article/details/52860496
+
+
+
+## Spring Security入门学习
+https://juejin.cn/post/7174576646635126814#heading-0
+
+Spring Security结合JWT实现认证与授权
+
+https://juejin.cn/post/7176803095525982269
+
+ Spring Security进阶学习
+https://juejin.cn/post/7174943829655552059
+
+Spring Security结合Redis实现缓存功能
+https://juejin.cn/post/7177188004677550141
+
+
+Spring Security自定义认证逻辑实现图片验证码登录
+https://juejin.cn/post/7176057114006126653
+
+[前后端分离 springboot shiro+jwt token认证 权限校验](https://blog.csdn.net/weixin_44912855/article/details/121319260?spm=1001.2014.3001.5501)
+
+
 

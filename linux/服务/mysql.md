@@ -43,7 +43,7 @@ systemctl status mysqld.service
 grep "password" /var/log/mysqld.log
 ```
 
-[![img](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/98b36a9b01de4cc79f3a53245296a19c~tplv-k3u1fbpfcp-zoom-1.image)](https://tva1.sinaimg.cn/large/008i3skNgy1gwg6eiwyqfj313402mgm8.jpg)
+![img](img/98b36a9b01de4cc79f3a53245296a19c~tplv-k3u1fbpfcp-zoom-1.image)
 
 ### 登录进MySQL
 

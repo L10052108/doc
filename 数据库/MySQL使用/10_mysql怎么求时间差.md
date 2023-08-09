@@ -1,5 +1,6 @@
 资料来源：<br/>
-[mysql怎么求时间差](https://www.utheme.cn/code/mysql/26085.html)
+[mysql怎么求时间差](https://www.utheme.cn/code/mysql/26085.html)<br/>
+[MySQL 获得当前日期时间 函数](https://www.cnblogs.com/ggjucheng/p/3352280.html)
 
 
 ## 计算时间差
@@ -22,7 +23,7 @@ DATEDIFF(end_date, start_date)
 SELECT DATEDIFF('2020-10-05', '2020-10-01');
 ```
 
-说明这五天之间相差了4天。c
+说明这五天之间相差了4天。
 
 ### 时间差（DATEDIFF）
 
