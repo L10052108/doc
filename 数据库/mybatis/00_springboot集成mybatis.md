@@ -218,6 +218,13 @@ server:
 
 指定`mapper`文件的路径
 
+**注**：
+
+- 在spring1.x和spring2.x中**数据库配置链接关键字有区别：**
+
+- - 在1.x中配置的是spring.datasource.XXX.url
+  - 在2.x中配置的是spring.datasource.XXX.jdbc-url
+
 ### 接口
 
 定义的接口

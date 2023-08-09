@@ -76,10 +76,6 @@ https://mp.weixin.qq.com/s/qWfdhx-b28NP6--xeTePSg
 [Spring Boot 如何统计、监控 SQL 运行情况？](https://mp.weixin.qq.com/s/AJyM0DyZNczgGcXepotnjA)
 
 
-SpringBoot-21-Mybatis多数据源配置
-https://www.toutiao.com/i7072000828030485004/?tt_from=weixin&utm_campaign=client_share&wxshare_count=1×tamp=1646780594&app=news_article&utm_source=weixin&utm_medium=toutiao_android&use_new_style=1&req_id=202203090703130101502221571126F741&share_token=6639b3b4-30b1-4a41-a44c-71bbb572f2cc&group_id=7072000828030485004
-
-
 mysql之自定义函数
 https://www.cnblogs.com/progor/p/8871480.html 
 
@@ -105,17 +101,10 @@ ES
 https://www.yuque.com/fengwenyi/pvaq8o/ftop4l
 
 
-
-
-
-
-
 读写分离
 https://mp.weixin.qq.com/s/2_YTsOwyEByYj0K01QIYVA
 
 
-
-[springBoot集成webSocket并使用postMan进行测试](https://www.toutiao.com/article/7177193271481860619/?app=news_article&timestamp=1671119163&use_new_style=1&req_id=202212152346037A22732ED825E889A450&group_id=7177193271481860619&share_token=032BBC14-0454-4D6F-BCFF-CB532E817C69&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect)
 
 [mysql数据同步到elasticsearch数据解决方案](https://www.toutiao.com/article/7176838363440398852/?app=news_article&timestamp=1671076798&use_new_style=1&req_id=20221215115958E446858BC8318E495254&group_id=7176838363440398852&share_token=9BD630F9-926F-42FC-BA9C-1043A442DAB9&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect)
 
@@ -123,12 +112,10 @@ https://mp.weixin.qq.com/s/2_YTsOwyEByYj0K01QIYVA
 [SpringBoot+ElasticSearch 实现模糊查询，批量CRUD，排序，分页，高亮！](https://mp.weixin.qq.com/s/qoK_OlUTVnN9fPSWsUF6uw)
 
 
-
 [SpringBoot集成kettle实现对接oracle数据](https://www.toutiao.com/article/7175357672575959586/?app=news_article&timestamp=1670687517&use_new_style=1&req_id=202212102351574B0A7436F0AA94505E19&group_id=7175357672575959586&share_token=625FCBB3-E435-4BE0-8AE0-62E72542C876&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect)
 
 
 [SpringBoot中统一日志管理](https://www.toutiao.com/article/7174784709573198376/?app=news_article&timestamp=1670686318&use_new_style=1&req_id=202212102331589D26B075A0C58F4D3893&group_id=7174784709573198376&share_token=1E2798B4-9CAC-40DC-A7FC-7F326D30F890&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect)
-
 
 
 [SpringBoot 过滤器、拦截器、监听器对比及使用场景](https://www.toutiao.com/article/7179777247111627321/?app=news_article&timestamp=1671684529&use_new_style=1&req_id=20221222124848BCBA5BB2781D070CA196&group_id=7179777247111627321&share_token=49349541-C358-4553-9EC1-F47D9C9F6C5F&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect)

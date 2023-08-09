@@ -45,6 +45,7 @@
 
 - mybatis
   - [00_springboot集成mybatis](数据库/mybatis/00_springboot集成mybatis.md)
+  - [00_springboot集成mybatis多数据源](数据库/mybatis/00_springboot集成mybatis多数据源.md)
   - [01_mybatis介绍](数据库/mybatis/mybatis介绍.md)
   - [02_MyBatis类型处理器typeHandlers](数据库/mybatis/typeHanders.md)
   - [03_MyBatis 中为什么不建议使用 where 1=1](数据库/mybatis/注意.md)
@@ -54,6 +55,7 @@
 
 - mybatis_puls
   - [CURD快速入门](数据库/mybatis_puls/CURD快速入门.md)
+  - [00_springboot集成mybatis_plus](数据库/mybatis_puls/00_springboot集成mybatis_plus.md)
   - [逻辑删除](数据库/mybatis_puls/逻辑删除.md)
   - [条件构造器使用与总结](数据库/mybatis_puls/条件构造器使用与总结.md)
   - [分页](数据库/mybatis_puls/分页.md)
