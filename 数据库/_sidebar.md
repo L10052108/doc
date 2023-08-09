@@ -23,15 +23,11 @@
   - [09_MYSQL索引](数据库/mysql/mysql理论/谈谈MYSQL索引是如何提高查询效率的.md)
   - [10_Canal+Kafka实现MySQL与Redis数据同步](数据库/mysql/mysql理论/Canal+Kafka实现MySQL与Redis数据同步.md)
   - [11_utf8和utf8mb4的区别](数据库/mysql/mysql理论/utf8和utf8mb4的区别.md)
-  - [12_MySQL常用引擎有哪些](数据库/mysql/mysql理论/MySQL常用引擎有哪些.md)
-    
 
 - mysql实际使用
   - [01_sql行列变化](数据库/MySQL使用/sql行列变化.md)
   - [02_查询显示行号](数据库/MySQL使用/mysql序号.md)
-  - [03_sql查询一天的数据](数据库/MySQL使用/sql查询一天的数据.md)
   - [04_别再使用 TIMESTAMP 作为日期字段](数据库/MySQL使用/datetime&timestamep.md)
-  - [05_mysql实现递归](数据库/MySQL使用/递归.md)
   - [06_函数&视图](数据库/MySQL使用/函数&视图.md)
   - [07_mysql实战](数据库/MySQL使用/mysql实战1.md)
   - [08_查询表空间](数据库/MySQL使用/查询表空间.md)
