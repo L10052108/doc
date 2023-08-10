@@ -1,5 +1,4 @@
-资料来源：
-
+资料来源：<br/>
 [美团面试：为什么MySQL不建议使用NULL作为列默认值？](https://mp.weixin.qq.com/s/XAO048ZQljPXrTsmSr01LA)
 
 
