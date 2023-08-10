@@ -18,7 +18,7 @@
 
 MySQL的连接主要分为内连接和外连接，外连接常用的有左连接、右连接。
 
-![img](img/fec929efc0f94e50b23f36b2ae89a693~noop.image)
+![img](img/fec929efc0f94e50b23f36b2ae89a693~noop.image ':size=50%')
 
 
 
@@ -28,7 +28,7 @@ MySQL的连接主要分为内连接和外连接，外连接常用的有左连接
 
 ### 3.说一下数据库的三大范式？
 
-![img](img/226ce58d170b486daa03e1fed1348780~noop.image)
+![img](img/226ce58d170b486daa03e1fed1348780~noop.image  ':size=50%')
 
 
 
@@ -42,7 +42,7 @@ MySQL的连接主要分为内连接和外连接，外连接常用的有左连接
 
 ### 4.varchar与char的区别？
 
-![img](img/38ef9e48d5cc483bbae0e55edfd4afbb~noop.image)
+![img](img/38ef9e48d5cc483bbae0e55edfd4afbb~noop.image  ':size=60%')
 
 
 
@@ -77,7 +77,7 @@ MySQL的连接主要分为内连接和外连接，外连接常用的有左连接
 
 **区别**：
 
-![img](img/98a7b69f5b0b42f4903374aaff131d3e~noop.image)
+![img](img/98a7b69f5b0b42f4903374aaff131d3e~noop.image  ':size=50%')
 
 
 
@@ -136,7 +136,7 @@ alter table blogs modify content text CHARACTER SET utf8mb4 COLLATE utf8mb4_unic
 
 ### 12.count(1)、count(*) 与 count(列名) 的区别？
 
-![img](img/b981fbf8ffc64447887aec01109fb712~noop.image)
+![img](img/b981fbf8ffc64447887aec01109fb712~noop.image  ':size=50%')
 
 
 
@@ -156,7 +156,7 @@ alter table blogs modify content text CHARACTER SET utf8mb4 COLLATE utf8mb4_unic
 
 ### 13.一条SQL查询语句的执行顺序？
 
-![img](img/4e670a8a45c54527b922f532e35e03cc~noop.image)
+![img](img/4e670a8a45c54527b922f532e35e03cc~noop.image ':size=70%')
 
 
 1. **FROM**：对FROM子句中的左表<left_table>和右表<right_table>执行笛卡儿积（Cartesianproduct），产生虚拟表VT1

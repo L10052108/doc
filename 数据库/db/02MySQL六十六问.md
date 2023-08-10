@@ -9,7 +9,7 @@
 
 慢SQL的监控主要通过两个途径：
 
-![606fe7b2648746bdbd755a1266944cf4~noop](img/606fe7b2648746bdbd755a1266944cf4noop.webp)
+![606fe7b2648746bdbd755a1266944cf4~noop](img/606fe7b2648746bdbd755a1266944cf4noop.webp  ':size=50%')
 
 
 
@@ -20,7 +20,7 @@
 
 慢SQL的优化，主要从两个方面考虑，SQL语句本身的优化，以及数据库设计的优化。
 
-![37f1f591efdd4fa4bbaa897dfaa1d319~noop](img/37f1f591efdd4fa4bbaa897dfaa1d319noop.webp)
+![37f1f591efdd4fa4bbaa897dfaa1d319~noop](img/37f1f591efdd4fa4bbaa897dfaa1d319noop.webp  ':size=30%')
 
 
 
@@ -173,10 +173,10 @@ explain是sql优化的利器，除了优化慢sql，平时的sql编写，也应�
 
 直接在 select 语句之前增加explain关键字，就会返回执行计划的信息。
 
-![img](img/cbb584f61db34b23814735808fc94209~noop.image)
+![img](img/cbb584f61db34b23814735808fc94209~noop.image  ':size=50%')
 
 
-![img](img/b2969385d7524bccbfa1136714260803~noop.image)
+![img](img/b2969385d7524bccbfa1136714260803~noop.image ':size=30%')
 
 
 1. **id** 列：MySQL会为每个select语句分配一个唯一的id值

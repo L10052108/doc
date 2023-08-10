@@ -7,7 +7,7 @@
 
 ###  43.MySQL中有哪几种锁，列举一下？
 
-![img](img/179ee17035a24c489093ac12c3f60a95~noop.image)
+![img](img/179ee17035a24c489093ac12c3f60a95~noop.image  ':size=50%')
 
 
 
@@ -26,7 +26,7 @@
 
 我们拿这么一个用户表来表示行级锁，其中插入了4行数据，主键值分别是1,6,8,12，现在简化它的聚簇索引结构，只保留数据记录。
 
-![img](img/6a7234feecb94ffe82c1a7f5fbeb115b~noop.image)
+![img](img/6a7234feecb94ffe82c1a7f5fbeb115b~noop.image ':size=50%')
 
 
 
@@ -36,7 +36,7 @@ InnoDB的行锁的主要实现如下：
 
 记录锁就是直接锁定某行记录。当我们使用唯一性的索引(包括唯一索引和聚簇索引)进行等值查询且精准匹配到一条记录时，此时就会直接将这条记录锁定。例如select * from t where id =6 for update;就会将id=6的记录锁定。
 
-![img](img/b4a79783271d46c7bd9af30f44e9351f~noop.image)
+![img](img/b4a79783271d46c7bd9af30f44e9351f~noop.image ':size=50%')
 
 
 
@@ -44,7 +44,7 @@ InnoDB的行锁的主要实现如下：
 
 间隙锁(Gap Locks) 的间隙指的是两个记录之间逻辑上尚未填入数据的部分,是一个**左开右开空间**。
 
-![img](img/e4ab40b770b746f090c6703123ae8687~noop.image)
+![img](img/e4ab40b770b746f090c6703123ae8687~noop.image ':size=50%')
 
 
 
@@ -54,7 +54,7 @@ InnoDB的行锁的主要实现如下：
 
 临键指的是间隙加上它右边的记录组成的**左开右闭区间**。比如上述的(1,6]、(6,8]等。
 
-![img](img/eb1fc1de22da41949018548fe331fd1a~noop.image)
+![img](img/eb1fc1de22da41949018548fe331fd1a~noop.image ':size=50%')
 
 
 
@@ -70,7 +70,7 @@ InnoDB的行锁的主要实现如下：
 
 假如我们有个T1事务，给(1,6)区间加上了意向锁，现在有个T2事务，要插入一个数据，id为4，它会获取一个（1,6）区间的插入意向锁，又有有个T3事务，想要插入一个数据，id为3，它也会获取一个（1,6）区间的插入意向锁，但是，这两个插入意向锁锁不会互斥。
 
-![img](img/ad732673a9354473a4c899db948a2e37~noop.image)
+![img](img/ad732673a9354473a4c899db948a2e37~noop.image ':size=50%')
 
 
 
@@ -88,7 +88,7 @@ InnoDB的行锁的主要实现如下：
 
 有了意向锁之后，要执行的事务A在申请行锁（写锁）之前，数据库会自动先给事务A申请表的意向排他锁。当事务B去申请表的互斥锁时就会失败，因为表上有意向排他锁之后事务B申请表的互斥锁时会被阻塞。
 
-![img](img/04f8225f8963479b9c18eef3b461f58a~noop.image)
+![img](img/04f8225f8963479b9c18eef3b461f58a~noop.image ':size=50%')
 
 
 
@@ -132,7 +132,7 @@ InnoDB的行锁的主要实现如下：
 
 ###  48.MySQL 事务的四大特性说一下？
 
-![img](img/160db4e276c2438f953682eed3332c95~noop.image)
+![img](img/160db4e276c2438f953682eed3332c95~noop.image ':size=30%')
 
 
 
@@ -147,13 +147,13 @@ InnoDB的行锁的主要实现如下：
 - 事务的**一致性**由undo log来保证：undo log是逻辑日志，记录了事务的insert、update、deltete操作，回滚的时候做相反的delete、update、insert操作来恢复数据。
 - 事务的**原子性**和**持久性**由redo log来保证：redolog被称作重做日志，是物理日志，事务提交的时候，必须先将事务的所有日志写入redo log持久化，到事务的提交操作才算完成。
 
-![img](img/31dfefd1edce421a9ef0cddf28a84dde~noop.image)
+![img](img/31dfefd1edce421a9ef0cddf28a84dde~noop.image ':size=50%')
 
 
 
 ###  50.事务的隔离级别有哪些？MySQL 的默认隔离级别是什么？
 
-![img](img/fdd3e32d71b9469989f1265567a013fb~noop.image)
+![img](img/fdd3e32d71b9469989f1265567a013fb~noop.image ':size=30%')
 
 
 
@@ -212,25 +212,25 @@ MVCC(Multi Version Concurrency Control)，中文名是多版本并发控制，�
 - DB_TRX_ID，事务ID，每次修改时，都会把该事务ID复制给DB_TRX_ID；
 - DB_ROLL_PTR，回滚指针，指向回滚段的undo日志。
 
-![img](img/cc314c19d8024cb6b4f21aa357ebdd21~noop.image)
+![img](img/cc314c19d8024cb6b4f21aa357ebdd21~noop.image ':size=50%')
 
 
 
 假如有一张user表，表中只有一行记录，当时插入的事务id为80。此时，该条记录的示例图如下：
 
-![img](img/30d833011f2b4873946fd9f123ffa8fa~noop.image)
+![img](img/30d833011f2b4873946fd9f123ffa8fa~noop.image ':size=50%')
 
 
 
 接下来有两个DB_TRX_ID分别为100、200的事务对这条记录进行update操作，整个过程如下：
 
-![img](img/f873c205293048eca2dbf4f637fd08fd~noop.image)
+![img](img/f873c205293048eca2dbf4f637fd08fd~noop.image ':size=50%')
 
 
 
 由于每次变动都会先把undo日志记录下来，并用DB_ROLL_PTR指向undo日志地址。因此可以认为，**对该条记录的修改日志串联起来就形成了一个版本链，版本链的头节点就是当前记录最新的值**。如下：
 
-![img](img/4121c06c416b43e3b31a440a24244813~noop.image)
+![img](img/4121c06c416b43e3b31a440a24244813~noop.image ':size=50%')
 
 
 
@@ -240,7 +240,7 @@ MVCC(Multi Version Concurrency Control)，中文名是多版本并发控制，�
 
 Read View就是事务执行**快照读**时，产生的读视图，相当于某时刻表记录的一个快照，通过这个快照，我们可以获取：
 
-![img](img/dd178858856146aeab12c382b896d049~noop.image)
+![img](img/dd178858856146aeab12c382b896d049~noop.image ':size=50%')
 
 
 
@@ -268,7 +268,7 @@ READ COMMITTED 是**每次读取数据前都生成一个ReadView**，这样就�
 
 读写分离的基本原理是将数据库读写操作分散到不同的节点上，下面是基本架构图：
 
-![img](img/4e5db45628934d13ba197b7252016a84~noop.image)
+![img](img/4e5db45628934d13ba197b7252016a84~noop.image ':size=30%')
 
 
 
@@ -287,7 +287,7 @@ READ COMMITTED 是**每次读取数据前都生成一个ReadView**，这样就�
 
 程序代码封装指在代码中抽象一个数据访问层（所以有的文章也称这种方式为 "中间层封装" ） ，实现读写操作分离和数据库服务器连接的管理。例如，基于 Hibernate 进行简单封装，就可以实现读写分离：
 
-![img](img/c12221aa5a804a658c30ea4cf9457098~noop.image)
+![img](img/c12221aa5a804a658c30ea4cf9457098~noop.image ':size=50%')
 
 
 
@@ -301,7 +301,7 @@ READ COMMITTED 是**每次读取数据前都生成一个ReadView**，这样就�
 
 其基本架构是：
 
-![img](img/d326818622004e1ebdaf0135c873f99f~noop.image)
+![img](img/d326818622004e1ebdaf0135c873f99f~noop.image ':size=50%')
 
 
 
@@ -313,7 +313,7 @@ READ COMMITTED 是**每次读取数据前都生成一个ReadView**，这样就�
 - slave再开启一个sql线程读取relay log事件并在slave执行，完成同步
 - slave记录自己的binglog
 
-![img](img/274e674c2225481d8b126a3b0ac7a39d~noop.image)
+![img](img/274e674c2225481d8b126a3b0ac7a39d~noop.image ':size=50%')
 
 
 
@@ -343,13 +343,13 @@ READ COMMITTED 是**每次读取数据前都生成一个ReadView**，这样就�
 
 - 垂直分库：以表为依据，按照业务归属不同，将不同的表拆分到不同的库中。
 
-![img](img/e1f1eba2024f471eb1a32ac6d233f806~noop.image)
+![img](img/e1f1eba2024f471eb1a32ac6d233f806~noop.image ':size=50%')
 
 
 
 - 水平分库：以字段为依据，按照一定策略（hash、range 等），将一个库中的数据拆分到多个库中。
 
-![img](img/8406b935ff774dc187360e890ddc1d56~noop.image)
+![img](img/8406b935ff774dc187360e890ddc1d56~noop.image ':size=50%')
 
 
 
@@ -358,7 +358,7 @@ READ COMMITTED 是**每次读取数据前都生成一个ReadView**，这样就�
 - 水平分表：以字段为依据，按照一定策略（hash、range 等），将一个表中的数据拆分到多个表中。
 - 垂直分表：以字段为依据，按照字段的活跃性，将表中字段拆到不同的表（主表和扩展表）中。
 
-![img](img/fd7fd56a07004daab1d8c81edd34bf18~noop.image)
+![img](img/fd7fd56a07004daab1d8c81edd34bf18~noop.image ':size=50%')
 
 
 
@@ -372,7 +372,7 @@ READ COMMITTED 是**每次读取数据前都生成一个ReadView**，这样就�
 
 我们可以观察一些支付系统，发现只能查一年范围内的支付记录，这个可能就是支付公司按照时间进行了分表。
 
-![img](img/ae5ad401afa44c73ad8962782d02154e~noop.image)
+![img](img/ae5ad401afa44c73ad8962782d02154e~noop.image ':size=50%')
 
 
 
@@ -384,7 +384,7 @@ READ COMMITTED 是**每次读取数据前都生成一个ReadView**，这样就�
 
 同样以订单 id 为例，假如我们一开始就规划了 4个数据库表，路由算法可以简单地用 id % 4 的值来表示数据所属的数据库表编号，id 为 12的订单放到编号为 50的子表中，id为 13的订单放到编号为 61的字表中。
 
-![img](img/b2f5e0c689e04df2b795a6bf2c2ab137~noop.image)
+![img](img/b2f5e0c689e04df2b795a6bf2c2ab137~noop.image ':size=50%')
 
 
 
@@ -394,7 +394,7 @@ Hash 路由设计的复杂点主要体现在初始表数量的选取上，表数
 
 配置路由设计简单，使用起来非常灵活，尤其是在扩充表的时候，只需要迁移指定的数据，然后修改路由表就可以了。
 
-![img](img/37d3a1bd8909469b9123866091ebd9e4~noop.image)
+![img](img/37d3a1bd8909469b9123866091ebd9e4~noop.image ':size=50%')
 
 
 
@@ -417,7 +417,7 @@ Hash 路由设计的复杂点主要体现在初始表数量的选取上，表数
 - 旧库不再写入新的数据
 - 经过一段时间，确定旧库没有请求之后，就可以下线老库
 
-![img](img/565b2425c47b41aabbe4939b23d4668f~noop.image)
+![img](img/565b2425c47b41aabbe4939b23d4668f~noop.image ':size=50%')
 
 
 
@@ -505,7 +505,7 @@ Hash 路由设计的复杂点主要体现在初始表数量的选取上，表数
 
 并且，锁是一种保证数据安全的机制和手段，而并不是特定于某项技术的。悲观锁和乐观锁亦是如此。本篇介绍的悲观锁和乐观锁是基于数据库层面的。
 
-![img](img/215a6f121cc44c0cb55548539d8a694e~noop.image)
+![img](img/215a6f121cc44c0cb55548539d8a694e~noop.image ':size=50%')
 
 **悲观锁**
 
@@ -515,7 +515,7 @@ Hash 路由设计的复杂点主要体现在初始表数量的选取上，表数
 
 数据库中的行锁，表锁，读锁，写锁，以及syncronized实现的锁均为悲观锁。
 
-![img](img/6e89c7e408ff436a854f2133ec3213fc~noop.image)
+![img](img/6e89c7e408ff436a854f2133ec3213fc~noop.image ':size=50%')
 
 
 
@@ -524,7 +524,7 @@ Hash 路由设计的复杂点主要体现在初始表数量的选取上，表数
 
 我们经常使用的数据库是mysql，mysql中最常用的引擎是Innodb，Innodb默认使用的是行锁。而行锁是基于索引的，因此要想加上行锁，在加锁时必须命中索引，否则将使用表锁。
 
-![img](img/d782c48224344435b1875c907e8363f3~noop.image)
+![img](img/d782c48224344435b1875c907e8363f3~noop.image ':size=50%')
 
 
 **乐观锁**
@@ -539,7 +539,7 @@ Hash 路由设计的复杂点主要体现在初始表数量的选取上，表数
 
 如果，v1不等于v2，那么说明数据变动期间，数据被其他事务改动了，此时不允许数据更新到表中，一般的处理办法是通知用户让其重新操作。不同于悲观锁，乐观锁是人为控制的。
 
-![img](img/d68742f30ef54687813eb093b1615d46~noop.image)
+![img](img/d68742f30ef54687813eb093b1615d46~noop.image ':size=50%')
 
 
 **如何实现**
@@ -572,14 +572,14 @@ select num from goods where id = 1 for update;
 
 下面是悲观锁的加锁图解
 
-![img](img/e1d1a417f74145cb9882b5dcf3c12b34~noop.image)
+![img](img/e1d1a417f74145cb9882b5dcf3c12b34~noop.image ':size=50%')
 
 
 
 我们通过开启mysql的两个会话，也就是两个命令行来演示。
 1、事务A执行命令给id=1的数据上悲观锁准备更新数据
 
-![img](img/735202f3d440427ca49b8e37e1664e4f~noop.image)
+![img](img/735202f3d440427ca49b8e37e1664e4f~noop.image ':size=50%')
 
 
 
@@ -587,7 +587,7 @@ select num from goods where id = 1 for update;
 
 2、事务B也去给id=1的数据上悲观锁准备更新数据
 
-![img](img/0d3b5da6b46f45439e183d6e903b1ef1~noop.image)
+![img](img/0d3b5da6b46f45439e183d6e903b1ef1~noop.image ':size=50%')
 
 
 
@@ -595,7 +595,7 @@ select num from goods where id = 1 for update;
 
 3、接着我们让事务A执行命令去修改数据，让猪肉脯的数量减一，然后查看修改后的数据，最后commit,结束事务。
 
-![img](img/4800727c45b2407cb71adbc86ddc4a1d~noop.image)
+![img](img/4800727c45b2407cb71adbc86ddc4a1d~noop.image ':size=50%')
 
 
 
@@ -604,7 +604,7 @@ select num from goods where id = 1 for update;
 
 4、当事务A执行完第3步后，我们看事务B中出现了什么
 
-![img](img/e836e3132c3543c8b6c62c02f15a3c52~noop.image)
+![img](img/e836e3132c3543c8b6c62c02f15a3c52~noop.image ':size=50%')
 
 
 
@@ -630,7 +630,7 @@ A和B同时将猪肉脯(id=1下面都说是id=1)的数据查出来，然后A先�
 
 下面是乐观锁的加锁图解
 
-![img](img/a441ae64092c4445a41960c5ebb47a10~noop.image)
+![img](img/a441ae64092c4445a41960c5ebb47a10~noop.image ':size=50%')
 
 
 
@@ -638,7 +638,7 @@ A和B同时将猪肉脯(id=1下面都说是id=1)的数据查出来，然后A先�
 
 1、事务A执行查询命令，事务B执行查询命令，因为两者查询的结果相同，所以下面我只列出一个截图。
 
-![img](img/68bc21ed3fc84353b19fb5afa07625fe~noop.image)
+![img](img/68bc21ed3fc84353b19fb5afa07625fe~noop.image ':size=50%')
 
 
 
@@ -646,7 +646,7 @@ A和B同时将猪肉脯(id=1下面都说是id=1)的数据查出来，然后A先�
 
 2、事务A进行购买更新数据，然后再查询更新后的数据。
 
-![img](img/24a624c477104f2cbba780d333c22dd4~noop.image)
+![img](img/24a624c477104f2cbba780d333c22dd4~noop.image ':size=50%')
 
 
 
@@ -656,7 +656,7 @@ A和B同时将猪肉脯(id=1下面都说是id=1)的数据查出来，然后A先�
 
 事务B再进行购买更新数据，然后我们看影响行数和更新后的数据
 
-![img](img/ca8a873198994907a5c55ccc98659ff6~noop.image)
+![img](img/ca8a873198994907a5c55ccc98659ff6~noop.image ':size=50%')
 
 
 

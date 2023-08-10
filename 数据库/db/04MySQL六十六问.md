@@ -7,7 +7,7 @@
 
 ### 14.说说 MySQL 的基础架构?
 
-![img](img/7df060541d464aa2ae08afd93b319d02~noop.image)
+![img](img/7df060541d464aa2ae08afd93b319d02~noop.image  ':size=40%')
 
 
 
@@ -28,7 +28,7 @@ MySQL逻辑架构图主要分三层：
 
 ### 16.MySQL有哪些常见存储引擎？
 
-![img](img/c6cbeaf77b684bd59260c55f08559793~noop.image)
+![img](img/c6cbeaf77b684bd59260c55f08559793~noop.image  ':size=60%')
 
 
 
@@ -64,7 +64,7 @@ MySQL5.5之前，默认存储引擎是MylSAM，5.5之后变成了InnoDB。
 
 PS:MySQL8.0都开始慢慢流行了，如果不是面试，MylSAM其实可以不用怎么了解。
 
-![img](img/6b902479058f4d30ac88ce6effab6c31~noop.image)
+![img](img/6b902479058f4d30ac88ce6effab6c31~noop.image  ':size=50%')
 
 
 
@@ -86,7 +86,7 @@ PS:MySQL8.0都开始慢慢流行了，如果不是面试，MylSAM其实可以不
 
 ### 19.MySQL日志文件有哪些？分别介绍下作用？
 
-![img](img/4bb2d19ce6b546d8985496b238e53fb9~noop.image)
+![img](img/4bb2d19ce6b546d8985496b238e53fb9~noop.image  ':size=50%')
 
 
 
@@ -113,7 +113,7 @@ MySQL日志文件有很多，包括 ：
 
 更新语句的执行是Server层和引擎层配合完成，数据除了要写入表中，还要记录相应的日志。
 
-![img](img/06ebeb7dcd6345cbbe5a938b3b81db1e~noop.image)
+![img](img/06ebeb7dcd6345cbbe5a938b3b81db1e~noop.image  ':size=50%')
 
 1. 执行器先找引擎获取ID=2这一行。ID是主键，存储引擎检索数据，找到这一行。如果ID=2这一行所在的数据页本来就在内存中，就直接返回给执行器；否则，需要先从磁盘读入内存，然后再返回。
 2. 执行器拿到引擎给的行数据，把这个值加上1，比如原来是N，现在就是N+1，得到新的一行数据，再调用引擎接口写入这行新数据。
@@ -135,7 +135,7 @@ MySQL日志文件有很多，包括 ：
 
 在写完redo log之后，数据此时具有crash-safe能力，因此系统崩溃，数据会恢复成事务开始之前的状态。但是，若在redo log写完时候，binlog写入之前，系统发生了宕机。此时binlog没有对上面的更新语句进行保存，导致当使用binlog进行数据库的备份或者恢复时，就少了上述的更新语句。从而使得id=2这一行的数据没有被更新。
 
-![img](img/6ab44e6eaba747e0a0729237f4d4d434~noop.image)
+![img](img/6ab44e6eaba747e0a0729237f4d4d434~noop.image  ':size=50%')
 
 
 
@@ -143,7 +143,7 @@ MySQL日志文件有很多，包括 ：
 
 写完binlog之后，所有的语句都被保存，所以通过binlog复制或恢复出来的数据库中id=2这一行的数据会被更新为a=1。但是如果在redo log写入之前，系统崩溃，那么redo log中记录的这个事务会无效，导致实际数据库中id=2这一行的数据并没有更新。
 
-![img](img/29abe9c8b94b447681c424fa9aefb601~noop.image)
+![img](img/29abe9c8b94b447681c424fa9aefb601~noop.image  ':size=50%')
 
 
 
@@ -153,7 +153,7 @@ MySQL日志文件有很多，包括 ：
 
 redo log的写入不是直接落到磁盘，而是在内存中设置了一片称之为redo log buffer的连续内存空间，也就是redo 日志缓冲区。
 
-![img](img/3f1ae855d59a4dcbb2e504c0506e6338~noop.image)
+![img](img/3f1ae855d59a4dcbb2e504c0506e6338~noop.image  ':size=50%')
 
 
 
@@ -178,7 +178,7 @@ log buffer 的大小是有限的，如果不停的往这个有限大小的 log b
 
 重做日志缓存、重做日志文件都是以**块（block）** 的方式进行保存的，称之为**重做日志块（redo log block）** ,块的大小是固定的512字节。我们的redo log它是固定大小的，可以看作是一个逻辑上的 **log group**，由一定数量的**log block** 组成。
 
-![img](img/2b94e7f2398248ccad350b2b671e1bfc~noop.image)
+![img](img/2b94e7f2398248ccad350b2b671e1bfc~noop.image  ':size=50%')
 
 
 
@@ -188,7 +188,7 @@ log buffer 的大小是有限的，如果不停的往这个有限大小的 log b
 
 write pos是当前记录的位置，一边写一边后移，写到第3号文件末尾后就回到0号文件开头。checkpoint是当前要擦除的位置，也是往后推移并且循环的，擦除记录前要把记录更新到磁盘。
 
-![img](img/8cc356488a57440b8fa392eb7d1718e9~noop.image)
+![img](img/8cc356488a57440b8fa392eb7d1718e9~noop.image ':size=50%')
 
 
 
