@@ -4,6 +4,13 @@
 
 
 
+
+
+
+### 一、NettyClient
+需要登录<br/>
+参考代码:[https://gitee.com/L10052108/store/tree/master/netty](https://gitee.com/L10052108/store/tree/master/netty)
+
 导入使用的jar
 
 ```xml
@@ -14,10 +21,6 @@
             <version>4.1.39.Final</version>
         </dependency>
 ```
-
-
-
-### 一、NettyClient
 
 ```java
 import io.netty.bootstrap.Bootstrap;

@@ -106,11 +106,11 @@ elasticsearch在后台把每个索引划分成多个分片，每分分片可以�
 
 创建新索引
 
-![创建新索引](https://img-blog.csdnimg.cn/img_convert/2faa409745d8139159005bce5905bccb.png)
+![创建新索引](img/2faa409745d8139159005bce5905bccb.png)
 
 一个集群至少有一个节点，而一个节点就是一个elasricsearch进程，节点可以有多个索引默认的，如果你创建索引，那么索引将会有个5个分片(primary shard ,又称主分片)构成的，每一个主分片会有一个副本(replica shard，又称复制分片)
 
-![img](https://img-blog.csdnimg.cn/img_convert/10bf46e479ee230cb126bfb6c788c202.png)
+![img](img/10bf46e479ee230cb126bfb6c788c202.png)
 
 上图是一个有3个节点的集群，可以看到主分片和对应的复制分片都不会在同一个节点内，这样有利于某个节点挂掉了，数据也不至于失。实际上，一个分片是一个Lucene索引（一个ElasticSearch索引包含多个Lucene索引 ） ，一个包含倒排索引的文件目录，倒排索引的结构使得elasticsearch在不扫描全部文档的情况下，就能告诉你哪些文档包含特定的关键字。不过，等等，倒排索引是什么鬼?
 
@@ -118,7 +118,7 @@ elasticsearch在后台把每个索引划分成多个分片，每分分片可以�
 
 > 简单说就是 按（文章关键字，对应的文档0个或多个）形式建立索引，根据关键字就可直接查询对应的文档（含关键字的），无需查询每一个文档，如下图   
 
-![img](https://img-blog.csdnimg.cn/img_convert/b131c1e91d1180722e92b260789f0538.png)
+![img](img/b131c1e91d1180722e92b260789f0538.png)
 
 
 

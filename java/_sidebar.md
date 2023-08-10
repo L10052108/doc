@@ -1,6 +1,7 @@
 
 [//]: # "并发编程"
 - 并发编程
+  - [00Java内存模型JMM.md](java/并发编程/00Java内存模型JMM.md)
   - **01_多线程理论**
     - [01_多线程理论](java/并发编程/01多线程的理论.md)
     - [01_01多线程的原子性](java/并发编程/01.0多线程原子性.md)
@@ -20,10 +21,15 @@
   - [08_AQS](java/并发编程/08AQS.md)
   - [09_java锁详解](java/并发编程/09java锁详解.md)
   - [10_ReentrantLock](java/并发编程/10ReentrantLock.md)
+  - [10_02ReentrantLock原理](java/并发编程/10_02ReentrantLock原理.md)
   - [11_防抖和限流.md](java/并发编程/11防抖和限流.md.md)
   - [12_超时执行](java/并发编程/12超时执行.md)
-  - [100_锁的原理](java/并发编程/100_锁的原理.md)
 
+
+[//]: # "lock锁相关的内容"
+- lock
+  - [01_锁的原理](java/lock/01_锁的原理.md)
+  - [02_redis分布式锁](java/lock/02_redis分布式锁.md)
 
 [//]: # "java基础"
 - java基础
@@ -34,7 +40,9 @@
   - [05_map的使用](java/java基础/05_map的使用.md)
   - [06_guava工具类](java/java基础/06_guava工具类.md)
   - [07_collection](java/java基础/07_collection.md)
+  - [07_02Java集合复习](java/java基础/07_02Java集合复习.md)
   - [08_Java开发利器之重试](java/java基础/08_Java开发利器之重试.md)
+
 
 [//]: # "idea相关的内容"
 - idea
@@ -51,6 +59,11 @@
   - [03_(jdk新特性)StreamAPI](java/jdk/03StreamAPI.md)
   - [04_Queue](java/jdk/04Queue.md)
   - [05_反射限制](java/jdk/05反射限制.md)
+  - **JVM**
+    - [01_垃圾回收的区域](java/jdk/JVM/01垃圾回收机制.md)
+    - [02_垃圾回收算法](java/jdk/JVM/02垃圾回收机制.md)
+
+
 
 [//]: # "java基础"
 - MQ
@@ -65,6 +78,7 @@
     - [Lombok的使用](java/其他/Lombok.md)
     - [为什么有的团队禁止使用Lombok](java/其他/禁止使用Lombok.md)
   - [03_序列化](java/其他/03序列化的使用.md)
+  - [03_02序列化之Protobuf](java/其他/03_02序列化之Protobuf.md)
   - [04_串口](java/其他/04_串口.md)
   - [05_正则表达式](java/其他/05_正则表达式.md)
   - [06_java实现文字点阵打印](java/其他/06java实现文字点阵打印.md)
@@ -89,16 +103,18 @@
 - netty
   - [01_websocket使用](java/netty/webSocket.md)
   - [01_02websocket使用](java/netty/websocket2.md)
+  - [01_03websocket在项目中的使用](java/netty/01_03websocket在项目中的使用.md)
   - [02_netty中client的使用](java/netty/netty_client.md)
   - [03_netty中client的断开后重连](java/netty/netty_client2.md)
+  - [03_netty之protobuf](java/netty/03_netty之protobuf.md)
   - [04_netty之ByteBuf用法](java/netty/04ByteBuf用法.md)
   - [05_netty之编码和解码](java/netty/05_netty之编码和解码.md)
   - [06_Netty解决粘包和拆包问题的四种方案](java/netty/06_Netty解决粘包和拆包问题的四种方案.md)
 
+
 - 工具
   - [01_maven](java/工具/01maven.md)
-  - [02_redis](java/工具/02redis.md)
-  - [03_yapi](java/工具/02redis.md)
+  - [03_yapi](java/工具/03yapi.md)
   - [03_postman](java/工具/04postman.md)
   - [05_gitlab](java/工具/05gitlab.md)
 

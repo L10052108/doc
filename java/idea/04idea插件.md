@@ -135,3 +135,21 @@ Allow auto-make to start even if developed application is currently running
 修改代码中的内容，自动加载
 
 ![2023-06-29-09-51-07](img\2023-06-29-09-51-07.gif)
+
+### maven help
+
+1、File→Settings→Plugins，输入maven helper，本地没搜到，就可以点击Search in repositories（或直接点击Browse repositories进入搜索），搜到Maven Helper后选择Install进行安装即可，安装后需重启IDEA。
+
+![image-20230809143150372](img/image-20230809143150372.png)
+
+**使用方法：**
+
+1、安装完后，pom文件下方就会出现Dependency Analyzer面板。可以查看依赖冲突，也可以搜索相关依赖，进入后效果如下：
+
+![img](https://img2020.cnblogs.com/blog/711223/202201/711223-20220106094828214-1347609022.png)
+
+### mybatis
+
+![image-20230809143345599](img/image-20230809143345599.png)
+
+`Mybatis Log Free` 可以把日志中的打印的sql日志，合并输出

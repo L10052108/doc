@@ -43,6 +43,8 @@
 - 数据库
   - [01_H2的使用](springboot/h2/01H2的使用.md)
   - [02_sqlite的使用](springboot/h2/02sqlite的使用.md)
+  - [03_数据库连接池druid](springboot/h2/03_数据库连接池druid.md)
+  - [04_数据库连接池HikariCP](springboot/h2/04_数据库连接池HikariCP.md)
 
 - 文件上传
   - [01_minio](springboot/文件上传/01minio.md)

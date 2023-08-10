@@ -6,15 +6,25 @@ https://www.toutiao.com/article/7067138670272496166/?log_from=11a11471af1538_164
 
 - 原始数据
 
-![](https://tva1.sinaimg.cn/large/e6c9d24egy1h0ps701qpqj20hy0bgwew.jpg ":size=40%")
+| id   | 学生姓名 | 课程名称 | 课程成绩 |
+| ---- | -------- | -------- | -------- |
+| 1    | 张三     | Linux    | 85       |
+| 2    | 张三     | MySQL    | 92       |
+| 3    | 张三     | Java     | 87       |
+| 4    | 李四     | Linux    | 96       |
+| 5    | 李四     | MySQL    | 89       |
+| 6    | 李四     | Java     | 100      |
+| 7    | 王五     | Linux    | 91       |
+| 8    | 王五     | MySQL    | 83       |
+| 9    | 王五     | Java     | 98       |
 
 - 转化后
 
-![](https://tva1.sinaimg.cn/large/e6c9d24egy1h0ps8bopqjj20j006874d.jpg ":size=40%")
-
-
-
-
+| 学生姓名 | Linux | MySQL | Java |
+| -------- | ----- | ----- | ---- |
+| 张三     | 85    | 92    | 87   |
+| 李四     | 96    | 89    | 100  |
+| 王五     | 91    | 83    | 98   |
 
 **原始数据**
 
@@ -53,7 +63,7 @@ INSERT INTO tb_lemon_grade (student_name, course, score) VALUES
 
 整理后的结果
 
-![](https://tva1.sinaimg.cn/large/e6c9d24ely1h0qm97dnauj229c0d6gof.jpg)
+![img](img/2285f9722bff4f3e90971541e791a1f4~noop.image)
 
 ### 行转成列
 
@@ -69,7 +79,7 @@ select student_name,
 
 展示效果
 
-![](https://tva1.sinaimg.cn/large/e6c9d24ely1h0qo30ty84j20ja0cggly.jpg)
+![img](img/263ff7084ba040149e8aa286483ee35f~noop.image)
 
 
 
@@ -105,7 +115,7 @@ FROM tb_lemon_grade;
 
 运行结果
 
-![](https://tva1.sinaimg.cn/large/e6c9d24ely1h0qo7zgdcbj20j00ccq3a.jpg)
+![img](img/2cc5258de96546069b9b32841a48029b~noop.image)
 
 ### 聚合运算
 
@@ -138,7 +148,7 @@ GROUP BY
 	student_name
 ~~~~
 
-
+![img](img/aa0f87f9d1cc47fc855703b45cb9d3b9~noop.image)
 
 ## 其他方案
 
