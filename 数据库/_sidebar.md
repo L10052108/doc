@@ -46,7 +46,6 @@
   - [02_MyBatis类型处理器typeHandlers](数据库/mybatis/typeHanders.md)
   - [03_MyBatis 中为什么不建议使用 where 1=1](数据库/mybatis/注意.md)
   - [04_mybatis一对多](数据库/mybatis/mybatis一对多.md)
-  - [05_多数据源配置](数据库/mybatis/多数据源配置.md)
   - [06_mybatis的sql](数据库/mybatis/mybatis的sql.md)
 
 - mybatis_puls

@@ -1,10 +1,6 @@
-资料来源：
-
-[Mybatis union 循环](https://blog.csdn.net/sinat_36454672/article/details/109287098)
-
+资料来源：<br/>
+[Mybatis union 循环](https://blog.csdn.net/sinat_36454672/article/details/109287098)<br/>
 [union all和union的区别用法](https://xue.baidu.com/okam/pages/strategy-tp/index?source=aladdin_36402&sa=aladdin_36402&strategyId=129466835353908)
-
-
 
 
 
