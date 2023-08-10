@@ -9,7 +9,7 @@
 
 慢SQL的监控主要通过两个途径：
 
-![img](https://p3-sign.toutiaoimg.com/tos-cn-i-qvj2lq49k0/606fe7b2648746bdbd755a1266944cf4~noop.image?_iz=58558&from=article.pc_detail&x-expires=1691561800&x-signature=JSiQV5KmRiWal6D2%2BLAv9WM4%2B%2Bg%3D)
+![606fe7b2648746bdbd755a1266944cf4~noop](img/606fe7b2648746bdbd755a1266944cf4noop.webp)
 
 
 
@@ -20,7 +20,7 @@
 
 慢SQL的优化，主要从两个方面考虑，SQL语句本身的优化，以及数据库设计的优化。
 
-![img](https://p3-sign.toutiaoimg.com/tos-cn-i-qvj2lq49k0/37f1f591efdd4fa4bbaa897dfaa1d319~noop.image?_iz=58558&from=article.pc_detail&x-expires=1691561800&x-signature=92mcfrwbQPcYmXd%2BDW%2BjIkXfpIw%3D)
+![37f1f591efdd4fa4bbaa897dfaa1d319~noop](img/37f1f591efdd4fa4bbaa897dfaa1d319noop.webp)
 
 
 
@@ -214,5 +214,3 @@ explain是sql优化的利器，除了优化慢sql，平时的sql编写，也应�
 - Using index：表示MySQL将使用覆盖索引，以避免回表
 - Using where：表示会在存储引擎检索之后再进行过滤
 - Using temporary ：表示对查询结果排序时会使用一个临时表。
-
-- 
