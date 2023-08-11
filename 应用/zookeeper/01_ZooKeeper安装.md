@@ -127,3 +127,10 @@ Using config: /usr/local/zookeeper/apache-zookeeper-3.6.1-bin/bin/../conf/zoo.cf
 Stopping zookeeper ... STOPPED
 ```
 
+## 客户端
+
+使用 ZooKeeper 图形化的客户端工具 `ZooInspector` 连接 ZooKeeper 查看服务信息如下：
+
+![https://mrhelloworld.com/resources/articles/spring/spring-cloud/zookeeper/image-20200726221706629.png](img/image-20200726221706629.png)
+
+![https://mrhelloworld.com/resources/articles/spring/spring-cloud/zookeeper/image-20200727003205891.png](img/image-20200727003205891.png)
