@@ -5,6 +5,11 @@
   - [02_springcloud架构介绍](springCloud/02springcloud架构介绍.md)
   - [03_springCloudAlibaba介绍](springCloud/springCloudAlibaba/介绍.md)
 
+- 通讯
+  - [01_通讯方式.md](springCloud/通讯/01_通讯方式.md)
+  - [02_rpc](springCloud/通讯/02_RPC.md)
+  - [03_rmi](springCloud/通讯/03_rmi.md)
+
 - nacos
   - [01_nacos安装](springCloud/nacos/nacos安装.md)
   - [02_nacos配置](springCloud/nacos/nacos配置.md)
