@@ -7,3 +7,5 @@
     - [05_JMH基准测试](应用/normal/05_JMH基准测试.md)
     - [06_防止超卖的7种实现](应用/normal/06_防止超卖的7种实现.md)
 
+  - ZooKeeper 
+    - [ZooKeeper安装](应用/zookeeper/01_ZooKeeper安装.md)

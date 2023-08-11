@@ -44,12 +44,6 @@ oracle 数据库操作：https://blog.csdn.net/qq_38667427/article/details/11932
 https://mp.weixin.qq.com/s/qWfdhx-b28NP6--xeTePSg
 
 
-
-[SpringBoot 如何统计、监控 SQL运行情况](https://mp.weixin.qq.com/s/FD5XSGGc-5Y-Mbms3AlFlQ)
-
-[Spring Boot 如何统计、监控 SQL 运行情况？](https://mp.weixin.qq.com/s/AJyM0DyZNczgGcXepotnjA)
-
-
 mysql之自定义函数
 https://www.cnblogs.com/progor/p/8871480.html 
 
