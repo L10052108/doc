@@ -12,5 +12,3 @@ https://www.yydsys.top/box/api/
 github地址：
 https://github.com/liu673cn/box
 
-
-[filename](_sidebar.md ':include')
