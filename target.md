@@ -310,3 +310,8 @@ https://juejin.cn/post/7176057114006126653
 
 
 
+
+JUC集合: ConcurrentLinkedQueue详解
+
+
+https://pdai.tech/md/java/thread/java-thread-x-juc-collection-ConcurrentLinkedQueue.html
