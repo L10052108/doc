@@ -58,6 +58,7 @@
   - [02_(jdk新特性)List去重](java/jdk/02List去重.md) 
   - [03_(jdk新特性)StreamAPI](java/jdk/03StreamAPI.md)
   - [04_Queue](java/jdk/04Queue.md)
+  - [04_02Deque](java/jdk/04_02Deque.md)
   - [05_反射限制](java/jdk/05反射限制.md)
   - **JVM**
     - [01_垃圾回收的区域](java/jdk/JVM/01垃圾回收机制.md)
