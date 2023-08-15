@@ -24,3 +24,5 @@
   - [02_SpringBoot实现定时任务动态管理](应用/定时任务/SpringBoot实现定时任务动态管理.md)
   - **分布式定时任务**
     - [01_分布式quartz_cluster方式](应用/定时任务/分布式/01_分布式quartz_cluster方式.md)
+    - [02_分布式elastic-job方式](应用/定时任务/分布式/02_分布式elastic-job方式.md)
+    - [03_分布式xxl-job方式](应用/定时任务/分布式/03_分布式xxl-job方式.md)
