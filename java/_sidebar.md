@@ -63,7 +63,7 @@
   - **JVM**
     - [01_垃圾回收的区域](java/jdk/JVM/01垃圾回收机制.md)
     - [02_垃圾回收算法](java/jdk/JVM/02垃圾回收机制.md)
-
+    - [03_OOM教你生成dump](java/jdk/JVM/03_OOM教你生成dump.md)
 
 
 [//]: # "java基础"
