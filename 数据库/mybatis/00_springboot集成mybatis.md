@@ -197,6 +197,11 @@ spring:
 mybatis:
   mapper-locations: classpath:/mapper/*.xml
 
+## 打印sql日志
+logging:
+  level:
+    store.liuwei.db.mybatis.dao: debug
+
 server:
   port: 8003
   servlet:
@@ -285,3 +290,32 @@ public class MybatisDemo {
 ```
 
 到此，一个简单的系统已经完成
+
+### 插入数据
+
+在`UserDao`接口中增加一个方法
+
+```java
+	int insert(User record);
+```
+
+在`userDao.xml`配置
+
+```
+    <insert id="insert" parameterType="store.liuwei.db.mybatis.pojo.User" keyProperty="id" useGeneratedKeys="true">
+        insert into user (id, username, `password`,
+                          phone, email, created,
+                          updated)
+        values (#{id,jdbcType=BIGINT}, #{username,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR},
+                #{phone,jdbcType=VARCHAR}, #{email,jdbcType=VARCHAR}, #{created,jdbcType=TIMESTAMP},
+                #{updated,jdbcType=TIMESTAMP})
+    </insert>
+```
+
+如果需要返回id
+
+需要增加` keyProperty="id" useGeneratedKeys="true"`
+
+运行效果
+
+![image-20230815173703881](img/image-20230815173703881.png)
