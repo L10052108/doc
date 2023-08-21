@@ -66,9 +66,10 @@ cd distribution/target/nacos-server-$version/nacos/bin
 
 启动命令：
 
-`cmd startup.cmd`
+`startup.cmd -m standalone`
 
-或者双击 `startup.cmd` 运行文件。
+![image-20230817110852259](img/image-20230817110852259.png)
+
 
 ### 访问
 
@@ -104,9 +105,9 @@ sh shutdown.sh
 
 　　SQL源文件地址：<https://github.com/alibaba/nacos/blob/master/distribution/conf/nacos-mysql.sql> ，或者在 `nacos-server` 解压目录 `conf` 下，找到 `nacos-mysql.sql` 文件，运行该文件，结果如下：
 
-![](https://tva1.sinaimg.cn/large/e6c9d24ely1h0jl31n47cj206r08djrm.jpg)
+![img](img/image-20200429220641953.png)
 
-
+![image-20230817111010004](img/image-20230817111010004.png)
 
 ### application.properties　
 
@@ -136,4 +137,4 @@ db.password=1234
 - mysql8注意
 > 如果你和我一样使用的是 MySQL 8.0+ 版本，那么启动 Nacos 时肯定会报错。莫慌，在 Nacos 安装目录下新建 `plugins/mysql` 文件夹，并放入 8.0+ 版本的 mysql-connector-java-8.0.xx.jar，重启 Nacos 即可，启动时会提示更换了 MySQL 的 driver-class 类。
 
-![](https://tva1.sinaimg.cn/large/e6c9d24ely1h0jl4wn4pfj20rb01p0t3.jpg)
+![img](img/image-20200429183710879.png)
