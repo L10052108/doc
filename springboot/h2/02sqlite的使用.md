@@ -1,17 +1,16 @@
-资料来源：
-
-[windows系统安装sqlite和创建db文件](https://blog.csdn.net/ffyyhh995511/article/details/126270426)
-
-[SQLite数据库介绍与使用](https://blog.csdn.net/cnds123/article/details/129052163)
-
-[gitee代码](https://gitee.com/L10052108/store)
-
+资料来源：<br/>
+[windows系统安装sqlite和创建db文件](https://blog.csdn.net/ffyyhh995511/article/details/126270426)<br/>
+[SQLite数据库介绍与使用](https://blog.csdn.net/cnds123/article/details/129052163)<br/>
+[gitee代码](https://gitee.com/L10052108/store)<br/>
+[微信为什么使用SQLite保存聊天记录？](https://mp.weixin.qq.com/s/Ak764O1c-UqkIBJWIHAADg)<br/>
 
 ## sqlite使用
 
 ### sqlite 的介绍
 
 #### 介绍
+
+SQLite 是一个被大家低估的数据库，但有些人认为它是一个不适合生产环境使用的玩具数据库。事实上，SQLite 是一个非常可靠的数据库，它可以处理 TB 级的数据，但它没有网络层。接下来，本文将与大家共同探讨 SQLite 在过去一年中最新的 SQL 功能。
 
 SQLite是一个轻量级、跨平台的关系型数据库。SQLite的很小，它的数据库就是一个文件，但是它并不缺乏功能。不需要复杂的安装或管理。SQLite事务是完全兼容ACID的，允许从多个进程或线程安全访问。SQLite特别适合为单个应用程序和设备提供本地数据存储，使用很简单，将sqlite3.exe可执行文件复制到目标计算机上就可以运行它，新版本对SQL支持比较完善了，因此可以很方便的用来学习SQL。
 

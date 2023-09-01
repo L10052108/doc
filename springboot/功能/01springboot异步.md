@@ -1,6 +1,7 @@
 参考资料<br/>
 [Springboot中使用线程池](https://juejin.cn/post/7087526683430879240)<br/>
 [SpringBoot线程池的创建、@Async配置步骤及注意事项](https://blog.csdn.net/Muscleheng/article/details/81409672)<br/>
+[新来了个技术总监：谁再用 @Async 创建线程以后就不用来了！！](https://mp.weixin.qq.com/s/J6BImcPxVFlG_qECgXDKrw)
 
 ## springboot多线程
 
