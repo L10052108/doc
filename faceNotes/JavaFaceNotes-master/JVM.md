@@ -36,7 +36,7 @@ Java -verbose 具体类
 
 #### 4.画一下jvm内存结构图？
 
-![image-20200424132830267](https://gitee.com/yizhibuerdai/Imagetools/raw/master/images/image-20200424132830267.png)
+![image-20200424132830267](img/image-20200424132830267.png)
 
 #### 5.程序计数器
 
@@ -129,7 +129,7 @@ public class Cat {
 
 #### 21.Java堆内存组成？
 
-![image-20200424170643045](https://gitee.com/yizhibuerdai/Imagetools/raw/master/images/image-20200424170643045.png)
+![image-20200424170643045](img/image-20200424170643045.png)
 
 堆大小 = 新生代 + 老年代。如果是Java8则没有Permanent Generation。
 
@@ -169,7 +169,7 @@ Edem : from : to = 8 : 1 : 1
 
 首先标记出所有需要回收的对象，在标记完成后统一回收掉所有的被标记对象。
 
-![image-20200424181634238](https://gitee.com/yizhibuerdai/Imagetools/raw/master/images/image-20200424181634238.png)
+![image-20200424181634238](img/image-20200424181634238.png)
 
 缺点：
 
@@ -180,7 +180,7 @@ Edem : from : to = 8 : 1 : 1
 
  他将可用内存按容量划分为大小相等的两块，每次只使用其中的一块，当这一块内存用完了，就将还存活的对象复制到另外一块上面，然后再把已使用过的内存空间一次清理掉。
 
-![image-20200424183117930](https://gitee.com/yizhibuerdai/Imagetools/raw/master/images/image-20200424183117930.png)
+![image-20200424183117930](img/image-20200424183117930.png)
 
 优点:
 
@@ -194,7 +194,7 @@ Edem : from : to = 8 : 1 : 1
 
 先标记出要被回收的对象，然后让所有存活的对象都向一端移动，然后直接清理掉边界以外的内存。解决了复制算法和标记清理算法的问题。
 
-![image-20200424184054165](https://gitee.com/yizhibuerdai/Imagetools/raw/master/images/image-20200424184054165.png)
+![image-20200424184054165](img/image-20200424184054165.png)
 
 #### 30.分代收集算法？
 
@@ -204,7 +204,7 @@ Edem : from : to = 8 : 1 : 1
 
 如果说垃圾收集算法是方法论，那么垃圾收集器就是具体实现。连线代表可以搭配使用。
 
-![image-20200424191253710](https://gitee.com/yizhibuerdai/Imagetools/raw/master/images/image-20200424191253710.png)
+![image-20200424191253710](img/image-20200424191253710.png)
 
 
 
@@ -391,5 +391,5 @@ JConsole 和 VisualVM，这两个工具是JDK的正式成员。
 - 《实战Java虚拟机：JVM故障诊断与性能优化》
 
 
-![WechatIMG360](https://gitee.com/yizhibuerdai/Imagetools/raw/master/images/common1.png)
+![WechatIMG360](img/common1.png)
 

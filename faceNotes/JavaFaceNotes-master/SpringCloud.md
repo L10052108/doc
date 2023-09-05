@@ -46,7 +46,7 @@ HTTP
 
 #### 6.SpringCloud和Dubbo区别?
 
-![image-20200429230443620](https://gitee.com/yizhibuerdai/Imagetools/raw/master/images/image-20200429230443620.png)
+![image-20200429230443620](img/image-20200429230443620.png)
 
 #### 7.Eureka是什么？
 
@@ -232,4 +232,4 @@ SpringCloud这个体系东西还是挺大的，小编会不断的丰富内容以
 
 - ​    百度百科
 
-  ![WechatIMG360](https://gitee.com/yizhibuerdai/Imagetools/raw/master/images/common1.png)
+  ![WechatIMG360](img/common1.png)

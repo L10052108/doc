@@ -55,7 +55,7 @@ TERMINATED是一个线程的最终状态，在该状态下线程不会再切换�
 
 #### 10.线程状态转化图
 
-![image-20200501131131886](https://gitee.com/yizhibuerdai/Imagetools/raw/master/images/image-20200501131131886.png)
+![image-20200501131131886](img/image-20200501131131886.png)
 
 #### 11.i——————与System.out.println()的异常
 
@@ -422,23 +422,23 @@ Tips:32位虚拟机中一个字宽等于4字节。
 
 #### 33.Java对象头长度
 
-![image-20200418215447539](https://gitee.com/yizhibuerdai/Imagetools/raw/master/images/image-20200418215447539.png)
+![image-20200418215447539](img/image-20200418215447539.png)
 
 #### 34.Java对象头的存储结构
 
  32位JVM的Mark Word 默认存储结构
 
-![image-20200418220122794](https://gitee.com/yizhibuerdai/Imagetools/raw/master/images/image-20200418220122794.png)
+![image-20200418220122794](img/image-20200418220122794.png)
 
 #### 35.Mark Word的状态变化
 
 Mark Word 存储的数据会随着锁标志为的变化而变化。
 
-![image-20200418220322880](https://gitee.com/yizhibuerdai/Imagetools/raw/master/images/image-20200418220322880.png)
+![image-20200418220322880](img/image-20200418220322880.png)
 
 64位虚拟机下，Mark Word是64bit大小的
 
-![image-20200418224055558](https://gitee.com/yizhibuerdai/Imagetools/raw/master/images/image-20200418224055558.png)
+![image-20200418224055558](img/image-20200418224055558.png)
 
 #### 36.锁的升降级规则
 
@@ -474,7 +474,7 @@ Tips:如果你可以确定程序的所有锁通常情况处于竞态，则可以
 
 #### 42.锁的优缺点对比
 
-![image-20200419110938271](https://gitee.com/yizhibuerdai/Imagetools/raw/master/images/image-20200419110938271.png)
+![image-20200419110938271](img/image-20200419110938271.png)
 
 #### 43.什么是原子操作
 
@@ -526,7 +526,7 @@ Java语言规范第3版对volatile定义如下，Java允许线程访问共享变
 
 一个线程修改了一个对象的值，而另一个线程感知到了变化，然后进行相应的操作。
 
-#### ![WechatIMG360](https://gitee.com/yizhibuerdai/Imagetools/raw/master/images/common1.png)51.wait
+#### ![WechatIMG360](img/common1.png)51.wait
 
 方法wait()的作用是使当前执行代码的线程进行等待，wait()是Object类通用的方法，该方法用来将当前线程置入“预执行队列”中，并在 wait()所在的代码处停止执行，直到接到通知或中断为止。
 
@@ -630,7 +630,7 @@ Java小咖秀
 
 #### 59.Lock接口提供 synchronized不具备的主要特性
 
-![image-20200419193439709](https://gitee.com/yizhibuerdai/Imagetools/raw/master/images/image-20200419193439709.png)
+![image-20200419193439709](img/image-20200419193439709.png)
 
 #### 60.重入锁 ReentrantLock
 
@@ -689,7 +689,7 @@ Java中提供读写锁的实现类是ReentrantReadWriteLock。
 
 定义了一组公共静态方法，提供了最基本的线程阻塞和唤醒功能。
 
-![image-20200419223303672](https://gitee.com/yizhibuerdai/Imagetools/raw/master/images/image-20200419223303672.png)
+![image-20200419223303672](img/image-20200419223303672.png)
 
 #### 66.Condition接口
 
@@ -1109,5 +1109,5 @@ corePoolSize设置为0，maxmumPoolSize为Integer.MAX_VALUE。keepAliveTime为60
 
 - 《Java 并发编程的艺术》
 
-  ![WechatIMG360](https://gitee.com/yizhibuerdai/Imagetools/raw/master/images/common1.png)
+  ![WechatIMG360](img/common1.png)
 

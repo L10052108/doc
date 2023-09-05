@@ -362,7 +362,7 @@ SELECT * FROM table_name ORDER BY rand() LIMIT 1;
 
 #### 38.Mysql中的数值类型？
 
-![image-20200422123555254](https://gitee.com/yizhibuerdai/Imagetools/raw/master/images/image-20200422123555254.png)
+![image-20200422123555254](img/image-20200422123555254.png)
 
 #### 39.查看当前表有哪些索引？
 
@@ -405,7 +405,7 @@ explain sql;
 
 #### 44.explain列有哪些？含义？
 
-![image-20200501154131370](https://gitee.com/yizhibuerdai/Imagetools/raw/master/images/image-20200501154131370.png)
+![image-20200501154131370](img/image-20200501154131370.png)
 
 一、 id
 
@@ -415,7 +415,7 @@ id列数字越大越先执行，如果说数字一样大，那么就从上往下
 
 二、select_type
 
- ![image-20200501154212022](https://gitee.com/yizhibuerdai/Imagetools/raw/master/images/image-20200501154212022.png)
+ ![image-20200501154212022](img/image-20200501154212022.png)
 
 三、table
 
@@ -579,4 +579,4 @@ InnoDB : 比较麻烦，它执行 count(*) 的时候，需要把数据一行一�
 - 极客时间：MySQL实战45讲
 - 百度百科
 
-![WechatIMG360](https://gitee.com/yizhibuerdai/Imagetools/raw/master/images/common1.png)
+![WechatIMG360](img/common1.png)

@@ -164,7 +164,7 @@ Term查询，比如term exists, type, term set, range, prefix, ids, wildcard, re
 
  
 
-![img](http://res.mianshigee.com/upload/article/20200307/v2-1f5084b94e47d417b3cebd615ef04647_1440w.jpg)
+![img](img/v2-1f5084b94e47d417b3cebd615ef04647_1440w.jpg)
 
  
 
@@ -202,7 +202,7 @@ d(x,y) + d(y,z) >= d(x,z) -- 三角不等式
 
  
 
-![img](http://res.mianshigee.com/upload/article/20200307/v2-d5426155b3c3c0a7e49123954f96e347_1440w.jpg)
+![img](img/v2-d5426155b3c3c0a7e49123954f96e347_1440w.jpg)
 
 
 
@@ -218,7 +218,7 @@ Elasticsearch附带了许多可以随时使用的预建分析器。或者，您�
 
  
 
-![img](http://res.mianshigee.com/upload/article/20200307/v2-aa1a57bbbcbbf04ef089d6681d662ffe_1440w.jpg)
+![img](img/v2-aa1a57bbbcbbf04ef089d6681d662ffe_1440w.jpg)
 
  
 
@@ -232,7 +232,7 @@ Trie 的核心思想是空间换时间，利用字符串的公共前缀来降低
 
  
 
-![img](http://res.mianshigee.com/upload/article/20200307/v2-df4c8cd2e2b1dad444a50bab3f6d9bb2_1440w.jpg)
+![img](img/v2-df4c8cd2e2b1dad444a50bab3f6d9bb2_1440w.jpg)
 
 1、可以看到，trie 树每一层的节点数是 26^i 级别的。所以为了节省空间，我们还可以用动态链表，或者用数组来模拟动态。而空间的花费，不会超过单词数×单词长度。
 

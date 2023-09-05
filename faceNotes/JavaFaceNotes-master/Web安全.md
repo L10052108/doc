@@ -46,11 +46,11 @@
 
 **基于DOM型**
 
-[![img](https://s2.51cto.com/oss/202006/24/8ca9d116817109c5db78883ae65ee7c6.jpg)](https://s2.51cto.com/oss/202006/24/8ca9d116817109c5db78883ae65ee7c6.jpg)
+[![img](img/8ca9d116817109c5db78883ae65ee7c6.jpg)](https://s2.51cto.com/oss/202006/24/8ca9d116817109c5db78883ae65ee7c6.jpg)
 
 **存储型**
 
-[![img](https://s3.51cto.com/oss/202006/24/63a8d3a9d932ba7084930621a2a28983.jpg)](https://s3.51cto.com/oss/202006/24/63a8d3a9d932ba7084930621a2a28983.jpg)
+[![img](img/63a8d3a9d932ba7084930621a2a28983.jpg)](https://s3.51cto.com/oss/202006/24/63a8d3a9d932ba7084930621a2a28983.jpg)
 
 
 
@@ -599,4 +599,4 @@ http://www.100mian.com/category/webanquan/
 
 
 
-![WechatIMG360](https://gitee.com/yizhibuerdai/Imagetools/raw/master/images/common1.png)
+![WechatIMG360](img/common1.png)

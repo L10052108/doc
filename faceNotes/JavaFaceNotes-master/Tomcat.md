@@ -436,5 +436,5 @@ https://blog.csdn.net/qq_25934401/article/details/81536958
 http://blog.itpub.net/69902581/viewspace-2673221/
 
 
-![WechatIMG360](https://gitee.com/yizhibuerdai/Imagetools/raw/master/images/common1.png)
+![WechatIMG360](img/common1.png)
 

@@ -2,7 +2,7 @@
 
 
 
-![image-20200414192748596](https://gitee.com/yizhibuerdai/Imagetools/raw/master/images/image-20200414192748596.png)
+![image-20200414192748596](img/image-20200414192748596.png)
 
 #### 1.**什么是IO流？**
 
@@ -30,7 +30,7 @@
 
  应用程序调用一个IO函数，导致应用程序阻塞，如果数据已经准备好，从内核拷贝到用户空间，否则一直等待下去。一个典型的读操作流程大致如下图，当用户进程调用recvfrom这个系统调用时，kernel就开始了IO的第一个阶段：准备数据，就是数据被拷贝到内核缓冲区中的一个过程（很多网络IO数据不会那么快到达，如没收一个完整的UDP包），等数据到操作系统内核缓冲区了，就到了第二阶段：将数据从内核缓冲区拷贝到用户内存，然后kernel返回结果，用户进程才会解除block状态，重新运行起来。**blocking IO的特点就是在IO执行的两个阶段用户进程都会block住；**
 
-![image-20200416135005801](https://gitee.com/yizhibuerdai/Imagetools/raw/master/images/image-20200416135005801.png)
+![image-20200416135005801](img/image-20200416135005801.png)
 
 #### 7.**非阻塞I/O（nonblocking IO）**
 
@@ -40,7 +40,7 @@
 
 　　阻塞IO一个线程只能处理一个IO流事件，要想同时处理多个IO流事件要么多线程要么多进程，这样做效率显然不会高，而非阻塞IO可以一个线程处理多个流事件，只要不停地询所有流事件即可，当然这个方式也不好，当大多数流没数据时，也是会大量浪费CPU资源；为了避免CPU空转，引进代理(select和poll，两种方式相差不大)，代理可以观察多个流I/O事件，空闲时会把当前线程阻塞掉，当有一个或多个I/O事件时，就从阻塞态醒过来，把所有IO流都轮询一遍，于是没有IO事件我们的程序就阻塞在select方法处，即便这样依然存在问题，我们从select出只是知道有IO事件发生，却不知道是哪几个流，还是只能轮询所有流，**epoll**这样的代理就可以把哪个流发生怎样的IO事件通知我们；　
 
-![image-20200416135208788](https://gitee.com/yizhibuerdai/Imagetools/raw/master/images/image-20200416135208788.png)
+![image-20200416135208788](img/image-20200416135208788.png)
 
 #### 8.**I/O多路复用模型(IO multiplexing)**
 
@@ -48,13 +48,13 @@
 
 　　IO多路复用的优势在于并发数比较高的IO操作情况，可以同时处理多个连接，和bloking IO一样socket是被阻塞的，只不过在多路复用中socket是被select阻塞，而在阻塞IO中是被socket IO给阻塞。
 
-![image-20200416135308008](https://gitee.com/yizhibuerdai/Imagetools/raw/master/images/image-20200416135308008.png)
+![image-20200416135308008](img/image-20200416135308008.png)
 
 #### 9.信号驱动I/O模型
 
 可以用信号，让内核在描述符就绪时发送SIGIO信号通知我们，通过sigaction系统调用安装一个信号处理函数。该系统调用将立即返回，我们的进程继续工作，也就是说它没有被阻塞。当数据报准备好读取时，内核就为该进程产生一个SIGIO信号。我们随后既可以在信号处理函数中调用recvfrom读取数据报，并通知主循环数据已经准备好待处理。**特点：等待数据报到达期间进程不被阻塞。主循环可以继续执行，只要等待来自信号处理函数的通知：既可以是数据已准备好被处理，也可以是数据报已准备好被读取**
 
-![image-20200416140944940](https://gitee.com/yizhibuerdai/Imagetools/raw/master/images/image-20200416140944940.png)
+![image-20200416140944940](img/image-20200416140944940.png)
 
 #### 10.异步 I/O(asynchronous IO)
 
@@ -62,7 +62,7 @@
 
 用户进程发起read操作之后，立刻就可以开始去做其它的事。而另一方面，从kernel的角度，当它受到一个asynchronous read之后，首先它会立刻返回，所以不会对用户进程产生任何block。然后，kernel会等待数据准备完成，然后将数据拷贝到用户内存，当这一切都完成之后，kernel会给用户进程发送一个signal，告诉它read操作完成了
 
-![image-20200416141152742](https://gitee.com/yizhibuerdai/Imagetools/raw/master/images/image-20200416141152742.png)
+![image-20200416141152742](img/image-20200416141152742.png)
 
 #### 11.NIO与IO的区别？
 
@@ -89,7 +89,7 @@ channel、buffer、selector
 
 通道使用起来跟Stream比较像，可以读取数据到Buffer中，也可以把Buffer中的数据写入通道。
 
-![image-20200416150623938](https://gitee.com/yizhibuerdai/Imagetools/raw/master/images/image-20200416150623938.png)
+![image-20200416150623938](img/image-20200416150623938.png)
 
 当然，也有区别，主要体现在如下两点：
 
@@ -157,7 +157,7 @@ Selector（选择器）是一个特殊的组件，用于采集各个通道的状
 
 #### 22.Selector处理多Channel图文说明
 
-![image-20200416161430793](https://gitee.com/yizhibuerdai/Imagetools/raw/master/images/image-20200416161430793.png)
+![image-20200416161430793](img/image-20200416161430793.png)
 
 
 
@@ -206,4 +206,4 @@ https://www.cnblogs.com/xueSpring/p/9513266.html
 https://zhuanlan.zhihu.com/p/163506337
 
 
-![WechatIMG360](https://gitee.com/yizhibuerdai/Imagetools/raw/master/images/common1.png)
+![WechatIMG360](img/common1.png)

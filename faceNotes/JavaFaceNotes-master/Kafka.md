@@ -175,4 +175,4 @@ http://kafka.apache.org/
 
 https://blog.csdn.net/qq_28900249/article/details/90346599
 
-![WechatIMG360](https://gitee.com/yizhibuerdai/Imagetools/raw/master/images/common1.png)
+![WechatIMG360](img/common1.png)

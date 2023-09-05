@@ -251,5 +251,5 @@ Mybatis的动态sql可以在xml映射文件内，以标签的形式编写动态s
 https://zhuanlan.zhihu.com/p/60257737
 
 
-![WechatIMG360](https://gitee.com/yizhibuerdai/Imagetools/raw/master/images/common1.png)
+![WechatIMG360](img/common1.png)
 

@@ -21,7 +21,7 @@ JSP是服务器页面程序
 JSP本质上就是一个Servlet，在访问jsp时，在服务器端会将jsp先转换成servlet，再将生产的servlet的结果响应给浏览器。
 jsp是html页面中内嵌Java代码，侧重页面显示；Servlet是中书写Java代码，侧重逻辑控制；
 
-![img](https://img-blog.csdnimg.cn/20200910144535754.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI1ODU0NTk5,size_16,color_FFFFFF,t_70#pic_center)
+![img](img/20200910144535754.png)
 
 #### 3.Servlet 接口中有哪些方法？
 
@@ -35,7 +35,7 @@ jsp是html页面中内嵌Java代码，侧重页面显示；Servlet是中书写Ja
 
 5. getServletInfo()：获得 Servlet 描述，一般没有用。
 
-   ![img](https://img-blog.csdnimg.cn/20200910144604142.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI1ODU0NTk5,size_16,color_FFFFFF,t_70#pic_center)
+   ![img](img/20200910144604142.png)
 
 
 
@@ -43,7 +43,7 @@ jsp是html页面中内嵌Java代码，侧重页面显示；Servlet是中书写Ja
 
 异步处理允许 Servlet 重新发起一条新线程去调用 耗时业务方法，这样就可以避免等待
 
-![img](https://img-blog.csdnimg.cn/2020091014463133.png#pic_center)
+![img](img/2020091014463133.png)
 
 #### 5.Servlet 中如何获取用户提交的查询参数或表单数据？
 
@@ -94,7 +94,7 @@ public class TestRequestParam {
 
 **经典现实案例:**
 
-![Servlet相关技术常见面试题](https://img-blog.csdnimg.cn/img_convert/48ff7f8346d74c66da6806855a4b4cb7.png)
+![Servlet相关技术常见面试题](img/48ff7f8346d74c66da6806855a4b4cb7.png)
 
 #### 7. 比较一下Servlet与Filter
 
@@ -232,8 +232,6 @@ JSP技术中，scriptlet是嵌入在JSP页面中的一段Java代码。scriptlet�
 #### 20.声明(Decalaration)在哪里？
 
 声明跟Java中的变量声明很相似，它用来声明随后要被表达式或者scriptlet使用的变量。添加的声明必须要用开始和结束标签包起来。
-
-#### 
 
 #### 参考：
 

@@ -6,7 +6,7 @@ Spring框架是由于软件开发的复杂性而创建的，Spring使用的是�
 
 #### 2.Spring的整体架构？
 
-![image-20200425151510055](https://gitee.com/yizhibuerdai/Imagetools/raw/master/images/image-20200425151510055.png)
+![image-20200425151510055](img/image-20200425151510055.png)
 
 
 
@@ -14,7 +14,7 @@ Spring框架是由于软件开发的复杂性而创建的，Spring使用的是�
 
 #### 3.Spring可以做什么？
 
-![image-20200425152654798](https://gitee.com/yizhibuerdai/Imagetools/raw/master/images/image-20200425152654798.png)
+![image-20200425152654798](img/image-20200425152654798.png)
 
 #### 4.Spring的优点?缺点？
 
@@ -307,7 +307,7 @@ default：由上级标签<beans>的default-autowire属性确定。
 
 #### 45.**BeanFactory 和 ApplicationContext**区别？
 
-![image-20200428210402245](https://gitee.com/yizhibuerdai/Imagetools/raw/master/images/image-20200428210402245.png)
+![image-20200428210402245](img/image-20200428210402245.png)
 
 #### 46.@Qualifier注解？
 
@@ -332,7 +332,7 @@ default：由上级标签<beans>的default-autowire属性确定。
 
 #### 50.Spring事务传播行为有哪些？
 
-![image-20200428223544334](https://gitee.com/yizhibuerdai/Imagetools/raw/master/images/image-20200428223544334.png)
+![image-20200428223544334](img/image-20200428223544334.png)
 
 参考：
 

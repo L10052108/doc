@@ -24,7 +24,7 @@
 
 下图展示了 Git 的工作流程：
 
-![img](https://www.runoob.com/wp-content/uploads/2015/02/git-process.png)
+![img](img/git-process.png)
 
 #### 3.在 Git 中提交的命令是什么？
 
@@ -83,7 +83,7 @@ For this answer try to explain the below diagram as you can see:
 
 在完成提交之前，可以在称为“staging area”或“index”的中间区域中对其进行格式化和审查。从图中可以看出，每个更改首先在暂存区域中进行验证，我将其称为“stage file”，然后将更改提交到存储库。
 
-![clipboard.png](https://segmentfault.com/img/bVbtc0c?w=655&h=645)
+![clipboard.png](img/bVbtc0c)
 
 ### 9.什么是 git stash?
 
@@ -225,7 +225,7 @@ git push origin master
 
 下面这个图展示了工作区、版本库中的暂存区和版本库之间的关系：
 
-![img](https://www.runoob.com/wp-content/uploads/2015/02/1352126739_7909.jpg)
+![img](img/1352126739_7909.jpg)
 
 - 图中左侧为工作区，右侧为版本库。在版本库中标记为 "index" 的区域是暂存区（stage/index），标记为 "master" 的是 master 分支所代表的目录树。
 - 图中我们可以看出此时 "HEAD" 实际是指向 master 分支的一个"游标"。所以图示的命令中出现 HEAD 的地方可以用 master 来替换。

@@ -356,4 +356,4 @@ http://redisdoc.com/
 
 https://www.runoob.com/redis/
 
-![WechatIMG360](https://gitee.com/yizhibuerdai/Imagetools/raw/master/images/common1.png)
+![WechatIMG360](img/common1.png)

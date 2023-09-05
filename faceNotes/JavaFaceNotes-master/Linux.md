@@ -292,7 +292,7 @@ end
 
 #### 22.压缩工具有哪些?
 
-![image-20200421122324314](https://gitee.com/yizhibuerdai/Imagetools/raw/master/images/image-20200421122324314.png)
+![image-20200421122324314](img/image-20200421122324314.png)
 
 #### 23.如何压缩文件？如何解压文件?
 
@@ -320,7 +320,7 @@ tomcat
 
 语法: tar function [options] obj1 obj2
 
-![image-20200421122932671](https://gitee.com/yizhibuerdai/Imagetools/raw/master/images/image-20200421122932671.png)
+![image-20200421122932671](img/image-20200421122932671.png)
 
 ```
 ➜  apache tar -cvf service.tar service1 service2 // 创建规定文件service.tar
@@ -578,7 +578,7 @@ ps它能输出运行在系统上的所有程序的许多信息。
 
 与ps相比，top可以实时监控进程信息。
 
-![image-20200421114633852](https://gitee.com/yizhibuerdai/Imagetools/raw/master/images/image-20200421114633852.png)
+![image-20200421114633852](img/image-20200421114633852.png)
 
 平均负载有3个值:最近1分钟的、最近5分钟的和最近15分钟的平均负载。值越大说明系统 的负载越高。由于进程短期的突发性活动，出现最近1分钟的高负载值也很常见，但如果近15分 钟内的平均负载都很高，就说明系统可能有问题。
 
@@ -602,7 +602,7 @@ kill命令被用来给程序发送信号。如果没有指定信号，默认发�
 
 语法 : kill [-signal] PID …
 
-![image-20200421141556974](https://gitee.com/yizhibuerdai/Imagetools/raw/master/images/image-20200421141556974.png)
+![image-20200421141556974](img/image-20200421141556974.png)
 
 \#### 
 
@@ -610,7 +610,7 @@ kill命令被用来给程序发送信号。如果没有指定信号，默认发�
 
  ping。这个 ping 命令发送一个特殊的网络数据包(叫做 IMCP ECHO REQUEST)到一台指定的主机。大多数接收这个包的网络设备将会回复它，来允许网络连接验证。
 
-![image-20200421142307602](https://gitee.com/yizhibuerdai/Imagetools/raw/master/images/image-20200421142307602.png)
+![image-20200421142307602](img/image-20200421142307602.png)
 
 一旦启动，ping会持续在特定时间（默认1秒）发送数据包。
 
@@ -783,4 +783,4 @@ The lion said to the bear, “I caught this kid first, and so this is mine.”
 
 - 百度百科
 
-  ![WechatIMG360](https://gitee.com/yizhibuerdai/Imagetools/raw/master/images/common1.png)
+  ![WechatIMG360](img/common1.png)

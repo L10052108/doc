@@ -27,11 +27,11 @@ Dubbo是基于Java的高性能轻量级的RPC分布式服务框架，现已成�
 
 #### 4.你知道哪些机构在用Dubbo吗？
 
-![image-20200423105332840](https://gitee.com/yizhibuerdai/Imagetools/raw/master/images/image-20200423105332840.png)
+![image-20200423105332840](img/image-20200423105332840.png)
 
 #### 5.Dubbo服务的关键节点有哪些?
 
-![image-20200423105925624](https://gitee.com/yizhibuerdai/Imagetools/raw/master/images/image-20200423105925624.png)
+![image-20200423105925624](img/image-20200423105925624.png)
 
 #### 6.说一下Dubbo服务注册流程?
 
@@ -44,7 +44,7 @@ Dubbo是基于Java的高性能轻量级的RPC分布式服务框架，现已成�
 
 #### 7.能画一下服务注册流程图吗？
 
-![image-20200423110344448](https://gitee.com/yizhibuerdai/Imagetools/raw/master/images/image-20200423110344448.png)
+![image-20200423110344448](img/image-20200423110344448.png)
 
 #### 8.Dubbo架构的特点？
 
@@ -66,7 +66,7 @@ jdk1.6+
 
 #### 12.配置优先级规则？
 
-![image-20200423112118958](https://gitee.com/yizhibuerdai/Imagetools/raw/master/images/image-20200423112118958.png)
+![image-20200423112118958](img/image-20200423112118958.png)
 
 优先级从高到低：
 
@@ -144,7 +144,7 @@ com.alibaba.xxx.XxxService=dubbo://localhost:20890
 
 #### 19.集群容错几种方法？
 
-![image-20200423121735540](https://gitee.com/yizhibuerdai/Imagetools/raw/master/images/image-20200423121735540.png)
+![image-20200423121735540](img/image-20200423121735540.png)
 
 #### 20.Dubbo有几种配置方式？
 
@@ -222,7 +222,7 @@ cpu个数 + 1
 
 不适合传送大数据量的服务，比如传文件，传视频等，除非请求量很低。
 
-![image-20200423154308365](https://gitee.com/yizhibuerdai/Imagetools/raw/master/images/image-20200423154308365.png)
+![image-20200423154308365](img/image-20200423154308365.png)
 
 #### 32.自动剔除服务什么原理？
 
@@ -247,7 +247,7 @@ telnet localhost 20880
 
 #### 35.Dubbo框架设计是怎样的？
 
-![image-20200423162348971](https://gitee.com/yizhibuerdai/Imagetools/raw/master/images/image-20200423162348971.png)
+![image-20200423162348971](img/image-20200423162348971.png)
 
 各层说明:
 
@@ -267,5 +267,5 @@ telnet localhost 20880
 
 参考：http://dubbo.apache.org/en-us/
 
-![WechatIMG360](https://gitee.com/yizhibuerdai/Imagetools/raw/master/images/common1.png)
+![WechatIMG360](img/common1.png)
 

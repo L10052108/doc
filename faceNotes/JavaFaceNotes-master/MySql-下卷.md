@@ -23,17 +23,17 @@ primary key(id), key(age)
 
 B + 树是左小右大的顺序存储结构，节点只包含 id 索引列，而叶子节点包含索引列和数据，这种数据和索引在一起存储的索引方式叫做聚簇索引，一张表只能有一个聚簇索引。假设没有定义主键，InnoDB 会选择一个唯一的非空索引代替，如果没有的话则会隐式定义一个主键作为聚簇索引。
 
-![img](https://img-blog.csdnimg.cn/20201007140904245.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzQ1MjcwNjY3,size_16,color_FFFFFF,t_70#pic_center)
+![img](img/20201007140904245.jpg)
 
 
 这是主键聚簇索引存储的结构，那么非聚簇索引的结构是什么样子呢？非聚簇索引 (二级索引) 保存的是主键 id 值，这一点和 myisam 保存的是数据地址是不同的。
 
-![img](https://img-blog.csdnimg.cn/20201007141110124.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzQ1MjcwNjY3,size_1,color_FFFFFF,t_70#pic_center)
+![img](img/20201007141110124.jpg)
 
 
 最终，我们一张图看看 InnoDB 和 Myisam 聚簇和非聚簇索引的区别
 
-![img](https://img-blog.csdnimg.cn/20201007141238754.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzQ1MjcwNjY3,size_1,color_FFFFFF,t_70#pic_center)
+![img](img/20201007141238754.jpg)
 
 
 
@@ -80,7 +80,7 @@ read uncommit 读未提交，可能会读到其他事务未提交的数据，也
 
 用户本来应该读取到 id=1 的用户 age 应该是 10，结果读取到了其他事务还没有提交的事务，结果读取结果 age=20，这就是脏读。
 
-![img](https://img-blog.csdnimg.cn/20201007141450216.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzQ1MjcwNjY3,size_1,color_FFFFFF,t_70#pic_center)
+![img](img/20201007141450216.jpg)
 
 
 read commit 读已提交，两次读取结果不一致，叫做不可重复读。
@@ -89,7 +89,7 @@ read commit 读已提交，两次读取结果不一致，叫做不可重复读�
 
 用户开启事务读取 id=1 用户，查询到 age=10，再次读取发现结果 = 20，在同一个事务里同一个查询读取到不同的结果叫做不可重复读。
 
-![img](https://img-blog.csdnimg.cn/20201007141612150.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzQ1MjcwNjY3,size_16,color_FFFFFF,t_70#pic_center)
+![img](img/20201007141612150.jpg)
 
 
 repeatable read 可重复复读，这是 mysql 的默认级别，就是每次读取结果都一样，但是有可能产生幻读。
@@ -189,14 +189,13 @@ insert into user(age) values(21); #失败
 
 基于现在微服务拆分来说，都是已经做到了垂直分库了。
 
-![img](https://img-blog.csdnimg.cn/20201007142110579.png#pic_center)
-
+![img](img/20201007142110579.png)
 
 **垂直分表**
 
 如果表字段比较多，将不常用的、数据较大的等等做拆分。
 
-![img](https://img-blog.csdnimg.cn/20201007142229828.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzQ1MjcwNjY3,size_1,color_FFFFFF,t_70#pic_center)
+![img](img/20201007142229828.jpg)
 **水平分表**
 
 首先根据业务场景来决定使用什么字段作为分表字段 (sharding_key)，比如我们现在日订单 1000 万，我们大部分的场景来源于 C 端，我们可以用 user_id 作为 sharding_key，数据查询支持到最近 3 个月的订单，超过 3 个月的做归档处理，那么 3 个月的数据量就是 9 亿，可以分 1024 张表，那么每张表的数据大概就在 100 万左右。
@@ -237,7 +236,7 @@ List<Callable<List<User>>> taskList = Lists.newArrayList(); for (int shardingInd
 
 6. slave 记录自己的 binglog
 
-   ![img](https://img-blog.csdnimg.cn/20201007142848225.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzQ1MjcwNjY3,size_1,color_FFFFFF,t_70#pic_center)
+   ![img](img/20201007142848225.jpg)
 
    由于 mysql 默认的复制方式是异步的，主库把日志发送给从库后不关心从库是否已经处理，这样会产生一个问题就是假设主库挂了，从库处理失败了，这时候从库升为主库后，日志就丢失了。由此产生两个概念。
 
@@ -581,4 +580,4 @@ https://zhuanlan.zhihu.com/p/59838091
 
 https://blog.csdn.net/m0_45270667/article/details/108950184
 
-![WechatIMG360](https://gitee.com/yizhibuerdai/Imagetools/raw/master/images/common1.png)
+![WechatIMG360](img/common1.png)

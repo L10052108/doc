@@ -17,4 +17,4 @@ Netty、计算机基础、MongoDB、JSP、Servlet、Elasticsearch、Web安全、
 
 扫描二维码回复：“面试2”即可获取pdf
 
-![WechatIMG360](https://gitee.com/yizhibuerdai/Imagetools/raw/master/images/common1.png)
+![WechatIMG360](img/common1.png)

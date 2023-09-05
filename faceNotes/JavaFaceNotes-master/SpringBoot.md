@@ -280,6 +280,5 @@ java -jar xiaoka-v1.0.jar ———spring.profiles.active=dev
 
 - 百度百科
 
-  ![WechatIMG360](https://gitee.com/yizhibuerdai/Imagetools/raw/master/images/common1.png)
+  ![WechatIMG360](img/common1.png)
 
-## 

@@ -223,4 +223,4 @@ http {                               					# HTTP区块开始
 
 - 《深入理解nginx》
 
-  ![WechatIMG360](https://gitee.com/yizhibuerdai/Imagetools/raw/master/images/common1.png)
+  ![WechatIMG360](img/common1.png)
