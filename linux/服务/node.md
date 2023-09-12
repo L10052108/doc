@@ -4,6 +4,28 @@
 
 
 ```
+官网地址：https://nodejs.org/
+
+下载地址：https://nodejs.org/dist
+
+npm官网：https://www.npmjs.com/
+
+1.下载地址
+
+地址：https://nodejs.org/dist/v14.17.3/node-v14.17.3-linux-x64.tar.gz
+
+2.下载包
+
+命令：wget https://nodejs.org/dist/v14.17.3/node-v14.17.3-linux-x64.tar.gz
+
+解析：下载包名称node-v14.17.3-linux-x64.tar.gz。
+————————————————
+版权声明：本文为CSDN博主「zhangbeizhen18」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/zhangbeizhen18/article/details/128976585
+```
+
+
+```
 ###### 安装npm（实际上，部署不需要安装npm...） ######
 #创建目录
 mkdir -p /usr/local/node/

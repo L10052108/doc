@@ -1,6 +1,6 @@
-资料来源：
-
-[mysql重置root密码centos_mysql 5.7 root密码重置(centos 7)](https://blog.csdn.net/weixin_33152959/article/details/114352722)
+资料来源：<br/>
+[mysql重置root密码centos_mysql 5.7 root密码重置(centos 7)](https://blog.csdn.net/weixin_33152959/article/details/114352722)<br/>
+[mysql-community-common-5.7.38-1.el7.x86_64.rpm 的公钥尚未安装](https://blog.csdn.net/qq_53810226/article/details/124836467)
 
 ## 方法一
 
@@ -36,6 +36,17 @@ yum -y install mysql-community-server
 systemctl start  mysqld.service
 systemctl status mysqld.service
 ```
+
+### 报错
+
+![image-20230911145051685](img/image-20230911145051685.png)
+
+```shell
+rpm --import https://repo.mysql.com/RPM-GPG-KEY-mysql-2022
+yum -y install mysql-community-server
+```
+
+***目前只测试过centos7 MySQL5.7的环境 其他的并未测试***
 
 ### 查看MySQL的默认密码：
 
