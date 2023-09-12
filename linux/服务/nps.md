@@ -111,6 +111,28 @@ vim /etc/nps/conf/nps.conf
 
 ![](pic/2021020818042718.png)
 
+## docker 方式安装
+
+本来采用的直接安装的方式，但是在腾讯云上会收到报警。去除了报警之后，服务器会变的非常的差。重启也无用。无奈之下，我备份文件，重装了系统
+
+![image-20230912152320016](img/image-20230912152320016.png)
+
+上传config目录
+
+从 https://github.com/ehang-io/nps/tree/master/conf 下载下的zip解压并上传到服务器
+
+![image-20230912152655564](img/image-20230912152655564.png)
+
+和上面的配置一样，修改`nps.config`
+
+**启动docker容器** 我是在/nps/conf这个目录下放了配置文件，所以命令如下:
+
+```shell
+docker run -d --name=NPS_Server --restart=always --net=host -v /root/nps/conf:/conf ffdfgdfg/nps
+```
+
+启动服务后，和之前的是相同的
+
 ## 客户端的配置
 
 ### 修改配置文件
