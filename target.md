@@ -312,6 +312,18 @@ https://juejin.cn/post/7176057114006126653
 
 
 JUC集合: ConcurrentLinkedQueue详解
-
-
 https://pdai.tech/md/java/thread/java-thread-x-juc-collection-ConcurrentLinkedQueue.html
+
+
+网关apisix：https://github.com/apache/apisix
+
+
+rabbitMQ 订阅多线程问题？
+https://blog.csdn.net/LituXay/article/details/121652381 
+
+https://blog.csdn.net/weixin_68829137/article/details/127070686?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_baidulandingword~default-0-127070686-blog-114993402.235^v38^pc_relevant_default_base3&spm=1001.2101.3001.4242.1&utm_relevant_index=1 
+
+![img](img/0e10e03c676c4123997fbedb95733d6c.png)
+
+极光推送
+https://blog.csdn.net/weixin_39255905/article/details/132181104
