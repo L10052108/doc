@@ -44,4 +44,6 @@
   - [docker-compose](linux/docker/docker-compose.md)
 
 - docker服务
-  - [01_showdoc.md](linux/docker服务/01_showdoc.md)
+  - [01_showdoc](linux/docker服务/01_showdoc.md)
+  - [02_rabbitMq安装](linux/docker服务/02_rabbitMq安装.md)
+

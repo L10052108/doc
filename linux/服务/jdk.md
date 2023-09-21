@@ -1,3 +1,10 @@
+资料来源：
+
+[Linux环境下安装JDK(17)](https://blog.csdn.net/mnimxq/article/details/132154132)
+
+
+
+## jdk8
 
 ### 上传安装包
 
@@ -52,11 +59,47 @@ export PATH JAVA_HOME CLASSPATH
 
 
 
+## jdk17
+
+
+
+1、官网下载
+
+https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html
+
+
+
+解压缩，换包名
+
+```
+tar -zxvf jdk-17_linux-x64_bin.tar.gz
+
+tar -zxvf jdk-17_linux-x64_bin.tar.gz
+mv jdk-17.0.8  jdk17
+
+mv jdk-17.0.8 jdk17
+```
+
+
+
+5、配置环境变量，并让配置文件生效
+
+```shell
+vim /etc/profile
+```
 
 
 
 
 
 
+![img](img/3effbe7c1b954fe1b0ae0d2228cb4cf8.png)
 
+```shell
+source /etc/profile
+```
+
+6、检查一下结果
+
+java -version 
 

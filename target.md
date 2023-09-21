@@ -327,3 +327,24 @@ https://blog.csdn.net/weixin_68829137/article/details/127070686?utm_medium=distr
 
 极光推送
 https://blog.csdn.net/weixin_39255905/article/details/132181104
+
+
+git 工具
+SourceTree
+https://blog.csdn.net/weixin_43335226/article/details/107091568
+
+
+MP中id生成策略
+https://blog.csdn.net/Drifter_Galaxy/article/details/130786432
+
+
+springCache 使用 ？
+
+MQ延迟插件 ？
+组件中有定义钩子函数优雅关闭可以触发收尾工作。
+
+日志文件查看的常用技巧
+https://blog.csdn.net/weixin_41905047/article/details/129109221
+
+jdk21
+https://mp.weixin.qq.com/s/k7beS2MkiArWatzTtKmMPg
