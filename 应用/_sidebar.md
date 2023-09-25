@@ -12,6 +12,9 @@
   - ZooKeeper 
     - [ZooKeeper安装](应用/zookeeper/01_ZooKeeper安装.md)
 
+  - 极光推送
+    - [01_入门](应用/push/01入门.md) 
+    - [02_厂商通道](应用/push/02_厂商通道.md) 
 
   [comment]: <> "分布式定时任务"
 - 定时任务
