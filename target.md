@@ -348,3 +348,11 @@ https://blog.csdn.net/weixin_41905047/article/details/129109221
 
 jdk21
 https://mp.weixin.qq.com/s/k7beS2MkiArWatzTtKmMPg
+
+
+IM消息
+https://www.oschina.net/project/awesome?columnId=57
+
+
+RabbitMQ入门
+https://blog.csdn.net/yzq102873/article/details/128304566

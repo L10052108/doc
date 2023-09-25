@@ -1,5 +1,6 @@
 资料来源：<br/>
-[Docker安装RabbitMQ docker安装RabbitMQ完整详细教程](https://blog.csdn.net/qq_40739917/article/details/131509696)
+[Docker安装RabbitMQ docker安装RabbitMQ完整详细教程](https://blog.csdn.net/qq_40739917/article/details/131509696)<br/>
+[RabbitMQ入门](https://blog.csdn.net/yzq102873/article/details/128304566)
 
 
 
@@ -19,7 +20,6 @@ docker pull rabbitmq:3.12-management
 ```shell
 docker run --name some-rabbitmq -p 5672:5672 -p 15672:15672 -d rabbitmq:3.12-management
 ```
-
 
 --name 是 容器别名，将 宿主机 5672端口映射到 容器内5672，and 端口15672端口映射到 容器内15672 端口，访问宿主机端口的时候会映射到对应容器端口, -d 表示后台运行。
 
@@ -51,3 +51,43 @@ RabbitMQ默认的登录账号和密码如下：
 
 - 用户名：**guest**
 - 密码： **guest**
+
+
+
+## 指定VirtualHost
+
+```
+方式一：默认guest用户，密码也是guest
+
+docker run -d -p 5672:5672 -p 15672:15672 --name rabbitmq
+
+方式二：设置用户名和密码
+
+docker run -d \
+     --name my-rabbitmq \
+     -p 5672:5672 -p 15672:15672 \
+     -v /data:/var/lib/rabbitmq \
+     --hostname my-rabbitmq-host \
+     -e RABBITMQ_DEFAULT_VHOST=my_vhost \
+     -e RABBITMQ_DEFAULT_USER=admin \
+     -e RABBITMQ_DEFAULT_PASS=admin \
+     --restart=always \
+     rabbitmq:management 
+
+参数说明：
+   -d：后台运行容器
+   -name：指定容器名
+   -p：指定服务运行的端口（5672：应用访问端口；15672：控制台Web端口号）
+   -v：映射目录或文件，启动了一个数据卷容器，数据卷路径为：/var/lib/rabbitmq，再将此数据卷映射到住宿主机的/data目录
+   --hostname：主机名（RabbitMQ的一个重要注意事项是它根据所谓的 “节点名称” 存储数据，默认为主机名）
+   -e：指定环境变量；（
+RABBITMQ_DEFAULT_VHOST：默认虚拟机名；
+RABBITMQ_DEFAULT_USER：默认的用户名；
+RABBITMQ_DEFAULT_PASS：默认用户名的密码）
+   --restart=always：当Docker重启时，容器能自动启动   
+   rabbitmq:management：镜像名
+   
+   注1：RABBITMQ_DEFAULT_VHOST=my_vhost，my_vhost名字请记好，在之后的编程中要用到,
+        如果启动时没指定，默认值为/
+```
+
