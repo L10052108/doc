@@ -1,10 +1,10 @@
 资料来源：<br/>
 [Docker安装RabbitMQ docker安装RabbitMQ完整详细教程](https://blog.csdn.net/qq_40739917/article/details/131509696)<br/>
 [RabbitMQ入门](https://blog.csdn.net/yzq102873/article/details/128304566)
+[org.springframework.amqp.AmqpIOException: java.io.IOException](https://blog.csdn.net/weixin_45902573/article/details/125798551)
 
 
-
-### 拉取 RabbitMQ 镜像
+## 拉取 RabbitMQ 镜像
 我这边选择的版本是 `rabbitmq:3.12-management`在终端中执行以下命令以拉取 `rabbitmq:3.12-management`根据自己使用过的版本：
 镜像尽量选择 带`-management`后缀的，因为这个是自带Web监控页面，同3.12版本MQ有两个
 `docker pull rabbitmq:3.12-management`
@@ -56,7 +56,7 @@ RabbitMQ默认的登录账号和密码如下：
 
 ## 指定VirtualHost
 
-```
+```c
 方式一：默认guest用户，密码也是guest
 
 docker run -d -p 5672:5672 -p 15672:15672 --name rabbitmq
@@ -91,3 +91,10 @@ RABBITMQ_DEFAULT_PASS：默认用户名的密码）
         如果启动时没指定，默认值为/
 ```
 
+登录管理后台，可以看到
+
+![image-20230926091835494](img/image-20230926091835494.png)
+
+ **创建vhosts**
+
+![img](img/75206053a32742c89cde512c6c2d3669.png)
