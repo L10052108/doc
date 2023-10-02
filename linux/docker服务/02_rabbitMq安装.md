@@ -1,7 +1,8 @@
 资料来源：<br/>
 [Docker安装RabbitMQ docker安装RabbitMQ完整详细教程](https://blog.csdn.net/qq_40739917/article/details/131509696)<br/>
 [RabbitMQ入门](https://blog.csdn.net/yzq102873/article/details/128304566)
-[org.springframework.amqp.AmqpIOException: java.io.IOException](https://blog.csdn.net/weixin_45902573/article/details/125798551)
+[org.springframework.amqp.AmqpIOException: java.io.IOException](https://blog.csdn.net/weixin_45902573/article/details/125798551)<br/>
+[Docker 安装 RabbitMQ 并安装延迟队列插件 rabbitmq-delayed-message-exchange](https://blog.csdn.net/m0_46114643/article/details/124692659)
 
 
 ## 拉取 RabbitMQ 镜像
@@ -98,3 +99,61 @@ RABBITMQ_DEFAULT_PASS：默认用户名的密码）
  **创建vhosts**
 
 ![img](img/75206053a32742c89cde512c6c2d3669.png)
+
+## 安装rabbitmq-delayed-message-exchange插件
+
+### 下载延迟插件
+
+在 RabbitMQ 的 3.5.7 版本之后，提供了一个插件（rabbitmq-delayed-message-exchange）来实现延迟队列 ，同时需保证 Erlang/OPT 版本为 18.0 之后。
+我这里 MQ 的版本是 3.9.11，现在去[GitHub 上根据版本号下载插件](https://github.com/rabbitmq/rabbitmq-delayed-message-exchange/releases)
+根据自己的版本号自行下载即可
+![image-20230926191506592](img/image-20230926191506592.png)
+
+### 安装插件并启用
+我用的是 Docker 客户端，下载完成后直接把插件放在 C 盘的根目录，然后拷贝到容器内plugins目录下（be95ff9c2ee4是容器的id，也可以使用容器id）
+
+![image-20230926191630987](img/image-20230926191630987.png)
+
+```
+docker cp rabbitmq_delayed_message_exchange-3.8.9-0199d11c.ez be95ff9c2ee4:/plugins
+```
+
+进入 Docker 容器
+
+```
+docker exec -it be95ff9c2ee4 /bin/bash
+```
+
+查看插件是否存在
+
+```
+cd plugins
+ls |grep delay
+```
+
+
+在plugins内启用插件
+
+```
+rabbitmq-plugins enable rabbitmq_delayed_message_exchange
+```
+
+退出容器
+
+```
+exit
+```
+
+
+重启 RabbitMQ
+
+```
+docker restart rabbit
+```
+
+
+容器启动成功之后，登录RabbitMQ的管理页面，找到ExchangesTab页。点击Add a new exchange，在Type里面查看是否有x-delayed-message选项，如果存在就代表插件安装成功。
+
+![image-20230926191828965](img/image-20230926191828965.png)
+
+说明成功

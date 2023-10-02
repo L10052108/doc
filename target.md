@@ -309,6 +309,11 @@ https://juejin.cn/post/7176057114006126653
 [前后端分离 springboot shiro+jwt token认证 权限校验](https://blog.csdn.net/weixin_44912855/article/details/121319260?spm=1001.2014.3001.5501)
 
 
+https://www.oracle.com/java/technologies/downloads/#jdk21-windows
+
+https://www.toutiao.com/article/7281613145850937910/?app=news_article&timestamp=1696167855&use_new_style=1&req_id=20231001214414B8BE7874029DABD0C372&group_id=7281613145850937910&wxshare_count=1&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_android&utm_campaign=client_share&share_token=24d83fe5-534f-4b1b-969c-4cdacaa6cecd&source=m_redirect
+
+
 
 
 JUC集合: ConcurrentLinkedQueue详解
@@ -358,3 +363,6 @@ RabbitMQ入门
 https://blog.csdn.net/yzq102873/article/details/128304566
 
 - 测试提交任务
+
+- seate 分布任务
+https://www.toutiao.com/article/7281647302065603124/?app=news_article&timestamp=1695855367&use_new_style=1&req_id=2023092806560616F011B59EAD4E33E27C&group_id=7281647302065603124&wxshare_count=1&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_android&utm_campaign=client_share&share_token=7e91ed45-6769-4999-98e9-5c7912d1f3d5&source=m_redirect
