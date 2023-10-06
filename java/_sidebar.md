@@ -64,7 +64,9 @@
     - [01_垃圾回收的区域](java/jdk/JVM/01垃圾回收机制.md)
     - [02_垃圾回收算法](java/jdk/JVM/02垃圾回收机制.md)
     - [03_OOM教你生成dump](java/jdk/JVM/03_OOM教你生成dump.md)
-
+  - **jdk21**
+    - [00_jdk21介绍](java/jdk/jdk21/00_jdk21介绍.md)
+    - [01_虚拟线程](java/jdk/jdk21/01_虚拟线程.md)
 
 [//]: # "java基础"
 - MQ
