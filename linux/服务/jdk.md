@@ -72,8 +72,9 @@ https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html
 解压缩，换包名
 
 ```
+wget https://download.oracle.com/java/17/archive/jdk-17.0.8_linux-x64_bin.tar.gz
+// 按照实际修改名
 tar -zxvf jdk-17_linux-x64_bin.tar.gz
-
 tar -zxvf jdk-17_linux-x64_bin.tar.gz
 mv jdk-17.0.8  jdk17
 

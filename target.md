@@ -363,6 +363,4 @@ https://blog.csdn.net/yzq102873/article/details/128304566
 https://www.toutiao.com/article/7281647302065603124/?app=news_article&timestamp=1695855367&use_new_style=1&req_id=2023092806560616F011B59EAD4E33E27C&group_id=7281647302065603124&wxshare_count=1&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_android&utm_campaign=client_share&share_token=7e91ed45-6769-4999-98e9-5c7912d1f3d5&source=m_redirect
 
 
-https://www.oracle.com/java/technologies/downloads/#jdk21-windows
-
 https://www.toutiao.com/article/7281613145850937910/?app=news_article&timestamp=1696167855&use_new_style=1&req_id=20231001214414B8BE7874029DABD0C372&group_id=7281613145850937910&wxshare_count=1&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_android&utm_campaign=client_share&share_token=24d83fe5-534f-4b1b-969c-4cdacaa6cecd&source=m_redirect
