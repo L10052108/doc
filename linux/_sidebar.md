@@ -13,6 +13,7 @@
     - [DooTask轻量级的开源在线项目任务管理工具](linux/服务/在线项目任务管理工具.md)
     - [linux远程桌面管理工具xrdp](linux/服务/xrdp.md)
     - [nps](linux/服务/nps.md)
+    - [04_Glances监控工具](linux/服务/04_Glances监控工具.md)
     
   - 翻墙
     - [bbr加速](linux/服务/翻墙/bbr.md)
