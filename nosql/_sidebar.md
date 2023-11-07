@@ -21,6 +21,7 @@
   - **01_Redisson**
     - [09_01Redisson介绍](nosql/redis/09_01Redisson介绍.md) 
     - [09_02分布式锁和同步器](nosql/redis/09_02分布式锁和同步器.md)    
+    - [09_02_01分布式锁的使用](nosql/redis/09_02_01分布式锁的使用.md)
     - [09_03分布式集合](nosql/redis/09_03分布式集合.md)   
     - [09_04pring集成Redisson](nosql/redis/09_04pring集成Redisson.md)   
 

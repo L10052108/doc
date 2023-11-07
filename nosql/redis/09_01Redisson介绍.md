@@ -31,7 +31,7 @@ Redisson是一个在Redis的基础上实现的Java驻内存数据网格（In-Mem
 
 每个Redis服务实例都能管理多达1TB的内存。
 
-![1313133224](img/1313133224.png)
+![1313133224](img/1313133224.png ':size=60%')
 
 如果你现在正在使用其他的Redis的Java客户端，那么[Redis命令和Redisson对象匹配列表](https://github.com/redisson/redisson/wiki/11.-redis命令和redisson对象匹配列表) 能够帮助你轻松的将现有代码迁徙到Redisson框架里来。
 
