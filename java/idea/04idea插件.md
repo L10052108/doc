@@ -157,3 +157,43 @@ Allow auto-make to start even if developed application is currently running
 ![image-20230809143345599](img/image-20230809143345599.png)
 
 `Mybatis Log Free` 可以把日志中的打印的sql日志，合并输出
+
+### 日志插件
+
+![image-20231107165904606](img/image-20231107165904606.png)
+
+**方法一：settings->Other Settings->Grep Console，在右边窗口中自定义你想要的效果**
+
+![img](img/f33f9c922bc74bc3bc9d25ae9eb2661d.png)
+
+**方法二：启动项目后在日志输出控制台右击，再点击Open Grep Console Settings进入** 
+
+![img](img/e85fda7701e34e678cdb021a2f507532.png)
+
+ **方法三：点击IDEA Tools -> Grep Console，点击 Grep Console进入**
+
+![img](img/1cca0fecb2f4441abfdbb538d8dfb4ab.png)
+
+设置完成后，你可以通过代码日志输出测试一下效果
+
+**下面例子我通过设置warn/error的背景色，使得输出更直观：**
+
+![img](img/a49337960d6047a783cfedf564ceb801.png)
+
+```java
+public class GrepConsole {
+ 
+    public static void main(String[] args) {
+        Logger logger = LoggerFactory.getLogger(GrepConsole.class);
+        logger.info("*****info*****");
+        logger.warn("*****warn*****");
+        logger.error("*****error*****");
+    }
+}
+```
+
+![img](img/bc77b18ebdce48cd952de65cda2f79fe.png)
+
+通过增加Grep条件，过滤你想要的日志：
+
+![img](img/c51f8b24fa744b35bc0810771f6084d7.png)

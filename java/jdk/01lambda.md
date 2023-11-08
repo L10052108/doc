@@ -143,7 +143,7 @@ public interface Comparator<T> {
 在上面我们说到了只要函数式接口抽象方法的函数签名与 lambda 一致，那么就可以把 lambda 表达式作为该函数式接口的实现。
 上面的例子中， lambda 的参数类型也是可以省略的，那么 Java 是如何判断 lambda 是否与函数式接口匹配呢？
 如果 lambda 表达式中，参数和返回值的类型都省略之后，需要从使用 lambda 的上下文推断出来。
-![](https://tva1.sinaimg.cn/large/e6c9d24ely1h0e5hfoqd0j215i0j474z.jpg)
+
 ### 举例
 - 执行异步任务
 ~~~~java

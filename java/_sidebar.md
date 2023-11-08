@@ -52,11 +52,13 @@
   - [04_idea插件](java/idea/04idea插件.md)
   - [05_idea配置](java/idea/05配置.md)
 
-- JDK
+- JDK 新特性
   - [00_(jdk新特性)介绍](java/jdk/00介绍.md)
   - [01_(jdk新特性)lambda](java/jdk/01lambda.md)
   - [02_(jdk新特性)List去重](java/jdk/02List去重.md) 
   - [03_(jdk新特性)StreamAPI](java/jdk/03StreamAPI.md)
+  - [04_jdk8新特性-Optional](java/jdk/04_jdk8新特性-Optional.md)
+- jdk类
   - [04_Queue](java/jdk/04Queue.md)
   - [04_02Deque](java/jdk/04_02Deque.md)
   - [05_反射限制](java/jdk/05反射限制.md)
