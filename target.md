@@ -364,3 +364,37 @@ https://www.toutiao.com/article/7281647302065603124/?app=news_article&timestamp=
 
 
 https://www.toutiao.com/article/7281613145850937910/?app=news_article&timestamp=1696167855&use_new_style=1&req_id=20231001214414B8BE7874029DABD0C372&group_id=7281613145850937910&wxshare_count=1&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_android&utm_campaign=client_share&share_token=24d83fe5-534f-4b1b-969c-4cdacaa6cecd&source=m_redirect
+
+
+
+日志
+
+https://zhuanlan.zhihu.com/p/611653538
+
+
+
+
+一文讲透Java Agent是什么玩意？能干啥？怎么用？
+
+https://zhuanlan.zhihu.com/p/6366039104
+
+
+
+亚毫秒GC暂停到底有多香？JDK17+ZGC初体验｜得物技术
+
+————————————————
+版权声明：本文为CSDN博主「得物技术」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/SmartCodeTech/article/details/131247135
+
+
+自实现分布式链路追踪 方案&实践
+https://zhuanlan.zhihu.com/p/611653538
+
+
+《见「微」知「著」系列——<分布式流量防护>篇》介绍常见的限流算法：固定时间窗口算法、滑动时间窗口算法、 漏桶算法、令牌桶算法
+https://zhuanlan.zhihu.com/p/627507543
+
+
+ES
+https://zhuanlan.zhihu.com/p/624297206
+

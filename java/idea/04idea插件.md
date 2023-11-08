@@ -1,8 +1,7 @@
-资料来源：
-
-[这款 IDEA 插件太好用了，堪称日志管理神器！](https://mp.weixin.qq.com/s/pfa5mJmAETJoxwdxIqBpXA)
-
-[Idea热加载插件JRebel激活及使用教程](https://blog.csdn.net/qq_42263280/article/details/128888312)
+资料来源：<br/>
+[这款 IDEA 插件太好用了，堪称日志管理神器！](https://mp.weixin.qq.com/s/pfa5mJmAETJoxwdxIqBpXA)<br/>
+[Idea热加载插件JRebel激活及使用教程](https://blog.csdn.net/qq_42263280/article/details/128888312)<br/>
+[IntelliJ IDEA好用插件推荐之（一）：Grep Console](https://blog.csdn.net/xutong_123/article/details/128311026)<br/>
 
 ## idea插件
 
