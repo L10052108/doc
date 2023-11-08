@@ -53,11 +53,11 @@
 ## 二、过滤器
 
 **两种方式：**
-**1、**使用spring boot提供的**FilterRegistrationBean注册Filter**
-**2、**使用**原生servlet注解定义Filter**
-两种方式的本质都是一样的，**都是去FilterRegistrationBean注册自定义Filter**
+**1、**使用spring boot提供的**FilterRegistrationBean注册Filter**<br/>
+**2、**使用**原生servlet注解定义Filter**<br/>
+两种方式的本质都是一样的，**都是去FilterRegistrationBean注册自定义Filter**<br/>
 
-**方式一: （使用spring boot提供的FilterRegistrationBean注册Filter ）**
+**方式一: （使用spring boot提供的FilterRegistrationBean注册Filter ）**<br/>
 ①、先定义Filter：
 
 ```
@@ -99,7 +99,7 @@ public class FilterConfig {
 
     @Bean
     public FilterRegistrationBean registrationBean() {
-       ** FilterRegistrationBean filterRegistrationBean = new FilterRegistrationBean(new** **MyFilter());**
+        FilterRegistrationBean filterRegistrationBean = new FilterRegistrationBean(new MyFilter());
         filterRegistrationBean.addUrlPatterns("/*");
         return filterRegistrationBean;
     }
@@ -111,9 +111,9 @@ public class FilterConfig {
 ```
 @Configuration public class FilterConfig {
  
-    @Bean public **FilterRegistrationBean** registFilter() {
-        **FilterRegistrationBean registration** **= new FilterRegistrationBean();
-        registration.setFilter(new** **LogCostFilter());**
+    @Bean public FilterRegistrationBean registFilter() {
+        FilterRegistrationBean registration = new FilterRegistrationBean();
+        registration.setFilter(new LogCostFilter());
         registration.addUrlPatterns("/*");
         registration.setName("LogCostFilter");
         registration.setOrder(1); return registration;
