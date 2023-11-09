@@ -753,6 +753,10 @@ logging:
     <!-- 彩色日志依赖的渲染类 -->
     <conversionRule conversionWord="clr"
                     converterClass="org.springframework.boot.logging.logback.ColorConverter"/>
+    <conversionRule conversionWord="wex"
+                    converterClass="org.springframework.boot.logging.logback.WhitespaceThrowableProxyConverter"/>
+    <conversionRule conversionWord="wEx"
+                    converterClass="org.springframework.boot.logging.logback.ExtendedWhitespaceThrowableProxyConverter"/>
 
     <!-- 系统模块日志级别控制  -->
     <logger name="store.liuwei.blog" level="debug" />
