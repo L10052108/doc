@@ -56,6 +56,7 @@
   - [自定义sql](数据库/mybatis_puls/自定义sql.md)
   - [servieImpl](数据库/mybatis_puls/servieImpl.md)
   - [其他功能](数据库/mybatis_puls/其他功能.md)
+  - [10_01高级用法](数据库/mybatis_puls/10_01高级用法.md)
   
 - mybatis_Flex
   - [MyBatis-Flex](数据库/MyBatis-Flex/01_MyBatis-Flex介绍.md)

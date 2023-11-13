@@ -46,6 +46,7 @@
 - Java Agent
   - [01_一文讲透Java Agent是什么](java/java_agent/01_一文讲透Java_Agent是什么.md)
   - [02_idea配置远程调试](java/java_agent/02_idea配置远程调试.md)
+  - [03_项目Jar包加密](java/java_agent/03_项目Jar包加密.md)
 
 
 [//]: # "idea相关的内容"

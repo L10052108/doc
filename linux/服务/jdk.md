@@ -104,3 +104,8 @@ source /etc/profile
 
 java -version 
 
+## jdk21
+
+下载页面：https://www.oracle.com/java/technologies/javase/jdk21-archive-downloads.html
+
+下载地址：https://www.oracle.com/java/technologies/javase/jdk21-archive-downloads.html
