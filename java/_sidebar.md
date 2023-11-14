@@ -74,6 +74,7 @@
   - **jdk21**
     - [00_jdk21介绍](java/jdk/jdk21/00_jdk21介绍.md)
     - [01_虚拟线程](java/jdk/jdk21/01_虚拟线程.md)
+    - [02_jdk21新特性](java/jdk/jdk21/02_jdk21新特性.md)
 
 [//]: # "java基础"
 - MQ

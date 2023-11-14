@@ -346,8 +346,6 @@ MQ延迟插件 ？
 日志文件查看的常用技巧
 https://blog.csdn.net/weixin_41905047/article/details/129109221
 
-jdk21
-https://mp.weixin.qq.com/s/k7beS2MkiArWatzTtKmMPg
 
 
 IM消息
@@ -399,6 +397,8 @@ ES
 https://zhuanlan.zhihu.com/p/624297206
 
 
+https://www.toutiao.com/article/7292967410637095474/?app=news_article&timestamp=1698242510&use_new_style=1&req_id=20231025220150202F7C87085E851F8E0F&group_id=7292967410637095474&wxshare_count=1&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_android&utm_campaign=client_share&share_token=b0030b77-fcc2-4d10-b55a-233f3042b407&source=m_redirect
+
 限流
 https://github.com/lizhifuabc/spring-learn/blob/main/spring-boot-redis-limit/src/main/java/com/redis/limit/algorithm/AbstractRedisRateLimitAlgorithm.java
 
@@ -417,3 +417,30 @@ springboot学习
   ____ ____    ___ ____ _  _ ____ _  _ 
 [__  |__| __  |  |  | |_/  |___ |\ | 
 ___] |  |     |  |__| | \_ |___ | \| 
+
+
+架构师怎样绘制系统架构蓝图？
+https://mp.weixin.qq.com/s/mzx9e_SK4V9-8SL9DbD8NQ
+
+
+使用screw一键生成数据库文档
+
+https://www.toutiao.com/article/7299308128263373352/?app=news_article&timestamp=1699594314&use_new_style=1&req_id=20231110133153089FC9514FEB2465F918&group_id=7299308128263373352&wxshare_count=1&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_android&utm_campaign=client_share&share_token=0ed122b6-5101-4230-b4c1-c24e73ed05de&source=m_redirect
+
+
+SpringBoot 整合 Sa-Token 让鉴权更简单
+https://mp.weixin.qq.com/s/pY2T_49rTkrKAfBZLO3vYQ
+
+
+Springboot + Wsocket + RabbitMQ + Thymeleaf + Bootstrap 实现聊天互动功能
+https://mp.weixin.qq.com/s/ispOj37a30WgVnMgg7Ao2Q
+
+
+
+SpringBoot 快速实现 api 加密，一个轮子搞定！
+https://www.toutiao.com/article/7298163426189378089/?app=news_article&timestamp=1699314436&use_new_style=1&req_id=20231107074716F646EE5437D077498A29&group_id=7298163426189378089&wxshare_count=1&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_android&utm_campaign=client_share&share_token=b6e87c77-ff70-49f6-b536-c3496672642d&source=m_redirect
+
+
+让我们回顾一些慈善的开源项目，它们养活了许多人：
+https://www.toutiao.com/w/1779448256684045/?app=news_article&timestamp=1698087191&use_new_style=1&wxshare_count=1&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_android&utm_campaign=client_share&share_token=0db213f7-f969-47c0-bf49-ad85be9f0e88&source=m_redirect
+
