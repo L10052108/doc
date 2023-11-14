@@ -27,6 +27,7 @@
   - [16_springboot跨域](springboot/功能/16springboot跨域.md)
   - [17_Springboot过滤器和拦截器](springboot/功能/17Springboot过滤器和拦截器.md)
   - [18_获取properties](springboot/功能/18获取properties.md)
+  - [18_01获取properties](springboot/功能/18_01获取properties.md)
   - [19_spring加载bean的顺序](springboot/功能/19spring加载bean的顺序.md)
   - [20_返回数字结果过长](springboot/功能/20返回数字结果过长.md)
   - [21_spring循环依赖](springboot/功能/21spring循环依赖.md)
