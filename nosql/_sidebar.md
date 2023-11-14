@@ -18,12 +18,14 @@
   - [06_redis监听](nosql/redis/06redis监听.md)
   - [07_redis客户端](nosql/redis/07redis客户端.md)
   - [08_Lua脚本完全入门](nosql/redis/08_Lua脚本完全入门.md)
+  - [10实现分布式消息传递]()
   - **01_Redisson**
     - [09_01Redisson介绍](nosql/redis/09_01Redisson介绍.md) 
     - [09_02分布式锁和同步器](nosql/redis/09_02分布式锁和同步器.md)    
     - [09_02_01分布式锁的使用](nosql/redis/09_02_01分布式锁的使用.md)
     - [09_03分布式集合](nosql/redis/09_03分布式集合.md)   
     - [09_04pring集成Redisson](nosql/redis/09_04pring集成Redisson.md)   
+  - [10_实现分布式消息传递](nosql/redis/10_实现分布式消息传递.md)
 
 - MongoDB
   - [01_mongoDB介绍](nosql/MongoDB/01_mongoDB介绍.md)

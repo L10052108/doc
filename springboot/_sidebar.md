@@ -42,6 +42,7 @@
 
 - springboot3.0
   - [01_Spring Boot3.0升级，踩坑之旅](springboot/springboot3/01springboot3踩坑.md)
+  - [02_新项目为什么决定用 Spring Boot 3.1 + JDK 17了](springboot/springboot3/02springboot3升级功能.md)
 
 - 数据库
   - [01_H2的使用](springboot/h2/01H2的使用.md)
