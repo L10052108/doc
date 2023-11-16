@@ -419,9 +419,6 @@ springboot学习
 ___] |  |     |  |__| | \_ |___ | \| 
 
 
-架构师怎样绘制系统架构蓝图？
-https://mp.weixin.qq.com/s/mzx9e_SK4V9-8SL9DbD8NQ
-
 
 使用screw一键生成数据库文档
 
