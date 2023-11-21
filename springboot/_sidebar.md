@@ -2,6 +2,7 @@
   - [springboot介绍](springboot/springboot介绍.md)
   - [springboot启动命令](springboot/springboot启动命令.md)
   - [springboot创建项目](springboot/start.md)
+  - [35款优秀的开源项目](springboot/35款优秀的开源项目.md)
 
 - 功能
   - [00_springboot.md](springboot/功能/00springboot.md)

@@ -443,3 +443,9 @@ https://mp.weixin.qq.com/s/23eZm-mdtj7J_Pg9TUUKNA
 让我们回顾一些慈善的开源项目，它们养活了许多人：
 https://www.toutiao.com/w/1779448256684045/?app=news_article&timestamp=1698087191&use_new_style=1&wxshare_count=1&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_android&utm_campaign=client_share&share_token=0db213f7-f969-47c0-bf49-ad85be9f0e88&source=m_redirect
 
+
+MyBatis 动态 SQL 最全教程，这样写 SQL 太爽了！
+https://mp.weixin.qq.com/s?__biz=Mzg3NzU0MDQzOQ==&mid=2247506003&idx=1&sn=731e4012102c5f92fb0f87dcc2e22c61&chksm=cf23fd6bf854747d52e4f0e1ca1128e71c7700f80cc36606bee280ab4ae892a65ef608e33277&scene=178&cur_album_id=1832215597854621698#rd
+
+前后端分离必备的接口规范，十分接地气！
+https://mp.weixin.qq.com/s?__biz=Mzg3NzU0MDQzOQ==&mid=2247506021&idx=1&sn=88ff7bbaca6637c0dcbf825fc003327b&chksm=cf23fd5df854744bcf2dc7f55fa2e390d8923e78d9acfadc4c553ad1d05ec560ab2626aa1c41&scene=178&cur_album_id=1832215597854621698#rd
