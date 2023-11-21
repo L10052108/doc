@@ -1,10 +1,7 @@
 资料来源：<br/>
-[Elasticsearch通关教程（一）： 基础入门](https://developer.aliyun.com/article/694252)
-
-[Elasticsearch 通关教程（二）： 索引映射Mapping问题](https://developer.aliyun.com/article/694260?spm=a2c6h.13262185.profile.8.10b44599fske9u)
-
-[狂神说笔记之ElasticSearch](https://blog.csdn.net/gouzhengju1454/article/details/117707976#comments_16924081)
-
+[Elasticsearch通关教程（一）： 基础入门](https://developer.aliyun.com/article/694252)<br/>
+[Elasticsearch 通关教程（二）： 索引映射Mapping问题](https://developer.aliyun.com/article/694260?spm=a2c6h.13262185.profile.8.10b44599fske9u)<br/>
+[狂神说笔记之ElasticSearch](https://blog.csdn.net/gouzhengju1454/article/details/117707976#comments_16924081)<br/>
 
 
 ## Elaticsearch介绍
