@@ -1,9 +1,11 @@
 资料来源：<br/>
-
 [面试官问我什么是JMM.md](https://github.com/yehongzhi/learningSummary/blob/master/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E7%9A%84%E8%89%BA%E6%9C%AF/%E9%9D%A2%E8%AF%95%E5%AE%98%E9%97%AE%E6%88%91%E4%BB%80%E4%B9%88%E6%98%AFJMM.md)
 
 
 
+## 推荐书籍
+
+下载:https://jinlilu.lanzoum.com/ibHCh1fi0mif 密码:22tv
 
 
 ## Java内存模型

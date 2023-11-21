@@ -35,6 +35,7 @@
     - [linux其他服务](linux/常用的功能.md)
     - [linux防火墙](linux/linux_firewall.md)    
     - [linux定时任务crond](linux/linux定时任务crond.md)    
+    - [生成目录结构图](linux/生成目录结构图.md)   
 
   - nginx 
     - [01_nginx使用配置](linux/nginx/nginx配置.md)
