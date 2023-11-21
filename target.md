@@ -449,3 +449,11 @@ https://mp.weixin.qq.com/s?__biz=Mzg3NzU0MDQzOQ==&mid=2247506003&idx=1&sn=731e40
 
 前后端分离必备的接口规范，十分接地气！
 https://mp.weixin.qq.com/s?__biz=Mzg3NzU0MDQzOQ==&mid=2247506021&idx=1&sn=88ff7bbaca6637c0dcbf825fc003327b&chksm=cf23fd5df854744bcf2dc7f55fa2e390d8923e78d9acfadc4c553ad1d05ec560ab2626aa1c41&scene=178&cur_album_id=1832215597854621698#rd
+
+
+SpringBoot 统一功能处理！
+https://mp.weixin.qq.com/s?__biz=Mzg3NzU0MDQzOQ==&mid=2247503236&idx=1&sn=add9470a1cb2d0898ef16f5331e150f5&chksm=cf23e8bcf85461aa257b6ba2daa8f9a9b29c8da6213cd237b36ca67c46ea79c9d288480e0d26&scene=178&cur_album_id=1832215597854621698#rd
+
+
+MP
+https://mp.weixin.qq.com/s?__biz=Mzg3NzU0MDQzOQ==&mid=2247503155&idx=1&sn=a45bc34f9ade282d592de36e68065a4e&chksm=cf23e80bf854611d25270aea1821e6bd6b1317d13f4763e43aea62b68286bf2f6525f0e94b7d&scene=178&cur_album_id=1832215597854621698#rd

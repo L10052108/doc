@@ -148,7 +148,92 @@ showdoc.51mylove.top {
 
 配置了如果http请求自动跳转到https
 
+下面将演示如何用 Caddy 搭建站点，加深理解配置格式和命令使用。
 
+目录结构：
 
+```shell
+.
+├── Caddyfile
+├── index.html
+└── public
+    └── HG.html
+```
 
+两个页面文件 index.html 和 HG.html 的内容如下：
 
+```html
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+</head>
+<body>
+    你好，世界！
+</body>
+</html>
+<!-- HG.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HelloGitHub</title>
+</head>
+<body>
+    HelloGitHub
+</body>
+</html>
+```
+
+Caddyfile 配置内容如下：
+
+```shell
+# 如果本机没有 wordpress 则注释这一块儿的站点配置
+#:80 { # 部署一个 wordpress 站点
+#	root * /var/www/wordpress
+#	php_fastcgi unix//run/php/php-version-fpm.sock # 配置一个 fastcig 服务
+#	file_server	# 配置一个文件服务
+#}
+
+http://localhost:3000 {
+	basicauth /public/* {
+		# 匹配访问 localhost:3000/public/* 的请求，为其加上登陆保护
+		HG JDJhJDE0JGEySk9janFMdHlBY2Y0aVdQZklQak9HcmwzNDZhNFg0N3V5Ny9EZkZMZHB1Nkt4ZE5BNGJt
+		# 用户名 HG 密码 HelloGitHub，密码使用 caddy hash-passowrd 指令生成
+	}
+
+	root * ./ # 设置当前站点根目录为当前文件夹，* 表示匹配所有的 request
+	templates
+	file_server {
+		# 配置当前站点为静态文件服务器，可用于博客系统的搭建
+		hide .git # 隐藏所有的 .git 文件
+	}
+}
+
+:4000 {
+	reverse_proxy /public/* http://localhost:3000 # 配置反向代理
+	# 只会匹配 locahost:4000/public 的请求，转发到 localhost:3000/public/
+}
+```
+
+在当前目录输入：
+
+```
+$ caddy run # 启动 Caddy
+```
+
+最后，效果如下：
+
+1. 访问：http://localhost:3000 可以看到页面展示 “你好，世界！”
+2. 访问：http://localhost:3000/public/HG.html 提示输入用户名和密码，验证正确后才能看到页面。
+3. 访问：http://localhost:4000 则会自动跳转到端口 3000 的页面
+
+### 生成密码
+
+![image-20231121144453312](img/image-20231121144453312.png)
+
+> 密码使用 caddy hash-passowrd 指令生成
+
+![image-20231121144511044](img/image-20231121144511044.png)
