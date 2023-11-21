@@ -7,6 +7,7 @@
     - [05_JMH基准测试](应用/normal/05_JMH基准测试.md)
     - [06_防止超卖的7种实现](应用/normal/06_防止超卖的7种实现.md)
     - [07_责任链模式应用](应用/normal/07_责任链模式应用.md)
+    - [08_00介绍常见的限流算法](应用/normal/08_00介绍常见的限流算法.md)
     - [08_SpringBoot项目限流就该这么设计](应用/normal/08_SpringBoot项目限流就该这么设计.md)
 
   [comment]: <> "ZooKeeper"

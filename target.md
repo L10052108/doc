@@ -393,8 +393,16 @@ https://zhuanlan.zhihu.com/p/611653538
 https://zhuanlan.zhihu.com/p/627507543
 
 
-ES
+## ES
 https://zhuanlan.zhihu.com/p/624297206
+
+5000字详说Elasticsearch入门(一)
+
+https://www.toutiao.com/article/7292967410637095474/?app=news_article&timestamp=1698242510&use_new_style=1&req_id=20231025220150202F7C87085E851F8E0F&group_id=7292967410637095474&wxshare_count=1&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_android&utm_campaign=client_share&share_token=b0030b77-fcc2-4d10-b55a-233f3042b407&source=m_redirect
+
+巧记Elasticsearch常用DSL语法
+
+https://mp.weixin.qq.com/s?__biz=MzI3OTA2MDQyOQ==&mid=2247484941&idx=1&sn=c7ae496b1f97d276d441413274833dbc&chksm=eb4cccafdc3b45b98abd487c1ab216832b299944913329cc52b6f53f19f49947dc5686e37d92&scene=132&exptype=timeline_recommend_article_extendread_samebiz#wechat_redirect
 
 
 https://www.toutiao.com/article/7292967410637095474/?app=news_article&timestamp=1698242510&use_new_style=1&req_id=20231025220150202F7C87085E851F8E0F&group_id=7292967410637095474&wxshare_count=1&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_android&utm_campaign=client_share&share_token=b0030b77-fcc2-4d10-b55a-233f3042b407&source=m_redirect
@@ -420,11 +428,6 @@ ___] |  |     |  |__| | \_ |___ | \|
 
 
 
-使用screw一键生成数据库文档
-
-https://www.toutiao.com/article/7299308128263373352/?app=news_article&timestamp=1699594314&use_new_style=1&req_id=20231110133153089FC9514FEB2465F918&group_id=7299308128263373352&wxshare_count=1&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_android&utm_campaign=client_share&share_token=0ed122b6-5101-4230-b4c1-c24e73ed05de&source=m_redirect
-
-
 SpringBoot 整合 Sa-Token 让鉴权更简单
 https://mp.weixin.qq.com/s/pY2T_49rTkrKAfBZLO3vYQ
 
@@ -433,6 +436,8 @@ Springboot + Wsocket + RabbitMQ + Thymeleaf + Bootstrap 实现聊天互动功能
 https://mp.weixin.qq.com/s/ispOj37a30WgVnMgg7Ao2Q
 
 
+Springboot+WebSocket 实现IM及时通讯
+https://mp.weixin.qq.com/s/23eZm-mdtj7J_Pg9TUUKNA
 
 
 让我们回顾一些慈善的开源项目，它们养活了许多人：
