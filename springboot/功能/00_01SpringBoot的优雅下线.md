@@ -93,7 +93,7 @@ public class MyBean {private Resource resource;public void setResource(Resource 
 
 看一个简单的应用， 尼恩带大家，一步一步的翻翻源码：
 
-![img](https://img-blog.csdnimg.cn/2cf5763e63614797bd9269ae394b099c.png)
+![img](img/2cf5763e63614797bd9269ae394b099c.png)
 
 顺着run的调用链路，继续往里翻看，会看到`refreshContext` 方法的执行
 

@@ -169,6 +169,6 @@ index.html配置
 
 ### 官方插件
 
-[可以参考](help/docsify/定制化插件.md)
+[可以参考](linux/服务/定制化插件.md)
 
 
