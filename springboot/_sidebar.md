@@ -40,7 +40,8 @@
   - [27_springboot校验](springboot/功能/27springboot校验.md) 
   - [28_SpringBoot项目限流就该这么设计](springboot/功能/28SpringBoot项目限流就该这么设计.md) 
   - [29_SpringBoot之EventListener](springboot/功能/29_SpringBoot之EventListener.md) 
-  - [29_SpringBoot快速实现api加密，一个轮子搞定](springboot/功能/30_api加密.md) 
+  - [30_SpringBoot快速实现api加密，一个轮子搞定](springboot/功能/30_api加密.md) 
+  - [31_SpringBoot配置加密](springboot/功能/31_SpringBoot配置加密.md) 
 
 
 - springboot3.0
