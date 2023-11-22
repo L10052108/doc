@@ -15,6 +15,7 @@
     - [ZooKeeper安装](应用/zookeeper/01_ZooKeeper安装.md)
 
   - 极光推送
+    - [00_背景](应用/push/00_背景.md) 
     - [01_入门](应用/push/01入门.md) 
     - [02_厂商通道](应用/push/02_厂商通道.md) 
 

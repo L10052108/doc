@@ -44,11 +44,12 @@
   - [01_mybatis介绍](数据库/mybatis/mybatis介绍.md)
   - [02_MyBatis类型处理器typeHandlers](数据库/mybatis/typeHanders.md)
   - [03_MyBatis 中为什么不建议使用 where 1=1](数据库/mybatis/注意.md)
-  - [04_mybatis一对多](数据库/mybatis/mybatis一对多.md)
   - [06_mybatis的sql](数据库/mybatis/mybatis的sql.md)
+  - [07_mybatis的动态SQL最全教程](数据库/mybatis/07_mybatis的动态SQL最全教程.md)
 
 - mybatis_puls
-  - [CURD快速入门](数据库/mybatis_puls/CURD快速入门.md)
+  - [00_CURD快速入门](数据库/mybatis_puls/CURD快速入门.md)
+  - [01_主键生成策略](数据库/mybatis_puls/01_主键生成策略.md)
   - [00_springboot集成mybatis_plus](数据库/mybatis_puls/00_springboot集成mybatis_plus.md)
   - [逻辑删除](数据库/mybatis_puls/逻辑删除.md)
   - [条件构造器使用与总结](数据库/mybatis_puls/条件构造器使用与总结.md)
@@ -56,7 +57,10 @@
   - [自定义sql](数据库/mybatis_puls/自定义sql.md)
   - [servieImpl](数据库/mybatis_puls/servieImpl.md)
   - [其他功能](数据库/mybatis_puls/其他功能.md)
+  - [10_00_MP用法总结](数据库/mybatis_puls/10_00_MP用法总结.md)
   - [10_01高级用法](数据库/mybatis_puls/10_01高级用法.md)
+  - [10_02join联表查询](数据库/mybatis_puls/10_02join联表查询.md)
+
   
 - mybatis_Flex
   - [MyBatis-Flex](数据库/MyBatis-Flex/01_MyBatis-Flex介绍.md)
