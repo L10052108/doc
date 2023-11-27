@@ -427,6 +427,20 @@ springboot学习
 ___] |  |     |  |__| | \_ |___ | \| 
 
 
+```xml
+  <!--动态线程池-->
+            <dependency>
+                <groupId>cn.dynamictp</groupId>
+                <artifactId>dynamic-tp-spring-boot-starter-nacos</artifactId>
+                <version>1.1.0</version>
+            </dependency>
+              <dependency>
+                <groupId>com.github.ben-manes.caffeine</groupId>
+                <artifactId>caffeine</artifactId>
+                <version>2.9.3</version>
+            </dependency>
+```
+
 
 SpringBoot 整合 Sa-Token 让鉴权更简单
 https://mp.weixin.qq.com/s/pY2T_49rTkrKAfBZLO3vYQ
