@@ -432,6 +432,7 @@ SpringBoot 整合 Sa-Token 让鉴权更简单
 https://mp.weixin.qq.com/s/pY2T_49rTkrKAfBZLO3vYQ
 
 
+
 Springboot + Wsocket + RabbitMQ + Thymeleaf + Bootstrap 实现聊天互动功能
 https://mp.weixin.qq.com/s/ispOj37a30WgVnMgg7Ao2Q
 
@@ -458,3 +459,24 @@ https://mp.weixin.qq.com/s?__biz=Mzg3NzU0MDQzOQ==&mid=2247503236&idx=1&sn=add947
 
 9个维度全面解析：如何确保RocketMQ不丢失消息？
 https://www.toutiao.com/article/7297062388674019867/?app=news_article&timestamp=1700618701&use_new_style=1&req_id=2023112210050077CC27BAD635664779D4&group_id=7297062388674019867&wxshare_count=1&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_android&utm_campaign=client_share&share_token=622501d5-6418-41fc-88da-9ad662de39be&source=m_redirect
+
+
+SpringBoot 3.0整合OpenAPI使用教程
+https://mp.weixin.qq.com/s/lX-tpZzXEV-vJ-l3xjRNNQ
+
+
+一款IT团队都在用的私有化知识库，技术开放，还开源了！
+https://www.toutiao.com/article/7301120615451460108/?app=news_article&timestamp=1700850155&use_new_style=1&req_id=20231125022234FFB74A6BB69F8F36B45A&group_id=7301120615451460108&wxshare_count=1&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_android&utm_campaign=client_share&share_token=42c908a1-f9e2-40bb-a751-74f1feab1e79&source=m_redirect
+
+
+Springboot+WebSocket 实现IM及时通讯
+http://www.mangod.top/articles/2023/08/27/1693094046480.html?share_token=e2a6583c-9906-4a73-bf23-8ffd7774490d
+
+
+
+像mysql一样查询ES,一看就会，爽歪歪
+https://juejin.cn/post/7302308448581812258
+
+
+请查收这份 6.3k Star 的 Java 攻城狮学习指南！
+https://www.toutiao.com/article/7299646024938127872/?app=news_article&timestamp=1701041709&use_new_style=1&req_id=2023112707350831D2CD753BAB7B3B73A6&group_id=7299646024938127872&wxshare_count=1&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_android&utm_campaign=client_share&share_token=cfa0cce9-e310-434a-b04c-d9df04a09ad1&source=m_redirect

@@ -3,7 +3,13 @@
 [SpringBoot线程池的创建、@Async配置步骤及注意事项](https://blog.csdn.net/Muscleheng/article/details/81409672)<br/>
 [新来了个技术总监：谁再用 @Async 创建线程以后就不用来了！！](https://mp.weixin.qq.com/s/J6BImcPxVFlG_qECgXDKrw)
 
+[Springboot中如何让@Async的执行线程池可监控，可控制](https://www.toutiao.com/article/7304648903486472744/?app=news_article&timestamp=1700790480&use_new_style=1&req_id=202311240947598862EF6E689B0049EE01&group_id=7304648903486472744&wxshare_count=1&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_android&utm_campaign=client_share&share_token=915c3f6e-02e3-4a1a-9fe4-e39eedbb7276&source=m_redirect)
+
 ## springboot多线程
+
+充分利用Springboo的@Async在带来的系统性能提升上让人欲罢不能，咱们小白都能通过增加并发量快速实现系统的性能提升。不过线程虽好，却不能贪杯，过多的线程可能让我们的系统浪费太多的时间在处理线程上下文切换上（边际成本变高），而没有把力气放在真正的业务逻辑上，因此在系统运行期间对线程池的**监控**和**动态控制**显得尤为重要，不能太多也不能太少。
+
+![img](img/234253442543.png)
 
 ### 介绍
 
@@ -254,3 +260,76 @@ public class SyncDemo {
 > 三、异步方法不能与被调用的异步方法在同一个类中<br/>
 > 四、类中需要使用@Autowired或@Resource等注解自动注入，不能自己手动new对象<br/>
 > 五、如果使用SpringBoot框架必须在启动类中增加@EnableAsync注解<br/>
+
+## 如何监控@Async线程池的使用情况
+
+> 当然如果我们想监控线程池的运行状况，完全可以自己实现一个线程池。不过我们一般不会去重复造轮子啦~~，因此这里我们要引入一个非常牛的线程池框架：dynamic-tp，这个线程池框架不仅能让我们有动态配置线程池大小的能力，也有很强的告警、日志等能力。
+
+- 引入**dynamic-tp**的依赖
+
+```xml
+<dependency>
+  <groupId>org.dromara.dynamictp</groupId>
+  <artifactId>dynamic-tp-spring-boot-starter-common</artifactId>
+  <version>1.1.5</version>
+</dependency>
+```
+
+- 打开启动类开关
+
+```java
+@EnableDynamicTp
+@SpringBootApplication
+@EnableAsync
+public class Application {
+    public static void main(String[] args) {
+        // springboot启动
+        SpringApplication.run(Application.class, args);
+        System.out.println("服务启动了");
+    }
+}
+```
+
+- 配置文件
+
+```yaml
+spring.dynamic:
+  tp:
+    enabled: true
+    enabledCollect: true # 是否开启监控指标采集，默认false
+    collectorTypes: micrometer,logging # 监控数据采集器类型（logging | micrometer | internal_logging），默认micrometer
+    logPath: /home/logs # 监控日志数据路径，默认 ${user.home}/logs，采集类型非logging不用配置
+    monitorInterval: 5 # 监控时间间隔（报警检测、指标采集），默认5s
+    executors: # 动态线程池配置，都有默认值，采用默认值的可以不配置该项，减少配置量
+      - threadPoolName: tyj-executor-tp
+        threadPoolAliasName: 测试线程池 # 线程池别名
+        executorType: common # 线程池类型common、eager：适用于io密集型
+        corePoolSize: 6
+        maximumPoolSize: 8
+        queueCapacity: 200
+        queueType: VariableLinkedBlockingQueue # 任务队列，查看源码QueueTypeEnum枚举类
+        rejectedHandlerType: CallerRunsPolicy # 拒绝策略，查看RejectedTypeEnum枚举类
+        keepAliveTime: 50
+        allowCoreThreadTimeOut: false # 是否允许核心线程池超时
+        threadNamePrefix: dynamic-tp- # 线程名前缀
+        waitForTasksToCompleteOnShutdown: false # 参考spring线程池设计，优雅关闭线程池
+        awaitTerminationSeconds: 5 # 单位（s）
+        preStartAllCoreThreads: false # 是否预热所有核心线程，默认false
+        runTimeout: 200 # 任务执行超时阈值，目前只做告警用，单位（ms）
+        queueTimeout: 100 # 任务在队列等待超时阈值，目前只做告警用，单位（ms）
+        taskWrapperNames: ["ttl", "mdc"] # 任务包装器名称，继承TaskWrapper接口
+        notifyEnabled: true # 是否开启报警，默认true
+```
+
+- 指定Async注解的参数为**tyj-executor-tp**就能将@Async的执行线程切换到dynamic-tp为我们管理的线程池咯。通过dynamictp线程池的管理能力我们就能实现类似【线程变动通知】、【日志打印】、【动态管理】等丰富的功能了。
+
+## 写在最后
+
+- 线程池的恰到好处的使用能为我们带来很多性能提升。
+- dynamictp是一款非常好的线程池管理包，除了文中介绍的管理一步执行线程池之外，它还能替换很多中间件的线程池，比如tomcat、dubbo等。
+- 我们所谓的**架构能力**，无非就是**懂底层之理**，**行站巨肩之事**。
+- 本文实验代码地址，持续更新，又猛又持久！！欢迎关注。
+
+```curl
+https://gitee.com/slackwareer/tyj-springboot
+```

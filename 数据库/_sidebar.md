@@ -23,6 +23,7 @@
   - [09_MYSQL索引](数据库/mysql/mysql理论/谈谈MYSQL索引是如何提高查询效率的.md)
   - [10_Canal+Kafka实现MySQL与Redis数据同步](数据库/mysql/mysql理论/Canal+Kafka实现MySQL与Redis数据同步.md)
   - [11_utf8和utf8mb4的区别](数据库/mysql/mysql理论/utf8和utf8mb4的区别.md)
+  - [12_mysql建表举例](数据库/mysql/mysql理论/12_mysql建表举例.md)
 
 - mysql实际使用
   - [01_sql行列变化](数据库/MySQL使用/sql行列变化.md)
