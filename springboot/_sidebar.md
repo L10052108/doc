@@ -22,6 +22,7 @@
   - [11_数据库连接池的数量](springboot/功能/11数据库连接池的数量.md)
   - [12_SpringBoot设置Undertow](springboot/功能/12SpringBoot设置Undertow.md)
   - [13_springboot日志](springboot/功能/13日志.md)
+  - [13_springboot_TLog日志TLog](springboot/功能/13_springboot_TLog日志TLog.md)
   - [13_02springboot日志(logback-spring.xml)](springboot/功能/13日志_logback-spring.md)
   - [14_springboot第三方jar](springboot/功能/14.springboot第三方jar.md)
   - [15_01springboot打包](springboot/功能/15springboot打包.md)
