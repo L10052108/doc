@@ -494,3 +494,8 @@ https://juejin.cn/post/7302308448581812258
 
 请查收这份 6.3k Star 的 Java 攻城狮学习指南！
 https://www.toutiao.com/article/7299646024938127872/?app=news_article&timestamp=1701041709&use_new_style=1&req_id=2023112707350831D2CD753BAB7B3B73A6&group_id=7299646024938127872&wxshare_count=1&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_android&utm_campaign=client_share&share_token=cfa0cce9-e310-434a-b04c-d9df04a09ad1&source=m_redirect
+
+
+123云盘
+https://www.123pan.com/
+下载速度还是很快的

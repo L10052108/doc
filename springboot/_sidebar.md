@@ -44,7 +44,13 @@
   - [29_SpringBoot之EventListener](springboot/功能/29_SpringBoot之EventListener.md) 
   - [30_SpringBoot快速实现api加密，一个轮子搞定](springboot/功能/30_api加密.md) 
   - [31_SpringBoot配置加密](springboot/功能/31_SpringBoot配置加密.md) 
+  - [32_SpringBoot统一异常处理](springboot/功能/32_SpringBoot统一异常处理.md) 
+  - **condition**
+    - [01_spring提供的conditional](springboot/condition/01spring提供的conditional.md)
+    - [02_springboot不同开发环境](springboot/condition/02.springboot不同环境.md)
 
+- spring
+  - [01_BeanUtils拷贝list](springboot/spring/01_BeanUtils拷贝list.md)
 
 - springboot3.0
   - [01_Spring Boot3.0升级，踩坑之旅](springboot/springboot3/01springboot3踩坑.md)
@@ -60,9 +66,7 @@
   - [01_minio](springboot/文件上传/01minio.md)
   - [01_文件分片上传](springboot/文件上传/02文件分片上传.md)
 
-- condition
-  - [01_spring提供的conditional](springboot/condition/01spring提供的conditional.md)
-  - [02_springboot不同开发环境](springboot/condition/02.springboot不同环境.md)
+
 
 [comment]: <> "sba笔记需要完善"
 - sba
