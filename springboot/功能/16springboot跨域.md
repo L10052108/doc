@@ -31,7 +31,7 @@
 前端页面通过不同域名或IP访问微服务的后台<br/>
 例如前端人员会在本地起HttpServer 直连后台开发本地起的服务，此时，如果不加任何配置，前端页面的请求会被浏览器跨域限制拦截，所以，业务服务常常会添加如下代码设置全局跨域：
 
-~~~~
+~~~~java
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 import org.springframework.web.cors.CorsConfiguration;
@@ -56,7 +56,7 @@ public class CrosConfig {
 
 ~~~~
 另外一种写法
-~~~~
+~~~~java
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.cors.CorsConfiguration;
@@ -90,6 +90,31 @@ public class CorsConfig implements WebMvcConfigurer {
         }
     }
 ~~~~
+
+使用上面的方法出现了
+
+![image-20231206154607061](img/image-20231206154607061.png)
+
+在网上[SpringBoot跨域问](https://www.cnblogs.com/kanie-life/p/14285217.html) 中找到了答案
+
+```java
+public CorsFilter corsFilter() {
+    CorsConfiguration config = new CorsConfiguration();
+    //允许所有域名进行跨域调用
+    config.addAllowedOriginPattern("*");//替换这个
+    //允许跨越发送cookie
+    config.setAllowCredentials(true);
+    //放行全部原始头信息
+    config.addAllowedHeader("*");
+    //允许所有请求方法跨域调用
+    config.addAllowedMethod("*");
+    UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
+    source.registerCorsConfiguration("/**", config);
+    return new CorsFilter(source);
+}
+```
+
+解决：将`allowingOrigins`换成`allowedOriginPatterns`即可。
 
 ### 方法二(@CrossOrigin)
 
