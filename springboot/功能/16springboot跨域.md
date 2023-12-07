@@ -97,6 +97,7 @@ public class CorsConfig implements WebMvcConfigurer {
 
 在网上[SpringBoot跨域问](https://www.cnblogs.com/kanie-life/p/14285217.html) 中找到了答案
 
+
 ```java
 public CorsFilter corsFilter() {
     CorsConfiguration config = new CorsConfiguration();
