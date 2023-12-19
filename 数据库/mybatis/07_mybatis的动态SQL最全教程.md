@@ -5,7 +5,7 @@
 
 动态 SQL 是 MyBatis 的强大特性之一。在 JDBC 或其它类似的框架中，开发人员通常需要手动拼接 SQL 语句。根据不同的条件拼接 SQL 语句是一件极其痛苦的工作。例如，拼接时要确保添加了必要的空格，还要注意去掉列表最后一个列名的逗号。而动态 SQL 恰好解决了这一问题，可以根据场景动态的构建查询。
 
-![图片](https://mmbiz.qpic.cn/sz_mmbiz_jpg/nAPmobkkalsqIsvBZv05YtcFcklibcJZ0RPRrcvssWEjqtOkPsOAiaSGefMpBQWqzveVbficbFhO0OXEL5ceTv3pw/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1)
+![图片](img/dsafa.png)
 
 动态SQL（code that is executed dynamically），它一般是根据用户输入或外部条件动态组合的SQL语句块。动态SQL能灵活的发挥SQL强大的功能、方便的解决一些其它方法难以解决的问题。相信使用过动态SQL的人都能体会到它带来的便利，然而动态SQL有时候在执行性能 (效率)上面不如静态SQL，而且使用不恰当，往往会在安全方面存在隐患 (SQL 注入式攻击)。
 
@@ -15,7 +15,7 @@ Mybatis 动态 sql 可以让我们在 Xml 映射文件内，以标签的形式�
 
 ### **2.Mybatis 的 9 种 动 态 sql 标 签有哪些？**
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/8KKrHK5ic6XCC18HByCOa5B0ia3mU0H0TpK4vtgs6iaHNyyG2Te4BbicftzkBRIWkecLEQnqutGVjgNDfqd6a6axSA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1)
+![图片](img/3434254.png)
 
 ### **3.动态 sql 的执行原理？**
 
