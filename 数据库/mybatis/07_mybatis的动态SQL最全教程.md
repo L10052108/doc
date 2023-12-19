@@ -452,6 +452,119 @@ public class StuTest {
 }
 ```
 
+https://blog.csdn.net/TM_enn/article/details/122740823
+
+| 属性       | 描述                                                         |
+| ---------- | :----------------------------------------------------------- |
+| collection | 指定要遍历的集合。表示传入过来的参数的数据类型。该属性是必须指定的，要做 foreach 的对象。 |
+| index      | 索引，index 指定一个名字，用于表示在迭代过程中，每次迭代到的位置。遍历 list 的时候 index 就是索引，遍历 map 的时候 index 表示的就是 map 的 key，item 就是 map 的值。 |
+| item       | 表示本次迭代获取的元素，若collection为List、Set或者数组，则表示其中的元素；若collection为map，则代表key-value的value，该参数为必选 |
+| open       | 表示该语句以什么开始，最常用的是左括弧’(’，注意:mybatis会将该字符拼接到整体的sql语句之前，并且只拼接一次，该参数为可选项 |
+| separator  | 表示在每次进行迭代之间以什么符号作为分隔符。select * from tab where id in(1,2,3)相当于1,2,3之间的"," |
+| close      | 表示该语句以什么结束，最常用的是右括弧’)’，注意:mybatis会将该字符拼接到整体的sql语句之后，该参数为可选项 |
+
+##### 查询
+
+```java
+	<!--第一种-->
+	<select id="getList" resultType="com.epeit.api.model.Device"> 
+	  	SELECT *
+	  	FROM devcie 
+	 	WHERE 1=1 
+	 	 <if test="ids != null and ids.size > 0"> 
+	   		AND id IN
+	   		<foreach collection="ids" item="item" open="(" separator="," close=")"> 
+	   		 #{item} 
+	  		 </foreach> 
+	  	 </if> 
+	 </select>
+ 
+	<!--第二种-->
+	<select id="getList" resultType="com.epeit.api.model.Device"> 
+	  	SELECT *
+	  	FROM devcie 
+	  	WHERE 1=1 
+	  	<if test="ids != null and ids.size > 0"> 
+	   		AND
+	   		<foreach collection="ids" item="item" open="id IN(" separator="," close=")"> 
+	    		#{item} 
+	   		</foreach> 
+	  	</if> 
+	 </select>
+	 
+	 <!--如果入参是一个逗号分隔的字符串比如"1,2,3,4"，还可以简化写法，不用转成List,直接以字符串的形式传入即可-->
+	<select id="getList" resultType="com.epeit.api.model.Device">
+		SELECT *
+	  	FROM devcie 
+	 	WHERE 1=1 
+	 	 <if test="strIds != null and strIds ！= ''"> 
+	   		AND id IN
+	   		<foreach collection="strIds.split(',')" item="item" open="(" separator="," close=")"> 
+	   		 #{item} 
+	  		 </foreach> 
+	  	 </if>
+	</select>
+
+
+```
+
+##### 批量更新
+
+```xml
+
+	<!--第一种-->
+	<update id="updateList">
+		<foreach collection="deviceList" item="item"  separator=";">
+		    UPDATE device 
+		    SET 
+		       name = #{item.name},
+		       no = #{item.no}
+		    WHERE  
+		       id = #{item.id}  
+		</foreach>
+	</update>
+
+	<!--第二种-->
+	<update id="updateList">
+		UPDATE device 
+		SET 
+		   del_flag = 1
+		WHERE 1=1
+		AND id IN
+	    <foreach collection="ids" item="item" open="("  separator="," close=")">
+	         #{item}
+	    </foreach>
+	</update>
+
+```
+
+##### 批量插入
+
+```xml
+<!--第一种-->
+<insert id="insertList">
+    INSERT INTO
+   	device
+    	(id,name,no)
+    VALUES
+    <foreach collection="deviceList" item="item" separator=",">
+        ( #{item.id}, #{item.name}, #{item.no} )
+    </foreach>
+</insert>
+
+<!--第二种-->
+<insert id="insertList">
+	<foreach collection="deviceList" item="item" separator=";">
+    INSERT INTO
+   	device
+    	(id,name,no)
+    VALUES
+        ( #{item.id}, #{item.name},#{item.no} )
+    </foreach>
+</insert>
+```
+
+
 ### **7.sql**
 
 在实际开发中会遇到许多相同的SQL，比如根据某个条件筛选，这个筛选很多地方都能用到，我们可以将其抽取出来成为一个公用的部分，这样修改也方便，一旦出现了错误，只需要改这一处便能处处生效了，此时就用到了`<sql>`这个标签了。另外，搜索公众号Linux中文社区后台回复“私房菜”，获取一份惊喜礼包。
