@@ -30,6 +30,7 @@
 - lock
   - [01_锁的原理](java/lock/01_锁的原理.md)
   - [02_redis分布式锁](java/lock/02_redis分布式锁.md)
+  - [03_分布式锁框架Lock4j简单使用](java/lock/03_分布式锁框架Lock4j简单使用.md)
 
 [//]: # "java基础"
 - java基础
