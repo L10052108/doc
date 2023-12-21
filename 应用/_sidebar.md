@@ -10,6 +10,7 @@
     - [07_责任链模式应用](应用/normal/07_责任链模式应用.md)
     - [08_00介绍常见的限流算法](应用/normal/08_00介绍常见的限流算法.md)
     - [08_SpringBoot项目限流就该这么设计](应用/normal/08_SpringBoot项目限流就该这么设计.md)
+    - [08_微服务容错Resilience4j](应用/normal/08_微服务容错Resilience4j.md)
     - [09_SpringBoot中swagger的使用](应用/normal/09_SpringBoot中swagger的使用.md)
     - [10_SpringBoot中excel下载](应用/normal/10_SpringBoot中excel下载.md)
 
