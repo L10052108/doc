@@ -30,12 +30,13 @@
     - [docsify定制化插件](linux/服务/定制化插件.md)
 
   - linux命令
-    - [linux命令](linux/常用的命令.md)
-    - [linux常用命令](linux/linux.md)
-    - [linux其他服务](linux/常用的功能.md)
-    - [linux防火墙](linux/linux_firewall.md)    
-    - [linux定时任务crond](linux/linux定时任务crond.md)    
-    - [生成目录结构图](linux/生成目录结构图.md)   
+    - [01_linux命令](linux/功能/常用的命令.md)
+    - [02_linux常用命令](linux/功能/linux.md)
+    - [03_linux其他服务](linux/功能/常用的功能.md)
+    - [04_linux防火墙](linux/功能/linux_firewall.md)    
+    - [05_inux定时任务crond](linux/功能/linux定时任务crond.md)    
+    - [06_生成目录结构图](linux/功能/生成目录结构图.md)   
+    - [07_linux测速](linux/功能/07_linux测速.md)   
 
   - nginx 
     - [01_nginx使用配置](linux/nginx/nginx配置.md)

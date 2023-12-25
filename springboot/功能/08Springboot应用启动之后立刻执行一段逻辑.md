@@ -1,6 +1,7 @@
 资料来源：
 
 [如何在Spring Boot应用启动之后立刻执行一段逻辑](https://www.toutiao.com/article/6833566023392690699/?app=news_article&timestamp=1651680983&use_new_style=1&req_id=202205050016220101581651511F7EB1CC&group_id=6833566023392690699&wxshare_count=1&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_android&utm_campaign=client_share&share_token=6adb844a-83a3-4c70-b38c-669ce9113d61)<br/>
+[SpringBoot 实现启动项目后立即执行方法的几种方式](https://www.toutiao.com/article/7237293681273733692/?app=news_article&timestamp=1685238263&use_new_style=1&req_id=202305280944238D3A7BEFFCFF4B27D599&group_id=7237293681273733692&wxshare_count=2&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_android&utm_campaign=client_share&share_token=f397a208-55e0-4a95-94af-d9319f873353&source=m_redirect&wid=1703214207437)
 
 
 
@@ -124,3 +125,80 @@ java -jar yourapp.jar --foo=bar --foo=baz --dev.name=码农小胖哥 java felord
 
 然后你就可以根据实际需要动态地执行一些逻辑。
 
+## JDK所提供的@PostConstruct
+
+@PostConstruct是JDK所提供的注解，使用该注解的方法会在服务器加载Servlet的时候运行。也可以在一个类中写多个方法并添加这个注解
+
+```java
+import org.springframework.stereotype.Component;
+
+import javax.annotation.PostConstruct;
+
+@Component
+public class PostConstructTest {
+    @PostConstruct
+    public void start() {
+        System.out.println("@PostConstruct方法执行");
+    }
+
+    @PostConstruct
+    public void start01() {
+        System.out.println("@PostConstruct1111方法执行");
+    }
+}
+```
+
+
+
+## 其他方法(不常用)
+
+**1. ApplicationContextAware**
+
+```java
+import org.springframework.beans.BeansException;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ApplicationContextAware;
+import org.springframework.stereotype.Component;
+
+@Component
+public class ApplicationContextAwareImpl implements ApplicationContextAware {
+    @Override
+    public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
+        System.out.println("ApplicationContextAwareImpl方法执行");
+    }
+}
+```
+
+**ApplicationListener**(会执行多次)
+
+```java
+import org.springframework.context.ApplicationEvent;
+import org.springframework.context.ApplicationListener;
+import org.springframework.stereotype.Component;
+
+@Component
+public class ApplicationListenerImpl implements ApplicationListener {
+    @Override
+    public void onApplicationEvent(ApplicationEvent event) {
+        System.out.println("ApplicationListenerImpl方法执行");
+    }
+}
+```
+
+**InitializingBean**
+
+```java
+org.springframework.beans.factory.InitializingBean;
+import org.springframework.stereotype.Component;
+
+@Component
+public class InitializingBeanImpl implements InitializingBean {
+
+    @Override
+    public void afterPropertiesSet() throws Exception {
+        System.out.println("InitializingBeanImpl方法执行");
+    }
+}
+```
+
+这些方法也都可以实现在启动项目后立即执行，但是不太常用。
