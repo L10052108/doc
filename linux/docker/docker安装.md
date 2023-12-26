@@ -32,6 +32,74 @@
 ~~~~
 
 
-  [哈喽沃德先生](https://www.cnblogs.com/mrhelloworld/) docker 专题非常好，有时间整理出来
+## Docker镜像仓库
 
-https://www.cnblogs.com/mrhelloworld/p/docker1.html
+## 1.1. 打开关系后台
+
+在使用Docker时，有时需要制作自己的Docker镜像，这些镜像可以保存到不同的Docker Hub中，包括Docker官方的和国内的一些Hub，比如阿里云。同时，也可以使用阿里云的Docker Hub来加速镜像的拉取速度。
+
+配置镜像加速器
+
+1. 登录阿里云，进入容器镜像服务-镜像加速器： https://cr.console.aliyun.com/#/accelerator
+
+https://cr.console.aliyun.com/repository/cn-hangzhou/liiuliu/junhui/images （后台镜像地址）
+
+​           ![image-20231225133406453](img/image-20231225133406453.png)                    
+
+ 
+
+ 
+
+>  使用的用户名： 17080346772
+>
+> 密码是：
+
+## 镜像的上传和下载
+
+第一步: 登录 阿里云镜像仓库
+
+ ![image-20231225133318284](img/image-20231225133318284.png)
+
+登录阿里云docker registry:
+
+```shell
+ $ sudo docker login --username=17080346772 registry.cn-hangzhou.aliyuncs.com
+```
+
+登录registry的用户名是您的阿里云账号全名，密码是您开通服务时设置的密码。
+
+你可以在镜像管理首页点击右上角按钮修改docker login密码。
+
+从registry中拉取镜像：
+
+```shell
+ $ sudo docker pull registry.cn-hangzhou.aliyuncs.com/liiuliu/junhui:[镜像版本号]
+```
+
+将镜像推送到registry：
+
+```shell
+ $ sudo docker login --username=17080346772 registry.cn-hangzhou.aliyuncs.com
+
+ $ sudo docker tag [ImageId] registry.cn-hangzhou.aliyuncs.com/liiuliu/junhui:[镜像版本号]
+
+ $ sudo docker push registry.cn-hangzhou.aliyuncs.com/liiuliu/junhui:[镜像版本号]
+```
+
+其中[ImageId],[镜像版本号]请你根据自己的镜像信息进行填写。
+
+ImageId 和 镜像的版本 值得是下图的内容
+
+![image-20231225133222403](img/image-20231225133222403.png)
+
+文件上传
+
+![image-20231225133212506](img/image-20231225133212506.png)
+
+ 
+
+ 
+
+ 
+
+ 

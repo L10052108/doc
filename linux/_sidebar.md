@@ -48,8 +48,8 @@
   - [01_docker介绍](linux/docker/01_docker介绍.md)
   - [02_docker操作](linux/docker/02_docker操作.md)
   - [03_dockerFile操作](linux/docker/03_dockerFile操作.md)
-  - [docker安装](linux/docker/docker安装.md)
-  - [docker-compose](linux/docker/docker-compose.md)
+  - [04_docker安装](linux/docker/docker安装.md)
+  - [05_docker-compose](linux/docker/docker-compose.md)
 
 - docker服务
   - [01_showdoc](linux/docker服务/01_showdoc.md)
