@@ -39,11 +39,11 @@
 
   - 面试总结2（跟着Mic学架构）
     - [01_Java基础](faceNotes/mic/java基础.md)
-    - [01_02多线程](faceNotes/mic/01_02多线程.md)
     - [02_多线程](faceNotes/mic/多线程.md)
     - [03_锁](faceNotes/mic/锁.md)
     - [04_mysql](faceNotes/mic/mysql.md)
     - [05_spring](faceNotes/mic/spring.md)
+    - [05_02springMVC](faceNotes/mic/05_02springMVC.md)
     - [06_JVM](faceNotes/mic/JVM.md)
     - [07_redis](faceNotes/mic/redis.md)
     - [08_MQ](faceNotes/mic/MQ.md)
@@ -51,6 +51,9 @@
     - [10_分布式事务](faceNotes/mic/事务.md)
     - [11_设计模式](faceNotes/mic/设计模式.md)
     - [12_springboot](faceNotes/mic/springboot.md)
+    - [13_netty](faceNotes/mic/13_netty.md)
+    - [14_dubbo](faceNotes/mic/14_dubbo.md)
+
   - 面试总结3（磊哥）
     - [java基础&容器&多线程](faceNotes/interview-master/doc/200+/200_1.md)
     - [反射&对象拷贝&Java Web&异常&网络](faceNotes/interview-master/doc/200+/200_2.md)

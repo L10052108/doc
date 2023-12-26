@@ -25,7 +25,7 @@
     - [09_03分布式集合](nosql/redis/09_03分布式集合.md)   
     - [09_04pring集成Redisson](nosql/redis/09_04pring集成Redisson.md)   
   - [10_实现分布式消息传递](nosql/redis/10_实现分布式消息传递.md)
-  - [11_Spring Boot结合Redis优雅地实现数据缓存!](nosql/redis/11_Spring Boot结合Redis优雅地实现数据缓存.md)
+  - [11_SpringBoot结合Redis优雅地实现数据缓存](nosql/redis/11_SpringBoot结合Redis优雅地实现数据缓存.md)
 
 - MongoDB
   - [01_mongoDB介绍](nosql/MongoDB/01_mongoDB介绍.md)
