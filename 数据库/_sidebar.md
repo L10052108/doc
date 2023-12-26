@@ -24,6 +24,7 @@
   - [10_Canal+Kafka实现MySQL与Redis数据同步](数据库/mysql/mysql理论/Canal+Kafka实现MySQL与Redis数据同步.md)
   - [11_utf8和utf8mb4的区别](数据库/mysql/mysql理论/utf8和utf8mb4的区别.md)
   - [12_mysql建表举例](数据库/mysql/mysql理论/12_mysql建表举例.md)
+  - [13_一条查询SQL是如何执行的](数据库/mysql/mysql理论/13_一条查询SQL是如何执行的.md)
 
 - mysql实际使用
   - [01_sql行列变化](数据库/MySQL使用/sql行列变化.md)
