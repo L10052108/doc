@@ -54,4 +54,5 @@
 - docker服务
   - [01_showdoc](linux/docker服务/01_showdoc.md)
   - [02_rabbitMq安装](linux/docker服务/02_rabbitMq安装.md)
+  - [03_apiSix](linux/docker服务/03_apiSix.md)
 
