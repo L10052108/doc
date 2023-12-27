@@ -1,0 +1,133 @@
+资料来源：<br/>
+[1.2K Stars 国产开源文档生成工具，零侵入！](https://www.toutiao.com/article/7316460667652244006/?app=news_article&timestamp=1703512223&use_new_style=1&req_id=2023122521502369EC0899C1EC55FD9F93&group_id=7316460667652244006&wxshare_count=1&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_android&utm_campaign=client_share&share_token=789b72bc-fb41-4125-878b-abb63bab846e&source=m_redirect)
+
+## 简介
+
+smart-doc 是一款同时支持 Java Rest Api 和 Apache Dubbo RPC 接口文档生成的工具，在业内率先提出基于 Java 泛型定义推导的理念，完全基于注释生成文档，做到零侵入。
+
+只需要按照Javadoc标准编写注释， smart-doc 就能帮你生成一个简易明了的Markdown、HTML5、Postman Collection2.0+、OpenAPI 3.0+ 的文档。
+
+![img](img/868a35963ce549049bf2b6e31d3e4a4f~noop.image)
+
+
+
+## ️ 最新版功能
+
+- 零注解、零学习成本、只需要写标准JAVA注释。
+- 基于源代码接口定义自动推导，强大的返回结构推导。
+- 支持Spring MVC、Spring Boot、Spring Boot Web Flux(Controller书写方式)、Feign。
+- 支持Callable、Future、CompletableFuture等异步接口返回的推导。
+- 支持JavaBean上的JSR303参数校验规范，包括分组验证。
+- 对JSON请求参数的接口能够自动生成模拟JSON参数。
+- 对一些常用字段定义能够生成有效的模拟值。
+- 支持生成JSON返回值示例。
+- 支持从项目外部加载源代码来生成字段注释(包括标准规范发布的jar包)。
+- 支持生成多种格式文档：Markdown、HTML5、Word、Asciidoctor、Postman Collection、OpenAPI 3.0。开放文档数据，可自由实现接入文档管理系统。
+- 支持导出错误码和定义在代码中的各种字典码到接口文档。
+- 支持生成Jmeter性能测试脚本。
+- 支持Maven、Gradle插件式轻松集成。
+- 支持Apache Dubbo RPC接口文档生成。
+- 支持基于Git管理项目的变更增量文档生成。
+- debug接口调试html5页面完全支持文件上传，下载(@download tag标记下载方法)测试。
+
+##  最佳实践方案
+
+smart-doc + Torna 组成行业领先的文档生成和管理解决方案，使用smart-doc无侵入完成Java源代码分析和提取注释生成API文档， 自动将文档推送到 Torna 企业级接口文档管理平台。
+
+Torna 是由 smart-doc 官方独家推动联合研发的企业级文档管理系统， 集成 torna 需要使用 smart-doc 2.0.9 版本及以上，目前也是主推 smart-doc+Torna 的这套方案。
+
+如下图所示：
+
+![img](img/d8044906294c4b92a5f5416fe805c5b0~noop.image)
+
+
+
+## smart-doc和swagger对比
+
+![img](img/161e920ba51f40d4aa3a43995fc15689~noop.image)
+
+
+
+## 快速体验
+
+smart-doc官方目前已经开发完成 Maven 插件和 Gradle 插件，小编这里使用 Maven 插件按最小化配置举例。
+
+**环境版本：**
+
+- Maven 3.3.9+
+- JDK1.8+
+
+1、在项目启动类所在模块的resources目录下创建 smart-doc.json 文件，内容如下：
+
+```
+{
+  "outPath": "/path/to/userdir", // 接口文档输出地址
+  "serverUrl": "http://127.0.0.1:8080"// 请求路径
+}
+```
+
+outPath 可以使用相对路径，如：
+
+./src/main/resources/static/doc
+
+2、在项目启动类所在模块的pom.xml文件配置 Maven 插件
+
+注意：需要 includes 依赖的源码包
+
+```
+<plugin>
+    <groupId>com.ly.smart-doc</groupId>
+    <artifactId>smart-doc-maven-plugin</artifactId>
+    <version>[最新版本]</version>
+    <configuration> 
+        <configFile>./src/main/resources/smart-doc.json</configFile>  
+        <projectName>${project.description}</projectName>  
+        <includes>  
+            <!-- 使用了mybatis-plus的Page分页需要include所使用的源码包 -->
+            <include>com.baomidou:mybatis-plus-extension</include>
+            <!-- 使用了mybatis-plus的IPage分页需要include mybatis-plus-core-->
+            <include>com.baomidou:mybatis-plus-core</include>
+            <!-- 使用了jpa的分页需要include所使用的源码包 -->
+            <include>org.springframework.data:spring-data-commons</include>             
+        </includes> 
+    </configuration>
+    <executions>
+        <execution>
+            <!--如果不需要在执行编译时启动smart-doc，则将phase注释掉-->
+            <phase>compile</phase>
+            <goals>
+                <!--smart-doc提供了html、openapi、markdown等goal，可按需配置-->
+                <goal>html</goal>
+            </goals>
+        </execution>
+    </executions>
+</plugin>
+```
+
+3、在 IDEA 中直接使用 Maven 插件目录下的 smart-doc 模块
+
+![img](img/392cece29b074c98b6c639dda26df795~noop.image)
+
+
+
+或者在命令行中执行
+
+```
+mvn -Dfile.encoding=UTF-8 smart-doc:html
+mvn -Dfile.encoding=UTF-8 smart-doc:markdown
+mvn -Dfile.encoding=UTF-8 smart-doc:torna-rest
+...
+```
+
+4、文档效果演示：
+
+![img](img/d1ba5b2aa7154b5699a6f998adacf861~noop.image)
+
+
+
+## 结语
+
+目前市面上的文档工具有很多，如 swagger、knife4j、apidoc，在功能体验和实际使用中都各有千秋。
+
+相比较来说 smart-doc 以其最小的代码侵入性、与代码实时同步更新、前期工作量最低、可单独生成单独部署等优点，在众多文档工具中脱颖而出，目前很多大厂也都在使用，如小米、科大讯飞等，无论你是有经验的大佬、还是刚入行的萌新，都能轻松上手。有需要的宝子不要错过~
+
