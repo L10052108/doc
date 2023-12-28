@@ -56,8 +56,6 @@
     - [14_Zookeeper](faceNotes/mic/zookeeper.md)
     - [15_场景题](faceNotes/mic/15_场景题.md)
 
-    场景题
-
   - 面试总结3（磊哥）
     - [java基础&容器&多线程](faceNotes/interview-master/doc/200+/200_1.md)
     - [反射&对象拷贝&Java Web&异常&网络](faceNotes/interview-master/doc/200+/200_2.md)

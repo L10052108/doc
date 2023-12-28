@@ -42,7 +42,7 @@
 ## mysql 引擎
 
 ###  Mysql中MyISAM和InnoDB引擎有什么区别？
-资料来源:[Mysql中MyISAM和InnoDB引擎有什么区别？](https://www.toutiao.com/article/7147518399751701022/)
+资料来源:[Mysql中MyISAM和InnoDB引擎有什么区别？](https://www.toutiao.com/video/7137497556010926605)
 
 MyISAM和InnoDB都是Mysql里面的两个存储引擎。
 
@@ -229,11 +229,15 @@ next-key Lock 相当于间隙锁和记录锁的合集， 记录锁锁定存在�
 
 资料来源：[【Java面试】为什么阿里Java手册，禁止使用存储过程？](https://www.toutiao.com/video/7254097421586661945/?from_scene=all)
 
+一般来说每个公司都有自己的开发规范，开发规范的目的是为了减少一些低级错误和提升代码的后期可维护性
+
+就这个问题来说
 
 
-### Redis遇到Hash冲突怎么办？
 
-资料来源：[【Java面试】5年架构师都是这么回答，Redis遇到Hash冲突怎么办？](https://www.toutiao.com/video/7222929409823474213/)
+
+
+
 
 <hr/>
 
