@@ -21,3 +21,8 @@
 资料来源：[【Java面试】SpringBoot如何解决跨域问题？](https://www.toutiao.com/video/7250372149167587843/)
 
 
+
+
+### 如何理解Spring Boot中的Starter？看完高手的回答简直就像教科书
+[如何理解Spring Boot中的Starter？看完高手的回答简直就像教科书](https://www.toutiao.com/video/7091928878859584007/?from_scene=all)
+
