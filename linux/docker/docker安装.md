@@ -109,13 +109,6 @@ ImageId 和 镜像的版本 值得是下图的内容
 
  
 
-##  保存的阿里云服务
-
-### showdoc
-
-`5de4596813a9` showdoc 文档，这个版本比较好用
-
-使用过程[01_showdoc](linux/docker服务/01_showdoc.md)
 
 ### apisix
 
