@@ -188,9 +188,9 @@ Hi， 大家好， 我是 Mic。
 
 
 最后， 我再总结一下。
-@Autowired 是根据 type 来匹配， @Resource 可以根据 name 和 type 来匹配，默认是 name 匹配。
-@Autowired 是 Spring 定义的注解， @Resource 是 JSR 250 规范里面定义的注解， 而 Spring 对 JSR 250 规范提供了支持。
-@Autowired 如果需要支持 name 匹配， 就需要配合@Primary 或者@Qualifier来实现。
+@Autowired 是根据 type 来匹配， @Resource 可以根据 name 和 type 来匹配，默认是 name 匹配。<br/>
+@Autowired 是 Spring 定义的注解， @Resource 是 JSR 250 规范里面定义的注解， 而 Spring 对 JSR 250 规范提供了支持。<br/>
+@Autowired 如果需要支持 name 匹配， 就需要配合@Primary 或者@Qualifier来实现。<br/>
 以上就是我对这个问题的理解。
 
 ### 面试总结  
@@ -309,21 +309,21 @@ Spring 生命周期全过程大致分为五个阶段： 创建前准备阶段、
 
 ![image-20231226165145216](img/image-20231226165145216.png)
 
-**一、 创建前准备阶段**
-这个阶段主要的作用是， Bean 在开始加载之前， 需要从上下文和相关配置中解析并查找 Bean 有关的扩展实现，
-比如像 init-method-容器在初始化 bean 时调用的方法、 destory-method， 容器在销毁 bean 时调用的方法。以及， BeanFactoryPostProcessor 这类的 bean 加载过程中的前置和后置处理。
-这些类或者配置其实是 Spring 提供给开发者， 用来实现 Bean 加载过程中的扩展机制， 在很多和 Spring 集成的中间件中比较常见， 比如 Dubbo。
-**二、 创建实例阶段**
-这个阶段主要是通过反射来创建 Bean 的实例对象， 并且扫描和解析 Bean 声明的一些属性。
-**三、 依赖注入阶段**
-如果被实例化的 Bean 存在依赖其他 Bean 对象的情况， 则需要对这些依赖 bean进行对象注入。 比如常见的@Autowired、 setter 注入等依赖注入的配置形式。
-同 时 ， 在 这 个 阶 段 会 触 发 一 些 扩 展 的 调 用 ， 比 如 常 见 的 扩 展 类 ：BeanPostProcessors（用来实现 bean 初始化前后的扩展回调） 、InitializingBean（这个类有一个afterPropertiesSet()， 这个在工作中也比较常见）、BeanFactoryAware 等等。
-**四、 容器缓存阶段**
-容器缓存阶段主要是把 bean 保存到容器以及 Spring 的缓存中， 到了这个阶段，Bean 就可以被开发者使用了。这个阶段涉及到的操作， 常见的有， init-method 这个属性配置的方法， 会在这个阶段调用。以 及 像 BeanPostProcessors 方 法 中 的 后 置 处 理 器 方 法 如 ：postProcessAfterInitialization， 也会在这个阶段触发。
-**五、 销毁实例阶段**
-当 Spring 应用上下文关闭时， 该上下文中的所有 bean 都会被销毁。如果存在 Bean 实现了 DisposableBean 接口， 或者配置了 destory-method 属性，会在这个阶段被调用。  
+**一、 创建前准备阶段**<br/>
+这个阶段主要的作用是， Bean 在开始加载之前， 需要从上下文和相关配置中解析并查找 Bean 有关的扩展实现，<br/>
+比如像 init-method-容器在初始化 bean 时调用的方法、 destory-method， 容器在销毁 bean 时调用的方法。以及， BeanFactoryPostProcessor 这类的 bean 加载过程中的前置和后置处理。<br/>
+这些类或者配置其实是 Spring 提供给开发者， 用来实现 Bean 加载过程中的扩展机制， 在很多和 Spring 集成的中间件中比较常见， 比如 Dubbo。<br/>
+**二、 创建实例阶段<br/>**
+这个阶段主要是通过反射来创建 Bean 的实例对象， 并且扫描和解析 Bean 声明的一些属性。<br/>
+**三、 依赖注入阶段**<br/>
+如果被实例化的 Bean 存在依赖其他 Bean 对象的情况， 则需要对这些依赖 bean进行对象注入。 比如常见的@Autowired、 setter 注入等依赖注入的配置形式。<br/>
+同 时 ， 在 这 个 阶 段 会 触 发 一 些 扩 展 的 调 用 ， 比 如 常 见 的 扩 展 类 ：BeanPostProcessors（用来实现 bean 初始化前后的扩展回调） 、InitializingBean（这个类有一个afterPropertiesSet()， 这个在工作中也比较常见）、BeanFactoryAware 等等。<br/>
+**四、 容器缓存阶段<br/>**
+容器缓存阶段主要是把 bean 保存到容器以及 Spring 的缓存中， 到了这个阶段，Bean 就可以被开发者使用了。这个阶段涉及到的操作， 常见的有， init-method 这个属性配置的方法， 会在这个阶段调用。以 及 像 BeanPostProcessors 方 法 中 的 后 置 处 理 器 方 法 如 ：postProcessAfterInitialization， 也会在这个阶段触发。<br/>
+**五、 销毁实例阶段<br/>**
+当 Spring 应用上下文关闭时， 该上下文中的所有 bean 都会被销毁。如果存在 Bean 实现了 DisposableBean 接口， 或者配置了 destory-method 属性，会在这个阶段被调用。 <br/> 
 
-MIC： 嗯， 看完高手的回答后， 相信大家对 Spring Bean 的生命周期有了深刻的
+MIC： 嗯， 看完高手的回答后， 相信大家对 Spring Bean 的生命周期有了深刻的<br/>
 印象了， 需要文档中 Spring Bean 生命周期的高清流程图， 可以加微信： mic6769。
 在附赠一张高清的时序图给大家！  
 
@@ -335,29 +335,26 @@ MIC： 嗯， 看完高手的回答后， 相信大家对 Spring Bean 的生命�
 
 资料来源：[Spring 中Bean的作用域有哪些](https://www.toutiao.com/video/7088874285007110687/)
 
-一个工作 3 年的小伙子， 去面试被问到 Spring 里面的问题。  
+一个工作 3 年的小伙子， 去面试被问到 Spring 里面的问题。 <br/> 
 
-这个问题比较简单， 但是他却没有回答上来。
-虽然他可以通过搜索引擎找到答案， 但是如果没有理解， 下次面试还是不会！
-这个面试题是： “Spring 中的 Bean， 作用域有哪些？ ”
-对于这个问题， 看看普通人和高手的回答。  
-
-
+这个问题比较简单， 但是他却没有回答上来。<br/>
+虽然他可以通过搜索引擎找到答案， 但是如果没有理解， 下次面试还是不会！<br/>
+这个面试题是： “Spring 中的 Bean， 作用域有哪些？ ”<br/>
+对于这个问题， 看看普通人和高手的回答。  <br/>
 
 #### 高手
-好的， 这个问题可以从几个方面来回答。
-首先呢， Spring 框架里面的 IOC 容器， 可以非常方便的去帮助我们管理应用里面的 Bean 对象实例。
-我们只需要按照 Spring 里面提供的 xml 或者注解等方式去告诉 IOC 容器， 哪些Bean 需要被 IOC 容器管理就行了。
-其次呢， 既然是 Bean 对象实例的管理， 那意味着这些实例， 是存在生命周期，也就是所谓的作用域。
-理论上来说， 常规的生命周期只有两种：
-singleton， 也就是单例， 意味着在整个 Spring 容器中只会存在一个 Bean 实例。
-prototype， 翻译成原型， 意味着每次从 IOC 容器去获取指定 Bean 的时候， 都会返回一个新的实例对象。
-但是在基于 Spring 框架下的 Web 应用里面， 增加了一个会话纬度来控制 Bean的生命周期， 主要有三个选择
-request， 针对每一次 http 请求， 都会创建一个新的 Bean  
+好的， 这个问题可以从几个方面来回答。<br/>
+首先呢， Spring 框架里面的 IOC 容器， 可以非常方便的去帮助我们管理应用里面的 Bean 对象实例。<br/>
+我们只需要按照 Spring 里面提供的 xml 或者注解等方式去告诉 IOC 容器， 哪些Bean 需要被 IOC 容器管理就行了。<br/>
+其次呢， 既然是 Bean 对象实例的管理， 那意味着这些实例， 是存在生命周期，也就是所谓的作用域。<br/>
+理论上来说， 常规的生命周期只有两种：<br/>
+singleton， 也就是单例， 意味着在整个 Spring 容器中只会存在一个 Bean 实例。<br/>
+prototype， 翻译成原型， 意味着每次从 IOC 容器去获取指定 Bean 的时候， 都会返回一个新的实例对象。<br/>
+但是在基于 Spring 框架下的 Web 应用里面， 增加了一个会话纬度来控制 Bean的生命周期， 主要有三个选择request， 针对每一次 http 请求， 都会创建一个新的 Bean  <br/>
 
-session， 以 sesssion 会话为纬度， 同一个 session 共享同一个 Bean 实例， 不同的 session 产生不同的 Bean 实例
-globalSession， 针对全局 session 纬度， 共享同一个 Bean 实例
-以上就是我对这个问题的理解。  
+session， 以 sesssion 会话为纬度， 同一个 session 共享同一个 Bean 实例， 不同的 session 产生不同的 Bean 实例<br/>
+globalSession， 针对全局 session 纬度， 共享同一个 Bean 实例<br/>
+以上就是我对这个问题的理解。  <br/>
 
 #### 面试点评  
 
