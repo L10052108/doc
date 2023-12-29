@@ -40,9 +40,10 @@
     - [08_centos7使用](linux/功能/08_centos7使用.md)   
 
   - nginx 
-    - [01_nginx使用配置](linux/nginx/nginx配置.md)
-    - [02_Nginx代理MySQL连接](linux/nginx/02.Nginx代理MySQL连接.md)
-    - [03_限制可访问IP](linux/nginx/03_限制可访问IP.md)
+    - [01_nginx安装和介绍](linux/nginx/01_nginx安装和介绍.md)
+    - [02_nginx使用配置](linux/nginx/02_nginx使用配置.md)
+    - [03_nginx插件](linux/nginx/03_nginx插件.md)
+    - [04_nginx日志](linux/nginx/04_nginx日志.md)
 
 - docker
   - [01_docker介绍](linux/docker/01_docker介绍.md)
