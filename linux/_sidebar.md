@@ -14,6 +14,7 @@
     - [linux远程桌面管理工具xrdp](linux/服务/xrdp.md)
     - [nps](linux/服务/nps.md)
     - [04_Glances监控工具](linux/服务/04_Glances监控工具.md)
+    - [05_acme免费证书](linux/服务/05_acme免费证书.md) 
     
   - 翻墙
     - [bbr加速](linux/服务/翻墙/bbr.md)
