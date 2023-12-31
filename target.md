@@ -373,7 +373,6 @@ https://zhuanlan.zhihu.com/p/611653538
 
 
 一文讲透Java Agent是什么玩意？能干啥？怎么用？
-
 https://zhuanlan.zhihu.com/p/6366039104
 
 
@@ -504,3 +503,10 @@ https://www.toutiao.com/article/7299308128263373352/?app=news_article&timestamp=
 
 快速搭建Docker环境  
 https://blog.csdn.net/sanduo112/article/details/118765838
+
+
+让我看完直呼“哇塞”的分布式ID生成器，现在是你的了~
+https://www.toutiao.com/article/7293028624780018226/?app=news_article&timestamp=1703896165&use_new_style=1&req_id=20231230082925CFB0774A3750C80E5449&group_id=7293028624780018226&wxshare_count=1&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_android&utm_campaign=client_share&share_token=4f34b7b6-bcb2-46dd-b927-596c893f941b&source=m_redirect
+
+Spring SSE 技术实现：实时股市数据推送
+https://mp.weixin.qq.com/s/vcVhGfIx-axxAv8T_Fmr-A
