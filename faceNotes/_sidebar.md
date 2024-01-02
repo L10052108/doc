@@ -1,7 +1,8 @@
 
 
 - [面试](faceNotes/README.md)
-  - 面试总结（java小咖秀）
+
+  - java小咖秀
     - [计算机基础](faceNotes/JavaFaceNotes-master/计算机基础.md)
     - [简历](faceNotes/JavaFaceNotes-master/简历.md)
     - [异常&反射](faceNotes/JavaFaceNotes-master/异常&反射.md)
@@ -37,7 +38,13 @@
     - [Elasticsearch](faceNotes/JavaFaceNotes-master/Elasticsearch.md)
     - [Dubbo](faceNotes/JavaFaceNotes-master/Dubbo.md)
 
-  - 面试总结2（跟着Mic学架构）
+  - 磊哥
+    - [java基础&容器&多线程](faceNotes/interview-master/doc/200+/200_1.md)
+    - [反射&对象拷贝&Java Web&异常&网络](faceNotes/interview-master/doc/200+/200_2.md)
+    - [设计模式&Spring/Spring MVC&JSpring Boot/Spring Cloud&Hibernate&Mybatis&RabbitMQ](faceNotes/interview-master/doc/200+/200_3.md)
+    - [Kafka&Zookeeper&MySqlb&Redis&JVM](faceNotes/interview-master/doc/200+/200_4.md)
+
+  - 跟着Mic学架构
     - [01_Java基础](faceNotes/mic/java基础.md)
     - [02_多线程](faceNotes/mic/多线程.md)
     - [03_锁](faceNotes/mic/锁.md)
@@ -55,9 +62,3 @@
     - [14_dubbo](faceNotes/mic/14_dubbo.md)
     - [14_Zookeeper](faceNotes/mic/zookeeper.md)
     - [15_场景题](faceNotes/mic/15_场景题.md)
-
-  - 面试总结3（磊哥）
-    - [java基础&容器&多线程](faceNotes/interview-master/doc/200+/200_1.md)
-    - [反射&对象拷贝&Java Web&异常&网络](faceNotes/interview-master/doc/200+/200_2.md)
-    - [设计模式&Spring/Spring MVC&JSpring Boot/Spring Cloud&Hibernate&Mybatis&RabbitMQ](faceNotes/interview-master/doc/200+/200_3.md)
-    - [Kafka&Zookeeper&MySqlb&Redis&JVM](faceNotes/interview-master/doc/200+/200_4.md)
