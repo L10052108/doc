@@ -204,6 +204,8 @@ Hi， 大家好， 我是 Mic。
 喜欢我的作品的小伙伴记得点赞和收藏加关注。
 我是 Mic， 一个工作 14 年的 Java 程序员， 咱们下期再见！  
 
+##  Spring 中Bean的作用域有哪些？
+资料来源：[Spring 中Bean的作用域有哪些？高手的回答秀到我了](https://www.toutiao.com/video/7088874285007110687/?from_scene=all)
 
 ## Spring中有哪些方式可以把Bean注入到IOC容器
 

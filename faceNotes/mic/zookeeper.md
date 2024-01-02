@@ -55,4 +55,8 @@ Watch 的具体流程分为几个部分：
 ### 为什么Zookeeper集群的节点都是单数？
 
 资料来源：[【Java面试】为什么Zookeeper集群的节点都是单数？](https://www.toutiao.com/video/7290116854083912203/)
+
 <hr>
+### 大厂必问并发编程面试题，Zookeeper如何实现Leader选举
+
+资料来源：[【Java面试】大厂必问并发编程面试题，Zookeeper如何实现Leader选举？](https://www.toutiao.com/video/7104112611561734669/)
