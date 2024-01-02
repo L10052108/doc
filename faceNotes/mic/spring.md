@@ -335,7 +335,7 @@ MIC： 嗯， 看完高手的回答后， 相信大家对 Spring Bean 的生命�
 
 资料来源：[Spring 中Bean的作用域有哪些](https://www.toutiao.com/video/7088874285007110687/)
 
-一个工作 3 年的小伙子， 去面试被问到 Spring 里面的问题。 <br/> 
+一个工作 3 年的小伙子， 去面试被问到 Spring 里面的问题。 <br/>
 
 这个问题比较简单， 但是他却没有回答上来。<br/>
 虽然他可以通过搜索引擎找到答案， 但是如果没有理解， 下次面试还是不会！<br/>
@@ -348,12 +348,11 @@ MIC： 嗯， 看完高手的回答后， 相信大家对 Spring Bean 的生命�
 我们只需要按照 Spring 里面提供的 xml 或者注解等方式去告诉 IOC 容器， 哪些Bean 需要被 IOC 容器管理就行了。<br/>
 其次呢， 既然是 Bean 对象实例的管理， 那意味着这些实例， 是存在生命周期，也就是所谓的作用域。<br/>
 理论上来说， 常规的生命周期只有两种：<br/>
-singleton， 也就是单例， 意味着在整个 Spring 容器中只会存在一个 Bean 实例。<br/>
-prototype， 翻译成原型， 意味着每次从 IOC 容器去获取指定 Bean 的时候， 都会返回一个新的实例对象。<br/>
+**singleton**， 也就是单例， 意味着在整个 Spring 容器中只会存在一个 Bean 实例。<br/>
+**prototype**， 翻译成原型， 意味着每次从 IOC 容器去获取指定 Bean 的时候， 都会返回一个新的实例对象。<br/>
 但是在基于 Spring 框架下的 Web 应用里面， 增加了一个会话纬度来控制 Bean的生命周期， 主要有三个选择request， 针对每一次 http 请求， 都会创建一个新的 Bean  <br/>
-
-session， 以 sesssion 会话为纬度， 同一个 session 共享同一个 Bean 实例， 不同的 session 产生不同的 Bean 实例<br/>
-globalSession， 针对全局 session 纬度， 共享同一个 Bean 实例<br/>
+**session**， 以 sesssion 会话为纬度， 同一个 session 共享同一个 Bean 实例， 不同的 session 产生不同的 Bean 实例<br/>
+**globalSession**， 针对全局 session 纬度， 共享同一个 Bean 实例<br/>
 以上就是我对这个问题的理解。  <br/>
 
 #### 面试点评  
@@ -372,8 +371,6 @@ globalSession， 针对全局 session 纬度， 共享同一个 Bean 实例<br/>
 
 资料来源：[Spring中BeanFactory和FactoryBean的区别](https://www.toutiao.com/video/7090791563147772424/)
 
-<hr/>
-
 一个工作了六年多的粉丝， 胸有成竹的去京东面试。
 然后被 Spring 里面的一个问题卡住， 唉， 我和他说， 6 年啦， Spring 都没搞明
 白？
@@ -381,7 +378,6 @@ globalSession， 针对全局 session 纬度， 共享同一个 Bean 实例<br/>
 这个问题是： Spring 中 BeanFactory 和 FactoryBean 的区别。
 好吧， 对于这个问题看看普通人和高手的回答  
 
-#### 普通人
 #### 高手
 关于这个问题， 我从几个方面来回答。
 首先， Spring 里面的核心功能是 IOC 容器， 所谓 IOC 容器呢， 本质上就是一个Bean 的容器或者是一个 Bean 的工厂。
