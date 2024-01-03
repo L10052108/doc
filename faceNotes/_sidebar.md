@@ -45,8 +45,10 @@
     - [Kafka&Zookeeper&MySqlb&Redis&JVM](faceNotes/interview-master/doc/200+/200_4.md)
 
   - 跟着Mic学架构
-    - [01_Java基础](faceNotes/mic/java基础.md)
+    - [01_Java基础](faceNotes/mic/01_01java基础.md)
+    - [01_02java基础](faceNotes/mic/01_02java基础.md)
     - [02_多线程](faceNotes/mic/多线程.md)
+    - [02_多线程(线程池)](faceNotes/mic/线程池.md)
     - [03_锁](faceNotes/mic/锁.md)
     - [04_mysql](faceNotes/mic/mysql.md)
     - [05_spring](faceNotes/mic/spring.md)
@@ -63,3 +65,4 @@
     - [14_Zookeeper](faceNotes/mic/zookeeper.md)
     - [15_场景题](faceNotes/mic/15_场景题.md)
     - [16_springCloud](faceNotes/mic/16_springCloud.md)
+    
