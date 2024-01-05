@@ -45,6 +45,7 @@
     - [02_nginx使用配置](linux/nginx/02_nginx使用配置.md)
     - [03_nginx插件](linux/nginx/03_nginx插件.md)
     - [04_nginx日志](linux/nginx/04_nginx日志.md)
+    - [05_nginx证书](linux/nginx/05_nginx证书.md)
 
 - docker
   - [01_docker介绍](linux/docker/01_docker介绍.md)

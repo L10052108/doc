@@ -65,19 +65,19 @@ Nety 相比于直接使用 JDK 自带的 NIO 相关的 API 来说更加易用。
 Netty 由三层结构构成：网络通信层、事件调度器与服务编排层
 
 在网络通信层有三个核心组件：Bootstrap、ServerBootStrap、Channel
--  Bootstrap 负责客户端启动并用来链接远程 netty server
--  ServerBootStrap 负责服务端监听，用来监听指定端口，
--  Channel 是负责网络通信的载体
+-  **Bootstrap** 负责客户端启动并用来链接远程 netty server
+-  **ServerBootStrap** 负责服务端监听，用来监听指定端口，
+-  **Channel** 是负责网络通信的载体
 
-事件调度器有两个核心组件：EventLoopGroup 与 EventLoop
+事件调度器有两个核心组件：**EventLoopGroup** 与 **EventLoop**
 
-- EventLoopGroup 本质上是一个线程池，主要负责接收 I/O 请求，并分配线程执行处理请求。
-- EventLoop。相当于线程池中的线程
+- **EventLoopGroup** 本质上是一个线程池，主要负责接收 I/O 请求，并分配线程执行处理请求。
+- **EventLoop**。相当于线程池中的线程
 
 在服务编排层有三个核心组件 ChannelPipeline、ChannelHandler、ChannelHandlerContext
--  ChannelPipeline 负责将多个 Channelhandler 链接在一起
--  ChannelHandler 针对 IO 数据的处理器，数据接收后，通过指定的 Handler 进行处理。
--  ChannelHandlerContext 用来保存 ChannelHandler 的上下文信息
+-  **ChannelPipeline** 负责将多个 Channelhandler 链接在一起
+-  **ChannelHandler** 针对 IO 数据的处理器，数据接收后，通过指定的 Handler 进行处理。
+-  **ChannelHandlerContext** 用来保存 ChannelHandler 的上下文信息
 
 ### 面试官：在说说 Netty 有几种线程模型吧？
 高手 Netty 提供了三种 Reactor 模型的支持
