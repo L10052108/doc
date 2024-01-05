@@ -58,10 +58,6 @@ setter 注入<br/>
 以上就是我对这个问题的理解！  
 
 
-### @Conditional注解有什么用
-
-`condition` 注解的一个作用为bean的装载做一个条件判断，只有在满足条件的情况下。`spring`才会把`bean`装载到`IOC`容器里面。而这个条件是我们可以自定义去完成的。我们可以实现`condition`这个接口，并且重写里面的`matches`这个方法，去实现自定义的逻辑。所以`@condition`这个注解，增加了bean的装配的灵活性。在`springboot`里面对`@condition`注解做了更进一步的扩展，比如增加了`@conditionalOnClass`,`@conditionOnBean`等这样的注解，使得我们在使用的过程中。不再需要些那些条件的逻辑判断。而是可以直接根据数据本身的语义去完成对应的条件的一个装配
-
 
 ### 介绍下Spring IoC的工作流程？
 
@@ -127,15 +123,19 @@ IoC 容器的作用就是对这些注册的 Bean 的定义信息进行处理和�
 喜欢我的作品的小伙伴记得点赞和收藏加关注。
 我是 Mic， 一个工作 14 年的 Java 程序员， 咱们下期再见  
 
+### @Conditional注解有什么用
+
+`condition` 注解的一个作用为bean的装载做一个条件判断，只有在满足条件的情况下。
+`spring`才会把`bean`装载到`IOC`容器里面。而这个条件是我们可以自定义去完成的。
+我们可以实现`condition`这个接口，并且重写里面的`matches`这个方法，去实现自定义的逻辑。所以`@condition`这个注解，增加了bean的装配的灵活性。在`springboot`里面对`@condition`注解做了更进一步的扩展，比如增加了`@conditionalOnClass`,`@conditionOnBean`等这样的注解，使得我们在使用的过程中。不再需要些那些条件的逻辑判断。而是可以直接根据数据本身的语义去完成对应的条件的一个装配
+
+
 ### @Resource 和 @Autowired 的区别  
 
 [「Java面试」带你用不同视角分析@Resource和@Autowired的区别？-今日头条 (toutiao.com)](https://www.toutiao.com/article/7106424759147397664/?channel=&source=search_tab)
 
 Hi， 大家好， 我是 Mic。
 一个工作 2 年的粉丝， 问我一个 Spring 里面的问题。
-
-
-
 希望我能从不同的视角去分析， 然后碾压面试官。
 这个问题是： “@Resource 和@Autowired”的区别。
 高手部分的回答我已经整理成了文档， 需要的小伙伴可以在主页加 V 领取。
@@ -146,112 +146,107 @@ Hi， 大家好， 我是 Mic。
 #### 高手
 
 好的， 面试官。
-@Resource 和@Autowired 这两个注解的作用都是在 Spring 生态里面去实现Bean 的依赖注入。
-
-下面我分别说一下@Autowired 和@Resource 这两个注解。
-
-首先， @Autowired 是 Spring 里面提供的一个注解， 默认是根据类型来实现 Bean的依赖注入。
+@Resource 和@Autowired 这两个注解的作用都是在 Spring 生态里面去实现Bean 的依赖注入。<br/>
+下面我分别说一下@Autowired 和@Resource 这两个注解。<br/>
+**首先**， @Autowired 是 Spring 里面提供的一个注解， 默认是根据类型来实现 Bean的依赖注入。
 @Autowired 注解里面有一个 `required `属性默认值是 true， 表示强制要求 bean实例的注入，
-在应用启动的时候， 如果 IOC 容器里面不存在对应类型的 Bean， 就会报错。当然， 如果不希望自动注入， 可以把这个属性设置成 false。
-
+在应用启动的时候， 如果 IOC 容器里面不存在对应类型的 Bean， 就会报错。当然， 如果不希望自动注入， 可以把这个属性设置成 false。<br/>
 ![image-20231225155215052](img/image-20231225155215052.png)
 
-其次呢， 如果在 Spring IOC 容器里面存在多个相同类型的 Bean 实例。 由于@Autowired 注解是根据类型来注入 Bean 实例的  
+**其次**呢， 如果在 Spring IOC 容器里面存在多个相同类型的 Bean 实例。 由于@Autowired 注解是根据类型来注入 Bean 实例的  <br/>
 
 ![image-20231225155242284](img/image-20231225155242284.png)
 
-所以 Spring 启动的时候， 会提示一个错误， 大概意思原本只能注入一个单实例Bean，
-但是在 IOC 容器里面却发现有多个， 导致注入失败。  
+所以 Spring 启动的时候， 会提示一个错误， 大概意思原本只能注入一个单实例Bean，但是在 IOC 容器里面却发现有多个， 导致注入失败。  <br/>
 
 ![image-20231225155307813](img/image-20231225155307813.png)
-
-
-
-当然， 针对这个问题， 我们可以使用 @Primary 或者@Qualifier 这两个注解来解决。
-@Primary 表示主要的 bean， 当存在多个相同类型的 Bean 的时候， 优先使用声明了@Primary 的 Bean。
-@Qualifier 的作用类似于条件筛选， 它可以根据 Bean 的名字找到需要装配的目标 Bean。  
+当然， 针对这个问题， 我们可以使用 @Primary 或者@Qualifier 这两个注解来解决。<br/>
+> @Primary 表示主要的 bean， 当存在多个相同类型的 Bean 的时候， 优先使用声明了@Primary 的 Bean。<br/>
+> @Qualifier 的作用类似于条件筛选， 它可以根据 Bean 的名字找到需要装配的目标 Bean。  <br/>
 
 ![image-20231225155342216](img/image-20231225155342216.png)
 
-接下来， 我再解释一下@Resource 注解。
-@Resource 是 JDK 提供的注解， 只是 Spring 在实现上提供了这个注解的功能支持。
-它的使用方式和@Autowired 完全相同， 最大的差异于@Resource 可以支持ByName 和 ByType 两种注入方式。
-如果使用name， Spring就根据bean的名字进行依赖注入， 如果使用type， Spring就根据类型实现依赖注入。
-如果两个属性都没配置， 就先根据定义的属性名字去匹配， 如果没匹配成功， 再根据类型匹配。 两个都没匹配到， 就报错  
+接下来， 我再解释一下@Resource 注解。<br/>
+@Resource 是 JDK 提供的注解， 只是 Spring 在实现上提供了这个注解的功能支持。<br/>
+它的使用方式和@Autowired 完全相同， 最大的差异于@Resource 可以支持ByName 和 ByType 两种注入方式。<br/>
+如果使用name， Spring就根据bean的名字进行依赖注入， 如果使用type， Spring就根据类型实现依赖注入。<br/>
+如果两个属性都没配置， 就先根据定义的属性名字去匹配， 如果没匹配成功， 再根据类型匹配。 两个都没匹配到， 就报错  <br/>
 
 ![image-20231225155415268](img/image-20231225155415268.png)
 
 
 
 最后， 我再总结一下。
-@Autowired 是根据 type 来匹配， @Resource 可以根据 name 和 type 来匹配，默认是 name 匹配。<br/>
-@Autowired 是 Spring 定义的注解， @Resource 是 JSR 250 规范里面定义的注解， 而 Spring 对 JSR 250 规范提供了支持。<br/>
-@Autowired 如果需要支持 name 匹配， 就需要配合@Primary 或者@Qualifier来实现。<br/>
-以上就是我对这个问题的理解。
+
+> @Autowired 是根据 type 来匹配， @Resource 可以根据 name 和 type 来匹配，默认是 name 匹配。<br/>
+> @Autowired 是 Spring 定义的注解， @Resource 是 JSR 250 规范里面定义的注解， 而 Spring 对 JSR 250 规范提供了支持。<br/>
+> @Autowired 如果需要支持 name 匹配， 就需要配合@Primary 或者@Qualifier来实现。<br/>
+
+以上就是我对这个问题的理解。<br/>
 
 #### 面试总结  
 
-大家可以关注高手部分的回答， 他的逻辑结构很清晰的。
-他是非常直观的告诉面试官这两个注解的差异， 同时又基于两个注解的特性解释
-了更多的差异。
-最后做了一个简短的总结。
-大家在面试的时候可以参考类似的回答思路。
-好的， 本期的普通人 VS 高手面试系列的视频就到这里结束了。
-喜欢我的作品的小伙伴记得点赞和收藏加关注。
-我是 Mic， 一个工作 14 年的 Java 程序员， 咱们下期再见！  
+大家可以关注高手部分的回答， 他的逻辑结构很清晰的。<br/>
+他是非常直观的告诉面试官这两个注解的差异， 同时又基于两个注解的特性解释了更多的差异。<br/>
+最后做了一个简短的总结。<br/>
+大家在面试的时候可以参考类似的回答思路。<br/>
+好的， 本期的普通人 VS 高手面试系列的视频就到这里结束了。<br/>
+喜欢我的作品的小伙伴记得点赞和收藏加关注。<br/>
+我是 Mic， 一个工作 14 年的 Java 程序员， 咱们下期再见！  <br/>
 
 ## spring Bean
 ###  Spring 中Bean的作用域有哪些？
 资料来源：[Spring 中Bean的作用域有哪些？高手的回答秀到我了](https://www.toutiao.com/video/7088874285007110687/?from_scene=all)
 
-一个工作 3 年的小伙子，去面试被问到 Spring 里面的问题。
-这个问题比较简单，但是他却没有回答上来。
-虽然他可以通过搜索引擎找到答案，但是如果没有理解，下次面试还是不会！
-这个面试题是： “Spring 中的 Bean，作用域有哪些？”
-对于这个问题，看看普通人和高手的回答。
+一个工作 3 年的小伙子，去面试被问到 Spring 里面的问题。<br/>
+这个问题比较简单，但是他却没有回答上来。<br/>
+虽然他可以通过搜索引擎找到答案，但是如果没有理解，下次面试还是不会！<br/>
+这个面试题是： “Spring 中的 Bean，作用域有哪些？”<br/>
+对于这个问题，看看普通人和高手的回答。<br/>
 
 #### 高手
-好的，这个问题可以从几个方面来回答。
-首先呢，Spring 框架里面的 IOC 容器，可以非常方便的去帮助我们管理应用里面的Bean 对象实例。
-我们只需要按照 Spring 里面提供的 xml 或者注解等方式去告诉 IOC 容器，哪些 Bean需要被 IOC 容器管理就行了。
-其次呢，既然是 Bean 对象实例的管理，那意味着这些实例，是存在生命周期，也就是所谓的作用域。
+好的，这个问题可以从几个方面来回答。<br/>
+首先呢，Spring 框架里面的 IOC 容器，可以非常方便的去帮助我们管理应用里面的Bean 对象实例。<br/>
+我们只需要按照 Spring 里面提供的 xml 或者注解等方式去告诉 IOC 容器，哪些 Bean需要被 IOC 容器管理就行了。<br/>
+其次呢，既然是 Bean 对象实例的管理，那意味着这些实例，是存在生命周期，也就是所谓的作用域。<br/>
 理论上来说，**常规的生命周期只有两种：**
-- ** singleton**， 也就是单例，意味着在整个 Spring 容器中只会存在一个 Bean 实例。
+
+- **singleton**， 也就是单例，意味着在整个 Spring 容器中只会存在一个 Bean 实例。<br/>
 -  **prototype**，翻译成原型，意味着每次从 IOC 容器去获取指定 Bean 的时候，都会返回一个新的实例对象。<br/>
 但是在基于 Spring 框架下的 Web 应用里面，增加了一个会话纬度来控制 Bean 的生命周期，主要有三个选择<br/>
 -  **request**， 针对每一次 http 请求，都会创建一个新的 Bean<br/>
 -  **session**，以 sesssion 会话为纬度，同一个 session 共享同一个 Bean 实例，不同的 session 产生不同的 Bean 实例<br/>
 -   globalSession，针对全局 session 纬度，共享同一个 Bean 实例session
 以上就是我对这个问题的理解。
-面试点评
-“技术框架的本质是去解决特定问题的，所以如果能够站在技术的角度去思考
-Spring”
-当遇到这种问题的时候，就可以像这个高手的回答一样，能够基于场景来推断出答案。
-就像我们现在写 CRUD 代码，它已经变成了一种基本能力去让我们完成复杂业务逻辑
-的开发。
-好的，本期的普通人 VS 高手面试系列的视频就到这里结束了。
-有任何不懂的技术面试题，欢迎随时私信我
-我是 Mic，一个工作了 14 年的 Java 程序员，咱们下期再见。  
+
+#### 面试点评
+
+“技术框架的本质是去解决特定问题的，所以如果能够站在技术的角度去思考Spring”<br/>
+当遇到这种问题的时候，就可以像这个高手的回答一样，能够基于场景来推断出答案。<br/>
+就像我们现在写 CRUD 代码，它已经变成了一种基本能力去让我们完成复杂业务逻辑的开发。<br/>
+好的，本期的普通人 VS 高手面试系列的视频就到这里结束了。<br/>
+有任何不懂的技术面试题，欢迎随时私信我<br/>
+我是 Mic，一个工作了 14 年的 Java 程序员，咱们下期再见。  <br/>
 
 ### Spring中有哪些方式可以把Bean注入到IOC容器
 
 资料来源：[Spring中有哪些方式可以把Bean注入到IOC容器](https://www.toutiao.com/video/7098586416824713736/)
 
-问题是： “Spring 中有哪些方式可以把 Bean 注入到 IOC 容器”。
-他说这道题是所有面试题里面回答最好的， 但是看面试官的表情， 好像不太对。
-我问他怎么回答的， 他说： “接口注入”、 “Setter 注入”、 “构造器注入”。
-为什么不对？ 来看看普通人和高手的回答。  
+问题是： “Spring 中有哪些方式可以把 Bean 注入到 IOC 容器”。<br/>
+他说这道题是所有面试题里面回答最好的， 但是看面试官的表情， 好像不太对。<br/>
+我问他怎么回答的， 他说： “接口注入”、 “Setter 注入”、 “构造器注入”。<br/>
+为什么不对？ 来看看普通人和高手的回答。  <br/>
 
 #### 高手
 
-好的， 把 Bean 注入到 IOC 容器里面的方式有 7 种方式
-使用 xml 的方式来声明 Bean 的定义， Spring 容器在启动的时候会加载并解析这个 xml， 把 bean 装载到 IOC 容器中。
-使用@CompontScan 注解来扫描声明了@Controller、@Service、@Repository、@Component 注解的类。
-使用@Configuration 注解声明配置类， 并使用@Bean 注解实现 Bean 的定义，这种方式其实是 xml 配置方式的一种演变， 是 Spring 迈入到无配置化时代的里程碑  
+好的， 把 Bean 注入到 IOC 容器里面的方式有 7 种方式<br/>
+使用 xml 的方式来声明 Bean 的定义， Spring 容器在启动的时候会加载并解析这个 xml， 把 bean 装载到 IOC 容器中。<br/>
+使用@CompontScan 注解来扫描声明了@Controller、@Service、@Repository、@Component 注解的类。<br/>
+使用@Configuration 注解声明配置类， 并使用@Bean 注解实现 Bean 的定义，这种方式其实是 xml 配置方式的一种演变， 是 Spring 迈入到无配置化时代的里程碑  <br/>
 
 使用@Import 注解， 导入配置类或者普通的 Bean使 用 FactoryBean 工 厂 bean ， 动 态 构 建 一 个 Bean 实 例 ， Spring Cloud
-OpenFeign 里面的动态代理实例就是使用 FactoryBean 来实现的。实现 ImportBeanDefinitionRegistrar 接口， 可以动态注入 Bean 实例。 这个在Spring Boot 里面的启动注解有用到。实现 ImportSelector 接口， 动态批量注入配置类或者 Bean 对象， 这个在 Spring Boot 里面的自动装配机制里面有用到。
-以上就是我对这个问题的理解。  
+OpenFeign 里面的动态代理实例就是使用 FactoryBean 来实现的。实现 ImportBeanDefinitionRegistrar 接口， 可以动态注入 Bean 实例。 这个在Spring Boot 里面的启动注解有用到。实现 ImportSelector 接口， 动态批量注入配置类或者 Bean 对象， 这个在 Spring Boot 里面的自动装配机制里面有用到。<br/>
+以上就是我对这个问题的理解。 <br/> 
 
 <hr/>
 
@@ -355,41 +350,6 @@ MIC： 嗯， 看完高手的回答后， 相信大家对 Spring Bean 的生命�
 在附赠一张高清的时序图给大家！  
 
 ![image-20231226165235604](img/image-20231226165235604.png)
-
-
-
-### Spring 中Bean的作用域有哪些
-
-资料来源：[Spring 中Bean的作用域有哪些](https://www.toutiao.com/video/7088874285007110687/)
-
-一个工作 3 年的小伙子， 去面试被问到 Spring 里面的问题。 <br/>
-
-这个问题比较简单， 但是他却没有回答上来。<br/>
-虽然他可以通过搜索引擎找到答案， 但是如果没有理解， 下次面试还是不会！<br/>
-这个面试题是： “Spring 中的 Bean， 作用域有哪些？ ”<br/>
-对于这个问题， 看看普通人和高手的回答。  <br/>
-
-#### 高手
-好的， 这个问题可以从几个方面来回答。<br/>
-首先呢， Spring 框架里面的 IOC 容器， 可以非常方便的去帮助我们管理应用里面的 Bean 对象实例。<br/>
-我们只需要按照 Spring 里面提供的 xml 或者注解等方式去告诉 IOC 容器， 哪些Bean 需要被 IOC 容器管理就行了。<br/>
-其次呢， 既然是 Bean 对象实例的管理， 那意味着这些实例， 是存在生命周期，也就是所谓的作用域。<br/>
-理论上来说， 常规的生命周期只有两种：<br/>
-**singleton**， 也就是单例， 意味着在整个 Spring 容器中只会存在一个 Bean 实例。<br/>
-**prototype**， 翻译成原型， 意味着每次从 IOC 容器去获取指定 Bean 的时候， 都会返回一个新的实例对象。<br/>
-但是在基于 Spring 框架下的 Web 应用里面， 增加了一个会话纬度来控制 Bean的生命周期， 主要有三个选择request， 针对每一次 http 请求， 都会创建一个新的 Bean  <br/>
-**session**， 以 sesssion 会话为纬度， 同一个 session 共享同一个 Bean 实例， 不同的 session 产生不同的 Bean 实例<br/>
-**globalSession**， 针对全局 session 纬度， 共享同一个 Bean 实例<br/>
-以上就是我对这个问题的理解。  <br/>
-
-#### 面试点评  
-
-“技术框架的本质是去解决特定问题的， 所以如果能够站在技术的角度去思考Spring”  <br/>
-当遇到这种问题的时候， 就可以像这个高手的回答一样， 能够基于场景来推断出答案。  <br/>
-就像我们现在写 CRUD 代码， 它已经变成了一种基本能力去让我们完成复杂业务逻辑的开发。  <br/>
-好的， 本期的普通人 VS 高手面试系列的视频就到这里结束了。  <br/>
-有任何不懂的技术面试题， 欢迎随时私信我  <br/>
-我是 Mic， 一个工作了 14 年的 Java 程序员， 咱们下期再见    <br/>
 
 <hr/>
 
