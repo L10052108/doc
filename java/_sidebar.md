@@ -17,6 +17,7 @@
   - [05_02JUC中的Exchange交换器](java/并发编程/05_02JUC中的Exchange交换器.md)
   - [05_阻塞一个线程的方法](java/并发编程/05阻塞一个线程的方法.md)
   - [06_synchronized的使用](java/并发编程/06synchronized的使用.md)
+  - [06_synchronized的对象锁和类锁的区别](java/并发编程/06_synchronized的对象锁和类锁的区别.md)
   - [07_并发编程框架](java/并发编程/07并发编程框架.md)
   - [08_AQS](java/并发编程/08AQS.md)
   - [09_java锁详解](java/并发编程/09java锁详解.md)
@@ -32,6 +33,7 @@
   - [02_redis分布式锁](java/lock/02_redis分布式锁.md)
   - [03_分布式锁框架Lock4j简单使用](java/lock/03_分布式锁框架Lock4j简单使用.md)
 
+
 [//]: # "java基础"
 - java基础
   - [01_String](java/java基础/01_String.md)
@@ -46,6 +48,7 @@
 
 - Java Agent
   - [01_一文讲透Java Agent是什么](java/java_agent/01_一文讲透Java_Agent是什么.md)
+  - [01_AOP编程之AspectJ的三种织入方式](java/java_agent/01_AOP编程之AspectJ的三种织入方式.md)
   - [02_idea配置远程调试](java/java_agent/02_idea配置远程调试.md)
   - [03_项目Jar包加密](java/java_agent/03_项目Jar包加密.md)
   - [04_集成使用SkyWalking](java/java_agent/04_集成使用SkyWalking.md)
@@ -114,7 +117,7 @@
   - [10_桥接模式](java/设计模式/10桥接模式.md)
   - [11_工厂模式](java/设计模式/11工厂模式.md)
   - [12_单例模式](java/设计模式/12单例模式.md)
-  - [观察者模式](java/设计模式/观察者模式.md)
+  - [13观察者模式](java/设计模式/13观察者模式.md)
   - [001java设计模式之监听者模式](java/设计模式/001java设计模式之监听者模式.md)
 
 - netty
