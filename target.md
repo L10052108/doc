@@ -510,3 +510,7 @@ https://www.toutiao.com/article/7293028624780018226/?app=news_article&timestamp=
 
 Spring SSE 技术实现：实时股市数据推送
 https://mp.weixin.qq.com/s/vcVhGfIx-axxAv8T_Fmr-A
+
+
+Oracle Cloud甲骨文云主机免费VPS保活永久使用图文教程
+https://www.toutiao.com/article/7217678109011903015/?app=news_article&timestamp=1704720440&use_new_style=1&req_id=202401082127208BD17F6FFC035D15C477&group_id=7217678109011903015&wxshare_count=1&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_android&utm_campaign=client_share&share_token=bd1ad965-db03-4d4a-b926-ffb28fe19226&source=m_redirect&wid=1704777774740
