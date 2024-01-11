@@ -67,3 +67,8 @@
   - [07_gitlab](linux/docker服务/07_gitlab.md)
   - [08_mongodb](linux/docker服务/08_mongodb.md)
   - [09_mysql](linux/docker服务/09_mysql.md)
+  - [10_oracle](linux/docker服务/10_oracle.md)
+  - [11_PG](linux/docker服务/11_PG.md)
+  - [12_redis](linux/docker服务/12_redis.md)
+  - [13_sqlserver](linux/docker服务/13_sqlserver.md)
+  - [14_禅道](linux/docker服务/14_禅道.md)

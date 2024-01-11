@@ -1,0 +1,6 @@
+
+
+## 安装
+```
+docker run -p 6379:6379 -d redis:latest redis-server
+```
