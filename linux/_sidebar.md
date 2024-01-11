@@ -5,17 +5,19 @@
     - [02_acme.sh实现免费自动续期的https](linux/服务/02acme.sh实现免费自动续期的https.md)
     - [03_私服nexus](linux/服务/03nexus.md)
     - [03_git](linux/服务/05git.md)
-    - [jdk](linux/服务/jdk.md)
-    - [node](linux/服务/node.md)
-    - [mysql](linux/服务/mysql.md)
-    - [redis](linux/服务/redis.md)
-    - [jenkins](linux/服务/Jenkins.md) 
-    - [DooTask轻量级的开源在线项目任务管理工具](linux/服务/在线项目任务管理工具.md)
-    - [linux远程桌面管理工具xrdp](linux/服务/xrdp.md)
-    - [nps](linux/服务/nps.md)
+    - [04_jdk](linux/服务/jdk.md)
+    - [05_node](linux/服务/node.md)
+    - [06_mysql](linux/服务/mysql.md)
+    - [07_redis](linux/服务/redis.md)
+    - [08_jenkins](linux/服务/Jenkins.md) 
+    - [09_DooTask轻量级的开源在线项目任务管理工具](linux/服务/在线项目任务管理工具.md)
+    - [10_linux远程桌面管理工具xrdp](linux/服务/xrdp.md)
+    - [11_nps](linux/服务/nps.md)
     - [04_Glances监控工具](linux/服务/04_Glances监控工具.md)
     - [05_acme免费证书](linux/服务/05_acme免费证书.md) 
+    - [11_Nexus](linux/服务/11_Nexus.md)
     
+    Nexus 
   - 翻墙
     - [bbr加速](linux/服务/翻墙/bbr.md)
     - [ss](linux/服务/翻墙/ss.md)
@@ -46,6 +48,7 @@
     - [03_nginx插件](linux/nginx/03_nginx插件.md)
     - [04_nginx日志](linux/nginx/04_nginx日志.md)
     - [05_nginx证书](linux/nginx/05_nginx证书.md)
+    - [05_acme免费证书](linux/nginx/05_acme免费证书.md)
 
 - docker
   - [01_docker介绍](linux/docker/01_docker介绍.md)
@@ -58,4 +61,9 @@
   - [01_showdoc](linux/docker服务/01_showdoc.md)
   - [02_rabbitMq安装](linux/docker服务/02_rabbitMq安装.md)
   - [03_apiSix](linux/docker服务/03_apiSix.md)
-
+  - [04_activemq](linux/docker服务/04_activemq.md)
+  - [05_db2](linux/docker服务/05_db2.md)
+  - [06_ftp](linux/docker服务/06_ftp.md)
+  - [07_gitlab](linux/docker服务/07_gitlab.md)
+  - [08_mongodb](linux/docker服务/08_mongodb.md)
+  - [09_mysql](linux/docker服务/09_mysql.md)
