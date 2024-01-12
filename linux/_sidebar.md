@@ -56,6 +56,7 @@
   - [03_dockerFile操作](linux/docker/03_dockerFile操作.md)
   - [04_docker安装](linux/docker/docker安装.md)
   - [05_docker-compose](linux/docker/docker-compose.md)
+  - [06_容器与宿主机日期时间同步](linux/docker/06_容器与宿主机日期时间同步.md)
 
 - docker服务
   - [01_showdoc](linux/docker服务/01_showdoc.md)

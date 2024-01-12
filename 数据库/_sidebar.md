@@ -38,7 +38,7 @@
   - [11_Java调用shell脚本实现数据库备份功能](数据库/MySQL使用/11_Java调用shell脚本实现数据库备份功能.md)
   - [12_MySQL递归查询上下级菜单](数据库/MySQL使用/12_MySQL递归查询上下级菜单.md)
   - [13_mysql8新特性](数据库/MySQL使用/13_mysql8新特性.md)
-
+  - [14_MySQL的For_Update行级锁](数据库/MySQL使用/14_MySQL的For_Update行级锁.md)
 
 
 - oracle
