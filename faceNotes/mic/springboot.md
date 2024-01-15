@@ -14,15 +14,27 @@
 #### 高手的回答
 
 我从 4 个点方面来回答。<br/>
-首先， 约定优于配置是一种软件设计的范式， 它的核心思想是减少软件开发人员对于配置项的维护， 从而让开发人员更加聚焦在业务逻辑上。<br/>
-Spring Boot 就是约定优于配置这一理念下的产物， 它类似于 Spring 框架下的一个脚手架， 通过 Spring Boot， 我们可以快速开发基于 Spring 生态下的应用程序。<br/>
-基于传统的 Spring 框架开发 web 应用， 我们需要做很多和业务开发无关并且只需要做一次的配置， 比如管理 jar 包依赖web.xml 维护Dispatch-Servlet.xml 配置项维护应用部署到 Web 容器第三方组件集成到 Spring IOC 容器中的配置项维护 <br/>
+**首先**， 约定优于配置是一种软件设计的范式， 它的核心思想是减少软件开发人员对于配置项的维护， 从而让开发人员更加聚焦在业务逻辑上。<br/>
+**第二**Spring Boot 就是约定优于配置这一理念下的产物， 它类似于 Spring 框架下的一个脚手架， 通过 Spring Boot， 我们可以快速开发基于 Spring 生态下的应用程序。<br/>
+**第三**基于传统的 Spring 框架开发 web 应用， 我们需要做很多和业务开发无关并且只需要做一次的配置， 比如：
+
+> 1,管理 jar 包依赖<br/>
+> 2,web.xml 维护<br/>
+> 3,springmvc中的Dispatch-Servlet.xml 配置项维护<br/>
+> 4,应用部署到 Web 容器<br/>
+> 5,第三方组件集成到 Spring IOC 容器中的配置项维护 <br/>
+
 而在 Spring Boot 中， 我们不需要再去做这些繁琐的配置， Spring Boot 已经自动帮我们完成了， 这就是约定由于配置思想的体现。
-Spring Boot 约定由于配置的体现有很多， 比如Spring Boot Starter 启动依赖， 它能帮我们管理所有 jar 包版本
-如果当前应用依赖了spring mvc相关的jar， 那么Spring Boot会自动内置Tomcat容器来运行 web 应用， 我们不需要再去单独做应用部署。<br/>
-Spring Boot 的自动装配机制的实现中， 通过扫描约定路径下的 spring.factories文件来识别配置类， 实现 Bean 的自动装配。
-默认加载的配置文件 application.properties 等等。<br/>
-总的来说， 约定优于配置是一个比较常见的软件设计思想， 它的核心本质都是为了更高效以及更便捷的实现软件系统的开发和维护。
+
+**最后**Spring Boot 约定由于配置的体现有很多， 比如：
+
+- Spring Boot Starter 启动依赖， 它能帮我们管理所有 jar 包版本<br/>
+- 如果当前应用依赖了spring mvc相关的jar， 那么Spring Boot会自动内置Tomcat容器来运行 web 应用， 我们不需要再去单独做应用部署。
+- Spring Boot 的自动装配机制的实现中， 通过扫描约定路径下的 spring.factories文件来识别配置类， 实现 Bean 的自动装配。
+- 默认加载的配置文件 application.properties 等等。<br/>
+  
+
+总的来说， 约定优于配置是一个比较常见的软件设计思想， 它的核心本质都是为了更高效以及更便捷的实现软件系统的开发和维护。<br/>
 以上就是我对这个问题的理解。<br/>
 
 #### 结尾
@@ -48,12 +60,11 @@ Spring Boot 的自动装配机制的实现中， 通过扫描约定路径下的 
 
 自动装配， 简单来说就是自动把第三方组件的 Bean 装载到 Spring IOC 器里面，不需要开发人员再去写 Bean 的装配配置。<br/>
 在 Spring Boot 应用里面， 只需要在启动类加上@SpringBootApplication 注解就可以实现自动装配。<br/>
-@SpringBootApplication 是 一 个 复 合 注 解 ， 真 正 实 现 自 动 装 配 的 注 解 是@EnableAutoConfiguration。<br/>
-自动装配的实现主要依靠三个核心关键技术。<br/>
-引入 Starter 启动依赖组件的时候， 这个组件里面必须要包含@Configuration 配置类， 在这个配置类里面通过@Bean 注解声明需要装配到 IOC 容器的 Bean 对象。<br/>
-这个配置类是放在第三方的 jar 包里面， 然后通过 SpringBoot 中的约定优于配置思想， 把这个配置类的全路径放在 classpath:/META-INF/spring.factories 文件中。<br/>
+@SpringBootApplication是一 个复合注解 ， 真 正 实 现 自 动 装 配 的注解是@EnableAutoConfiguration。<br/>
+自动装配的实现主要依靠三个核心关键技术。<br/>**第一个**引入 Starter 启动依赖组件的时候， 这个组件里面必须要包含@Configuration 配置类， 在这个配置类里面通过@Bean 注解声明需要装配到 IOC 容器的 Bean 对象。<br/>**第二个**这个配置类是放在第三方的 jar 包里面， 然后通过 SpringBoot 中的约定优于配置思想， 把这个配置类的全路径放在 classpath:/META-INF/spring.factories 文件中。<br/>
 这样 SpringBoot 就可以知道第三方 jar 包里面的配置类的位置， 这个步骤主要是用到了 Spring 里面的 SpringFactoriesLoader 来完成的。<br/>
-SpringBoot 拿到所第三方 jar 包里面声明的配置类以后， 再通过 Spring 提供的ImportSelector 接口， 实现对这些配置类的动态加载。
+**第三个**SpringBoot 拿到所第三方 jar 包里面声明的配置类以后， 再通过 Spring 提供的ImportSelector 接口， 实现对这些配置类的动态加载。从而去完成自动装配这个动作<br/>
+
 在我看来， SpringBoot 是约定优于配置这一理念下的产物， 所以在很多的地方，都会看到这类的思想。 它的出现， 让开发人员更加聚焦在了业务代码的编写上，而不需要去关心和业务无关的配置。<br/>
 其实， 自动装配的思想， 在 SpringFramework3.x 版本里面的@Enable 注解， 就有了实现的雏形。 @Enable 注解是模块驱动的意思， 我们只需要增加某个@Enable 注解， 就自动打开某个功能， 而不需要针对这个功能去做 Bean 的配置， @Enable 底层也是帮我们去自动完成这个模块相关 Bean 的注入。<br/>
 以上， 就是我对 Spring Boot 自动装配机制的理解  <br/>
@@ -87,12 +98,15 @@ SpringBoot 拿到所第三方 jar 包里面声明的配置类以后， 再通过
 
 ![image-20240105161842367](img/image-20240105161842367.png)
 
-而解决跨域问题的方法，就是在不破坏同源策略的情况下，能够安全地实现数据共享和<br/>
-交互。
+而解决跨域问题的方法，就是在不破坏同源策略的情况下，能够安全地实现数据共享和交互。
 
 #### 问题解答
 
-常见的解决跨域问题的方法有两种，一种是 jsonp，另一种是 CORS。<br/>
+常见的解决跨域问题的方法有两种，
+
+- 一种是 jsonp，
+- 另一种是 CORS。<br/>
+
 其中，CORS 是一种在服务器后端解决跨域的方案，它的工作原理很简单。<br/>
 如果一个网站需要访问另一个网站的资源，浏览器会先发送一个 OPTIONS 请求，<br/>
 根据服务器返回的 Access-Control-Allow-Origin 头信息，决定是否允许跨域访问。<br/>
@@ -114,7 +128,7 @@ publicclassCorsConfigimplementsWebMvcConfigurer {
 }
 ~~~~
 
-以上就是我的理解。<br/>
+以上就是解决这个问题的方法。<br/>
 
 
 ### 如何理解Spring Boot中的Starter？看完高手的回答简直就像教科书
@@ -210,10 +224,6 @@ hi， 大家好， 我是 Mic， 一个没有才华只能靠颜值混饭吃的 J
 技术的发展是日新月异的， 不要让自己停留在一个舒适区， 否则以后找不到合适
 的工作会焦虑。<br/>
 我是 Mic， 咱们下期再见！  <br/>
-
-
-
-
 
 ### 是微服务架构嘛？如果你来设计一个类似淘宝 的系统，你怎么划分微服务？  
 
