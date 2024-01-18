@@ -90,6 +90,9 @@
     - [01_RabbitMQ安装](java/mq/RabbitMQ/01_RabbitMQ安装.md)
     - [02_RabbitMQ简单使用](java/mq/RabbitMQ/02_RabbitMQ简单使用.md)
     - [03_RabbitMQ延时队列(死信)](java/mq/RabbitMQ/03_RabbitMQ延时队列(死信).md)
+    - [03_RabbitMQ延时队列(插件版)](java/mq/RabbitMQ/03_RabbitMQ延时队列(插件版).md)
+    - [04_RabbitMQ消息确认)](java/mq/RabbitMQ/04_RabbitMQ消息确认.md)
+    - [05_RabbitMQ多线程)](java/mq/RabbitMQ/05_RabbitMQ多线程.md)
 
 [//]: # "其他功能"
 - 其他功能
