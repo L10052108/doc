@@ -85,8 +85,11 @@
 [//]: # "java基础"
 - MQ
   - [01_MQ的介绍](java/mq/01MQ的介绍.md)
-  - [Spring Boot+Disruptor=王炸](java/mq/02Disruptor.md)
-
+  - [01_Spring Boot+Disruptor=王炸](java/mq/02Disruptor.md)
+  - RabbitMQ
+    - [01_RabbitMQ安装](java/mq/RabbitMQ/01_RabbitMQ安装.md)
+    - [02_RabbitMQ简单使用](java/mq/RabbitMQ/02_RabbitMQ简单使用.md)
+    - [03_RabbitMQ延时队列(死信)](java/mq/RabbitMQ/03_RabbitMQ延时队列(死信).md)
 
 [//]: # "其他功能"
 - 其他功能
