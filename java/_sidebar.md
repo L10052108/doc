@@ -82,17 +82,6 @@
     - [01_虚拟线程](java/jdk/jdk21/01_虚拟线程.md)
     - [02_jdk21新特性](java/jdk/jdk21/02_jdk21新特性.md)
 
-[//]: # "java基础"
-- MQ
-  - [01_MQ的介绍](java/mq/01MQ的介绍.md)
-  - [01_Spring Boot+Disruptor=王炸](java/mq/02Disruptor.md)
-  - RabbitMQ
-    - [01_RabbitMQ安装](java/mq/RabbitMQ/01_RabbitMQ安装.md)
-    - [02_RabbitMQ简单使用](java/mq/RabbitMQ/02_RabbitMQ简单使用.md)
-    - [03_RabbitMQ延时队列(死信)](java/mq/RabbitMQ/03_RabbitMQ延时队列(死信).md)
-    - [03_RabbitMQ延时队列(插件版)](java/mq/RabbitMQ/03_RabbitMQ延时队列(插件版).md)
-    - [04_RabbitMQ消息确认)](java/mq/RabbitMQ/04_RabbitMQ消息确认.md)
-    - [05_RabbitMQ多线程)](java/mq/RabbitMQ/05_RabbitMQ多线程.md)
 
 [//]: # "其他功能"
 - 其他功能
@@ -139,16 +128,6 @@
     - [22_中介者模式](java/设计模式/22_中介者模式.md)
     - [23_解释器模式](java/设计模式/23_解释器模式.md)
 
-- netty
-  - [01_websocket使用](java/netty/webSocket.md)
-  - [01_02websocket使用](java/netty/websocket2.md)
-  - [01_03websocket在项目中的使用](java/netty/01_03websocket在项目中的使用.md)
-  - [02_netty中client的使用](java/netty/netty_client.md)
-  - [03_netty中client的断开后重连](java/netty/netty_client2.md)
-  - [03_netty之protobuf](java/netty/03_netty之protobuf.md)
-  - [04_netty之ByteBuf用法](java/netty/04ByteBuf用法.md)
-  - [05_netty之编码和解码](java/netty/05_netty之编码和解码.md)
-  - [06_Netty解决粘包和拆包问题的四种方案](java/netty/06_Netty解决粘包和拆包问题的四种方案.md)
 
 - 工具
   - [01_maven](java/工具/01maven.md)

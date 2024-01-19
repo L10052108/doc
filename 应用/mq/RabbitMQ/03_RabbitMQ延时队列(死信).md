@@ -198,7 +198,7 @@ public class DelayReceiver {
 }
 ```
 
-#### 4.发送者
+#### 发送者
 
 ```java
 package com.lzc.rabbitmq.config;
@@ -222,7 +222,7 @@ public class DelaySender {
         log.info("【订单生成时间】" + new Date().toString() +"【1分钟后检查订单是否已经支付】" + order.toString() );
         this.amqpTemplate.convertAndSend(DelayRabbitConfig.ORDER_DELAY_EXCHANGE, DelayRabbitConfig.ORDER_DELAY_ROUTING_KEY, order, message -> {
             // 如果配置了 params.put("x-message-ttl", 5 * 1000); 那么这一句也可以省略,具体根据业务需要是声明 Queue 的时候就指定好延迟时间还是在发送自己控制时间
-            message.getMessageProperties().setExpiration(1 * 1000 * 60 + "");
+            message.getMessageProperties().setExpiration(1 * 1000 * 10 + "");
             return message;
         });
     }
@@ -232,54 +232,52 @@ public class DelaySender {
 #### 测试
 
 ```java
-package com.lzc.rabbitmq.controller;
- 
-import com.lzc.rabbitmq.config.DelaySender;
-import com.lzc.rabbitmq.config.Sender;
-import com.lzc.rabbitmq.dataobject.Order;
+
+import lombok.SneakyThrows;
+import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
- 
-import java.util.concurrent.DelayQueue;
- 
-@RestController
-public class TestController {
- 
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
+import store.liuwei.mq.simple.dead.DelaySender;
+import store.liuwei.mq.simple.dead.Order;
+
+@RunWith(SpringRunner.class)
+@SpringBootTest
+public class DelayDemo {
+
     @Autowired
     private DelaySender delaySender;
- 
-    @GetMapping("/sendDelay")
-    public Object sendDelay() {
+
+
+    @SneakyThrows
+    @Test
+    public void sendDelay() {
         Order order1 = new Order();
         order1.setOrderStatus(0);
         order1.setOrderId("123456");
         order1.setOrderName("小米6");
- 
+        delaySender.sendDelay(order1);
+
+        Thread.sleep(1000*2);
         Order order2 = new Order();
         order2.setOrderStatus(1);
         order2.setOrderId("456789");
         order2.setOrderName("小米8");
- 
-        delaySender.sendDelay(order1);
         delaySender.sendDelay(order2);
-        return "ok";
+
+        int i = 0;
+        for(;;){
+            Thread.sleep(1000*1);
+            System.out.println("i:" + (i++));
+        }
     }
+
+
 }
+
 ```
 
-访问http://localhost:8080/sendDelay，查看日志输出
+直接运行的结果
 
-```shell
-【订单生成时间】Mon Jun 18 11:55:36 CST 2018【1分钟后检查订单是否已经支付】Order(orderId=123456, orderStatus=0, orderName=小米6)
-【订单生成时间】Mon Jun 18 11:55:36 CST 2018【1分钟后检查订单是否已经支付】Order(orderId=456789, orderStatus=1, orderName=小米8)
- ###########################################
-【orderDelayQueue 监听的消息】 - 【消费时间】 - [Mon Jun 18 11:56:36 CST 2018]- 【订单内容】 - [Order(orderId=123456, orderStatus=0, orderName=小米6)]
-【该订单未支付，取消订单】Order(orderId=123456, orderStatus=2, orderName=小米6)
- ###########################################
- ###########################################
-【orderDelayQueue 监听的消息】 - 【消费时间】 - [Mon Jun 18 11:56:36 CST 2018]- 【订单内容】 - [Order(orderId=456789, orderStatus=1, orderName=小米8)]
-【该订单已完成支付】
- ###########################################
-```
-
+![image-20240119105500217](img/image-20240119105500217.png)

@@ -38,3 +38,29 @@
   - [01_分布式quartz_cluster方式](应用/定时任务/分布式/01_分布式quartz_cluster方式.md)
   - [02_分布式elastic-job方式](应用/定时任务/分布式/02_分布式elastic-job方式.md)
   - [03_分布式xxl-job方式](应用/定时任务/分布式/03_分布式xxl-job方式.md)
+
+
+[//]: # "java基础"
+- MQ
+  - [01_MQ的介绍](应用/mq/01MQ的介绍.md)
+  - [01_Spring Boot+Disruptor=王炸](应用/mq/02Disruptor.md)
+  - RabbitMQ
+    - [01_RabbitMQ安装](应用/mq/RabbitMQ/01_RabbitMQ安装.md)
+    - [02_RabbitMQ概述](应用/mq/RabbitMQ/02_RabbitMQ概述.md)
+    - [02_RabbitMQ简单使用](应用/mq/RabbitMQ/02_RabbitMQ简单使用.md)
+    - [03_RabbitMQ延时队列(死信)](应用/mq/RabbitMQ/03_RabbitMQ延时队列(死信).md)
+    - [03_RabbitMQ延时队列(插件版)](应用/mq/RabbitMQ/03_RabbitMQ延时队列(插件版).md)
+    - [04_RabbitMQ消息确认)](应用/mq/RabbitMQ/04_RabbitMQ消息确认.md)
+    - [05_RabbitMQ多线程)](应用/mq/RabbitMQ/05_RabbitMQ多线程.md)
+
+
+- netty
+  - [01_websocket使用](应用/netty/webSocket.md)
+  - [01_02websocket使用](应用/netty/websocket2.md)
+  - [01_03websocket在项目中的使用](应用/netty/01_03websocket在项目中的使用.md)
+  - [02_netty中client的使用](应用/netty/netty_client.md)
+  - [03_netty中client的断开后重连](应用/netty/netty_client2.md)
+  - [03_netty之protobuf](应用/netty/03_netty之protobuf.md)
+  - [04_netty之ByteBuf用法](应用/netty/04ByteBuf用法.md)
+  - [05_netty之编码和解码](应用/netty/05_netty之编码和解码.md)
+  - [06_Netty解决粘包和拆包问题的四种方案](应用/netty/06_Netty解决粘包和拆包问题的四种方案.md)
