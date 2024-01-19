@@ -44,14 +44,14 @@
 - MQ
   - [01_MQ的介绍](应用/mq/01MQ的介绍.md)
   - [01_Spring Boot+Disruptor=王炸](应用/mq/02Disruptor.md)
-  - RabbitMQ
+  - **RabbitMQ**
     - [01_RabbitMQ安装](应用/mq/RabbitMQ/01_RabbitMQ安装.md)
     - [02_RabbitMQ概述](应用/mq/RabbitMQ/02_RabbitMQ概述.md)
     - [02_RabbitMQ简单使用](应用/mq/RabbitMQ/02_RabbitMQ简单使用.md)
     - [03_RabbitMQ延时队列(死信)](应用/mq/RabbitMQ/03_RabbitMQ延时队列(死信).md)
     - [03_RabbitMQ延时队列(插件版)](应用/mq/RabbitMQ/03_RabbitMQ延时队列(插件版).md)
-    - [04_RabbitMQ消息确认)](应用/mq/RabbitMQ/04_RabbitMQ消息确认.md)
-    - [05_RabbitMQ多线程)](应用/mq/RabbitMQ/05_RabbitMQ多线程.md)
+    - [04_RabbitMQ消息确认](应用/mq/RabbitMQ/04_RabbitMQ消息确认.md)
+    - [05_RabbitMQ多线程](应用/mq/RabbitMQ/05_RabbitMQ多线程.md)
 
 
 - netty
