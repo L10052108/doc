@@ -46,6 +46,7 @@
   - [07_collection](java/java基础/07_collection.md)
   - [07_02Java集合复习](java/java基础/07_02Java集合复习.md)
   - [08_Java开发利器之重试](java/java基础/08_Java开发利器之重试.md)
+  - [09_5大线程安全Map](java/java基础/09_5大线程安全Map.md)
 
 - Java Agent
   - [01_一文讲透Java Agent是什么](java/java_agent/01_一文讲透Java_Agent是什么.md)
