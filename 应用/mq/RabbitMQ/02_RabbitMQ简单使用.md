@@ -434,7 +434,6 @@ public class FanoutRabbitConfig {
     Binding bindingExchangeC(Queue CMessage, FanoutExchange fanoutExchange) {
         return BindingBuilder.bind(CMessage).to(fanoutExchange);
     }
-
 }
 ```
 
