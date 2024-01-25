@@ -42,7 +42,6 @@
 
 [//]: # "java基础"
 - MQ
-  - [01_MQ的介绍](应用/mq/01MQ的介绍.md)
   - [01_Spring Boot+Disruptor=王炸](应用/mq/02Disruptor.md)
   - **RabbitMQ**
     - [01_RabbitMQ安装](应用/mq/RabbitMQ/01_RabbitMQ安装.md)

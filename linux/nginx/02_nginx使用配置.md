@@ -448,7 +448,7 @@ location / {
 
 ### 防盗链
 
-![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4e6359caa0d442a684f2e7b59e90ea6e~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=909&h=484&s=25125&e=png&b=e8f0f4)
+![4e6359caa0d442a684f2e7b59e905](img/4e6359caa0d442a684f2e7b59e905.png)
 
 > 防盗链是指防止其他网站直接链接到你的网站资源（如图片、视频等），从而消耗你的服务器带宽。Nginx提供了一个非常方便的模块——`ngx_http_referer_module`，用于实现防盗链功能。
 
@@ -694,25 +694,20 @@ http {
 }
 ```
 
-
-
-
-
 在两台tomcat正常运行的情况下，访问http://localhost 速度非常迅速，通过测试程序也可以看出是得到的负载均衡的效果，但是我们试验性的把其中一台tomcat（server localhost:8080）关闭后，再查看[http://localhost](http://localhost/)，发现反应呈现了一半反映时间快，一半反映时间非常非常慢的情况，但是最后都能得到正确结果.
 
->**proxy_connect_timeout** 
->语法：proxy_connect_timeout time ； 
->该指令设置与upstream server的连接超时时间，有必要记住，这个超时不能超过75秒。说明 ：该指令设置与代理服务器的读超时时间。它决定了nginx会等待多长时间来获得请求的响应。这个时间不是获得整个response的时间，而是两次reading操作的时间。 
->**proxy_send_timeout** 
->语法 proxy_send_timeout time ； 
->默认值 60s 
->说明： 这个指定设置了发送请求给upstream服务器的超时时间。超时设置不是为了整个发送期间，而是在两次write操作期间。如果超时后，upstream没有收到新的数据，nginx会关闭连接 
->**proxy_read_timeout** 
->语法 proxy_read_timeout time ； 
->默认值 60s 
->说明： 该指令设置与代理服务器的读超时时间。它决定了nginx会等待多长时间来获得请求的响应。这个时间不是获得整个response的时间，而是两次reading操作的时间。
->
->在http模块内配置了这三个字段，再reload 一下，只启动一个项目，就会发现，就算宕机一台，我们的项目也可以接着使用，如果不放心，可以多试几次。
+>**proxy_connect_timeout** <br/>
+>语法：proxy_connect_timeout time ； <br/>
+>该指令设置与upstream server的连接超时时间，有必要记住，这个超时不能超过75秒。说明 ：该指令设置与代理服务器的读超时时间。它决定了nginx会等待多长时间来获得请求的响应。这个时间不是获得整个response的时间，而是两次reading操作的时间。 <br/>
+>**proxy_send_timeout** <br/>
+>语法 proxy_send_timeout time ； <br/>
+>默认值 60s <br/>
+>说明： 这个指定设置了发送请求给upstream服务器的超时时间。超时设置不是为了整个发送期间，而是在两次write操作期间。如果超时后，upstream没有收到新的数据，nginx会关闭连接 <br/>
+>**proxy_read_timeout** <br/>
+>语法 proxy_read_timeout time ； <br/>
+>默认值 60s <br/>
+>说明： 该指令设置与代理服务器的读超时时间。它决定了nginx会等待多长时间来获得请求的响应。这个时间不是获得整个response的时间，而是两次reading操作的时间。<br/>
+>在http模块内配置了这三个字段，再reload 一下，只启动一个项目，就会发现，就算宕机一台，我们的项目也可以接着使用，如果不放心，可以多试几次。<br/>
 
 ### 正向代理配置
 

@@ -519,3 +519,32 @@ https://www.toutiao.com/article/7217678109011903015/?app=news_article&timestamp=
 会用RabbitMQ延迟插件，代码量直接降一半？
 
 https://mp.weixin.qq.com/s/Mh914S6nU0qjeijTRhEkOQ
+
+
+java基于quasar实现协程池
+https://blog.csdn.net/weixin_47723549/article/details/125377215
+
+https://blog.csdn.net/weixin_47723549/article/details/125534140
+
+
+BeanFactoryPostProcessor 接口的使用
+
+
+```java
+Reflections reflections = new Reflections("store", Scanners.values());
+        Set<Class<? extends IRabbitConfig>> iRabbitClasses = new HashSet<>(reflections.getSubTypesOf(IRabbitConfig.class));
+
+        Reflections allReflections = new Reflections();
+        iRabbitClasses.addAll(allReflections.getSubTypesOf(IRabbitConfig.class));
+```
+
+工具类的使用
+
+spring创建对象的生命周期
+
+https://blog.csdn.net/xiaoyu_alive/article/details/135740524
+
+https://blog.csdn.net/weixin_42594143/article/details/128865448
+
+Springboot扩展点之BeanFactoryPostProcessor
+https://blog.csdn.net/fox9916/article/details/128823328

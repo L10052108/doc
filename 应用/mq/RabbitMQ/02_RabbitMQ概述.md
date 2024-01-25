@@ -15,6 +15,8 @@ RabbitMQ 是一个开源的 AMQP 实现，服务器端用Erlang语言编写，�
 
 ### 相关概念
 
+#### 基本概念
+
 通常我们谈到队列服务, 会有三个概念： 发消息者、队列、收消息者，RabbitMQ 在这个基本概念之上, 多做了一层抽象, 在发消息者和 队列之间, 加入了交换器 (Exchange). 这样发消息者和队列就没有直接联系, 转而变成发消息者把消息给交换器, 交换器根据调度策略再把消息再给队列。
 
 ![img](img/RabbitMQ01.png)
@@ -50,7 +52,7 @@ Channel是在Connection的基础上建立的虚拟连接，RabbitMQ中大部分�
 Channel就是为了解决这种问题，通常情况下，每个线程创建单独的Channel进行通讯，每个Channel都有自己的channel id帮助Broker和客户端识别Channel，所以Channel之间是完全隔离的。
 
 Connection与Channel之间的关系可以比作光纤电缆，如果把Connection比作一条光纤电缆，那么Channel就相当于是电缆中的一束光纤。
-
+![img](img/0e10e03c676c4123997fbedb95733d6c.png)
 
 #### Queue（队列）
 

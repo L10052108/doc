@@ -45,6 +45,12 @@
   - [01_01安装](数据库/oracle/01安装.md)
   - [100_常见的问题](数据库/oracle/100常见的问题.md)
 
+- h2
+  - [01_H2的使用](数据库/h2/01H2的使用.md)
+  - [02_sqlite的使用](数据库/h2/02sqlite的使用.md)
+  - [03_数据库连接池druid](数据库/h2/03_数据库连接池druid.md)
+  - [04_数据库连接池HikariCP](数据库/h2/04_数据库连接池HikariCP.md)
+
 - mybatis
   - [00_springboot集成mybatis](数据库/mybatis/00_springboot集成mybatis.md)
   - [00_springboot集成mybatis多数据源](数据库/mybatis/00_springboot集成mybatis多数据源.md)

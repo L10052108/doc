@@ -57,11 +57,7 @@
   - [01_Spring Boot3.0升级，踩坑之旅](springboot/springboot3/01springboot3踩坑.md)
   - [02_新项目为什么决定用 Spring Boot 3.1 + JDK 17了](springboot/springboot3/02springboot3升级功能.md)
 
-- 数据库
-  - [01_H2的使用](springboot/h2/01H2的使用.md)
-  - [02_sqlite的使用](springboot/h2/02sqlite的使用.md)
-  - [03_数据库连接池druid](springboot/h2/03_数据库连接池druid.md)
-  - [04_数据库连接池HikariCP](springboot/h2/04_数据库连接池HikariCP.md)
+
 
 - 文件上传
   - [01_minio](springboot/文件上传/01minio.md)
