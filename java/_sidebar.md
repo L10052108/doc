@@ -47,6 +47,8 @@
   - [07_02Java集合复习](java/java基础/07_02Java集合复习.md)
   - [08_Java开发利器之重试](java/java基础/08_Java开发利器之重试.md)
   - [09_5大线程安全Map](java/java基础/09_5大线程安全Map.md)
+  - **100_反射**
+    - [100_01反射机制详解](java/java基础/100_01反射机制详解.md)
 
 - Java Agent
   - [01_一文讲透Java Agent是什么](java/java_agent/01_一文讲透Java_Agent是什么.md)
@@ -74,15 +76,24 @@
   - [04_Queue](java/jdk/04Queue.md)
   - [04_02Deque](java/jdk/04_02Deque.md)
   - [05_反射限制](java/jdk/05反射限制.md)
-  - **JVM**
-    - [01_垃圾回收的区域](java/jdk/JVM/01垃圾回收机制.md)
-    - [02_垃圾回收算法](java/jdk/JVM/02垃圾回收机制.md)
-    - [03_OOM教你生成dump](java/jdk/JVM/03_OOM教你生成dump.md)
   - **jdk21**
     - [00_jdk21介绍](java/jdk/jdk21/00_jdk21介绍.md)
     - [01_虚拟线程](java/jdk/jdk21/01_虚拟线程.md)
     - [02_jdk21新特性](java/jdk/jdk21/02_jdk21新特性.md)
 
+ - JVM
+   - JVM系列
+     - [01_初识JVM](java/jdk/JVM系列/01_初识JVM.md)
+     - [02_字节码文件详解](java/jdk/JVM系列/02_字节码文件详解.md)
+     - [03_类的生命周期](java/jdk/JVM系列/03_类的生命周期.md)
+     - [04_类加载器](java/jdk/JVM系列/04_类加载器.md)
+     - [05_java内存区域](java/jdk/JVM系列/05_java内存区域.md)
+     - [06_java垃圾回收](java/jdk/JVM系列/06_java垃圾回收.md)
+   - JVM介绍
+     - [01_垃圾回收的区域](java/jdk/JVM/01垃圾回收机制.md)
+     - [02_垃圾回收算法](java/jdk/JVM/02垃圾回收机制.md)
+     - [03_OOM教你生成dump](java/jdk/JVM/03_OOM教你生成dump.md)
+   
 
 [//]: # "其他功能"
 - 其他功能

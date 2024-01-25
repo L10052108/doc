@@ -548,3 +548,10 @@ https://blog.csdn.net/weixin_42594143/article/details/128865448
 
 Springboot扩展点之BeanFactoryPostProcessor
 https://blog.csdn.net/fox9916/article/details/128823328
+
+
+
+
+
+插件
+https://blog.csdn.net/Netceor/article/details/119705826
