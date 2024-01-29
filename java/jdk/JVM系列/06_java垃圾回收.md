@@ -7,19 +7,19 @@
 
 **内存泄漏**指的是不再使用的对象在系统中未被回收，内存泄漏的积累可能会导致**内存溢出**。
 
-![1.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/195202abfab7405b99705ad1eee44a0f~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=748&h=264&s=39577&e=png&b=fcf5f4)
+![1.png](img/Yr6pdnD318kXhfK.png)
 
 Java中为了简化对象的释放，引入了自动的**垃圾回收（Garbage Collection简称GC）\**机制。通过垃圾回收器来对不再使用的对象完成自动的回收，垃圾回收器主要负责对\**堆上**的内存进行回收。其他很多现代语言比如C#、Python、Go都拥有自己的垃圾回收器。
 
-![2.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/95580ccb8f384aae9a8b2ab43e58a710~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=825&h=273&s=49261&e=png&b=f5f4f4)
+![2.png](img/a9ULXSNPzcH5bsY.png)
 
 **垃圾回收器的对比**
 
-![3.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/60993586117c48b193526b847122823f~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=1008&h=409&s=153116&e=png&b=fffefe)
+![3.png](img/hL24RClcgkMqn1r.png)
 
 **应用场景**
 
-![4.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/12cd11295ed64e358629399370f315d7~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=889&h=333&s=79637&e=png&b=ffffff)
+![4.png](img/iUGh6N8snHfI1YD.png)
 
 ## 方法区的回收
 
@@ -27,25 +27,25 @@ Java虚拟机在运行Java程序过程中管理的内存区域，称之为**运�
 
 《Java虚拟机规范》中规定了每一部分的作用
 
-![5.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0568b55222084eab978bec9208107897~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=1014&h=367&s=33468&e=png&b=ffffff)
+![5.png](img/8XtPLNYpcoB6yMf.png)
 
 线程不共享的部分，都是**伴随着线程的创建而创建，线程的销毁而销毁**。而方法的栈帧在执行完方法之后就会自动弹出栈并释放掉对应的内存。
 
-![6.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/02aa8ac9dea94bc7b694fb9b4475c648~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=775&h=355&s=27344&e=png&b=fffafa)
+![6.png](img/n6kIgO1rYpEGT7W.png)
 
 方法区中能回收的内容主要就是不再使用的类。判定一个类可以被卸载。需要同时满足下面三个条件：
 
 **此类所有实例对象都已经被回收，在堆中不存在任何该类的实例对象以及子类对象。**
 
-![7.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f40426339ab54a6b99e3d7d7d6bb745b~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=658&h=109&s=26002&e=png&b=fefdfd)
+![7.png](img/JFKuo69Ljp2eQAl.png)
 
 **加载该类的类加载器已经被回收。**
 
-![8.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/53cb0c11e12a492ba0acfa55c396041d~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=729&h=135&s=33911&e=png&b=fefbfb)
+![8.png](img/WODToGNMHpuVSU4.png)
 
 **该类对应的 java.lang.Class 对象没有在任何地方被引用。**
 
-![9.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/9ed65fcaf7cb489bb780202645730430~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=675&h=132&s=18806&e=png&b=fdfcfc)
+![9.png](img/JzgkLois5cVjQGy.png)
 
 ### 手动触发回收
 
@@ -55,7 +55,7 @@ Java虚拟机在运行Java程序过程中管理的内存区域，称之为**运�
 
 但是调用System.gc()方法并不一定会立即回收垃圾，仅仅是向Java虚拟机发送一个垃圾回收的请求，具体是否需要执行垃圾回收Java虚拟机会自行判断。
 
-![10.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/efabf6313f2a4d32af7548db3ff023ef~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=501&h=417&s=83885&e=png&b=fdfcfc)
+![10.png](img/e3vSFayXOIrslmR.png)
 
 现在这段代码，如果不打开注释的话，可以触发gc上的回收，因为我们使用的是while，当我们的循环进入到下一轮的时候，上一轮创建的三个对象就已经没有人在使用了，那么此时java虚拟机就会把这三个对象回收掉。所以没有必要添加 o = null。
 
@@ -71,13 +71,13 @@ Java虚拟机在运行Java程序过程中管理的内存区域，称之为**运�
 
 Java中的对象是否能被回收，是根据对象是否被**引用**来决定的。如果对象被引用了，说明该对象还在使用，不允许被回收。
 
-![11.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ada0d6feddb04e378236bff37d66d4f4~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=963&h=333&s=38613&e=png&b=fff9f8)
+![11.png](img/kels3rD4z2u8jLX.png)
 
 demo = null导致堆上的引用失效，所以堆上的Demo实例对象就可以被垃圾回收。
 
 上述的案例比较简单，但是如果对象之间互相包含着引用呢？比如这样。
 
-![12.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a9f8dea649334749b84c675281a86e3e~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=937&h=315&s=53938&e=png&b=fef7f6)
+![12.png](img/rIHuztn9Mk6LqNU.png)
 
 只有无法通过引用获取到对象时，该对象才能被回收。
 
@@ -87,17 +87,17 @@ demo = null导致堆上的引用失效，所以堆上的Demo实例对象就可�
 
 2.B对象到A对象的引用
 
-![13.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ae75eadfd7bc45ec9bd9f3ac135de095~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=930&h=297&s=57309&e=png&b=fffaf9)
+![13.png](img/cSnRVZGrD3TAvLU.png)
 
 如果在main方法中最后执行 a1 = null ，b1 = null，是否能回收A和B对象呢？ 可以回收，方法中已经没有办法使用引用去访问A和B对象了。
 
-![14.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e449848510a0450b8ac323a31225b2fd~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=921&h=291&s=56900&e=png&b=fef9f8)
+![14.png](img/SlY73PMFDW6ZvnU.png)
 
 常见的有两种判断方法：引用计数法和可达性分析法。
 
 引用计数法会为每个对象维护一个引用计数器，当对象被引用时加1，取消引用时减1。
 
-![15.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/26a6113122ab417b87d1a420810ad3a9~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=835&h=330&s=34467&e=png&b=e3f0fd)
+![15.png](img/MrglnLXAvJbsQ8f.png)
 
 引用计数法的优点是实现简单，C++中的智能指针就采用了引用计数法，但是它也存在缺点，主要有两点：
 
@@ -105,13 +105,13 @@ demo = null导致堆上的引用失效，所以堆上的Demo实例对象就可�
 
 2.存在循环引用问题，所谓循环引用就是当A引用B，B同时引用A时会出现对象无法回收的问题。
 
-![16.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3a3241d123af4be4ad1630f6ed941b51~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=1522&h=564&s=283427&e=png&b=fef6f5)
+![16.png](img/9r2OW6bn1HmRq5S.png)
 
 **如果想要查看垃圾回收的信息，可以使用-verbose:gc参数。**
 
 语法： **-verbose:gc**
 
-![17.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4f598fa859b745a4b83bf32ccaa5c87f~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=862&h=198&s=71888&e=png&b=fbfafa)
+![17.png](img/PuAUGd45hbDiXaM.png)
 
 运行之后分析，java虚拟机在上述代码中其实是没有出现内存泄漏的，也就是有效地进行了垃圾回收。
 
@@ -121,23 +121,23 @@ Java使用的是**可达性分析算法**来判断对象是否可以被回收。
 
 **下图中A到B再到C和D，形成了一个引用链，可达性分析算法指的是如果从某个到GC Root对象是可达的，对象就不可被回收。**
 
-![18.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e44580870b2d4811836cb7988a1f62f3~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=823&h=289&s=37670&e=png&b=f9f3e6)
+![18.png](img/g7Eh9b6FWpfsPjO.png)
 
 那么在可达性分析算法中，那些对象被称之为GC ROOT对象呢？
 
 **线程Thread对象**
 
-![19.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e4c050f8066d4ba3ba9d03ed68348d71~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=952&h=379&s=62734&e=png&b=fefaf9)
+![19.png](img/2lB7ex1c35iQusa.png)
 
 此时如果设置了a1 = null b1 = null，此时就相当于将堆内存上的引用去掉了，此时堆内存就到不到了GC Root了，所以会被回收。
 
 **系统类加载器加载的java.lang.Class对象，引用类中的静态变量。**
 
-![20.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f67f22da76d247b58dbacfaa87601dfe~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=973&h=133&s=39443&e=png&b=fefefe)
+![20.png](img/YKVfjbTe5sSitqJ.png)
 
 **监视器对象，用来保存同步锁synchronized关键字持有的对象。**
 
-![21.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/7107053240ef4ca48f89aac6dd631133~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=826&h=222&s=43688&e=png&b=fefefe)
+![21.png](img/lQoxu2Nd5AqcWh3.png)
 
 **本地方法调用时使用的全局对象。**
 
@@ -151,7 +151,7 @@ Java使用的是**可达性分析算法**来判断对象是否可以被回收。
 
 3、选择GC Roots功能查看所有的GC Root。
 
-![22.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/91cab4845b814343aa6c537c48af721d~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=861&h=240&s=76308&e=png&b=fdfcfc)
+![22.png](img/ow5OFTpSARLUMdx.png)
 
 ### 五种引用状态
 
@@ -175,7 +175,7 @@ Java使用的是**可达性分析算法**来判断对象是否可以被回收。
 
 4.如果依然内存不足，抛出OutOfMemory异常。
 
-![23.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f17df94b6a3c4e598be32d7af9a896c0~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=775&h=145&s=37086&e=png&b=fdfbfb)
+![23.png](img/WQClI4mPUJGdM2D.png)
 
 在java中有一款比较有名的缓存框架Caffeine，在创建缓存对象的时候，可以将value值设置成soft也就是软引用。
 
@@ -210,17 +210,17 @@ SoftReference提供了一套队列机制：
 
 1、软引用创建时，通过构造器传入引用队列
 
-![24.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/44e154ae1c99456ea78d9d6bb98684c3~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=889&h=307&s=46072&e=png&b=fdf6f1)
+![24.png](img/jzcMNK5tdHwIRDG.png)
 
 2、在软引用中包含的对象被回收时，该软引用对象会被放入引用队列
 
-![25.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/cd287d4675aa40a58139046eafb3899a~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=1423&h=589&s=101511&e=png&b=fff8f5)
+![25.png](img/FauETylcPs2LUeC.png)
 
 3、通过代码遍历引用队列，将SoftReference的强引用删除
 
 代码如下：
 
-![26.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f895b969119e4f369e42f78691213557~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=549&h=364&s=136545&e=png&b=fefcfc)
+![26.png](img/GiVhwgFj5n9JzpX.png)
 
 假如说堆内存设置为200M，那么输出为9。
 
@@ -228,16 +228,16 @@ SoftReference提供了一套队列机制：
 
 软引用也可以使用继承自SoftReference类的方式来实现，StudentRef类就是一个软引用对象。通过构造器传入软引用包含的对象，以及引用队列。
 
-![27.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/43113f71668b4a15bec491be666fa04a~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=700&h=259&s=48056&e=png&b=fdfcfc)
+![27.png](img/IxFzN1XowUfmpl4.png)
 
 使用软引用实现学生数据的缓存：
 
-![28.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/7a7e512d3e224198a544164ebcb09227~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=976&h=354&s=50655&e=png&b=fcf9f9)
+![28.png](img/d7XqGtEsg56ux8r.png)
 
 实现代码如下：
 
 ```java
-java复制代码package chapter04.soft;
+package chapter04.soft;
 
 import java.lang.ref.ReferenceQueue;
 import java.lang.ref.SoftReference;
@@ -360,7 +360,7 @@ class Student {
 弱引用对象本身也可以使用引用队列进行回收。
 
 ```java
-java复制代码byte[] bytes = new byte[1024 * 1024 * 100];
+byte[] bytes = new byte[1024 * 1024 * 100];
         WeakReference<byte[]> weakReference = new WeakReference<byte[]>(bytes);
         bytes = null;
         System.out.println(weakReference.get());
@@ -394,13 +394,13 @@ Java是如何实现垃圾回收的呢？简单来说，垃圾回收要做的有�
 
 本质上后续所有的垃圾回收算法，都是在上述两种算法的基础上优化而来。
 
-![29.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/12012f5c49454826b634c2f9c4bb7882~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=957&h=196&s=30679&e=png&b=fefefe)
+![29.png](img/l7XqtgAdEw6FoiS.png)
 
 ##### 垃圾回收算法的评价标准
 
 Java垃圾回收过程会通过单独的GC线程来完成，但是不管使用哪一种GC算法，都会有部分阶段需要停止所有的用户线程。这个过程被称之为Stop The World简称STW，如果STW时间过长则会影响用户的使用。
 
-![30.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5fc06f9385e54b37a0511cd4b77f323e~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=883&h=93&s=13639&e=png&b=ffffff)
+![30.png](img/Bcd9IXFksY8NP1b.png)
 
 所以判断GC算法是否优秀，可以从三个方面来考虑：
 
@@ -414,7 +414,7 @@ Java垃圾回收过程会通过单独的GC线程来完成，但是不管使用�
 
 最大暂停时间指的是所有在垃圾回收过程中的STW时间最大值。比如如下的图中，黄色部分的STW就是最大暂停时间，显而易见上面的图比下面的图拥有更少的最大暂停时间。最大暂停时间越短，用户使用系统时受到的影响就越短。
 
-![31.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/9bb6a09e4f4e4e14911449dd8f4856cd~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=895&h=247&s=32406&e=png&b=ffffff)
+![31.png](img/UGd9y3ErQI8TCVK.png)
 
 3.堆使用效率
 
@@ -426,7 +426,7 @@ Java垃圾回收过程会通过单独的GC线程来完成，但是不管使用�
 
 **不同的垃圾回收算法，适用于不同的场景。**
 
-![32.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/aa9dde795da1419098c7d8990c549429~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=763&h=187&s=13844&e=png&b=fefefe)
+![32.png](img/xGeuIzbLgDSRBJo.png)
 
 ##### 标记清除算法
 
@@ -444,11 +444,11 @@ Java垃圾回收过程会通过单独的GC线程来完成，但是不管使用�
 
 由于内存是连续的，所以在对象被删除之后，内存中会出现很多细小的可用内存单元。如果我们需要的是一 个比较大的空间，很有可能这些内存单元的大小过小无法进行分配。
 
-![33.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/88f92dc0930347f3bd308c6dfd7fc1b9~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=850&h=282&s=45461&e=png&b=fefefe)
+![33.png](img/vfKIPJrp9kXFn4l.png)
 
 2.分配速度慢。由于内存碎片的存在，需要维护一个空闲链表，极有可能发生每次需要遍历到链表的最后才 能获得合适的内存空间。
 
-![34.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/02b0167bc0384bfebaf196f19e574ca7~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=991&h=229&s=33231&e=png&b=ffffff)
+![34.png](img/sPrAf2XRaMHyk9p.png)
 
 ##### 复制算法
 
@@ -472,7 +472,7 @@ Java垃圾回收过程会通过单独的GC线程来完成，但是不管使用�
 
 ###### 优缺点
 
-![35.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/59ccc819aab6495c940988637d9413dd~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=970&h=358&s=106031&e=png&b=fefefe)
+![35.png](img/RmZTPakt4yndjo1.png)
 
 ##### 标记整理法
 
@@ -484,11 +484,11 @@ Java垃圾回收过程会通过单独的GC线程来完成，但是不管使用�
 
 2.整理阶段，将存活对象移动到堆的一端。清理掉存活对象的内存空间。
 
-![36.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4fc523a346de4070bd8c039f28ac8070~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=1033&h=220&s=21283&e=png&b=fdfdfd)
+![36.png](img/VeadSy9BbQnmMJ5.png)
 
 ###### 优缺点
 
-![37.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/7a8d789323b54c1f8e3bf155fca8be54~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=982&h=340&s=108757&e=png&b=fffefe)
+![37.png](img/fr4txGUNXvoyVYL.png)
 
 ##### 分代垃圾回收算法
 
@@ -496,7 +496,7 @@ Java垃圾回收过程会通过单独的GC线程来完成，但是不管使用�
 
 分代垃圾回收将整个内存区域划分为年轻代和老年代：
 
-![38.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6db1d64bf2074ed3bbaeafdba3b0ff0b~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=1500&h=628&s=107318&e=png&b=fefefe)
+![38.png](img/3IhK8sbVL7cfZOA.png)
 
 **arthas查看分代之后的内存情况**
 
@@ -504,7 +504,7 @@ Java垃圾回收过程会通过单独的GC线程来完成，但是不管使用�
 
 在arthas中使用memory命令查看内存，显示出三个区域的内存情况。
 
-![39.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4f6e898457ea467682e3b66fa0ba301b~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=933&h=225&s=69367&e=png&b=272c33)
+![39.png](img/VXdqbscmBNkZYWo.png)
 
 **根据以下虚拟机参数，调整堆的大小并观察结果。注意加上-XX:+UseSerialGC**
 
@@ -524,9 +524,9 @@ Java垃圾回收过程会通过单独的GC线程来完成，但是不管使用�
 
 Minor GC会把需要eden中和From需要回收的对象回收，把没有回收的对象放入To区。
 
-![40.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8721785229d348a182f3271a05f7426b~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=928&h=288&s=19473&e=png&b=fdfdfd)
+![40.png](img/jfMucvkUApV9qKt.png)
 
-![41.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e161645c96614c00b89ac0954b6097db~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=978&h=294&s=29867&e=png&b=fefefe)
+![41.png](img/rYy84lAIapbXCFn.png)
 
 通过分析可知，年轻代使用的是复制算法
 
@@ -534,17 +534,17 @@ Minor GC会把需要eden中和From需要回收的对象回收，把没有回收�
 
 此时会回收eden区和S1(from)中的对象，并把eden和from区中剩余的对象放入S0。
 
-![42.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/debefcc510534bf2b391248cb9cfc890~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=985&h=300&s=40475&e=png&b=fefefe)
+![42.png](img/UkafXtjFgEQwP5e.png)
 
 注意：每次Minor GC中都会为对象记录他的年龄，初始值为0，每次GC完加1。
 
-![43.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ad7a7fe3ab1f453e9bb8db9126f85372~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=985&h=301&s=35331&e=png&b=fefefe)
+![43.png](img/LXi8vD5lRxZ3pF4.png)
 
 如果Minor GC后对象的年龄达到阈值（最大15，默认值和垃圾回收器有关），对象就会被晋升至老年代。
 
-![44.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c3a0722b66dd43a291f2fc9de6b5b87a~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=984&h=298&s=35195&e=png&b=fefefe)
+![44.png](img/3FlZRrBoaNAXtih.png)
 
-![45.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/87f11770baee45939922b15a752a62e5~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=987&h=301&s=34972&e=png&b=fefefe)
+![45.png](img/QWwKYEviXZBI4jM.png)
 
 当老年代中空间不足，无法放入新的对象时，先尝试minor gc如果还是不足，就会触发Full GC，Full GC会对整个堆进行垃圾回收。
 
@@ -552,7 +552,7 @@ Minor GC会把需要eden中和From需要回收的对象回收，把没有回收�
 
 下图中的程序为什么会出现OutOfMemory？
 
-![46.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/03fb4edece11480eaec291c4853a26f2~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=615&h=81&s=40583&e=png&b=252a2d)
+![46.png](img/ZkcnlCJfj6Ie1sF.png)
 
 从上图可以看到，Full GC无法回收掉老年代的对象，那么当对象继续放入老年代时，就会抛出Out Of Memory异常。
 
@@ -560,7 +560,7 @@ Minor GC会把需要eden中和From需要回收的对象回收，把没有回收�
 
 为什么分代GC算法要把堆分成年轻代和老年代？
 
-![47.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/011a8b89ca0a479a95ad136c395a5282~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=946&h=300&s=21912&e=png&b=fefefe)
+![47.png](img/EMXnuI9DjdayCbh.png)
 
 系统中的大部分对象，都是创建出来之后很快就不再使用可以被回收，比如用户获取订单数据，订单数据返回给用户之后就可以释放了。
 
@@ -568,7 +568,7 @@ Minor GC会把需要eden中和From需要回收的对象回收，把没有回收�
 
 在虚拟机的默认设置中，新生代大小要远小于老年代的大小。
 
-![48.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2cecea4a133d49f18d5eda1688493ff3~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=705&h=234&s=10843&e=png&b=ffffff)
+![48.png](img/LSM4QWY9IaAfDrP.png)
 
 分代GC算法将堆分成年轻代和老年代主要原因有：
 
@@ -584,13 +584,13 @@ Minor GC会把需要eden中和From需要回收的对象回收，把没有回收�
 
 由于垃圾回收器分为年轻代和老年代，除了G1之外其他垃圾回收器必须成对组合进行使用。
 
-![49.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6ed2b5822f1848d7a5309a087978d9cc~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=1021&h=358&s=61440&e=png&b=fdfdfd)
+![49.png](img/GQMhHk29eOlC47n.png)
 
 #### 年轻代-Serial垃圾回收器
 
 Serial是是一种**单线程串行**回收年轻代的垃圾回收器
 
-![50.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/96babf8bc33a49a5910acf768f8e9aa3~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=523&h=217&s=15041&e=png&b=ffffff)
+![50.png](img/kjsqVQRvBEcAeKw.png)
 
 ![51.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4cd41db9bdf940c8a558fe90875f2062~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=984&h=127&s=49795&e=png&b=fefdfd)
 
@@ -600,7 +600,7 @@ SerialOld是Serial垃圾回收器的老年代版本，采用**单线程串行回
 
 **-XX:+UseSerialGC 新生代、老年代都使用串行回收器。**
 
-![52.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0f67550098e64c4f9f22a39d55295b20~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=532&h=205&s=14976&e=png&b=ffffff)
+![52.png](img/wtJTkBGWSCfeERj.png)
 
 ![53.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/53dbf0ca9e994c9097d913f32711b057~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=1000&h=157&s=53503&e=png&b=fefdfd)
 
@@ -608,7 +608,7 @@ SerialOld是Serial垃圾回收器的老年代版本，采用**单线程串行回
 
 ParNew垃圾回收器本质上是对Serial在多CPU下的优化，使用**多线程**进行垃圾回收**-XX:+UseParNewGC 新生代使用ParNew回收器， 老年代使用串行回收器**
 
-![54.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a0240b7d22464148a047d0a0724369e7~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=511&h=199&s=15220&e=png&b=ffffff)
+![54.png](img/AoRSnhMfYaL8Pi6.png)
 
 ![55.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4063968ae08d4521a8e811d93dbb8e2c~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=967&h=109&s=45908&e=png&b=fffefe)
 
@@ -618,9 +618,9 @@ CMS垃圾回收器关注的是系统的**暂停时间**，**允许用户线程�
 
 参数：XX:+UseConcMarkSweepGC
 
-![56.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0b717b2e38fc4d91a547c57ba325692f~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=576&h=151&s=14533&e=png&b=fbfafa)
+![56.png](img/vh1QbGSsMRdK9Yk.png)
 
-![57.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f8670d241d9d40488877f1ea713530a7~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=961&h=127&s=52933&e=png&b=fefdfd)
+![57.png](img/rLCzwmVt1EWZcnS.png)
 
 **CMS执行步骤：**
 
@@ -652,19 +652,19 @@ ParallelGCThreads是由处理器核数决定的：
 
 2、否则 ParallelGCThreads = 8 + (CPU核数 – 8 )*5/8
 
-![58.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/305533962c3f452889911270e73723ad~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=850&h=220&s=28103&e=png&b=fefefe)
+![58.png](img/wG7AafYxvEOFdUr.png)
 
 由于CPU的核心数有限，就会影响用户线程执行的性能。
 
-![59.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/44b9f482c64a44149fc4d0efd2c77d19~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=765&h=370&s=32899&e=png&b=fffefe)
+![59.png](img/ESme39ytvoGzpWM.png)
 
 #### 年轻代-Parallel Scavenge垃圾回收器
 
 Parallel Scavenge是JDK8默认的年轻代垃圾回收器，**多线程并行回收，关注的是系统的吞吐量。具备自动调整堆内存大小的特点。**
 
-![60.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/892d7490cd574e52bac29d5facbc8569~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=517&h=210&s=15315&e=png&b=ffffff)
+![60.png](img/wY1qm9jgfzHsi6r.png)
 
-![61.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/7717246a638e45d0923544cc6c67ff24~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=991&h=142&s=51723&e=png&b=fefdfd)
+![61.png](img/q9bfnxPvpkoFid3.png)
 
 #### 老年代-Parallel Old垃圾回收器
 
@@ -674,15 +674,15 @@ Parallel Old是为Parallel Scavenge收集器设计的老年代版本，利用多
 
 Parallel Scavenge + Parallel Old这种组合。
 
-![62.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/94336fb6d87c40f8ba614fc3a8c8b934~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=516&h=196&s=15330&e=png&b=ffffff)
+![62.png](img/RpD6tg3iK7IO8Mu.png)
 
-![63.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/dea707e7833d4f48a563d95e9f43de9d~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=942&h=115&s=35494&e=png&b=ffffff)
+![63.png](img/uCqSDNpGxHv75yX.png)
 
 Parallel Scavenge允许手动设置最大暂停时间和吞吐量。
 
 Oracle官方建议在使用这个组合时，**不要设置堆内存的最大值**，垃圾回收器会根据最大暂停时间和吞吐量自动调整内存大小。
 
-![64.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c788f88871214d2ca0380d6ef842536f~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=838&h=141&s=54185&e=png&b=fefdfd)
+![c788f888712](img/c788f888712.png)
 
 #### G1垃圾回收器
 
@@ -706,11 +706,11 @@ CMS关注暂停时间，但是吞吐量方面会下降。
 
 G1出现之前的垃圾回收器，内存结构一般是连续的，如下图：
 
-![65.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/043c7823989e4befb64f0254c0e16eeb~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=898&h=250&s=21512&e=png&b=fefefe)
+![65.png](img/LbuQP2IgSzcsmBv.png)
 
 G1的整个堆会被划分成多个大小相等的区域，称之为区Region，区域不要求是连续的。分为Eden、Survivor、Old区。Region的大小通过堆空间大小/2048计算得到，也可以通过参数-XX:G1HeapRegionSize=32m指定(其中32m指定region大小为32M)，Region size必须是2的指数幂，取值范围从1M到32M。
 
-![66.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/dfe4c27f75e444a195d2ad0c862b0256~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=427&h=303&s=9523&e=png&b=fefefe)
+![66.png](img/tI5l4FDnr1M2863.png)
 
 G1垃圾回收有两种方式：
 
@@ -746,17 +746,17 @@ G1在进行Young GC的过程中会去记录每次垃圾回收时每个Eden区和
 
 （-XX:InitiatingHeapOccupancyPercent默认45%）会触发混合回收MixedGC。回收所有年轻代和部分老年代的对象以及大对象区。采用复制算法来完成。
 
-![67.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/983cc0581194422dbff689ba49f42148~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=550&h=309&s=15221&e=png&b=ffffff)
+![67.png](img/rdIBY2Zo3g9bifj.png)
 
 混合回收分为：初始标记（initial mark）、并发标记（concurrent mark）、最终标记（remark或者Finalize Marking）、并发清理（cleanup）
 
-![68.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/31e238885d0b4ab4853ffb72aa3032e7~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=958&h=297&s=63251&e=png&b=ffffff)
+![68.png](img/o4gTQjpAFd39xLW.png)
 
 G1对老年代的清理会选择存活度最低的区域来进行回收，这样可以保证回收效率最高，这也是G1（Garbage first）名称的由来。
 
 最后清理阶段使用复制算法，不会产生内存碎片。
 
-![69.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b8cb2b9f67644c30b5f990ffc1851966~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=955&h=345&s=23169&e=png&b=ffffff)
+![69.png](img/l6bwuSLxMzaKI3J.png)
 
 注意：如果清理过程中发现没有足够的空Region存放转移的对象，会出现Full GC。单线程执行标记-整理算法，此时会导致用户线程的暂停。所以尽量保证应该用的堆内存有一定多余的空间。
 
@@ -766,7 +766,7 @@ G1对老年代的清理会选择存活度最低的区域来进行回收，这样
 
 参数2：-XX:MaxGCPauseMillis=毫秒值最大暂停的时间
 
-![70.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a383f99aab204937b5a04080177891a6~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=967&h=154&s=47963&e=png&b=fffefe)
+![70.png](img/ZSlVdiFqasOWnhD.png)
 
 
 
