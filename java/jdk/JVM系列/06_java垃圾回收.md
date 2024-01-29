@@ -592,7 +592,7 @@ Serial是是一种**单线程串行**回收年轻代的垃圾回收器
 
 ![50.png](img/kjsqVQRvBEcAeKw.png)
 
-![51.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4cd41db9bdf940c8a558fe90875f2062~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=984&h=127&s=49795&e=png&b=fefdfd)
+![51.png](img/BfGTCbXvz73ZsHO.png)
 
 #### 老年代-SerialOld垃圾回收器
 
@@ -602,7 +602,7 @@ SerialOld是Serial垃圾回收器的老年代版本，采用**单线程串行回
 
 ![52.png](img/wtJTkBGWSCfeERj.png)
 
-![53.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/53dbf0ca9e994c9097d913f32711b057~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=1000&h=157&s=53503&e=png&b=fefdfd)
+![53.png](img/OuThLjp4NMk8zva.png)
 
 #### 年轻代-ParNew垃圾回收器
 
@@ -610,7 +610,7 @@ ParNew垃圾回收器本质上是对Serial在多CPU下的优化，使用**多线
 
 ![54.png](img/AoRSnhMfYaL8Pi6.png)
 
-![55.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4063968ae08d4521a8e811d93dbb8e2c~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=967&h=109&s=45908&e=png&b=fffefe)
+![55.png](img/sL2W9zr1lvM65St.png)
 
 #### 老年代- CMS(Concurrent Mark Sweep)垃圾回收器
 
@@ -770,7 +770,7 @@ G1对老年代的清理会选择存活度最低的区域来进行回收，这样
 
 
 
-作者：爱吃芝士的土豆倪
-链接：https://juejin.cn/post/7327642905244893219
-来源：稀土掘金
-著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+作者：爱吃芝士的土豆倪<br/>
+链接：https://juejin.cn/post/7327642905244893219<br/>
+来源：稀土掘金<br/>
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。<br/>
