@@ -89,6 +89,10 @@
      - [04_类加载器](java/jdk/JVM系列/04_类加载器.md)
      - [05_java内存区域](java/jdk/JVM系列/05_java内存区域.md)
      - [06_java垃圾回收](java/jdk/JVM系列/06_java垃圾回收.md)
+     - [07_内存调优](java/jdk/JVM系列/07_内存调优.md)
+     - [08_GC调优](java/jdk/JVM系列/08_GC调优.md)
+     - [09_性能调优](java/jdk/JVM系列/09_性能调优.md)
+
    - JVM介绍
      - [01_垃圾回收的区域](java/jdk/JVM/01垃圾回收机制.md)
      - [02_垃圾回收算法](java/jdk/JVM/02垃圾回收机制.md)

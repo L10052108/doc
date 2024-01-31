@@ -1,8 +1,29 @@
-资料来源
-
+资料来源<br/>
 [官方标配！吊炸天的Linux可视化管理工具，必须推荐给你](https://www.toutiao.com/article/7067569199320744482/?app=news_article&timestamp=1650380630&use_new_style=1&req_id=202204192303500101580310440513B0C8&group_id=7067569199320744482&wxshare_count=1&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_android&utm_campaign=client_share&share_token=28858b91-92b4-4b88-b8ca-6fc124edb795)
 
+[1Panel：比宝塔更好用的开源 Linux 面板](https://www.youtube.com/watch?v=7bdfTASCW0U)
+
 ## linux可视化工具
+
+### 1Panel
+
+官网：https://1panel.cn/
+
+![image-20240131150929768](img/image-20240131150929768.png)
+
+点击下载安装
+
+```shell
+curl -sSL https://resource.fit2cloud.com/1panel/package/quick_start.sh -o quick_start.sh && sudo bash quick_start.sh
+```
+
+![image-20240131151011023](img/image-20240131151011023.png)
+
+安装过程非常简单，也非常好用
+
+![image-20240131151039251](img/image-20240131151039251.png)
+
+
 
 ###  Cockpit简介
 

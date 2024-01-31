@@ -552,6 +552,9 @@ https://blog.csdn.net/fox9916/article/details/128823328
 
 
 
-
 插件
 https://blog.csdn.net/Netceor/article/details/119705826
+
+我们放弃了Nacos作为配置中心，转而选择了这款神器~
+https://mp.weixin.qq.com/s/EBFV8_7Syyh4_rcX-Be47g
+
