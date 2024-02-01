@@ -1,7 +1,7 @@
 - java
   - [java](java/)
   - [linux](linux/)
-  - [springboot](springboot/)
+  - [spring](springboot/)
   - [数据库](数据库/) <br/>
   - [面试](faceNotes/) <br/>
   - [前端](前端/) <br/>

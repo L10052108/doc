@@ -52,7 +52,10 @@
 - spring
   - [01_BeanUtils拷贝list](springboot/spring/01_BeanUtils拷贝list.md)
   - [02_Spring丰富的内置工具类](springboot/spring/02_Spring丰富的内置工具类.md)
-
+  - **spring Bean**
+    - [01_springBean的生命周期](springboot/spring/bean/01_SpringBean的生命周期.md)
+    - [02_工厂后置处理器](springboot/spring/bean/02_工厂后置处理器.md)
+    - [03_工厂后置处理器使用案例](springboot/spring/bean/03_工厂后置处理器使用案例.md)
 - springboot3.0
   - [01_Spring Boot3.0升级，踩坑之旅](springboot/springboot3/01springboot3踩坑.md)
   - [02_新项目为什么决定用 Spring Boot 3.1 + JDK 17了](springboot/springboot3/02springboot3升级功能.md)

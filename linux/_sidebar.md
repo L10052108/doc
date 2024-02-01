@@ -13,7 +13,6 @@
     - [09_DooTask轻量级的开源在线项目任务管理工具](linux/服务/在线项目任务管理工具.md)
     - [10_linux远程桌面管理工具xrdp](linux/服务/xrdp.md)
     - [11_nps](linux/服务/nps.md)
-    - [13_Nexus](linux/服务/11_Nexus.md)
     
   - 翻墙
     - [bbr加速](linux/服务/翻墙/bbr.md)
@@ -70,3 +69,4 @@
   - [12_redis](linux/docker服务/12_redis.md)
   - [13_sqlserver](linux/docker服务/13_sqlserver.md)
   - [14_禅道](linux/docker服务/14_禅道.md)
+  - [15_Nexus](linux/服务/11_Nexus.md)
