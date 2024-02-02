@@ -4,7 +4,165 @@
 
 ## 时间函数
 
-### now
+### 获取时间
+
+#### DATE(date)
+
+**返回指定日期/时间表达式的日期部分或将文本转为日期格式**
+
+```sql
+mysql> select date("2022-3-15");2022-03-15
+mysql> select date('2022-4-15 12:30:48');2022-04-15
+
+```
+
+#### YEAR(date)
+
+**返回指定日期的年份(范围在1000到9999)**
+
+```sql
+mysql> select year('2022-4-15 12:30:48');2022
+```
+
+类似的，MONTH(date)返回指定日期的月份(范围在1到12）；DAY(date)返回指定日期的日(范围在1到31)；HOUR(datetime)返回指定时间的小时(范围在0-23)；minute(datetime)返回指定时间的分(范围在0-59)；second(datetime)返回指定时间的秒(范围在0-59)。
+
+#### 对日期时间进行加减运算
+
+> **ADDDATE(**date,interval expr type)
+>
+> DATE_ADD(date,interval expr type)
+>
+> SUBDATE(date,interval expr type)
+>
+> DATE_SUB(date,interval expr type)
+
+其中，date是一个datetime或date值；expr是对date进行加减法的一个表达式字符串或一个数字；type指明表达式expr应该如何被解释，是减去1天还是一年等。
+
+![img](img/b2de9c82d158ccbf96a976d090808c34b03541a2.jpeg)
+
+
+
+```sql
+mysql>select adddate('2022-4-1',interval 5 day);2022-04-06
+select adddate('2022-4-15 13:30:28',interval '3 1:2' day_minute);2022-04-18 14:32:28
+```
+
+#### DATE_FORMAT
+
+**根据format字符串格式化date值，常用于获取日期的年月日和时间**
+
+在format字符串中可用标志符
+
+%M 月名字(january……december)
+
+**%Y 年**, 数字, 4 位
+
+%y 年, 数字, 2 位
+
+%a 缩写的星期名字(sun……sat)
+
+**%d 月份中的天数**, 数字(00……31)
+
+%e 月份中的天数, 数字(0……31)
+
+**%m 月**, 数字(01……12)
+
+%c 月, 数字(1……12)
+
+%b 缩写的月份名字(jan……dec)
+
+%j 一年中的天数(001……366)
+
+%h 十二时制的小时(00……12)
+
+%k 二十四时制的小时(0……23)
+
+%i 分钟, 数字(00……59)
+
+%r 时间,12 小时(hh:mm:ss [ap]m)
+
+%s 秒(00……59) %p am或pm
+
+**%w 一个星期中的天数**(0=sunday ……6=saturday ）
+
+**%u 一年中的周数**(1……53)
+
+示例
+
+```
+mysql> select date_format('2022-4-15 13:30:28','%Y-%m-%d');2022-04-15
+```
+
+#### 5.CURDATE()
+
+**以'yyyy-mm-dd'或yyyymmdd格式返回当前日期值(根据返回值所处上下文是字符串或数字)**
+
+示例
+
+```
+mysql> select curdate();2022-04-15
+mysql> select curdate()+0;20220415
+```
+
+#### CURTIME()
+
+**以'hh:mm:ss'或hhmmss格式返回当前时间值(根据返回值所处上下文是字符串或数字)**
+
+```
+mysql> select curtime();22:26:44
+```
+
+#### NOW()
+
+**以'yyyy-mm-dd hh:mm:ss'或yyyymmddhhmmss格式返回当前日期时间(根据返回值所处上下文是字符串或数字**
+
+示例
+
+```
+mysql> select now();2022-04-15 22:28:33
+```
+
+#### TIMESTAMPDIFF(type,expr1,expr2)
+
+**返回起始日expr1和结束日expr2之间的时间差整数**。
+
+时间差的单位由type指定：
+
+second 秒
+
+minute 分
+
+hour 时
+
+day 天
+
+month 月
+
+year 年
+
+示例
+
+```
+select timestampdiff(day,'2022-4-1','2022-4-15') 14
+```
+
+#### UNIX_TIMESTAMP([date])
+
+**返回一个unix时间戳(从'1970-01-01 00:00:00'开始的秒数,date默认值为当前时间)**
+
+```
+mysql> select unix_timestamp('2022-4-15');1649952000
+```
+
+#### FROM_UNIXTIME(unix_timestamp)
+
+**以'yyyy-mm-dd hh:mm:ss'或yyyymmddhhmmss格式返回时间戳的值(根据返回值所处上下文是字符串或数字)**
+
+```
+mysql> select from_unixtime(1649952001);2022-04-15 00:00:01
+```
+
+#### now
 
 获得当前日期+时间（date + time）函数：now()
 
