@@ -83,7 +83,7 @@ source <(curl -sL https://git.io/trojan-install) --remove
 
 **注意： 默认的管理员 用户名： admin**
 
-![](https://tva1.sinaimg.cn/large/e6c9d24ely1h0lvtc1da6j20w00iqdhb.jpg)
+
 
 
 
@@ -92,7 +92,26 @@ source <(curl -sL https://git.io/trojan-install) --remove
 https://jinlilu.lanzoum.com/iDWBu01yfm7a
 密码:71jt
 
+联网出现
 
+```shell
+500 Internal Privoxy Error
+Privoxy encountered an error while processing your request:
+
+Could not load template file no-server-data or one of its included components.
+
+Please contact your proxy administrator.
+
+If you are the proxy administrator, please put the required file(s)in the (confdir)/templates directory. The location of the (confdir) directory is specified in the main Privoxy config file. (It's typically the Privoxy install directory).
+```
+
+
+
+1. 双击WINDOWS底部状态栏的时间
+2. 更改日期和时间设置
+3. Internet时间
+4. 更改设置
+5. 立即更新
 
 
 
