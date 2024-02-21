@@ -541,3 +541,24 @@ https://blog.csdn.net/qq_32740973/article/details/131799510
 
 
 ![image-20240218151618123](img/image-20240218151618123.png)
+
+
+smart-doc-maven-plugin 
+
+https://www.jianshu.com/p/b0a4bb457bd1
+
+https://zhuanlan.zhihu.com/p/608697109
+
+
+
+```
+@Slf4j
+@RestController
+@Setter(onMethod_ = @Autowired)
+@RequestMapping("/api/v1/specialist/disposable")
+public class ExpertMigrationController {
+```
+
+
+
+![image-20240221135550921](img/image-20240221135550921.png)
