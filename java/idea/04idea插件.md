@@ -149,7 +149,7 @@ Allow auto-make to start even if developed application is currently running
 
 1、安装完后，pom文件下方就会出现Dependency Analyzer面板。可以查看依赖冲突，也可以搜索相关依赖，进入后效果如下：
 
-![img](https://img2020.cnblogs.com/blog/711223/202201/711223-20220106094828214-1347609022.png)
+![img](img/711223-20220106094828214-1347609022.png)
 
 ### mybatis
 

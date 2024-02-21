@@ -36,6 +36,52 @@
 
 `npm i docsify-cli -g`
 
+如果初始化报错`ERR code ETIMEDOUT`
+
+```
+C:\Users\Administrator>npm i docsify-cli -g
+npm ERR! code ETIMEDOUT
+npm ERR! syscall connect
+npm ERR! errno ETIMEDOUT
+npm ERR! network request to https://registry.npmjs.org/update-notifier failed, reason: connect ETIMEDOUT 104.16.26.34:443
+npm ERR! network This is a problem related to network connectivity.
+npm ERR! network In most cases you are behind a proxy or have bad network settings.
+npm ERR! network
+npm ERR! network If you are behind a proxy, please make sure that the
+npm ERR! network 'proxy' config is set properly.  See: 'npm help config'
+
+npm ERR! A complete log of this run can be found in: C:\Users\Administrator\AppData\Local\npm-cache\_logs\2024-02-20T10_19_05_930Z-debug-0.log
+```
+
+处理方法
+
+```
+//1.查看npm镜像设置
+npm config get registry
+//2.将npm设置为淘宝镜像
+npm config set registry https://registry.npm.taobao.org
+//3.再次查看npm镜像设置
+npm config get registry
+//4.重新install
+npm i docsify-cli -g
+```
+
+![image-20240220183403126](img/image-20240220183403126.png)
+
+
+
+[npm install报错ERR code ETIMEDOUT的解决办法](https://blog.csdn.net/laosao_66/article/details/135880270)
+
+```
+清除npm缓存
+npm cache clean --force
+取消ssl验证：
+npm config set strict-ssl false
+之后再npm install 你想安装的东西
+```
+
+
+
 初始化项目
 
 ````Java
@@ -44,6 +90,10 @@ docsify init ./docs
 # 启动一个本地服务器，可以方便地实时预览效果。默认访问地址 http://localhost:3000
 docsify serve docs
 ````
+
+
+
+
 
 初始化成功后，可以看到 ./docs 目录下创建的几个文件
 
