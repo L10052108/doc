@@ -413,7 +413,7 @@ springboot学习
   练习
   https://github.com/lizhifuabc/spring-learn
   springbotot3
-  
+
   https://github.com/hb0730/boot-admin
 
 
@@ -421,7 +421,7 @@ springboot学习
   Dynamic Thread Pool
 
 
-  ____ ____    ___ ____ _  _ ____ _  _ 
+____ ____    ___ ____ _  _ ____ _  _
 [__  |__| __  |  |  | |_/  |___ |\ | 
 ___] |  |     |  |__| | \_ |___ | \| 
 
@@ -532,3 +532,12 @@ https://blog.csdn.net/weixin_47723549/article/details/125534140
 我们放弃了Nacos作为配置中心，转而选择了这款神器~
 https://mp.weixin.qq.com/s/EBFV8_7Syyh4_rcX-Be47g
 
+SpringBoot3 GraalVM 原生镜像打包 
+
+https://blog.csdn.net/qq_32740973/article/details/131799510
+
+
+
+
+
+![image-20240218151618123](img/image-20240218151618123.png)
