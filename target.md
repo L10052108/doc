@@ -220,12 +220,6 @@ https://blog.csdn.net/weixin_42286276/article/details/127860167?utm_medium=distr
 https://blog.csdn.net/FlyLikeButterfly/article/details/130888197?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_baidulandingword~default-0-130888197-blog-104897288.235^v38^pc_relevant_sort_base1&spm=1001.2101.3001.4242.1&utm_relevant_index=3
 
 
-Swing图形化设计
-https://blog.csdn.net/liudonglovehemin/article/details/130740949
-
-https://blog.csdn.net/weixin_43444930/article/details/117855310
-
-https://blog.csdn.net/weixin_43444930/article/details/118769225?spm=1001.2101.3001.6650.3&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-3-118769225-blog-130740949.235%5Ev38%5Epc_relevant_sort_base1&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-3-118769225-blog-130740949.235%5Ev38%5Epc_relevant_sort_base1&utm_relevant_index=6
 
 25000 字详解 23 种设计模式，建议收藏
 https://mp.weixin.qq.com/s/tX0bRm1ZnsTNdVWbAD1N5g
@@ -310,21 +304,6 @@ https://juejin.cn/post/7176057114006126653
 
 
 
-
-JUC集合: ConcurrentLinkedQueue详解
-https://pdai.tech/md/java/thread/java-thread-x-juc-collection-ConcurrentLinkedQueue.html
-
-
-网关apisix：https://github.com/apache/apisix
-
-
-rabbitMQ 订阅多线程问题？
-https://blog.csdn.net/LituXay/article/details/121652381 
-
-https://blog.csdn.net/weixin_68829137/article/details/127070686?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_baidulandingword~default-0-127070686-blog-114993402.235^v38^pc_relevant_default_base3&spm=1001.2101.3001.4242.1&utm_relevant_index=1 
-
-![img](img/0e10e03c676c4123997fbedb95733d6c.png)
-
 极光推送
 https://blog.csdn.net/weixin_39255905/article/details/132181104
 
@@ -368,20 +347,6 @@ https://www.toutiao.com/article/7281613145850937910/?app=news_article&timestamp=
 日志
 
 https://zhuanlan.zhihu.com/p/611653538
-
-
-
-
-一文讲透Java Agent是什么玩意？能干啥？怎么用？
-https://zhuanlan.zhihu.com/p/6366039104
-
-
-
-亚毫秒GC暂停到底有多香？JDK17+ZGC初体验｜得物技术
-
-————————————————
-版权声明：本文为CSDN博主「得物技术」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
-原文链接：https://blog.csdn.net/SmartCodeTech/article/details/131247135
 
 
 自实现分布式链路追踪 方案&实践
@@ -463,24 +428,20 @@ https://www.toutiao.com/w/1779448256684045/?app=news_article&timestamp=169808719
 https://mp.weixin.qq.com/s?__biz=Mzg3NzU0MDQzOQ==&mid=2247506021&idx=1&sn=88ff7bbaca6637c0dcbf825fc003327b&chksm=cf23fd5df854744bcf2dc7f55fa2e390d8923e78d9acfadc4c553ad1d05ec560ab2626aa1c41&scene=178&cur_album_id=1832215597854621698#rd
 
 
-SpringBoot 统一功能处理！
-https://mp.weixin.qq.com/s?__biz=Mzg3NzU0MDQzOQ==&mid=2247503236&idx=1&sn=add9470a1cb2d0898ef16f5331e150f5&chksm=cf23e8bcf85461aa257b6ba2daa8f9a9b29c8da6213cd237b36ca67c46ea79c9d288480e0d26&scene=178&cur_album_id=1832215597854621698#rd
+
 
 
 
 
 
 9个维度全面解析：如何确保RocketMQ不丢失消息？
-https://www.toutiao.com/article/7297062388674019867/?app=news_article&timestamp=1700618701&use_new_style=1&req_id=2023112210050077CC27BAD635664779D4&group_id=7297062388674019867&wxshare_count=1&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_android&utm_campaign=client_share&share_token=622501d5-6418-41fc-88da-9ad662de39be&source=m_redirect
-
+https://www.toutiao.com/article/7297062388674019867
 
 SpringBoot 3.0整合OpenAPI使用教程
 https://mp.weixin.qq.com/s/lX-tpZzXEV-vJ-l3xjRNNQ
 
-
 一款IT团队都在用的私有化知识库，技术开放，还开源了！
-https://www.toutiao.com/article/7301120615451460108/?app=news_article&timestamp=1700850155&use_new_style=1&req_id=20231125022234FFB74A6BB69F8F36B45A&group_id=7301120615451460108&wxshare_count=1&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_android&utm_campaign=client_share&share_token=42c908a1-f9e2-40bb-a751-74f1feab1e79&source=m_redirect
-
+https://www.toutiao.com/article/7301120615451460108
 
 Springboot+WebSocket 实现IM及时通讯
 http://www.mangod.top/articles/2023/08/27/1693094046480.html?share_token=e2a6583c-9906-4a73-bf23-8ffd7774490d
@@ -490,16 +451,14 @@ http://www.mangod.top/articles/2023/08/27/1693094046480.html?share_token=e2a6583
 像mysql一样查询ES,一看就会，爽歪歪
 https://juejin.cn/post/7302308448581812258
 
-
 请查收这份 6.3k Star 的 Java 攻城狮学习指南！
-https://www.toutiao.com/article/7299646024938127872/?app=news_article&timestamp=1701041709&use_new_style=1&req_id=2023112707350831D2CD753BAB7B3B73A6&group_id=7299646024938127872&wxshare_count=1&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_android&utm_campaign=client_share&share_token=cfa0cce9-e310-434a-b04c-d9df04a09ad1&source=m_redirect
-
+https://www.toutiao.com/article/7299646024938127872/
 
 123云盘
 https://www.123pan.com/
 下载速度还是很快的
 
-https://www.toutiao.com/article/7299308128263373352/?app=news_article&timestamp=1699594314&use_new_style=1&req_id=20231110133153089FC9514FEB2465F918&group_id=7299308128263373352&wxshare_count=1&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_android&utm_campaign=client_share&share_token=0ed122b6-5101-4230-b4c1-c24e73ed05de&source=m_redirect
+
 
 快速搭建Docker环境  
 https://blog.csdn.net/sanduo112/article/details/118765838
@@ -512,8 +471,7 @@ Spring SSE 技术实现：实时股市数据推送
 https://mp.weixin.qq.com/s/vcVhGfIx-axxAv8T_Fmr-A
 
 
-Oracle Cloud甲骨文云主机免费VPS保活永久使用图文教程
-https://www.toutiao.com/article/7217678109011903015/?app=news_article&timestamp=1704720440&use_new_style=1&req_id=202401082127208BD17F6FFC035D15C477&group_id=7217678109011903015&wxshare_count=1&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_android&utm_campaign=client_share&share_token=bd1ad965-db03-4d4a-b926-ffb28fe19226&source=m_redirect&wid=1704777774740
+
 
 
 会用RabbitMQ延迟插件，代码量直接降一半？
@@ -521,10 +479,6 @@ https://www.toutiao.com/article/7217678109011903015/?app=news_article&timestamp=
 https://mp.weixin.qq.com/s/Mh914S6nU0qjeijTRhEkOQ
 
 
-java基于quasar实现协程池
-https://blog.csdn.net/weixin_47723549/article/details/125377215
-
-https://blog.csdn.net/weixin_47723549/article/details/125534140
 
 
 
@@ -543,22 +497,5 @@ https://blog.csdn.net/qq_32740973/article/details/131799510
 ![image-20240218151618123](img/image-20240218151618123.png)
 
 
-smart-doc-maven-plugin 
-
-https://www.jianshu.com/p/b0a4bb457bd1
-
-https://zhuanlan.zhihu.com/p/608697109
 
 
-
-```
-@Slf4j
-@RestController
-@Setter(onMethod_ = @Autowired)
-@RequestMapping("/api/v1/specialist/disposable")
-public class ExpertMigrationController {
-```
-
-
-
-![image-20240221135550921](img/image-20240221135550921.png)

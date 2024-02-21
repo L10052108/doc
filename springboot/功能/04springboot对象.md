@@ -271,6 +271,23 @@ public class UserServiceImpl2 implements UserService
 private UserService userService;
 ~~~~
 
+**另外一个种写法**
+
+在代码中居然看到这种写法，发现这个类中的对象，不需要进行注入处理
+
+```java
+@Slf4j
+@RestController
+@Setter(onMethod_ = @Autowired)
+@RequestMapping("/api/v1/specialist/disposable")
+public class ExpertMigrationController {
+   private IExpertMigrationService expertMigrationService;
+........
+   }
+```
+
+
+
 根据上面的步骤，可以很容易判断出，直接这么使用是会报错的
 原因：首先通过byType注入，判断UserService类型有两个实现，无法确定具体是哪一个，于是通过byName方式，这里的变量名userService也无法匹配IOC容器中id（此处指的userServiceImpl1和userServiceImpl2），于是报错。
 

@@ -1,5 +1,8 @@
-资料来源：<br/>
-[1.2K Stars 国产开源文档生成工具，零侵入！](https://www.toutiao.com/article/7316460667652244006/?app=news_article&timestamp=1703512223&use_new_style=1&req_id=2023122521502369EC0899C1EC55FD9F93&group_id=7316460667652244006&wxshare_count=1&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_android&utm_campaign=client_share&share_token=789b72bc-fb41-4125-878b-abb63bab846e&source=m_redirect)
+]资料来源：<br/>
+[1.2K Stars 国产开源文档生成工具，零侵入！](https://www.toutiao.com/article/7316460667652244006/)<br/>
+[图文详解：接口文档生成工具—smart-doc](https://zhuanlan.zhihu.com/p/608697109)<br/>
+[smart-doc maven插件](https://www.jianshu.com/p/b0a4bb457bd1)<br/>
+
 
 ## 简介
 
@@ -119,11 +122,71 @@ mvn -Dfile.encoding=UTF-8 smart-doc:torna-rest
 ...
 ```
 
+**完善项目中的注释**
+
+给实体类添加相关的注释，如下图所示：
+
+![img](img/v2-d057c03c13d189de55cdba03c4391027_720w.png)
+
+我们在控制器上也添加应有的注释。
+
+![img](img/v2-d6a961ae58eeaff739a43a8340b409ba_720w.png)
+
+注意：我们项目中的类、方法、属性，都必须使用文档注释！
+
+作为开发人员，一定要养成规范编写注释的好习惯。
+
+在idea中，我们可以直接通过插件生成smart各种格式的文档，如下图所示：
+
+![img](img/v2-2d8bf17b2d394c47f13d0d1202e7a6d7_720w.png)
+
+在本例中，我们双击smart-doc:html就可以生成html格式的接口文档。
+
+生成文档后，所在目录中的内容如下：
+
+![img](img/v2-58ba8330785a869e00e1c2c175bd73ef_720w.png)
+
 4、文档效果演示：
 
 ![img](img/d1ba5b2aa7154b5699a6f998adacf861~noop.image)
 
+**1.1 生成文档**
 
+根据上文的配置，默认情况下，仅是生成接口文档，配置"createDebugPage": true，双击插件的smart-doc:html选项，即可生成带接口调用功能的接口文档。怎么样，这个功能是不是相当强大？
+
+生成带调试功能的接口文件，如下所示：
+
+![img](img/v2-fbb62ba2eddd7327998794026f5042a9_720w.png)
+
+**1.2 运行测试**
+
+此时双击debug-all.html，运行测试文档后，页面如下：
+
+![img](img/v2-97d0d50fbbb9fca07eaffe307d6f266c_720w.png)
+
+### **2. 导入ApiPost进行测试**
+
+**2.1 生成postman格式文档**
+
+接着我们再双击smart-doc:postman，生成一个postman格式的文档：
+
+![img](img/v2-82f30545d3577c490e65fb0e3347b979_720w.png)
+
+生成的postman格式文档如下所示：
+
+![img](img/v2-e6718285325e7281b7a401a202172a7f_720w.png)
+
+**2.2 导入文档**
+
+我们还可以在ApiPost中导入该文档，其步骤如下：
+
+![img](img/v2-366b47ee1c957b41d5a1fa26181a7798_720w.png)
+
+![img](img/v2-3758f2e06140abf0e672a89b36b7a0e6_720w.png)
+
+**2.3 测试接口**
+
+导入后，我们可以切换到导入的项目，这样就可以进行接口测试了。
 
 ## 结语
 
