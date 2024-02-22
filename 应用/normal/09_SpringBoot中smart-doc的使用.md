@@ -188,6 +188,162 @@ mvn -Dfile.encoding=UTF-8 smart-doc:torna-rest
 
 导入后，我们可以切换到导入的项目，这样就可以进行接口测试了。
 
+
+
+### 复恒科技（专家库）的配置
+
+pom 文件的配置
+
+```xml
+   <build>
+        <finalName>${image.name}</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <excludes>
+                        <exclude>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                        </exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>copy-resources</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>../target</outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>./target/</directory>
+                                    <includes>
+                                        <include>*.jar</include>
+                                        <include>*.war</include>
+                                    </includes>
+                                    <filtering>false</filtering>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>com.github.shalousun</groupId>
+                <artifactId>smart-doc-maven-plugin</artifactId>
+                <version>2.6.7</version>
+                <configuration>
+                    <!--指定生成文档的使用的配置文件,配置文件放在自己的项目中 -->
+                    <configFile>./src/main/resources/smart-doc.json</configFile>
+                    <!--指定项目名称 -->
+                    <projectName>专家服务</projectName>
+                    <!--smart-doc实现自动分析依赖树加载第三方依赖的源码，如果一些框架依赖库加载不到导致报错，这时请使用excludes排除掉 -->
+                    <excludes>
+                        <!--格式为：groupId:artifactId;参考如下 -->
+                        <exclude>com.alibaba:fastjson</exclude>
+                    </excludes>
+                    <!--自1.0.8版本开始，插件提供includes支持 -->
+                    <!--smart-doc能自动分析依赖树加载所有依赖源码，原则上会影响文档构建效率，因此你可以使用includes来让插件加载你配置的组件 -->
+                    <!-- <includes> 格式为：groupId:artifactId;参考如下 <include>com.alibaba:fastjson</include>
+                        </includes> -->
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>com.spotify</groupId>
+                <artifactId>dockerfile-maven-plugin</artifactId>
+                <version>1.4.13</version>
+                <configuration>
+                    <repository>registry.cn-hangzhou.aliyuncs.com/zhaotx/${project.build.finalName}</repository>
+                    <tag>${image.tag}</tag>
+                    <username>2490519602@qq.com</username>
+                    <password>ztx@2020</password>
+                    <useMavenSettingsForAuth>false</useMavenSettingsForAuth>
+                    <buildArgs>
+                        <JAR_FILE>${project.build.finalName}.jar</JAR_FILE>
+                        <SERVICE_NAME>${project.build.finalName}</SERVICE_NAME>
+                    </buildArgs>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+```
+
+smart-doc.json
+
+```yaml
+{
+  "isStrict": false,
+  "allInOne": true,
+  "outPath": "./src/main/resources/static/doc",
+  "coverOld": true,
+  "packageFilters": "cn.zhaotx.specialist.web.controller.*",
+  "md5EncryptedHtmlName": false,
+  "projectName": "招采天下-专家服务API",
+  "showAuthor": true,
+  "requestFieldToUnderline": false,
+  "responseFieldToUnderline": false,
+  "inlineEnum": true,
+  "recursionLimit": 5,
+  "displayActualType": true,
+  "ignoreRequestParams": [
+    "org.springframework.ui.ModelMap"
+  ],
+  "openUrl": "http://192.168.1.241:30011/api",
+  "appToken": "c7f91e3af4fa43c88990b910e2fed269",
+  "debugEnvName": "本地环境",
+  "debugEnvUrl": "http://localhost:8024",
+  "tornaDebug": true,
+  "replace": true,
+  "revisionLogs": [
+    {
+      "version": "1.0",
+      "status": "update",
+      "author": "杨金智",
+      "remarks": "专家服务API"
+    }
+  ],
+  "dataDictionaries": [
+  	{
+  		"enumClassName": "cn.zhaotx.specialist.common.enums.IIntEnum",	
+  		"codeField": "code",
+  		"descField": "desc"
+  	}
+  
+  ],
+  "customResponseFields": [
+    {
+      "name": "code",
+      "desc": "响应代码",
+      "ownerClassName": "org.springframework.data.domain.Pageable",
+      "value": "00000"
+    }
+  ],
+  "requestHeaders": [
+    {
+      "name": "token",
+      "type": "string",
+      "desc": "token, 登录时返回",
+      "required": false,
+      "value": "55",
+      "since": "-"
+    }
+  ]
+}
+```
+
+
+
 ## 结语
 
 目前市面上的文档工具有很多，如 swagger、knife4j、apidoc，在功能体验和实际使用中都各有千秋。
