@@ -499,3 +499,11 @@ https://blog.csdn.net/qq_32740973/article/details/131799510
 
 
 
+```java
+# jaeger ui: tjaeger.zhaotx.cn/search
+opentracing:
+  jaeger:
+    udp-sender:
+      host: ${JAEGER_AGENT_HOST:192.168.0.244}
+      port: 6831   
+```
