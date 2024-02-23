@@ -507,3 +507,15 @@ opentracing:
       host: ${JAEGER_AGENT_HOST:192.168.0.244}
       port: 6831   
 ```
+
+
+K8s
+
+https://www.toutiao.com/article/7338032078044512777/
+
+
+https://www.toutiao.com/article/7338420313174573578/
+
+
+
+https://www.toutiao.com/article/7338252518356435471/
