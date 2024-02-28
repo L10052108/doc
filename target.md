@@ -519,3 +519,22 @@ https://www.toutiao.com/article/7338420313174573578/
 
 
 https://www.toutiao.com/article/7338252518356435471/
+
+
+Spring事务失效十种原因
+
+
+https://blog.csdn.net/m0_64830897/article/details/131353364
+
+
+MyBatis Plus轻松实现数据读写分离
+
+https://www.toutiao.com/article/7338252518356435471/?
+
+
+MySQL中，21个写SQL的好习惯
+https://mp.weixin.qq.com/s/l7kh5yL6UHZrX7oqp-0Ubg
+
+MySQL的20条军规
+
+https://mp.weixin.qq.com/s/PkPvl-WowynIeCCluxw3bw
