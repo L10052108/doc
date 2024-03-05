@@ -538,3 +538,19 @@ https://mp.weixin.qq.com/s/l7kh5yL6UHZrX7oqp-0Ubg
 MySQL的20条军规
 
 https://mp.weixin.qq.com/s/PkPvl-WowynIeCCluxw3bw
+
+
+动态线程池
+https://mp.weixin.qq.com/s/30jRulffvr9Zfsa2JfNGCA
+
+
+一键搭建一套K8S集群+K8S可视化操作平台
+https://mp.weixin.qq.com/s/N4wzsBkPD3bxj_IKaLPJyg
+
+
+JustAuth - 史上最全的第三方登录开源库
+https://mp.weixin.qq.com/s/UkGlUNAbVqx7hEuiU1p6iA
+
+
+CentOS下搭建yum仓库内网私服
+https://mp.weixin.qq.com/s/UkGlUNAbVqx7hEuiU1p6iA
