@@ -554,3 +554,11 @@ https://mp.weixin.qq.com/s/UkGlUNAbVqx7hEuiU1p6iA
 
 CentOS下搭建yum仓库内网私服
 https://mp.weixin.qq.com/s/UkGlUNAbVqx7hEuiU1p6iA
+
+[Mysql 将一个表的某个字段的值 更新到 另外一个表的 某个字段的值](https://blog.csdn.net/qq_35387940/article/details/129681190)
+https://blog.csdn.net/qq_35387940/article/details/129681190
+
+
+SpringBoot 使用Junit单元测试的时候插入数据，单元测试跑成功了，但是数据没插入进去
+
+https://www.jianshu.com/p/82d446b36f31
