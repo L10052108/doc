@@ -562,3 +562,18 @@ https://blog.csdn.net/qq_35387940/article/details/129681190
 SpringBoot 使用Junit单元测试的时候插入数据，单元测试跑成功了，但是数据没插入进去
 
 https://www.jianshu.com/p/82d446b36f31
+
+
+https://gitee.com/xiaofu.wqdian.cn/Springboot-Notebook 
+
+
+三大Git版本控制分支策略详细介绍
+https://www.toutiao.com/article/7342338308019765812/?
+
+
+构建第一个GraalVM应用镜像，体验毫秒级极速启动！
+https://www.toutiao.com/article/7287571837767402043
+
+
+详解@AsyncExceptionHandler：处理Spring Boot异步方法中的异常
+https://www.toutiao.com/article/7342481020719235594/
