@@ -1,6 +1,5 @@
 
 
-
 [SpringBoot自定义注解+异步+观察者模式实现业务日志保存](https://www.toutiao.com/article/7159396762061390372/?app=news_article&timestamp=1666957328&use_new_style=1&req_id=20221028194208010209157026093A7510&group_id=7159396762061390372&share_token=8917AC16-A019-4853-893F-9F9288713788&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_ios&utm_campaign=client_share&wxshare_count=1&source=m_redirect)
 
 
@@ -584,3 +583,43 @@ https://blog.csdn.net/weixin_46063418/article/details/115894268
 https://www.jyshare.com/front-end/854/
 
 https://zhuanlan.zhihu.com/p/469973110
+
+Solon 在 jdk 各版本反射权限问题的处理指南
+
+原文链接：https://blog.csdn.net/cwzb/article/details/128936015
+
+互联网公司常用框架源码赏析
+https://github.com/doocs/source-code-hunter
+
+
+
+```
+1.阵列
+2.排队
+3.树
+4.矩阵
+5.图表
+6.链表
+7.最大堆数
+8.堆叠
+9.Trie
+10.HashMap
+11.哈希集
+```
+
+![5aca1783d3d849788286ce30e00bbbec~tplv-obj_702_806](img/5aca1783d3d849788286ce30e00bbbectplv-obj_702_806.png)
+
+
+小余知识库-- 高质量编程百万字笔记之路--前后端 
+地址：github.com/2002XiaoYu/Latest-front-end-Notes
+在线阅读：http://t.cn/A6YBgD8z ​​​#我来唠家常# #记录我的2024#
+
+
+
+https://mp.weixin.qq.com/s/MvoEs8B-tVH9ig2--Jh_wA
+你好，这个是完整版PDF
+链接：https://pan.baidu.com/s/1I50ow8KOQghMhxOeqvPTgA?pwd=1024 提取码：1024
+如需更多资料，可以添加我微信领取，后期整理的资料都会在微信分享
+
+
+https://rspress.dev/zh/guide/start/getting-started.html
