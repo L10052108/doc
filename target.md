@@ -634,3 +634,12 @@ https://blog.csdn.net/AlibabaTech1024/article/details/130076828
 
 HTML+CSS实现带按钮的弹出框
 https://blog.csdn.net/qq_35727582/article/details/114868023
+
+
+
+Java服务优雅上下线
+[toutiao.com/article/7349530429277422080/](https://www.toutiao.com/article/7349530429277422080/)
+
+
+三个良心网站让你实现Mac软件自由。
+https://www.toutiao.com/w/1794327735575620/
