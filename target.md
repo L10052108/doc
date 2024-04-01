@@ -643,3 +643,15 @@ Java服务优雅上下线
 
 三个良心网站让你实现Mac软件自由。
 https://www.toutiao.com/w/1794327735575620/
+
+
+Spring Boot如何优雅实现数据加密存储、模糊匹配和脱敏
+https://www.toutiao.com/article/7347886154802332212/
+
+
+SpringCache是什么？如何使用SpringCache？
+https://www.toutiao.com/article/7349441005869826570/
+
+
+1.5k star！一个小而美的实用的服务器、NAS导航面板!
+https://www.toutiao.com/article/7349919334795346468/?
