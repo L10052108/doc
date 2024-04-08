@@ -196,3 +196,13 @@ public class GrepConsole {
 通过增加Grep条件，过滤你想要的日志：
 
 ![img](img/c51f8b24fa744b35bc0810771f6084d7.png)
+
+###  CodeGlance
+
+再也不用疯狂拖拽到底去找一遍啦，多不方便呀，使用此插件可以查看缩略图一样，快速切换到自己需要去的地方~
+
+![image-20240403104820340](img/image-20240403104820340.png)
+
+
+
+![img](img/2501393-f5e1a9d4cdea0531.png)

@@ -662,3 +662,8 @@ trojan 客户端
 https://github.com/V2RaySSR/Trojan_panel_web/releases
 
 https://v2rayssr.com/vpn-client.html
+
+
+notepad--
+
+https://gitee.com/cxasm/notepad--/releases/tag/v2.14
