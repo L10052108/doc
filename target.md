@@ -667,3 +667,8 @@ https://v2rayssr.com/vpn-client.html
 notepad--
 
 https://gitee.com/cxasm/notepad--/releases/tag/v2.14
+
+
+idea2024 激活使用教程
+
+https://mp.weixin.qq.com/s/TGnY7_b4F2CVk5ajaEY6KQ
