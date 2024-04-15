@@ -3,6 +3,8 @@
 [Idea热加载插件JRebel激活及使用教程](https://blog.csdn.net/qq_42263280/article/details/128888312)<br/>
 [IntelliJ IDEA好用插件推荐之（一）：Grep Console](https://blog.csdn.net/xutong_123/article/details/128311026)<br/>
 
+[IDEA 插件推荐](https://blog.csdn.net/objectness/article/details/129246104)
+
 ## idea插件
 
 ### mybatis 接口和xml 关联
@@ -205,4 +207,39 @@ public class GrepConsole {
 
 
 
-![img](img/2501393-f5e1a9d4cdea0531.png)
+![img](img/658ab1530dcb0d6b4cd8b28204ded779.gif)
+
+### GenerateAllSetter（快速生成对象所有set方法）
+
+![img](img/b76d209514d799b4031c081d121cf579.gif)
+
+### GsonFormatPlus：json转实体
+
+Alt + ins(*Ins*ert)或者Alt + S打开窗口粘贴需要转换成实体的json字符串
+
+![img](img/3779567348c5529fc907e53d81f31fb3.gif)
+
+### Json Prase（JSON数据格式化工具）
+
+安装之后在IDEA右侧工具栏会生成"Json Parser"快捷方式，点击即可调出工具窗口，将JSON数据输入上方框内点击"Parse"即可进行格式化，比用在线工具网站方便。
+
+![img](img/e3d522b1a25efcada09dafb484856e2c.gif)
+
+### GitToolBox（跟踪每行代码的提交修改记录）
+
+![img](img/19c9968048c1e9ade1ed967f679ee75e.gif)
+
+### RestfulToolkitX（找到controller+快捷请求接口）
+
+新版本的idea可能用不了，作者因该不维护了，网上有人基于这个插件开发了新的插件可以搜索RestfulTool 快捷键 Ctrl + Alt + /
+
+根据url找对应action方法，根据url跳转，Ctrl + \或者Ctrl+Alt+N即可快速定位接口位置，比用IDEA的全局搜索效率高。
+
+
+![img](img/911245951da88c110de024be1c82fd71.gif)
+
+### HighlightBracketPair(括号匹配高亮显示)
+
+括号匹配高亮显示，你鼠标所在代码所处的括号会标亮，可以方便我们再复杂、繁多的代码结构中清晰的查看到当前所在的代码层级，十分有用。
+
+![img](img/ebd6af6394492d06cfe59fe43e2e6677.png)

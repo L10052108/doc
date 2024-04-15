@@ -417,7 +417,6 @@ https://mp.weixin.qq.com/s/ispOj37a30WgVnMgg7Ao2Q
 Springboot+WebSocket 实现IM及时通讯
 https://mp.weixin.qq.com/s/23eZm-mdtj7J_Pg9TUUKNA
 
-
 让我们回顾一些慈善的开源项目，它们养活了许多人：
 https://www.toutiao.com/w/1779448256684045/?app=news_article&timestamp=1698087191&use_new_style=1&wxshare_count=1&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_android&utm_campaign=client_share&share_token=0db213f7-f969-47c0-bf49-ad85be9f0e88&source=m_redirect
 
@@ -672,3 +671,13 @@ https://gitee.com/cxasm/notepad--/releases/tag/v2.14
 idea2024 激活使用教程
 
 https://mp.weixin.qq.com/s/TGnY7_b4F2CVk5ajaEY6KQ
+
+
+Mybatis-plus学习之@EnumValue注解学习
+https://blog.csdn.net/gli_001/article/details/126877012
+
+
+
+线程池
+
+https://www.jianshu.com/p/c82cacd6e356
