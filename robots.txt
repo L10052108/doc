@@ -1,0 +1,5 @@
+# robots.txt generated at https://33tool.com/robots
+User-agent: *
+Disallow:/
+Disallow:/bin/
+Sitemap:https://domain.com/sitemap.xml
