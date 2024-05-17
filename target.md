@@ -681,3 +681,42 @@ https://blog.csdn.net/gli_001/article/details/126877012
 线程池
 
 https://www.jianshu.com/p/c82cacd6e356
+
+
+
+唯一索引
+
+```sql
+CREATE TABLE `my_dept` (
+  `dept_id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'id值',
+  `parent_id` int(11) DEFAULT NULL COMMENT '上级部门',
+  `ancestors` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '祖级列表',
+  `dept_name` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '名称',
+  `sort` int(11) DEFAULT NULL COMMENT '排序',
+  `status` bit(1) NOT NULL COMMENT '状态',
+  `create_time` datetime DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+  `update_time` datetime DEFAULT CURRENT_TIMESTAMP COMMENT '更新时间',
+  PRIMARY KEY (`dept_id`) USING BTREE,
+  UNIQUE KEY `uq_item_emp` (`dept_name`,((`status` = 1))),
+  KEY `idx_m_ctime2` ((month(`create_time`))),
+  KEY `idx_m_ctime3` ((month(`create_time`)))
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
+
+
+SELECT
+	dept_id,
+	dept_name,
+	(CASE WHEN `status` = 0 THEN 1
+	ELSE dept_id END) as uk,
+	
+	`status` 
+FROM
+	my_dept ;
+
+
+(CASE WHEN stu_score < 60 THEN '不及格'
+        WHEN stu_score >= 60 AND stu_score < 80 THEN '及格'
+        WHEN stu_score >= 80 THEN '优秀'
+        ELSE '异常' END) AS REMARK
+```
+
