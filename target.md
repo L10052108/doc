@@ -720,3 +720,10 @@ FROM
         ELSE '异常' END) AS REMARK
 ```
 
+
+
+
+
+# MybatisPlus实现分页效果并解决错误：
+
+https://blog.csdn.net/weixin_46713508/article/details/129056424?
