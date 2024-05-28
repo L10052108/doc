@@ -727,3 +727,10 @@ FROM
 # MybatisPlus实现分页效果并解决错误：
 
 https://blog.csdn.net/weixin_46713508/article/details/129056424?
+
+
+
+hello算法
+
+https://github.com/krahets/hello-algo
+
