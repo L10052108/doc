@@ -367,8 +367,11 @@ https://www.toutiao.com/article/7292967410637095474/?app=news_article&timestamp=
 
 https://mp.weixin.qq.com/s?__biz=MzI3OTA2MDQyOQ==&mid=2247484941&idx=1&sn=c7ae496b1f97d276d441413274833dbc&chksm=eb4cccafdc3b45b98abd487c1ab216832b299944913329cc52b6f53f19f49947dc5686e37d92&scene=132&exptype=timeline_recommend_article_extendread_samebiz#wechat_redirect
 
-
 https://www.toutiao.com/article/7292967410637095474/?app=news_article&timestamp=1698242510&use_new_style=1&req_id=20231025220150202F7C87085E851F8E0F&group_id=7292967410637095474&wxshare_count=1&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_android&utm_campaign=client_share&share_token=b0030b77-fcc2-4d10-b55a-233f3042b407&source=m_redirect
+
+
+
+https://mp.weixin.qq.com/s/JKbUPFicP4MWE6WACRX5Xg
 
 限流
 https://github.com/lizhifuabc/spring-learn/blob/main/spring-boot-redis-limit/src/main/java/com/redis/limit/algorithm/AbstractRedisRateLimitAlgorithm.java
@@ -739,3 +742,35 @@ https://github.com/krahets/hello-algo
 ![image-20240528084333219](img/image-20240528084333219.png)
 
 https://blog.csdn.net/gitblog_00066/article/details/137191701
+
+https://gitee.com/xufengzz/istio-micro-service-demo
+
+
+
+ 整理Bitmap在项目中的实战
+
+https://mp.weixin.qq.com/s/lZlpG-LSmajowRWM88gE7g
+
+ 款强大的开源全平台文件同步神器，太香了！
+
+https://mp.weixin.qq.com/s/gHQzT9pJySQlY0UBpb57rQ
+
+MDC
+https://mp.weixin.qq.com/s/PTHfYSLBQTQORq9RxkunIQ
+
+个高性能、支持百万级多任务重试框架：Fast-Retry
+https://mp.weixin.qq.com/s/QhywccxOlguvNEU5_xc3kw
+
+
+
+# Sqids: 简短唯一ID生成器
+
+https://mp.weixin.qq.com/s/QhywccxOlguvNEU5_xc3kw
+
+
+
+
+
+# 用这个工具画时序图，真香！
+
+https://mp.weixin.qq.com/s/2HxLu8bArC01XN-wpNAMUQ
