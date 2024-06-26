@@ -1,5 +1,6 @@
 资料来源：<br/>
-[Java开发利器之重试框架guava-retrying](https://juejin.cn/post/7014099031718641694)
+[Java开发利器之重试框架guava-retrying](https://juejin.cn/post/7014099031718641694)<br/>
+[重试利器之Guava-Retryer](https://juejin.cn/post/6844903617183350798)
 
 
 ## 介绍
@@ -236,7 +237,11 @@ public class TryDemo2 {
 }
 ```
 
-第一次执行，失败后，1秒后执行，第二次失败，2秒后执行
+第1次执行，立即执行，失败后1秒重试 。
+
+重试失败后， 1+2秒后重试
+
+重试 1+2+2秒后重试
 
 ### ThreadSleepStrategy
 
@@ -515,3 +520,54 @@ public interface Attempt<V> {
 
 ```
 
+## 重试失败监听
+
+当发生重试之后，假如我们需要做一些额外的处理动作，比如发个告警邮件啥的，那么可以使用`RetryListener`。每次重试之后，guava-retrying会自动回调我们注册的监听。可以注册多个`RetryListener`，会按照注册顺序依次调用。
+
+```java
+import com.github.rholder.retry.Attempt;  
+import com.github.rholder.retry.RetryListener;  
+  
+import java.util.concurrent.ExecutionException;  
+  
+public class MyRetryListener<Boolean> implements RetryListener {  
+  
+    @Override  
+    public <Boolean> void onRetry(Attempt<Boolean> attempt) {  
+  
+        // 第几次重试,(注意:第一次重试其实是第一次调用)  
+        System.out.print("[retry]time=" + attempt.getAttemptNumber());  
+  
+        // 距离第一次重试的延迟  
+        System.out.print(",delay=" + attempt.getDelaySinceFirstAttempt());  
+  
+        // 重试结果: 是异常终止, 还是正常返回  
+        System.out.print(",hasException=" + attempt.hasException());  
+        System.out.print(",hasResult=" + attempt.hasResult());  
+  
+        // 是什么原因导致异常  
+        if (attempt.hasException()) {  
+            System.out.print(",causeBy=" + attempt.getExceptionCause().toString());  
+        } else {  
+            // 正常返回时的结果  
+            System.out.print(",result=" + attempt.getResult());  
+        }  
+  
+        // bad practice: 增加了额外的异常处理代码  
+        try {  
+            Boolean result = attempt.get();  
+            System.out.print(",rude get=" + result);  
+        } catch (ExecutionException e) {  
+            System.err.println("this attempt produce exception." + e.getCause().toString());  
+        }  
+  
+        System.out.println();  
+    }  
+} 
+```
+
+接下来在Retry对象中指定监听：
+
+```
+.withRetryListener(new MyRetryListener<>())
+```

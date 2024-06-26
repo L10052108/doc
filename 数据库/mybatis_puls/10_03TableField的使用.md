@@ -138,19 +138,58 @@ public enum ChargeTypeEnum {
 
 ### json 封装成对象
 
+实体类 TableName注解添加属性值 `autoResuleMap = true`，字段加`TableField`注解，添加属性值`typeHandler = JacksonTypeHandler.class`
+ FastjsonTypeHandler同样可以实现，二者的区别：
+ JacksonTypeHandler可以兼容 MybatisPlus 的功能和满足 支持 MySQL JSON 解析
+
+- 支持 MVC JSON 解析
+- 支持 MySQL JSON 解析
+
+FastjsonTypeHandler
+
+- 支持 MVC JSON 解析
+- 不支持 MySQL JSON 解析
+
 ```java
-    
-    /**
-     * 开票信息
-     */
-    @TableField(typeHandler = JacksonTypeHandler.class)
-    private InvoiceDTO invoice;
+@Data
+@Accessors(chain = true)
+@TableName(value = "base_info",autoResultMap = true)
+public class BaselineEcuInfo implements Serializable {
+   private static final long serialVersionUID = -83548930182013052L;
+   
+   private Integer id;
+  
+   private String name;
+   /**
+    * 这个字段数据库存的是json字符串
+    */
+   @TableField(typeHandler = JacksonTypeHandler.class)
+   private InfoDto value;
+}
     
 ```
 
-开票信息保存的是json格式
+注意事项
 
-![image-20240605101742269](img/image-20240605101742269.png)
+- MVC JSON 解析时，可以不用加  @TableName(value = "t_test", `autoResultMap = true`) 【高亮部分】，但是 MySQL JSON 解析查询的时候，如果不加，查出来为 null
+- MySQL JSON 解析查询时，只支持JSON格式：{"name":"Tomcat","age":10}，不支持：{"name":"Tomcat","age":10} 和 "{"name":"Tomcat","age":10}"
+
+1. xml文件,resulltMap里面的字段，添加 `typeHandler` 属性
+
+
+
+```xml
+<result property="ext"
+typeHandler="com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler" 
+column="ext"/>
+```
+
+注：mybatis 会有所不同
+
+作者：指下光年
+链接：https://www.jianshu.com/p/3fc2de1af017
+来源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 
 
 
