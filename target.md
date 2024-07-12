@@ -741,6 +741,8 @@ https://github.com/krahets/hello-algo
 
 ![image-20240528084333219](img/image-20240528084333219.png)
 
+https://istio.whuanle.cn/1.start.html 网格服务
+
 https://blog.csdn.net/gitblog_00066/article/details/137191701
 
 https://gitee.com/xufengzz/istio-micro-service-demo
