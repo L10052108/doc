@@ -784,3 +784,21 @@ https://mp.weixin.qq.com/s/2HxLu8bArC01XN-wpNAMUQ
 💾 **db-tutorial** 是一个数据库教程。
 
 https://github.com/dunwu/db-tutorial
+
+
+
+别再自己封装了，推荐一个功能强大的分布式锁框架：Lock4j
+
+https://www.toutiao.com/article/7392120222137745955
+
+
+
+下载量破【100万】这个SQL工具到底有何独特之处？
+
+https://www.toutiao.com/article/7384646163746423315/
+
+
+
+零侵入全自动接口文档生成 Doc-Apis 正式向丝袜哥(Swagger宣战)
+
+https://mp.weixin.qq.com/s/kv-uibVZ80LeOGI8IWtPag

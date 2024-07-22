@@ -52,6 +52,7 @@
     - [100_01反射机制详解](java/java基础/反射/100_01反射机制详解.md)
     - [100_02反射工具Reflections用法](java/java基础/反射/100_02反射工具Reflections用法.md)
   - [10_fastjson反序列化泛型](java/java基础/10_fastjson反序列化泛型.md)
+  - [11_树结构](java/java基础/11_树结构.md)
 
 
 - Java Agent
