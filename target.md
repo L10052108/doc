@@ -817,3 +817,16 @@ https://www.toutiao.com/article/7389449416458945065/?
 
 MySQL之表分区篇：涨知识了！携手共探鲜为人知的表分区！
 https://mp.weixin.qq.com/s/z3hHIVHCvAFhkELHLgjRYg
+
+
+
+
+
+跨平台本地SSL证书生成工具，本地也能优雅的调试https
+https://www.toutiao.com/article/6695730144838943240/
+
+
+
+**(一)全解MySQL之架构篇：自顶向下深入剖析MySQL整体架构！（））**
+
+https://mp.weixin.qq.com/s/wSh483f8PNJaTalBY6VJkg
