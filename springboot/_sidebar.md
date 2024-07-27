@@ -6,7 +6,9 @@
 
 - 功能
   - [00_springboot.md](springboot/功能/00springboot.md)
-  - [00_01SpringBoot的优雅下线](springboot/功能/00_01SpringBoot的优雅下线.md)
+  - **00_spring优雅下线**
+    - [00_00下线使用案例](springboot/功能/00_01SpringBoot的优雅下线使用.md)
+    - [00_01SpringBoot的优雅下线](springboot/功能/00_01SpringBoot的优雅下线.md)
   - [01_springboot异步](springboot/功能/01springboot异步.md)
   - [02_springboot-aop](springboot/功能/02aop.md)
   - [02_01springboot-aop详细介绍](springboot/功能/02_01springboot-aop详细介绍.md)

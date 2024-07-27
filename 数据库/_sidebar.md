@@ -75,6 +75,8 @@
   - [10_00_MP用法总结](数据库/mybatis_puls/10_00_MP用法总结.md)
   - [10_01高级用法](数据库/mybatis_puls/10_01高级用法.md)
   - [10_02join联表查询](数据库/mybatis_puls/10_02join联表查询.md)
+  - [10_03高级用法自定义雪花算法](数据库/mybatis_puls/10_03高级用法自定义雪花算法.md)
+
 
   
 - mybatis_Flex
