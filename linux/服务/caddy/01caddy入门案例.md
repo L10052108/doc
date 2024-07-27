@@ -257,6 +257,6 @@ $ caddy run # 启动 Caddy
 
 ![image-20231121144453312](img/image-20231121144453312.png)
 
-> 密码使用 caddy hash-passowrd 指令生成
+> 密码使用 caddy hash-password 指令生成
 
 ![image-20231121144511044](img/image-20231121144511044.png)
