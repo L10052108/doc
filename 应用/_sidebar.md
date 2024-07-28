@@ -15,6 +15,9 @@
     - [09_SpringBoot中smart-doc的使用](应用/normal/09_SpringBoot中smart-doc的使用.md)
     - [10_SpringBoot中excel下载](应用/normal/10_SpringBoot中excel下载.md)
     - [11_异步刷新技巧，你值得拥有!](应用/normal/11_异步刷新技巧，你值得拥有.md)
+    - **12_布隆过滤器**
+      - [12_01布隆过滤器](应用/normal/12_01布隆过滤器.md)
+      - [12_02布隆过滤器_redis](应用/normal/12_02布隆过滤器_redis.md)
 
   [comment]: <> "ZooKeeper"
   - ZooKeeper 
