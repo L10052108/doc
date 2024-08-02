@@ -830,3 +830,9 @@ https://www.toutiao.com/article/6695730144838943240/
 **(一)全解MySQL之架构篇：自顶向下深入剖析MySQL整体架构！（））**
 
 https://mp.weixin.qq.com/s/wSh483f8PNJaTalBY6VJkg
+
+
+
+ MYSQL备份实战
+
+https://mp.weixin.qq.com/s/AmfGC05SokHxCRK8CUvkww

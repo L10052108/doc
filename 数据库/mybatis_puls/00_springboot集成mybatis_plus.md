@@ -122,6 +122,20 @@ server:
 
 ~~~~
 
+其他配置
+
+```properties
+#mybatis-plus 配置
+mybatis-plus.mapper-locations=classpath:mybatis-mappers/*.xml
+mybatis-plus.type-aliases-package=cn.zhaotx.specialist.entity
+mybatis-plus.type-enums-package=cn.zhaotx.specialist.common.enums
+mybatis-plus.configuration.default-enum-type-handler=org.apache.ibatis.type.EnumOrdinalTypeHandler
+# 开启驼峰，开启后，只要数据库字段和对象属性名字母相同，无论中间加多少下划线都可以识别
+mybatis-plus.configuration.map-underscore-to-camel-case=true
+## 关闭日志的打印
+mybatis-plus.configuration.log-impl=org.apache.ibatis.logging.nologging.NoLoggingImpl
+```
+
 ### 使用的sql
 
 和[00_springboot集成mybatis](数据库/mybatis/00_springboot集成mybatis.md) 相同，这样更好的对比
