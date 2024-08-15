@@ -820,8 +820,6 @@ https://mp.weixin.qq.com/s/z3hHIVHCvAFhkELHLgjRYg
 
 
 
-
-
 跨平台本地SSL证书生成工具，本地也能优雅的调试https
 https://www.toutiao.com/article/6695730144838943240/
 
@@ -836,3 +834,19 @@ https://mp.weixin.qq.com/s/wSh483f8PNJaTalBY6VJkg
  MYSQL备份实战
 
 https://mp.weixin.qq.com/s/AmfGC05SokHxCRK8CUvkww
+
+
+
+**MySQL主从实践篇：超详细版读写分离、双主热备架构搭建教学**
+
+https://www.toutiao.com/article/7396575624535507506
+
+
+
+今天给大家推荐一个完全开源免费、支持自托管的URL短链服务——Kutt
+
+
+
+ JetCache-Alibaba：阿里开源的缓存利器，让你的应用速度飞起来~
+
+https://mp.weixin.qq.com/s/Y1Y1dkcj7M4uT0WeNH5fFw

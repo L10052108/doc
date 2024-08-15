@@ -141,6 +141,24 @@ Allow auto-make to start even if developed application is currently running
 
 ![2023-06-29-09-51-07](img\2023-06-29-09-51-07.gif)
 
+
+
+#### JRebel启动慢
+
+更新新版JRebel后，启动卡住无法正常启动项目
+Disconnected from the target VM, address: ‘127.0.0.1:58166’, transport: ‘socket’
+
+解决方式
+降低版本： 降到什么版本自行测试；
+修改idea配置： 根据插件官网回复，问题是由IntelliJ的默认配置的变化引起的，暂时可通过以下配置进行处理：
+1/ Open Settings 2/ Open “Languages and Frameworks” 3/ Select “Reactive Streams” 4/ Within the “Debugger” section, chose “None”
+
+![img](img/dc2362fe157845fb82fe029cf3228180.png)
+
+
+
+![image-20240808100932849](img/image-20240808100932849.png)
+
 ### maven help
 
 1、File→Settings→Plugins，输入maven helper，本地没搜到，就可以点击Search in repositories（或直接点击Browse repositories进入搜索），搜到Maven Helper后选择Install进行安装即可，安装后需重启IDEA。
