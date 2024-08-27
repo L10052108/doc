@@ -850,3 +850,9 @@ https://www.toutiao.com/article/7396575624535507506
  JetCache-Alibaba：阿里开源的缓存利器，让你的应用速度飞起来~
 
 https://mp.weixin.qq.com/s/Y1Y1dkcj7M4uT0WeNH5fFw
+
+
+
+ 10种超赞的MyBatis写法！
+
+https://mp.weixin.qq.com/s/-GlBvl6YlNNLLDTP_1oI8Q

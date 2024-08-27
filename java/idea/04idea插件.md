@@ -177,6 +177,53 @@ Disconnected from the target VM, address: ‘127.0.0.1:58166’, transport: ‘s
 
 `Mybatis Log Free` 可以把日志中的打印的sql日志，合并输出
 
+### MybatisLogFormat
+
+在使用idea开发的过程中，查询语句会遇到以下sql
+
+![img](img/e80c01a88eb14c3bb789f52cac34f1f8~noop.png)
+
+```tex
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@648639f1] was not registered for synchronization because synchronization is not active
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@fbc1de9] will not be managed by Spring
+==>  Preparing: SELECT id,name,province_code FROM t_province WHERE (province_code = ? AND name = ?) limit 1
+==> Parameters: 110000(String), 北京市(String)
+<==    Columns: id, name, province_code
+<==        Row: 1, 北京市, 110000
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@648639f1]
+```
+
+此时如果想得到完成的sql,就需要将上面的带占位符的sql拷贝出来，
+
+```sql
+SELECT id,name,province_code FROM t_province WHERE (province_code = ? AND name = ?) limit 1
+
+```
+
+然后再去找到Parameters那一段。
+
+Parameters: 110000(String), 北京市(String)
+
+将sql中的？依次替换Parameters中的实参，就能得到完整的sql了，看似这个很简单，但是如果sql中参数很多，这个时候再用这种方法就很容易出错了。
+
+下面介绍下idea的插件，在
+Settings/Plugins/Marketplace中输入 MybatisLogFormat，然后选择安装，下图是我安装过的。
+
+![img](img/274762560fbb43a1bbc92f9c31a56c49~noop.png)
+
+下载安装好重启后，选择sql语句和Parameters参数对应的行，然后右键点击
+MybatisLogFormat2Clipboard。
+
+![img](img/fe1ed2b069b1438eb56d11d303247de2~noop.png)
+
+此时一条美化后的sql就可以直接执行了，格式如下
+
+![img](img/4cec53600d7a4d86a25b53dd7fda0e66~noop.png)
+
+用了这个插件后，如果需要把sql拿出来到客户端执行分析，效率就大大提升了。
+
 ### 日志插件
 
 ![image-20231107165904606](img/image-20231107165904606.png)
