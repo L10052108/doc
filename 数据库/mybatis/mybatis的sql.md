@@ -137,3 +137,13 @@ mybatis是使用的OGNL表达式来进行解析的，在OGNL的表达式中，'n
 SELECT  cast(fieldName as CHAR)  FROM tablename 
 ```
 
+### 使用美枚举
+
+![image-20240828153212091](img/image-20240828153212091.png)
+
+
+
+```sql
+ WHERE e.deleted = '${@cn.zhaotx.specialist.common.enums.GeneralState@NO.Code}'
+```
+

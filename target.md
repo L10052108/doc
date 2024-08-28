@@ -856,3 +856,13 @@ https://mp.weixin.qq.com/s/Y1Y1dkcj7M4uT0WeNH5fFw
  10种超赞的MyBatis写法！
 
 https://mp.weixin.qq.com/s/-GlBvl6YlNNLLDTP_1oI8Q
+
+线程池异常
+https://mp.weixin.qq.com/s/Z9GJV4Pm6gGgQ9qPebA7YA
+
+
+
+ 链路追踪自从用了SkyWalking，睡的真香！
+
+https://mp.weixin.qq.com/s/RdpZVO5ysbp5HoVzEULjFA
+
