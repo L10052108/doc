@@ -218,3 +218,21 @@ MacOS 的 shadowsockets-NG 软件的最新版已经内嵌了 kcptun 插件，比
 - 加密方式 chacha20
 - 插件 kcptun
 - 配置 key=111111;crypt=aes;mode=fast;mtu=1350;sndwnd=512;rcvwnd=512;datashard=10;parityshard=3;dscp=0
+
+#### 安装
+
+
+
+设置kcp 的服务地址和IP
+
+![image-20240904141609784](img/image-20240904141609784.png ':size =30%')
+
+使用安装的kcp插件（注意：这个没有图标，只是个插件）
+
+启动的时候可能报错
+```
+ss在安卓上提示的问题[无法连接远程服务器：未知插件kcptun
+需要在手机管家->权限管理->自启动管理中将kcptun设置为允许启动。
+```
+
+![image-20240904141858310](img/image-20240904141858310.png ':size =30%')

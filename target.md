@@ -30,7 +30,6 @@ oracle 数据库操作：https://blog.csdn.net/qq_38667427/article/details/11932
 
 [SpringBoot 还在用 if 校验参数？那你真的太low了，老司机都是这么玩的！](https://mp.weixin.qq.com/s/Sm9VcUktodOts-arOdQ7oA)
 
-
 [java 中set删除](https://www.techiedelight.com/zh/remove-elements-from-set-java/)
 
 
@@ -866,3 +865,12 @@ https://mp.weixin.qq.com/s/Z9GJV4Pm6gGgQ9qPebA7YA
 
 https://mp.weixin.qq.com/s/RdpZVO5ysbp5HoVzEULjFA
 
+mapStruct
+
+https://www.jianshu.com/p/56b97843af61
+
+、
+
+ mybatis-plus-generator-ui
+
+https://github.com/davidfantasy/mybatis-plus-generator-ui

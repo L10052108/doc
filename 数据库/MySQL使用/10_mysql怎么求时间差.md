@@ -1,10 +1,30 @@
 资料来源：<br/>
 [mysql怎么求时间差](https://www.utheme.cn/code/mysql/26085.html)<br/>
-[MySQL 获得当前日期时间函数](https://www.cnblogs.com/ggjucheng/p/3352280.html)
+[MySQL 获得当前日期时间函数](https://www.cnblogs.com/ggjucheng/p/3352280.html)<br/>
+[mysql 获取当天零点和当天最后时间](https://blog.csdn.net/qq_35461948/article/details/141021907)
 
 ## 时间函数
 
 ### 获取时间
+
+```
+当天零点
+ SELECT DATE(NOW()) AS today_zero_time;
+当天最后时间：
+ SELECT DATE_ADD(ADDDATE(DATE(NOW()), 1), INTERVAL -1 SECOND) AS today_last_time;
+
+昨天零点
+SELECT  ADDDATE(DATE(NOW()), -1) AS yesterday_last_time;
+昨天最后时间：
+SELECT  DATE_ADD(DATE(NOW()), INTERVAL -1 SECOND) AS yesterday_last_time;
+
+指定日期零点
+SELECT DATE(STR_TO_DATE("2024-08-08 12:13:14", '%Y-%m-%d %H:%i:%s')) AS appoint_zero_time;
+指定日期最后时间：
+SELECT DATE_ADD(ADDDATE(DATE(STR_TO_DATE("2024-08-08 12:13:14", '%Y-%m-%d %H:%i:%s')), 1), INTERVAL -1 SECOND) AS appoint_last_time;
+```
+
+
 
 #### DATE(date)
 
