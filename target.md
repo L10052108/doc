@@ -869,8 +869,20 @@ mapStruct
 
 https://www.jianshu.com/p/56b97843af61
 
-、
+
 
  mybatis-plus-generator-ui
 
 https://github.com/davidfantasy/mybatis-plus-generator-ui
+
+
+
+阿里的面试官为什么会提到不建议在MySQL中用delete删除数据
+
+https://mp.weixin.qq.com/s/09vnXss8apbdFdA3vf3-XA
+
+
+
+开源单点认证中心MaxKey
+
+https://www.toutiao.com/article/7414046776342135347

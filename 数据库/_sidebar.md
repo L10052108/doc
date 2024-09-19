@@ -26,6 +26,9 @@
   - [12_mysql建表举例](数据库/mysql/mysql理论/12_mysql建表举例.md)
   - [13_一条查询SQL是如何执行的](数据库/mysql/mysql理论/13_一条查询SQL是如何执行的.md)
 
+- mysql语句
+  - [01_mysql建表举例](数据库/MySQL使用/01_mysql举例.md)
+
 - mysql实际使用
   - [01_sql行列变化](数据库/MySQL使用/sql行列变化.md)
   - [02_查询显示行号](数据库/MySQL使用/mysql序号.md)
