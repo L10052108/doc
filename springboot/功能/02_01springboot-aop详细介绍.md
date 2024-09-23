@@ -1,5 +1,7 @@
 参考资料<br/>
 [【Spring】AOP切入点表达式&通知类型&数据获取(二)](https://blog.csdn.net/m0_66570338/article/details/129906767)<br/>
+[spring boot切面execution表达式添加多个包路径](https://blog.csdn.net/u011974797/article/details/136815442)<br/>
+
 
 ## AOP 详细介绍
 
@@ -191,6 +193,37 @@ execution(* com.guanzhi.*.*Service.find*(..))
     
 execution(* com.guanzhi.*.*Service.save*(..))
 √ 将项目中所有业务层方法的以save开头的方法匹配
+```
+
+#### 多个切点
+
+在Spring Boot中，如果你想为多个包中的方法创建一个切面，你可以在@Pointcut注解中使用||操作符来指定多个包。
+
+```java
+// 定义切入点为两个包中的任意方法
+@Pointcut("execution(* com.example.package1..*.*(..)) || execution(* com.example.package2..*.*(..))")
+public void myPointcut() {
+}
+```
+
+排除某个接口
+
+```
+// 定义切点，包括所有接口的方法，除了login接口
+@Pointcut("execution(* com.example.package1..*.*(..)) && !execution(* com.example.controller.testController.login(..))")
+public void myPointcut() {
+}
+```
+
+整个表达式可以分为五个部分：
+
+```
+1、execution(): 表达式主体，可以扫描控制层的接口、某个注解、或者其他需要扫描的类。
+2、第一个*号：表示返回类型，*号表示所有的类型，比如public,protect,private等。
+3、包名：表示需要拦截的包名，后面的两个句点表示当前包和当前包的所有子包，com.demo.service.impl包、子孙包下所有类的方法。
+4、第二个*号：表示子包名，*号表示所有子包。
+5、第三个*号：表示类名，*号表示所有子包下的类。*
+6、*(..):最后这个星号表示方法名， *号表示所有的方法，后面括弧里面表示方法的参数，两个句点表示任何参数。
 ```
 
 ### (3) 书写技巧
