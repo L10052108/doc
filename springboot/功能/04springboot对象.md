@@ -471,7 +471,7 @@ public class ConditonDemo {
 
 运行效果
 
-![](https://tva1.sinaimg.cn/large/e6c9d24ely1h1p7zbo31yj20qs07mwfd.jpg ':size=50%')
+
 
 ###  Bean实例对象的销毁
 
@@ -488,7 +488,7 @@ public class ConditonDemo {
 
 ###  恶汉式 & 懒汉式
 
-?> 使用singleton单例，采用饿汉加载（容器启动，Bean实例就创建好了）<br/>?> 使用prototype多例，采用懒汉加载（IOC容器启动的时候，并不会创建对象实例，而是在第一次使用的时候才会创建）
+?>  使用singleton单例，采用饿汉加载（容器启动，Bean实例就创建好了）<br/>?>  使用prototype多例，采用懒汉加载（IOC容器启动的时候，并不会创建对象实例，而是在第一次使用的时候才会创建）
 
 **如何将 singleton 单例模式的 恶汉式 变更为 懒汉式，只需要再添加一个 @Lazy 注解即可。** 如下所示：
 
