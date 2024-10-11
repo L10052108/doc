@@ -48,11 +48,13 @@
   - [07_02Java集合复习](java/java基础/07_02Java集合复习.md)
   - [08_Java开发利器之重试](java/java基础/08_Java开发利器之重试.md)
   - [09_5大线程安全Map](java/java基础/09_5大线程安全Map.md)
+  - [10_fastjson反序列化泛型](java/java基础/10_fastjson反序列化泛型.md)
+  - [11_树结构](java/java基础/11_树结构.md)
+  - [12_BeanUtils如何优雅的拷贝List](java/java基础/12_BeanUtils如何优雅的拷贝List.md)
   - **100_反射**
     - [100_01反射机制详解](java/java基础/反射/100_01反射机制详解.md)
     - [100_02反射工具Reflections用法](java/java基础/反射/100_02反射工具Reflections用法.md)
-  - [10_fastjson反序列化泛型](java/java基础/10_fastjson反序列化泛型.md)
-  - [11_树结构](java/java基础/11_树结构.md)
+
 
 
 - Java Agent
