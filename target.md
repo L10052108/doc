@@ -890,3 +890,13 @@ https://mp.weixin.qq.com/s/09vnXss8apbdFdA3vf3-XA
 开源单点认证中心MaxKey
 
 https://www.toutiao.com/article/7414046776342135347
+
+
+
+## queue
+
+【Java】Java队列Queue使用详解
+
+https://blog.csdn.net/devnn/article/details/82591349
+
+blockQueue 的使用
