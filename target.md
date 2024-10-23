@@ -283,6 +283,11 @@ https://blog.csdn.net/zls986992484/article/details/52860496
 
 https://cloud.tencent.com/developer/article/1778572
 
+PDMan
+干掉 PowerDesigner，设计数据库表用它就够了！
+
+https://mp.weixin.qq.com/s/OGHzDnkeAxYZUux73-IeEg
+
 
 
 ## Spring Security入门学习
@@ -730,6 +735,10 @@ FROM
         WHEN stu_score >= 60 AND stu_score < 80 THEN '及格'
         WHEN stu_score >= 80 THEN '优秀'
         ELSE '异常' END) AS REMARK
+        
+        
+使用虚拟列解决
+https://juejin.cn/post/7341235774903664649
 ```
 
 
@@ -910,6 +919,10 @@ blockQueue 的使用
 https://mp.weixin.qq.com/s/-OLHoAUTkK3jrOxwM0w6gg
 
 
+
+ 说一说如何优雅的关闭线程池？
+
+https://mp.weixin.qq.com/s/c6PlbmTNJY3JO0BWvx0mow
 
 ## go
 
