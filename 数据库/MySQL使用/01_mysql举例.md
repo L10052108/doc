@@ -39,6 +39,11 @@ CREATE TABLE `op_operating_room_plan`  (
  (`id`, `organize_name`, `is_default`, `parent_organize_id`, `parent_node`, `sync_project_time`, `sync_project_time_unit`, `creator`, `create_time`, `modifier`, `modify_time`) 
  VALUES 
  (1, '招天下', 1, 0, '0', 0, 1, '招天下', now(), '招天下', now());
+ 
+ 
+-- 删除项目表 数据
+TRUNCATE TABLE bid_evaluation_record;  -- 清空数据，重新建表结构
+delete from bid_evaluation_record where id = 10;  -- 不清空数据
 
 -- ----------------------------
 -- 唯一索引
@@ -50,18 +55,6 @@ CREATE UNIQUE INDEX uk_organize_organizeName_parentOrganizeId ON organize(organi
 CREATE UNIQUE INDEX uk_organize_affiliation_organizeId ON organize_affiliation(organize_id);
 
 -- ----------------------------
--- 删除数
--- ----------------------------
--- 删除项目表 数据
-TRUNCATE TABLE bid_evaluation_record;  -- 清空数据，重新建表结构
-delete from bid_evaluation_record where id = 10;  -- 不清空数据
- 
--- ----------------------------
--- 修改表字段
--- ----------------------------
- ALTER TABLE z_bidding_record CHANGE bidder_code bidder_sn varchar(54)  COMMENT '竞买号';
- 
- -- ----------------------------
 -- 新增字段
 -- ----------------------------
 ALTER TABLE `pre_expert_staff` 
@@ -76,5 +69,16 @@ add COLUMN  `bank_type` tinyint(1) NULL DEFAULT 0 COMMENT '专家库类型：0-�
 add COLUMN `age_limit` tinyint(1) DEFAULT 0 COMMENT '是否年龄限制0:不限制1:限制' AFTER `bank_type`;
 add COLUMN `max_limit_age`   int(11) DEFAULT NULL COMMENT '限制的年龄' AFTER `age_limit`;
  
+ 
+ -- ----------------------------
+-- 修改表字段
+-- ----------------------------
+ ALTER TABLE z_bidding_record CHANGE bidder_code bidder_sn varchar(54)  COMMENT '竞买号';
+ 
+ -- ----------------------------
+-- 删除字段
+-- ----------------------------
+ALTER TABLE `expert_staff` 
+DROP COLUMN `tenant_id`;
 ```
 
