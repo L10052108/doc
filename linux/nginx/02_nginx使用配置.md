@@ -26,7 +26,7 @@ Nginx的主配置文件(`conf/nginx.conf`)按以下结构组织：
 一个比较全的配置文件示例如下。
 
 ```bash
-bash复制代码# 全局段配置
+# 全局段配置
 # ------------------------------
 
 # 指定运行nginx的用户或用户组，默认为nobody。
@@ -142,7 +142,7 @@ yaml
 示例：
 
 ```bash
-bash复制代码location = / {
+location = / {
     # 精确匹配 /，主机名后面不能带任何字符串
     # http://abc.com [匹配成功]
     # http://abc.com/index [匹配失败]
@@ -181,7 +181,7 @@ location / {
 要配置Nginx作为反向代理，您需要使用`location`块中的`proxy_pass`指令：
 
 ```bash
-bash复制代码location /some/path/ {
+location /some/path/ {
     proxy_pass http://your_backend_address;
 }
 ```
@@ -196,7 +196,7 @@ bash复制代码location /some/path/ {
 #### **示例配置**
 
 ```bash
-bash复制代码server {
+server {
     listen 80;
     server_name example.com;
 
@@ -251,7 +251,7 @@ bash复制代码server {
 1. **直接为静态内容设置一个别名或根目录**：
 
 ```bash
-bash复制代码location ~* .(jpg|jpeg|png|gif|ico|css|js)$ {
+location ~* .(jpg|jpeg|png|gif|ico|css|js)$ {
     root /path/to/static/files;
     expires 30d;  # 设置缓存时间
 }
@@ -276,7 +276,7 @@ bash复制代码location /static/ {
 对于动态内容，你可能需要将请求代理到后端的应用服务器，如Tomcat、uWSGI等。
 
 ```bash
-bash复制代码location / {
+location / {
     proxy_pass http://backend_server_address;
     proxy_set_header Host $host;
     proxy_set_header X-Real-IP $remote_addr;
@@ -397,7 +397,7 @@ Nginx中的静态资源压缩可以在http块、server块、location块中配置
 
 Gzip在应用程序中进行压缩，而sendfile可以直接通过系统的网络设备发送静态资源文件，绕过应用程序的用户进程。为了解决这两者之间的冲突，Nginx提供了`ngx_http_gzip_static_module`模块的`gzip_static`指令。
 
-![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/64c433e134804704ad9c2473f387ea4a~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=1138&h=678&s=209484&e=png&b=f6f4f4)
+![64c433e134804704ad9c2473f387ea4a~tplv-k3u1fb](img/64c433e134804704ad9c2473f387ea4atplv-k3u1fb.png)
 
 - gzip_static
 
@@ -413,7 +413,7 @@ Gzip在应用程序中进行压缩，而sendfile可以直接通过系统的网�
 
 跨域资源共享（CORS）是一种安全策略，用于控制哪些网站可以访问您的资源。当您的前端应用程序和后端API位于不同的域上时，通常会遇到跨域问题。Nginx可以通过设置响应头来帮助解决这个问题。
 
-![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2bf0e89ce8374506a12c588d4fcc56a7~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=850&h=550&s=63747&e=png&b=ffffff)
+![1](img/1.png)
 
 ```bash
 location / {
