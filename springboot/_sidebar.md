@@ -10,8 +10,10 @@
     - [00_00下线使用案例](springboot/功能/00_01SpringBoot的优雅下线使用.md)
     - [00_01SpringBoot的优雅下线](springboot/功能/00_01SpringBoot的优雅下线.md)
   - [01_springboot异步](springboot/功能/01springboot异步.md)
-  - [02_springboot-aop](springboot/功能/02aop.md)
-  - [02_01springboot-aop详细介绍](springboot/功能/02_01springboot-aop详细介绍.md)
+  - **02_spring之aop使用**
+    - [01_springboot-aop](springboot/功能/02aop.md)
+    - [02_01springboot-aop详细介绍](springboot/功能/02_01springboot-aop详细介绍.md)
+    - [03_aop租户的使用](springboot/功能/03_aop租户的使用.md)
   - [03_http优雅使用客户端retrofit](springboot/功能/03http客户端retrofit.md)
   - [03_02Springboot整合Retry实现重试机制](springboot/功能/03_02Springboot整合Retry实现重试机制.md)
   - [04_springboot创建对象](springboot/功能/04springboot对象.md)
