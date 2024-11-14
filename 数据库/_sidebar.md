@@ -28,6 +28,7 @@
 
 - mysql语句
   - [01_mysql建表举例](数据库/MySQL使用/01_mysql举例.md)
+  - [02_mysql索引](数据库/MySQL使用/02_mysql索引.md)
 
 - mysql实际使用
   - [01_sql行列变化](数据库/MySQL使用/sql行列变化.md)
