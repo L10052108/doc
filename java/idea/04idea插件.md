@@ -2,7 +2,6 @@
 [这款 IDEA 插件太好用了，堪称日志管理神器！](https://mp.weixin.qq.com/s/pfa5mJmAETJoxwdxIqBpXA)<br/>
 [Idea热加载插件JRebel激活及使用教程](https://blog.csdn.net/qq_42263280/article/details/128888312)<br/>
 [IntelliJ IDEA好用插件推荐之（一）：Grep Console](https://blog.csdn.net/xutong_123/article/details/128311026)<br/>
-
 [IDEA 插件推荐](https://blog.csdn.net/objectness/article/details/129246104)
 
 ## idea插件
@@ -159,6 +158,33 @@ Disconnected from the target VM, address: ‘127.0.0.1:58166’, transport: ‘s
 
 ![image-20240808100932849](img/image-20240808100932849.png)
 
+
+
+###  在线激活 （推荐）
+
+资料来源：[Jrebel 最新的 2024.3.0 激活方法](https://blog.csdn.net/qq251708339/article/details/134105044)
+
+#### 问题:
+
+- 用新不用旧，老版的插件连最新的springboot3 都不支持
+- 激活服务器提示： Ls client not configured
+
+#### 解决方法:
+
+- 1. 访问： https://www.jpy.wang/page/jrebel.html
+
+![在这里插入图片描述](img/c95b56c174799046b8b953542f70a302.png)
+
+
+
+2.在jrebel激活的时候填写相应的地址
+
+![在这里插入图片描述](img/9304f5655b00ac48c1353adab50879e5.png)
+
+
+
+![在这里插入图片描述](img/14adefa2972c3c21b88d1148ecc46eae.png)
+
 ### maven help
 
 1、File→Settings→Plugins，输入maven helper，本地没搜到，就可以点击Search in repositories（或直接点击Browse repositories进入搜索），搜到Maven Helper后选择Install进行安装即可，安装后需重启IDEA。
@@ -308,3 +334,7 @@ Alt + ins(*Ins*ert)或者Alt + S打开窗口粘贴需要转换成实体的json�
 括号匹配高亮显示，你鼠标所在代码所处的括号会标亮，可以方便我们再复杂、繁多的代码结构中清晰的查看到当前所在的代码层级，十分有用。
 
 ![img](img/ebd6af6394492d06cfe59fe43e2e6677.png)
+
+## 提交自动生成
+
+![image-20241125090000842](img/image-20241125090000842.png)
