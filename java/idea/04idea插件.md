@@ -2,7 +2,8 @@
 [这款 IDEA 插件太好用了，堪称日志管理神器！](https://mp.weixin.qq.com/s/pfa5mJmAETJoxwdxIqBpXA)<br/>
 [Idea热加载插件JRebel激活及使用教程](https://blog.csdn.net/qq_42263280/article/details/128888312)<br/>
 [IntelliJ IDEA好用插件推荐之（一）：Grep Console](https://blog.csdn.net/xutong_123/article/details/128311026)<br/>
-[IDEA 插件推荐](https://blog.csdn.net/objectness/article/details/129246104)
+[IDEA 插件推荐](https://blog.csdn.net/objectness/article/details/129246104)<br/>
+[idea安装Jrebel实现服务代码热更新](https://blog.csdn.net/qdsd_1898/article/details/142333216)
 
 ## idea插件
 
@@ -51,6 +52,14 @@ Installed安装之后重启，点击上方的Tools就能看到
 
 然后我们需要配置license server地址，这里我们通过一个JrebelBrainsLicenseServerforJava的激活jar包来实现，通过将jar包放在服务器上运行，然后就可以通过我们自己的服务器来作为license server地址了
 
+下载地址
+
+```
+https://github.com/ilanyu/ReverseProxy/releases/tag/v1.4
+```
+
+
+
 下载地址：
 
 ```
@@ -95,6 +104,10 @@ http://localhost:8888/0f1e21ef-c04a-4091-95d9-a27d46537744
 **激活成功！**
 
 ![img](\img\89c9b5645ac2678f818b688d897384a9.png)
+
+- 手动更新
+  - 方法1: 按快捷键Ctrl + Shift + F9
+  - 方法2: 配置Idea的HowSwap
 
 这样激活就算彻底完成了。
 
