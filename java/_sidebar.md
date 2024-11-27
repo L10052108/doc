@@ -157,6 +157,7 @@
 
 - 工具
   - [01_maven](java/工具/01maven.md)
+  - [02_maven项目的使用](java/工具/02maven使用.md)
   - [03_yapi](java/工具/03yapi.md)
   - [03_postman](java/工具/04postman.md)
   - [05_gitlab](java/工具/05gitlab.md)

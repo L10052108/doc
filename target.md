@@ -290,6 +290,13 @@ https://mp.weixin.qq.com/s/OGHzDnkeAxYZUux73-IeEg
 
 
 
+SpringBoot整合Flink CDC，实时追踪数据变动，无缝同步至Redis
+
+https://mp.weixin.qq.com/s/SJsHbVI2CftHYxrlTbHzwQ
+
+新选择！基于Spring Boot监听MySQL日志Binlog实现数据实时同步
+https://mp.weixin.qq.com/s/3rMWPmLHnoY4IDl-owuLIw
+
 ## Spring Security入门学习
 https://juejin.cn/post/7174576646635126814#heading-0
 
@@ -935,3 +942,9 @@ https://blog.csdn.net/qq_19283249/article/details/131747709
 ## spring工具类
 
 https://mp.weixin.qq.com/s/NzLkcZsy-ySYpPxVLnSEEQ
+
+
+
+在 mac 上 使用idea 设置eclipse快捷键 之后ctrl +左键进入类或者方法里
+
+https://blog.csdn.net/a417074865/article/details/81477672
