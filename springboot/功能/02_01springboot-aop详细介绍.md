@@ -501,6 +501,14 @@ public class MyAdvice {
 
 ![在这里插入图片描述](img/7aebe9c87f53478d84d65bc551a39abc.png)
 
+
+
+注意：
+
+**@Around： 返回的就是void 。执行后，返回的结果就会变成null**
+
+![image-20241211160139439](img/image-20241211160139439.png)
+
 ### 8) 通知类型总结
 
 | 名称 | `@After`                               | `@AfterReturning`                                  | `@AfterThrowing`                                   | `@Around`                                | `@Before`                              |
