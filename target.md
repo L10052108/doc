@@ -948,3 +948,17 @@ https://mp.weixin.qq.com/s/NzLkcZsy-ySYpPxVLnSEEQ
 在 mac 上 使用idea 设置eclipse快捷键 之后ctrl +左键进入类或者方法里
 
 https://blog.csdn.net/a417074865/article/details/81477672
+
+
+
+
+
+## DDD 
+
+https://mp.weixin.qq.com/s?__biz=MzUxMjY5NzEyMw==&mid=2247483967&idx=1&sn=fe54b7904bad7d69933681e701f70703&chksm=f9613473ce16bd654ad5312da7772027db31f2af742ff316c9c75a22e6aa0c2f94465e4e90eb&cur_album_id=2458748731635073025&scene=189#wechat_redirect
+
+
+
+## 设计模式
+
+https://blog.csdn.net/qq_41889508/article/details/105953114?spm=1001.2014.3001.5501
