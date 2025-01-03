@@ -962,3 +962,27 @@ https://mp.weixin.qq.com/s?__biz=MzUxMjY5NzEyMw==&mid=2247483967&idx=1&sn=fe54b7
 ## 设计模式
 
 https://blog.csdn.net/qq_41889508/article/details/105953114?spm=1001.2014.3001.5501
+
+
+
+
+
+导航
+
+https://mp.weixin.qq.com/s/OESOPuGOhYjb-sRruFtJ4A
+
+
+
+ Jetbrains IDEA 神仙插件之 Multi-Project Workspace
+
+https://www.toutiao.com/article/7447077401357599259/?
+
+
+
+Jetbrains IDEA 神仙插件之 File Expander
+
+https://www.toutiao.com/article/7447072245467365915/?log_from=cf30f4e5b17a3_1735788625153
+
+
+
+https://www.toutiao.com/article/7451540979305185855/
