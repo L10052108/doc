@@ -194,6 +194,102 @@ MacOS 的 shadowsockets-NG 软件的最新版已经内嵌了 kcptun 插件，比
 - 插件 kcptun
 - 配置 key=111111;crypt=aes;mode=fast;mtu=1350;sndwnd=512;rcvwnd=512;datashard=10;parityshard=3;dscp=0
 
+#### shadowsockets-NG 防火墙规则
+
+[pac模式自定义规则](https://www.oldboard.tech/2021/03/02/shadowsocks-pac.html)
+
+![shadowsocks-pac](img/shadowsocks-pac.jpg)
+
+![shadowsocks-pacedit](img/shadowsocks-pacedit.png)
+
+点击菜单栏shadowsocks图标，在下拉窗口里选择 “代理设置->编辑PAC用户自定规则…”。
+
+#### * 标记
+
+通配符。`*`可以表示任何字符串，任何满足条件的都会走代理。
+如：
+
+```
+*.example.com/*
+```
+
+表示：
+
+```
+https://www.example.com
+https://image.example.com
+https://image.example.com/abcd
+```
+
+等，都会走代理。
+
+#### @@ 标记
+
+例外规则，任何满足`@@`后面规则的地址，都不会走代理。
+如：
+
+```
+@@*.example.com/\*
+```
+
+表示：
+
+```
+https://www.example.com
+https://image.example.com
+https://image.example.com/abcd
+```
+
+等，都不会走代理。
+
+#### || 标记
+
+只匹配域名的结尾。
+如：
+
+```
+||example.com
+```
+
+表示：
+
+```
+http://example.com/abcd
+https://example.com
+ftp://example.com 
+```
+
+等，都会走代理。
+
+#### | 标记
+
+匹配地址的开头和结尾。
+如：
+
+```
+|https://example.com
+```
+
+表示以`https://example.com`开头的地址会走代理。
+
+```
+example.com|
+```
+
+表示以`example.com`结尾的地址会走代理。
+
+#### ! 标记
+
+注释。
+如：
+
+```
+! 这是一行注释
+! ||example.com
+```
+
+`!`后面的内容表示注释，以`!`开头的规则也会无效。
+
 ### Android
 
 #### 下载客户端
