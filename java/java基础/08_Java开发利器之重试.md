@@ -571,3 +571,112 @@ public class MyRetryListener<Boolean> implements RetryListener {
 ```
 .withRetryListener(new MyRetryListener<>())
 ```
+
+
+
+## 自定义重试
+
+项目开发中，需要使用到自定义时间进行重试。自定义一个数组，存储要重试的时间
+
+```java
+
+import cn.hutool.core.date.DateUtil;
+import com.github.rholder.retry.*;
+import com.google.common.base.Predicates;
+import lombok.extern.slf4j.Slf4j;
+
+import java.util.Date;
+
+@Slf4j
+public class RetryDemo {
+
+
+    int count = 0;
+
+    public static void main(String[] args) {
+        RetryDemo demo = new RetryDemo();
+        demo.test01();
+    }
+
+    public void test01(){
+        long[] time = {1000L, 2000L, 3000L, 4000L, 6000L};
+//        long[] time = {};
+        int length = time.length;
+        String demo  = "测试重试1";
+        String now = DateUtil.formatDateTime(new Date());
+        log.info("当前执行查询。当前的时间是：{}" ,now);
+        Retryer<Boolean> retryer = RetryerBuilder.<Boolean>newBuilder()
+                // 出现异常进行重试
+                .retryIfRuntimeException()
+                // 返回false重试
+                .retryIfResult(Predicates.equalTo(false))
+                // 延时的重试
+                // 改成  1.5  3.5  6.5 10.5 15.5
+                .withWaitStrategy(new CustomWaitStrategy(time))
+//                .withWaitStrategy(WaitStrategies.fixedWait(1, TimeUnit.SECONDS))
+                // 设置最大执行次数5次
+                .withStopStrategy(StopStrategies.stopAfterAttempt(length+1))
+                // 每次执行后进行监听
+                .withRetryListener(new MyRetryListener())
+                .build();
+        // 解释：执行出现了异常，执行三次
+        try {
+            retryer.call(() -> realAction(demo));
+        } catch (RetryException e){
+            log.info("全部都执行失败");
+        } catch (Exception e) {
+            log.error("全部都执行失败了", e);
+        }
+    }
+
+    /**
+     * 自定义监听
+     */
+    class MyRetryListener implements RetryListener {
+        @Override
+        public <V> void onRetry(Attempt<V> attempt) {
+            long attemptNumber = attempt.getAttemptNumber();
+            V result = attempt.getResult();
+            System.out.println("第" + attemptNumber + "次执行");
+        }
+    }
+
+    class CustomWaitStrategy implements WaitStrategy {
+
+        private final long[] waitTimes; // 自定义等待时间数组
+
+        public CustomWaitStrategy(long[] waitTimes) {
+            this.waitTimes = waitTimes;
+        }
+
+        @Override
+        public long computeSleepTime(Attempt attempt) {
+            long attemptNumber = attempt.getAttemptNumber();
+            if (attemptNumber <= waitTimes.length) {
+                return waitTimes[(int)attemptNumber - 1];
+            } else {
+                // 如果尝试次数超过数组长度，可以选择抛出异常或返回一个默认值
+                throw new RuntimeException("超出预定义的等待时间数组长度");
+            }
+        }
+    }
+
+    /**
+     * 重试执行的内容
+     * @param demo
+     * @return
+     */
+    private Boolean realAction(String demo) {
+        count++;
+        String now = DateUtil.formatDateTime(new Date());
+        log.info("当前执行查询。当前的时间是：{},次数是：{}" ,now,count);
+//        count++;
+        if(count == 10){
+            return true;
+        }
+        return false;
+    }
+
+}
+```
+
