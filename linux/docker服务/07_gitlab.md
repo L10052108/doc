@@ -2,6 +2,7 @@
 [安装私服](https://www.cnblogs.com/jefflee168/p/7402189.html)<br/>
 [安装私服](https://blog.csdn.net/u011054333/article/details/61532271)<br/>
 [配置docker](https://blog.csdn.net/yangxuan0261/article/details/74674809)<br/>
+[git统计代码行数、提交数](https://blog.csdn.net/trusause/article/details/142395501)<br/>
 
 
 
@@ -104,3 +105,20 @@ gitlab_rails['gitlab_email_from'] = "364105996@qq.com"
 gitlab_rails['gitlab_email_reply_to'] = '364105996@qq.com'
 gitlab_rails['gitlab_email_display_name'] = 'GitLab-Robot'
 ```
+
+
+
+## 查看代码的统计量
+
+查看个人时间段代码量
+
+```shell
+git log --since=2025-03-01 --until=2025-04-01 --author="liuwei"  --pretty=tformat: --numstat | awk '{ add += $1; subs += $2; loc += $1 - $2 } END { printf "added lines: %s, removed lines: %s, total lines: %s\n", add, subs, loc }'
+```
+
+所有人
+
+```shell
+git log --since=2025-03-01 --until=2025-04-01  --pretty=tformat: --numstat | awk '{ add += $1; subs += $2; loc += $1 - $2 } END { printf "added lines: %s, removed lines: %s, total lines: %s\n", add, subs, loc }'
+```
+
